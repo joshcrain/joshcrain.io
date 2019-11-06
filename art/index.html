@@ -1,0 +1,16 @@
+---
+layout: layout.liquid
+pageTitle: Art
+
+metaDescription: A place for art. Mostly still figuring it out. I would like to see a lot more here. 
+---
+<aside><p>{{metaDescription}}</p></aside>
+<ul class="flex--articles flex--articles--3 pull--both">
+    {% for post in collections.art reversed%}
+    <li>
+        <a href="{{ post.url }}" class="text--larger"><img src="{{post.data.metaImage}}" alt="{{ post.data.pageTitle }}">
+        {{ post.data.pageTitle }}</a>
+        <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription }}</p>
+    </li>
+{% endfor %}
+</ul>

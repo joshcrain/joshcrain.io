@@ -1,0 +1,15 @@
+---
+layout: layout.liquid
+pageTitle: Notes
+
+metaDescription: A collection of writings and notes.
+---
+<aside><p>{{metaDescription}}</p></aside>
+<ul class="list--articles">
+{% for post in collections.notes reversed%}
+    <li>    
+        <a href="{{ post.url }}" class="text--larger">{{ post.data.pageTitle }}</a>
+        <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription }}</p>
+    </li> 
+{% endfor %}
+</ul> 
