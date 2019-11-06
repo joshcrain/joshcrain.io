@@ -13,6 +13,11 @@
   
     netlify deploy --prod
 
+### Git
+git add .
+git commit -m "my comment"
+git push -u origin master
+
  ## Colors
 
  Blue: 89,171,227
