@@ -74,9 +74,9 @@ blockquote cite {display:block;font-size:.875em;text-align: right;}
   .list--horizontal.list--m--larger > li{padding:0 1.75em;}
   .list--horizontal.list--m--smaller {margin:0 -.625em}
   .list--horizontal.list--m--smaller > li{padding:0 .625em;}
-.list--articles {margin:2em 0;}
+.list--articles, .flex--articles {margin:0;padding:0 0 2em 0;}
   .list--articles li{margin:0 0 1em;list-style:none;}
-.flex--articles {padding:2em 0;display: flex;justify-content: space-between;font-size:.875em;flex-flow: row wrap;}
+.flex--articles {display: flex;justify-content: space-between;font-size:.875em;flex-flow: row wrap;}
   .flex--articles li{padding:0 0 1em;list-style:none;width:47.5%;}
   .flex--articles.flex--articles--3 li{width:30.833%;}
   .flex--articles li img{margin:0 0 .25em;}
