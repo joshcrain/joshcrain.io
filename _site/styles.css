@@ -19,7 +19,7 @@
   :root{
     --colorFore: 249, 240, 255;
     --colorBase: 0, 0, 0;
-    --colorBack: 25, 25, 25;
+    --colorBack: 10, 10, 25;
     --colorAccent: 89,171,227;
     --colorAccentAlt: 222,179,146;
   }
