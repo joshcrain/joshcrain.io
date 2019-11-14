@@ -132,5 +132,5 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 @media only print {
   * {background: none!important;color:var(--colorFore)!important;}
-  .site_header, .site_footer {display: none;}  
+  .site_header, .site_footer {display: none!important;} 
 }
