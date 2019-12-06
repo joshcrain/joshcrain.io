@@ -1,8 +1,7 @@
 ---
 pageTitle: What I’m Reading
 tags: notes
-
-metaDescription: A list of books and quotes I’m reading. 
+metaDescription: Instead of thumbing through social media during the short moments of boredom I have been reading.  
 date: 2019-10-08
 ---
 ## <div class="opacity_75 small-caps text--smaller">October 2019</div> Opus Posthumous 
