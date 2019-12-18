@@ -47,3 +47,5 @@ Montezuma Castle National Monument, Arizona.</figcaption>
     <img class="lazy" data-src="/images/arizona-utah/1024/paria-ut-1.jpeg" alt="Paria">
     <figcaption>Banded hills of the Chinle Formation, near the Paria movie set. Grand Staircase-Escalante National Monument, Utah. </figcaption>
 </figure>
+
+<div class="text_center">There are more photos from this trip on <a href="https://flickr.com/photos/joshuacrain/albums/72157670159343188" rel="noopener">Flickr</a>!</div>
