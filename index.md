@@ -3,13 +3,13 @@ layout: layout.liquid
 pageTitle: Josh Crain
 metaDescription: This is Josh Crain's website.
 ---
-<p class="text--larger"><span class="dropcap">S</span>ince 2006 I have worked in different roles as a web designer, product designer, and UI developer. Design allows me to make an impact through user advocacy, research, web standards, and code. Most recently, my interests have focused on how to build a better design system and the exciting new possibilities of static site generation.</p>
-<p class="text--larger">My lifelong interest has been making art. I want to be a better painter and I’d like to spend <em>a lot more time</em> in my sketchbook. There is a lot I want to learn and hope to share. There are also <a href="/notes/other-interesting-things/">other interesting things</a>.</p>
+<p class="text--larger"><span class="dropcap">J</span>has worked as a web designer, product designer, and UI developer. Design allows him to make an impact through user advocacy, research, web standards, and code. Most recently, his interests have focused on how to build a better design system and the exciting new possibilities of static site generation.</p>
+<p class="text--larger">His lifelong interest has been making art. He wants to be a better painter and would like to spend <em>a lot more time</em> in his sketchbook. There are also <a href="/notes/other-interesting-things/">other interesting things</a>.</p>
 
 <hr>
 
 ## Recent Art
-A selection of paintings. Mostly digital, gouache, or watercolor. Some are new some are old. Some are slightly embarassing. 
+A selection of digital, gouache, and watercolor paintings. Some are new some are old. Some are slightly embarassing. 
 
 <ul class="flex--articles flex--articles--3 pull--both" style="padding-top:2em;">
 {% for post in collections.art limit:9 reversed %}
