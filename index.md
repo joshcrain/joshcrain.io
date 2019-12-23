@@ -3,7 +3,7 @@ layout: layout.liquid
 pageTitle: Josh Crain
 metaDescription: This is Josh Crain's website.
 ---
-<p class="text--larger"><span class="dropcap">J</span>has worked as a web designer, product designer, and UI developer. Design allows him to make an impact through user advocacy, research, web standards, and code. Most recently, his interests have focused on how to build a better design system and the exciting new possibilities of static site generation.</p>
+<p class="text--larger"><span class="dropcap">J</span>osh has worked as a web designer, product designer, and UI developer. Design allows him to make an impact through user advocacy, research, web standards, and code. Most recently, his interests have focused on how to build a better design system and the exciting new possibilities of static site generation.</p>
 <p class="text--larger">His lifelong interest has been making art. He wants to be a better painter and would like to spend <em>a lot more time</em> in his sketchbook. There are also <a href="/notes/other-interesting-things/">other interesting things</a>.</p>
 
 <hr>
