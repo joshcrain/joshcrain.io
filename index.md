@@ -14,7 +14,7 @@ A selection of digital, gouache, and watercolor paintings. Some are new some are
 <ul class="flex--articles flex--articles--3 pull--both" style="padding-top:2em;">
 {% for post in collections.art limit:9 reversed %}
 <li>    
-    <a href="{{ post.url }}" class="text--larger"><img src="{{post.data.metaImage}}" alt="{{ post.data.pageTitle }}">{{ post.data.pageTitle }}</a>
+    <a href="{{ post.url }}" class="text--larger"><img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">{{ post.data.pageTitle }}</a>
     <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription }}</p>
 </li>
 {% endfor %} 

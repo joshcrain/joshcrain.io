@@ -5,7 +5,7 @@ tags: notes
 metaDescription: A collection of intriguing facts, figures and little known facts about Josh Crain. 
 date: 2019-07-18
 ---
-<aside><p>A collection of other intriguing facts and figures about the site author.</p></aside>
+<p class="lead">A collection of other intriguing facts and figures about the site author.</p>
 
 Josh Crain is an Iowa native, designer, and artist. He studied art and design at the University of Northern Iowa and received a Bachelor of Fine Arts degree. He has worked as a web designer, product designer, and UI developer.
 

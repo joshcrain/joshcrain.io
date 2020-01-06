@@ -50,7 +50,7 @@ figure{margin:1em 0;display:inline-block;text-align: center;width:100%;}
 .multiply {mix-blend-mode: multiply;}
 .opacity_75{opacity:.75;}
 
-aside {font-style:italic;margin-bottom:1.5em;font-size:1em;text-align: center}
+.lead {font-style:italic;margin-bottom:1.5em;font-size:1em;text-align: center}
 blockquote{margin:1.5em var(--margin);font-style: italic;font-size:1.15em;}
   blockquote p:before{content:'“';margin-left:-.27em;}
   blockquote p:after{content:'”'}
@@ -63,7 +63,7 @@ blockquote cite {display:block;font-size:.875em;text-align: right;}
   a.text_accent,.site_header a:hover {color:rgba(var(--colorAccent), 1)}
 .site_footer{font-size:.875em;}
 .site_footer a{color:inherit;}
-.page_content{padding:3em 1.5em 6em;}
+.page_content{padding:4em 1.5em 6em;}
   .page_content header{margin:0 auto 3em auto;}
 .wrapper {max-width:768px;margin:0 auto;}
 .wrapper p{-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;}
