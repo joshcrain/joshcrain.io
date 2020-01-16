@@ -4,6 +4,10 @@ tags: notes
 metaDescription: Instead of thumbing through social media during the short moments of boredom I have been reading.  
 date: 2019-10-08
 ---
+## <div class="opacity_75 small-caps text--smaller">December 2019</div> The Middle Five: Indian Boys at School
+
+> <p>The misconception of Indian life and character so common among the white people has been largely due to an ignorance of the Indian's language, of his mode of thought, his beliefs, his ideals, and his native institutions. Every aspect of the Indian and his manner of life has always been strange to the white man, and this strangeness has been magnified by the mists of prejudice and the conflict of interests between the two races. While these in time may disappear, no native American can ever cease to regret that the utterances of his fathers have been constantly belittled when put into English, that their thoughts have frequently been travestied and their native dignity obscured.</p><cite>Francis La Flesche </cite>
+
 ## <div class="opacity_75 small-caps text--smaller">October 2019</div> Opus Posthumous 
 
 > <p>Accuracy of observation is equivalent to accuracy of thinking.</p><cite>Wallace Stevens</cite>
