@@ -3,9 +3,11 @@ pageTitle: CSS Illustration
 tags: notes
 
 metaDescription: A collection of hand-coded illustrations created with HTML and CSS.
-date: 2019-07-31
+date: 2020-01-16
 
 ---
+Illustration using only CSS and HTML is a fun challange. 
+
 ## Love Bears All Things
 <figure>
 <p class="codepen" data-height="687" data-theme-id="light" data-default-tab="result" data-user="joshcrain" data-slug-hash="yGZBGr" style="height: 687px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Love Bears All Things - CSS Illustration">

@@ -3,7 +3,7 @@ pageTitle: Other interesting things
 tags: notes
 
 metaDescription: A collection of intriguing facts, figures and little known facts about Josh Crain. 
-date: 2019-07-18
+date: 2019-12-18
 ---
 <p class="lead">A collection of other intriguing facts and figures about the site author.</p>
 

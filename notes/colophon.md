@@ -3,7 +3,7 @@ pageTitle: Colophon
 tags: notes
 
 metaDescription: Notes on the tools, languages, publishing methods, and assets used in the production of this website. 
-date: 2019-07-24
+date: 2019-12-24
 ---
  I created this site using VSCode on a Mac with HTML, Markdown, Liquid, CSS, and Javascript. This site uses standards compliant mark-up and a custom responsive layout with the goal of simplicity and speed. 
  
