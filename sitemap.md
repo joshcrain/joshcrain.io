@@ -8,8 +8,8 @@ permalink: /sitemap.xml
   <url>
     <loc>https://joshcrain.io{{ item.url }}</loc>
     <lastmod>{{ item.date | date: '%Y-%m-%d' }}</lastmod>
-    <changefreq>{{ item.data.changefreq }}</changefreq>
-    <priority>{{ item.data.priority }}</priority>
+    <!--<changefreq>{{ item.data.changefreq }}</changefreq>-->
+    <!--<priority>{{ item.data.priority }}</priority>-->
   </url>
 {%- endunless %}
 {%- endfor %}
