@@ -16,5 +16,5 @@ Illustration using only CSS and HTML is a fun challange.
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-<figcaption>Some bears in love for Valentine's Day. Originally posted on <a href="https://twitter.com/thejoshcrain/status/1096067158512152582" rel="noopener">Twitter</a>.</figcaption>
+<figcaption>Some bears in love for Valentine's Day. Originally posted on <a href="https://twitter.com/thejoshcrain/status/1096067158512152582" rel="noopener">Twitter</a>. Edit 1/21/2020: Something has happened to their arms in Chrome!</figcaption>
 </figure>
