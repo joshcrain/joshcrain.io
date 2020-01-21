@@ -6,7 +6,7 @@ metaDescription: A collection of hand-coded illustrations created with HTML and 
 date: 2020-01-16
 
 ---
-Illustration using only CSS and HTML is a fun challange. 
+Illustration using only CSS and HTML is fun. 
 
 ## Love Bears All Things
 <figure>
@@ -16,5 +16,5 @@ Illustration using only CSS and HTML is a fun challange.
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-<figcaption>Some bears in love for Valentine's Day. Originally posted on <a href="https://twitter.com/thejoshcrain/status/1096067158512152582" rel="noopener">Twitter</a>. Edit 1/21/2020: Something has happened to their arms in Chrome!</figcaption>
+<figcaption>Some bears in love for Valentine's Day. Originally posted on <a href="https://twitter.com/thejoshcrain/status/1096067158512152582" rel="noopener">Twitter</a>. Edit 1/21/2020: Something has happened to their arms in Chrome! Still good in Safari and FF. </figcaption>
 </figure>
