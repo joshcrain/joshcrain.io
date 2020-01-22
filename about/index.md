@@ -1,19 +1,19 @@
 ---
-pageTitle: Other interesting things
-tags: notes
-
+pageTitle: A little about Josh Crain
+metaTitle: About Josh Crain
+tags: about
 metaDescription: A collection of intriguing facts, figures and little known facts about Josh Crain. 
-date: 2019-12-18
+date: 2019-01-22
 ---
-<p class="lead">A collection of other intriguing facts and figures about the site author.</p>
+<p class="lead">A collection of other intriguing facts and figures.</p>
 
-Josh Crain is an Iowa native, designer, and artist. He studied art and design at the University of Northern Iowa and received a Bachelor of Fine Arts degree. He has worked as a web designer, product designer, and UI developer.
+Josh Crain is an Iowa native, designer, and artist. He studied art and design at the University of Northern Iowa and received a Bachelor of Fine Arts degree. He has worked as a web designer, product designer, and UI developer. He doesn't love talking about himself in the third person, so he's going to stop that now if you don't mind.
 
 ## Family History
 <figure style="float:right;margin:0 0 1em 1em;width:auto;max-width:100px;width:25%;"> <img src="https://joshcrain.github.io/ancestry/images/crane-coat-of-arms.png" alt="Crane of Suffolk, England Coat Of Arms. Argent, a fesse between three crosses crosslet fitchée Guls, crest a crane ppr.">
 </figure>
 
-I am a 12th generation descendent of colonial settlers. I created <a href="/ancestry/">a site</a> as a way to explore my interest in heritage and progeny, and as place to catalog my findings. I learned some interesting things about <em>heraldry</em>&mdash;something I previously knew nothing about. You are most welcome to <a href="mailto:josh.crain+ancestry@gmail.com">contact me by email</a> with any interest.
+I am a 12th generation descendent of colonial settlers. I created <a href="/ancestry/">a site</a> as a way to explore my interest in heritage and progeny, and as place to catalog my findings. I learned some interesting things about <em>heraldry</em>&mdash;something I previously knew nothing about. You are most welcome to <a href="/say-hello/">contact me</a> with any interest.
 
 ## Personal Records
 <table>

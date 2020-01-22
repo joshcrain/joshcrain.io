@@ -1,16 +1,18 @@
 ---
 layout: layout.liquid
 pageTitle: Photography
-
-metaDescription: A place for photos. All shot using an underpowered iPhone. 
+metaTitle: Josh Crain's Photos
+metaDescription: A place for photos. All shot using an underpowered iPhone.
 ---
 <p class="lead">{{metaDescription}}</p>
 <ul class="flex--articles flex--articles--3 pull--both">
     {% for post in collections.photography reversed%}
     <li>
-        <a href="{{ post.url }}" class="text--larger"><img class="lazy" data-src="{{post.data.metaImage}}" alt="{{ post.data.pageTitle }}">
-        {{ post.data.pageTitle }}</a>
-        <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription }}</p>
-    </li> 
-{% endfor %}
+        <a href="{{ post.url }}" class="text--larger"><img class="lazy" data-src="{{post.data.metaImage}}"
+                alt="{{ post.data.pageTitle }}">
+            {{ post.data.pageTitle }}</a>
+        <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash;
+            {{ post.data.metaDescription }}</p>
+    </li>
+    {% endfor %}
 </ul>
