@@ -6,6 +6,7 @@
   --margin: 1.85rem; 
   --colorAccent: 114,96,18;
   --colorAccentAlt: 0,34,191;
+  --colorDanger: 192, 24, 35;
 } 
 :root .darkTheme{
   --colorFore: 249, 240, 255;
@@ -107,6 +108,13 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 .site_footer svg{height:1.25em;fill:rgba(var(--colorFore), 1)}
 .view a{border-radius:50%;background:rgba(var(--colorBase), 1);padding:.5em;position: fixed;right:2em;bottom:2em;line-height:.8}
 .view svg{height:1.25em;fill:rgba(var(--colorAccent), 1);}
+
+.form .form_item {margin-bottom:1em;}
+.form .form_item .form_field {border:0;color:rgba(var(--colorFore),1);background:rgba(var(--colorFore),.075);outline:2px solid rgba(var(--colorFore),1);width:100%;padding:.5em;font-size:1em;font-family: inherit;}
+.form .form_item .form_field:focus {outline:2px solid rgba(var(--colorAccent), 1);outline:0;}
+.form_field:not(:focus):invalid {outline-color:rgba(var(--colorDanger),1); }
+
+.btn {font-size:1em;font-family: inherit;border:2px solid rgba(var(--colorAccent),1);background:rgba(var(--colorFore),0);color:rgba(var(--colorAccent),1);padding:.5em .75em;border-radius: 0;}
 
 @media only screen and (min-width: 1024px) {
   .pull--both {margin-left:calc(var(--margin) * -4)!important;margin-right:calc(var(--margin) * -4)!important;width:auto;}
