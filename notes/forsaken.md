@@ -1,7 +1,6 @@
 ---
 pageTitle: Forsaken
-tags: photography
-
+tags: notes
 metaDescription: Forsaken places.
 metaImage: /images/forsaken/420/forsaken-0.jpg
 date: 2019-07-18
