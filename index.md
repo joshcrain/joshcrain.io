@@ -1,15 +1,15 @@
 ---
 layout: layout.liquid
 pageTitle: Josh Crain
-metaDescription: This is Josh Crain’s website.
+metaDescription: Josh Crain is a designer, developer, and student of art.
 ---
-<p class="text--larger"><span class="dropcap">H</span>ello! My name is Josh Crain. I have experience as a web designer, product designer, and front-end developer. Design allows me to make an impact through user advocacy, research, web standards, and code. Most recently, my professional interests have focused on how to build a better design system. I’m also excited to explore the new possibilities of static publishing.</p>
+<p class="text--larger"><span class="dropcap">H</span>ello! My name is Josh Crain. I have experience as a web designer, product designer, and front-end developer. Design allows me to make an impact through user advocacy, research, web standards, and code. Most recently, my professional interests have focused on how to build a better design system. I’m also excited to explore the new possibilities of “static” publishing.</p>
 <p class="text--larger">I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook. There are also <a href="/about/">other interesting things</a>.</p>
 
 <hr>
  
 ## Recent Art
-A selection of digital, gouache, and watercolor paintings. Some are new some are old. Some are slightly embarassing. 
+Digital, gouache, and watercolor. Some are new some are old. Some are slightly embarassing.
 
 <ul class="flex--articles flex--articles--3" style="padding-top:2em;">
 {% for post in collections.art limit:9 reversed %}
@@ -24,7 +24,7 @@ A selection of digital, gouache, and watercolor paintings. Some are new some are
 
 ## Recent Posts
 <ul class="list--articles">
-{% for post in collections.notes reversed%}
+{% for post in collections.notes limit:9 reversed%}
 <li>    
     <a href="{{ post.url }}" class="text--larger">{{ post.data.pageTitle }}</a>
     <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription strip_html truncate: 280 }}</p>
