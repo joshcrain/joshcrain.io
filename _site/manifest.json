@@ -1,0 +1,14 @@
+{
+  "name": "Josh Crain",
+  "short_name": "Josh Crain",
+  "description": "Josh Crain has experience as a web designer, product designer, and front-end developer. Design allows Josh to make an impact through user advocacy, research, web standards, and code.",
+  "dir": "ltr",
+  "lang": "en",
+  "theme_color": "#FFFFFF",
+  "background_color": "#000000",
+  "display": "standalone",
+  "orientation": "natural",
+  "start_url": "/",
+  "categories": ["art", "design", "technology", "web"]
+}
+
