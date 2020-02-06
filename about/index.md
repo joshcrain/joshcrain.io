@@ -54,7 +54,7 @@ I am a 12th generation descendant of colonial settlers. I only know after resear
 </table>
 
 ## Keytarist
-Many summers ago I played the keytar in <em>Dr. Mike</em>, one the the greatest bands of all time. You should buy our album, <em>A Mighty Love</em>, on <a href="https://www.amazon.com/Mighty-Love-Dr-Mike/dp/B000FSMMNK/">Amazon</a> or <a href="https://itunes.apple.com/us/album/a-mighty-love/97175026">iTunes</a>. You'll thank me. 
+Many summers ago I played the <a href="/notes/yamaha-shs-10/">keytar<a> in <em>Dr. Mike</em>, one the the greatest bands of all time. You should buy our album, <em>A Mighty Love</em>, on <a href="https://www.amazon.com/Mighty-Love-Dr-Mike/dp/B000FSMMNK/">Amazon</a> or <a href="https://itunes.apple.com/us/album/a-mighty-love/97175026">iTunes</a>. You'll thank me. 
 <figure>
     <img src="/images/IMG_374x768.jpg" alt="Josh Crain"/>
     <figcaption>Photo by Nicole Harmon.</figcaption>
