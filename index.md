@@ -3,6 +3,8 @@ layout: layout.liquid
 pageTitle: Josh Crain
 metaTitle: Josh Crain - Product designer, developer, artist in training
 metaDescription: Josh Crain has experience as a web designer, product designer, and front-end developer. Design allows Josh to make an impact through user advocacy, research, web standards, and code.
+changefreq: monthly
+priority: "1.0"
 ---
 <p class="text--larger"><span class="dropcap">H</span>ello! My name is Josh Crain. I have experience as a web designer, product designer, and front-end developer. Design allows me to make an impact through user advocacy, research, web standards, and code. Most recently, my professional interests have focused on how to deliver smart, reusable patterns in a design system. I’m also excited to explore the new possibilities of “static” publishing.</p>
 <p class="text--larger">I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook. There are also <a href="/about/">other interesting things</a>.</p>

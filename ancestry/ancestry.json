@@ -1,4 +1,6 @@
 {
     "layout": "layout.liquid",
-    "category": "Ancestry"
+    "category": "Ancestry",
+    "changefreq": "monthly",
+    "priority": "0.7"
 }
