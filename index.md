@@ -25,7 +25,7 @@ Digital, gouache, and watercolor. Some are new some are old. Some are slightly e
 
 <hr>
 
-## Recent Posts
+## Recent Notes
 <ul class="list--articles">
 {% for post in collections.notes limit:9 reversed%}
 <li>    
