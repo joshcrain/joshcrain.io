@@ -1,6 +1,6 @@
 ---
 pageTitle: 140 miles from the Camp Fire
-tags: notes
+tags: drafts
 metaDescription: The Camp Fire began the day we arrived.
 metaImage: /images/camp-fire/420/camp-fire-2.jpg
 date: 2018-11-22

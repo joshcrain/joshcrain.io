@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://joshcrain.io/notes/the-camp-fire/</loc>
+    <loc>https://joshcrain.io/drafts/the-camp-fire/</loc>
     <lastmod>2018-11-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://joshcrain.io/about/</loc>
@@ -97,7 +97,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/notes/a-run/</loc>
+    <loc>https://joshcrain.io/notes/2019/a-run/</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -109,16 +109,16 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/notes/arizona-and-utah/</loc>
+    <loc>https://joshcrain.io/drafts/arizona-and-utah/</loc>
     <lastmod>2019-07-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/notes/forsaken/</loc>
+    <loc>https://joshcrain.io/drafts/forsaken/</loc>
     <lastmod>2019-07-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://joshcrain.io/art/procreate-self-portraits/</loc>
@@ -139,7 +139,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/cheats/</loc>
+    <loc>https://joshcrain.io/drafts/cheats/</loc>
     <lastmod>2019-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -175,20 +175,20 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/notes/yamaha-shs-10/</loc>
+    <loc>https://joshcrain.io/notes/2020/yamaha-shs-10/</loc>
     <lastmod>2020-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/notes/love-bears-all-things/</loc>
+    <loc>https://joshcrain.io/notes/2020/love-bears-all-things/</loc>
     <lastmod>2020-02-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://joshcrain.io/</loc>
-    <lastmod>2020-02-14</lastmod>
+    <lastmod>2020-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
