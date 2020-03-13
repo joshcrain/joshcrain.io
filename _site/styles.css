@@ -57,7 +57,7 @@ blockquote{margin:1.5em var(--margin);font-style: italic;font-size:1.15em;}
   blockquote p:after{content:'”'}
 blockquote cite {display:block;font-size:.875em;text-align: right;}
   blockquote cite:before {content:'– ';}
-code {background:rgba(var(--colorAccent), .25);font-size: .875em;padding: .25em;}
+code {background:rgba(var(--colorAccent), .25);font-size: .875em;padding: 0 .15em;border-radius: .25em;}
 .site_header, .site_footer {padding:1.5em;}
 .site_header{line-height: 1;}
   .site_header a{color:inherit;}
