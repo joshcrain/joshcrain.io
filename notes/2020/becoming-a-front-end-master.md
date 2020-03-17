@@ -14,9 +14,7 @@ Check. This site uses [Eleventy](https://www.11ty.io) for static site generation
 This _was_ an area where needed to do some [reading](https://serverless.css-tricks.com/about/). With so many [services](https://serverless.css-tricks.com/services/major) out there, there’s a lot to follow. Often the best way to get started is to build something. The next challenge was helpful.
 
 ## Build a beautiful form in HTML/CSS
-I spent some time to learn [all about form validation](https://css-tricks.com/form-validation-part-1-constraint-validation-html/) and see how much can be done in just HTML, then HTML _plus_ some CSS, then with some vanilla JavaScript.
-
-I cannot get over how easy it was to implement a form with [Netlify forms](https://docs.netlify.com/forms/setup/). Take a look and [say hello](/say-hello/).
+I spent some time to learn [all about form validation](https://css-tricks.com/form-validation-part-1-constraint-validation-html/) and see how much can be done in just HTML, then HTML _plus_ some CSS, then with some vanilla JavaScript. I cannot get over how easy it was to implement a form with [Netlify forms](https://docs.netlify.com/forms/setup/). Take a look and [say hello](/say-hello/).
 
 ## Install the Axe accessibility plugin for DevTools
 
