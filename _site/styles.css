@@ -30,7 +30,7 @@ body {color:rgba(var(--colorFore), 1);font-family:var(--fontPrimary);font-weight
 ul, ol {padding:0;} 
 .wrapper > p+p,.wrapper > h2+p,.wrapper > h3+p,.wrapper > figure+p {margin:0;}
 :not(blockquote):not(ol):not(ul):not(dl):not(hr):not(pre)+p:not(img)+p,:not(figure)+p{text-indent: var(--margin);}
-p:first-of-type, h2+p, p:first-of-type, h3+p, .lead+p{text-indent: 0;margin:0;}
+p:first-of-type, h2+p, h3+p, .lead+p{text-indent: 0;margin:0;}
 .wrapper blockquote > p, cite+p{text-indent: 0;}
 p:last-of-type {margin-bottom:1.5em;}
 .visuallyhidden { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
@@ -38,7 +38,7 @@ a {color:rgba(var(--colorAccent), 1);text-decoration: none;}
 a:hover {text-decoration: underline;}
   h1 {margin:.5em 0;line-height: 1em;font-size:2.5em;font-weight: 400;}
 h2 {font-weight:normal;font-style:italic;margin-bottom:.5em}
-h3 {font-weight:normal;}
+h3 {font-weight:normal;margin-bottom:.25em;}
 img{margin-bottom:-10px;max-width:100%;line-height:1;}
 hr {margin: 2em 0;border: 0;outline: 0;padding: 0;position: relative;line-height:1;}
   hr:before, main footer:before {opacity:.25;display: block;left: 0;right: 0;top: 0;bottom: 0;padding:.75em;content: "•\00a0\00a0\00a0\00a0\00a0•\00a0\00a0\00a0\00a0\00a0•";text-align: center;font-size:1.25em;}
