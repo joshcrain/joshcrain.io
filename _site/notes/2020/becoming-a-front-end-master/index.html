@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Josh Crain's Notes</title>
-        <meta name="description" content="A collection of miscellaneous writings, notes, and images."/>
+        <title>Becoming a front-end master</title>
+        <meta name="description" content="Reading and exercises to guide me to be a front-end master."/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/styles.min.css">
         <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700&display=swap" rel="stylesheet">
@@ -26,62 +26,32 @@
         </header>
         <main class="page_content">
             <header class="wrapper text_center">
-                <h1>Notes</h1> 
-                 
+                <h1>Becoming a front-end master</h1> 
+                <div class="opacity_75 small-caps text--smaller">15 Mar 2020&nbsp;&nbsp;⁃&nbsp;&nbsp;Notes</div> 
             </header>
             <div class="wrapper">
-                <p class="lead">A collection of miscellaneous writings, notes, and images.</p>
-<ul class="list--articles">
-    
-    <li>
-        <a href="/notes/2020/becoming-a-front-end-master/" class="text--larger">Becoming a front-end master</a>
-        <p><span class="text--secondary small-caps">15 Mar 2020</span> &mdash;
-            Reading and exercises to guide me to be a front-end master.</p>
-    </li>
-    
-    <li>
-        <a href="/notes/2020/weeknote-11-2020/" class="text--larger">Weeknote 11/2020</a>
-        <p><span class="text--secondary small-caps">12 Mar 2020</span> &mdash;
-            What I’ve been up to the 11th week of 2020.</p>
-    </li>
-    
-    <li>
-        <a href="/notes/2020/weeknote-9-2020/" class="text--larger">Weeknote 9/2020</a>
-        <p><span class="text--secondary small-caps">27 Feb 2020</span> &mdash;
-            What I’ve been up to the 9th week of 2020.</p>
-    </li>
-    
-    <li>
-        <a href="/notes/2020/love-bears-all-things/" class="text--larger">Love Bears All Things</a>
-        <p><span class="text--secondary small-caps">13 Feb 2020</span> &mdash;
-            A year ago for Valentine’s Day I made a couple bears in love. Illustration in CSS and HTML is completely unnecessary—but fun!</p>
-    </li>
-    
-    <li>
-        <a href="/notes/2020/yamaha-shs-10/" class="text--larger">Yamaha SHS-10</a>
-        <p><span class="text--secondary small-caps">04 Feb 2020</span> &mdash;
-            The Yamaha SHS-10 keytar is rendered in Adobe Illustrator. Created in about 2006.</p>
-    </li>
-    
-    <li>
-        <a href="/notes/reading-list/" class="text--larger">What I’m Reading</a>
-        <p><span class="text--secondary small-caps">27 Dec 2019</span> &mdash;
-            Instead of thumbing through social media during the short moments of boredom I have been reading.</p>
-    </li>
-    
-    <li>
-        <a href="/notes/colophon/" class="text--larger">Colophon</a>
-        <p><span class="text--secondary small-caps">23 Dec 2019</span> &mdash;
-            Notes on the tools, languages, publishing methods, and assets used in the production of this website.</p>
-    </li>
-    
-    <li>
-        <a href="/notes/2019/a-run/" class="text--larger">A Run</a>
-        <p><span class="text--secondary small-caps">28 May 2019</span> &mdash;
-            That was the night I planned to run six but instead ended up on a gravel road in the middle of a twelve-mile loop...</p>
-    </li>
-    
-</ul> 
+                <p><span class="dropcap">R</span>ecently, I encountered <a href="https://css-tricks.com/become-a-front-end-master-in-2020-with-these-10-project-ideas/">an article</a> last November from Chris Coyer which was very helpful. This last year has been really rough for a number of reasons. I haven’t felt like myself, much less a <em>front-end master</em>. Chris’ article prompted me to explore some new things in the free moments I have and practice my skills in small but meaningful ways. In the following weeks and months I followed the recommendations—and I’ve learned a lot.</p>
+<h2>Try out a static site generator</h2>
+<p>Check. This site uses <a href="https://www.11ty.io">Eleventy</a> for static site generation. Changes are tracked with Git and pushed to <a href="https://github.com/joshcrain/eleventy-intro">a Github repo</a> using command line. The site is deployed automatically by Netlify using <a href="https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git">continuous deployment</a>.</p>
+<h2>Read a bit about Serverless</h2>
+<p>This <em>was</em> an area where needed to do some <a href="https://serverless.css-tricks.com/about/">reading</a>. With so many <a href="https://serverless.css-tricks.com/services/major">services</a> out there, there’s a lot to follow. Often the best way to get started is to build something. The next challenge was helpful.</p>
+<h2>Build a beautiful form in HTML/CSS</h2>
+<p>I spent some time to learn <a href="https://css-tricks.com/form-validation-part-1-constraint-validation-html/">all about form validation</a> and see how much can be done in just HTML, then HTML <em>plus</em> some CSS, then with some vanilla JavaScript.</p>
+<p>I cannot get over how easy it was to implement a form with <a href="https://docs.netlify.com/forms/setup/">Netlify forms</a>. Take a look and <a href="/say-hello/">say hello</a>.</p>
+<h2>Install the Axe accessibility plugin for DevTools</h2>
+<h3>Landmarks must have an accessible name</h3>
+<p>Landmarks (i.e. <code>&lt;main&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, etc.) need to have a unique role or label. In addition, it was also a good time to review <a href="https://css-tricks.com/how-to-section-your-html/">how to section your HTML</a> (I had an <code>&lt;aside&gt;</code> inside the <code>&lt;article&gt;</code>).</p>
+<h3>Alternative text should not be repeated as text</h3>
+<p>This can be a more annoying one to achieve when working with a CMS or templated build. Especially when the image is used as navigation. It’s easy to just reuse the label for the page name instead of a creating a new value for the ALT attribute.</p>
+<h2>Spin up a copy of Fractal</h2>
+<p>This <em>has</em> helped me think about how I would build a front-end as components. Fractal isn’t tied to a specific framework, which I really like. I have experimented with React and ... for this purpose in my day job, but I’m not ready make a decision. Fractal gives me a chance to build and document a strategy ahead of time without any commitment.</p>
+<p>It was helpful to see how others have structured their Pattern Libraries in Fractal.  <a href="http://patterns.perchcms.com/">Perch Pattern Library</a> and <a href="http://bits.24ways.org/">Bits for 24 Ways</a> are a few good examples.</p>
+<h2>Implement an SVG icon system</h2>
+<p>Icon fonts are so easy to implement, but also have <a href="https://css-tricks.com/icon-fonts-vs-svg/">some negatives</a>. Inline SVGs are a great approach especially if the icons are used in the build template. Chris’ book, <a href="https://abookapart.com/products/practical-svg">Practical SVG</a> introduced me to a lot more than I knew existed about SVG for web.</p>
+<p>This site is all about simplicity so it uses in-lined SVG—<a href="https://css-tricks.com/pretty-good-svg-icon-system/">a pretty good icon system</a>. For the larger application I work on, <a href="https://css-tricks.com/creating-svg-icon-system-react/">maybe something like this</a>. For a large application, icon fonts are still somewhat appealing because of the ease of caching.</p>
+<h2>Implement a service worker</h2>
+<p>Read <a href="https://abookapart.com/products/going-offline">a book about them</a>. Do something  <a href="https://simpleoffline.website/">very small</a>. Check out  <a href="https://developers.google.com/web/tools/workbox">a framework</a> centered around them. Service workers install the front-end of <em>this site</em> directly on your device after the first visit. In practice, a service worker can offer great performance benefits that go beyond traditional caching.</p>
+ 
             </div>
         </main>
         <footer class="site_footer">
