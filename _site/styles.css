@@ -37,7 +37,7 @@ p:last-of-type {margin-bottom:1.5em;}
 a {color:rgba(var(--colorAccent), 1);text-decoration: none;}
 a:hover {text-decoration: underline;}
   h1 {margin:.5em 0;line-height: 1em;font-size:2.5em;font-weight: 400;}
-h2 {font-weight:normal;font-style:italic;margin-bottom:.5em}
+h2 {font-weight:normal;margin-bottom:.5em}
 h3 {font-weight:normal;margin-bottom:.25em;}
 img{margin-bottom:-10px;max-width:100%;line-height:1;}
 hr {margin: 2em 0;border: 0;outline: 0;padding: 0;position: relative;line-height:1;}
@@ -57,7 +57,7 @@ blockquote{margin:1.5em var(--margin);font-style: italic;font-size:1.15em;}
   blockquote p:after{content:'”'}
 blockquote cite {display:block;font-size:.875em;text-align: right;}
   blockquote cite:before {content:'– ';}
-code {background:rgba(var(--colorAccent), .25);font-size: .875em;padding: .1em .15em;border-radius: .25em;font-size:.75em}
+code {font-size: .875em;}
 .site_header, .site_footer {padding:1.5em;}
 .site_header{line-height: 1;}
   .site_header a{color:inherit;}
