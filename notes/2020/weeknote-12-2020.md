@@ -16,7 +16,7 @@ date: 2020-03-21
 ## Thursday, March 19th
 From Lynn Ungar, a poem called [Pandemic](http://www.lynnungar.com/poems/pandemic/). "What if you thought of it / as the Jews consider the Sabbath– / the most sacred of times?" 
 
-## Wednesday, March 18t
+## Wednesday, March 18th
 * Ants in the dishwasher, which prompted me explore the crawl space. The added thing I didn’t need. 
 * Dow closes below 20,000
 * Drake Relays postponed 
