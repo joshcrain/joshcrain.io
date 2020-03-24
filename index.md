@@ -11,13 +11,14 @@ priority: "1.0"
 
 <hr>
  
-## Recent Art
+## Sketches and studies
 Digital, gouache, and watercolor. Some are new some are old. Some are slightly embarassing.
 
 <ul class="flex--articles flex--articles--3" style="padding-top:2em;">
 {% for post in collections.art limit:9 reversed %}
 <li>    
-    <a href="{{ post.url }}" class="text--larger"><!--<img class="lazy" data-src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->{{ post.data.pageTitle }}</a>
+    <!--<img class="lazy" data-src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->
+    <a href="{{ post.url }}" class="text--larger">{{ post.data.pageTitle }}</a>
     <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription }}</p>
 </li>
 {% endfor %} 

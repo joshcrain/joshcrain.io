@@ -1,12 +1,11 @@
 ---
 pageTitle: Gouache Studies
 tags: art
-
 metaDescription: I was introduced to Gouache, here are some of the first studies.
-metaImage: /images/gouache-studies/236/gouache-2.jpg
+metaImage: /images/gouache-studies/420/gouache-2.jpg
 date: 2019-07-30
 ---
-In 2014 I had never worked in gouache. I received a set of paints as a gift, so that winter I did some studies in a few sketchbooks. It was fun and rewarding, yet I have done nothing since. If I am able to make time I'll add more to this page. 
+In 2014 I received a set of designer gouache as a gift. That winter I did some studies in a few sketchbooks. It was fun and rewarding, yet I have done nothing since. If I am able to make time I'll add more to this page. 
 
 <figure> 
     <img src="/images/gouache-studies/768/gouache-2.jpg" alt="Gouache study">
