@@ -103,12 +103,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/art/</loc>
-    <lastmod>2019-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://joshcrain.io/drafts/arizona-and-utah/</loc>
     <lastmod>2019-07-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -187,12 +181,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/</loc>
-    <lastmod>2020-02-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://joshcrain.io/notes/2020/weeknote-9-2020/</loc>
     <lastmod>2020-02-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -221,5 +209,17 @@
     <lastmod>2020-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/art/</loc>
+    <lastmod>2020-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/</loc>
+    <lastmod>2020-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
