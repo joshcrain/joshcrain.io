@@ -16,7 +16,7 @@ var offlineFundamentals = [
   '/styles.min.css',
   '/js/init.js'
 ];
-
+ 
 /* The install event fires when the service worker is first installed.
    You can use this event to prepare the service worker to be able to serve
    files while visitors are offline.
