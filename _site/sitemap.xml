@@ -211,21 +211,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://joshcrain.io/notes/2020/weeknote-14-2020/</loc>
+    <lastmod>2020-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://joshcrain.io/art/</loc>
-    <lastmod>2020-04-02</lastmod>
+    <lastmod>2020-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://joshcrain.io/</loc>
-    <lastmod>2020-04-02</lastmod>
+    <lastmod>2020-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/notes/2020/weeknote-14-2020/</loc>
-    <lastmod>2020-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>
