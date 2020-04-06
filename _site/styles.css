@@ -25,6 +25,33 @@
     --colorAccentAlt: 222,179,146;
   }
 }
+/* eb-garamond-regular - latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('/fonts/eb-garamond-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/eb-garamond-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* eb-garamond-700 - latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('/fonts/eb-garamond-v13-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/eb-garamond-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* eb-garamond-italic - latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('/fonts/eb-garamond-v13-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/eb-garamond-v13-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 ::selection {background:rgba(var(--colorAccentAlt),.25) /* WebKit/Blink Browsers */}
 body {color:rgba(var(--colorFore), 1);font-family:var(--fontPrimary);font-weight:400;margin:0;font-size:1.333rem;line-height:1.5;background:rgba(var(--colorBack), 1);text-rendering: optimizeLegibility;-webkit-font-smoothing: subpixel-antialiased;}
 ul, ol {padding:0;} 
