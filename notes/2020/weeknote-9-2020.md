@@ -1,6 +1,8 @@
 ---
 pageTitle:  Weeknote 9/2020
-tags: notes
+tags: 
+  - notes
+  - weeknotes
 metaDescription: What I’ve been up to the 9th week of 2020.
 date: 2020-02-28
 ---

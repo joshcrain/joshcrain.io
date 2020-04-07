@@ -1,6 +1,9 @@
 ---
 pageTitle:  Weeknote 12/2020
-tags: notes
+tags: 
+  - notes
+  - covid-19
+  - weeknotes
 metaDescription: Happenings during the 12th week of 2020. Preparations for coronavirus, updates, and other thoughts. 
 date: 2020-03-21
 ---

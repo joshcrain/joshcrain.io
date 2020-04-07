@@ -1,6 +1,9 @@
 ---
 pageTitle:  Weeknote 14/2020
-tags: notes
+tags: 
+  - notes
+  - covid-19
+  - weeknotes
 metaDescription: What I’ve been up to the 14th week of 2020. Gardening, early starts, and bear hunts. 
 date: 2020-04-04
 ---

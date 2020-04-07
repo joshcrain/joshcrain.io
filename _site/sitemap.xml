@@ -228,4 +228,10 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://joshcrain.io/tags/covid-19/</loc>
+    <lastmod>2020-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
