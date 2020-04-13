@@ -234,4 +234,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://joshcrain.io/notes/2020/weeknote-15-2020/</loc>
+    <lastmod>2020-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
