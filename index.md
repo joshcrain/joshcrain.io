@@ -12,7 +12,7 @@ priority: "1.0"
 <hr>
  
 ## Sketches and studies
-Digital, gouache, and watercolor. Some are new some are old. Some are slightly embarassing.
+Digital, gouache, and watercolor. Some are new some are old. Some are slightly embarassing. netlify?
 
 <ul class="flex--articles flex--articles--3" style="padding-top:2em;">
 {% for post in collections.art limit:9 reversed %}
