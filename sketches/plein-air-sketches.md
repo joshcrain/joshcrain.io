@@ -1,6 +1,6 @@
 ---
 pageTitle: Plein Air Sketches
-tags: art
+tags: sketches
 metaDescription: Some of my first paintings in Gouache were done outside.
 metaImage: /images/plein-air-sketches/420/walnut-woods.jpg
 date: 2019-07-31

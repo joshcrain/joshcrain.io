@@ -1,12 +1,12 @@
 ---
 layout: layout.liquid
-pageTitle: Art
-metaTitle: Josh Crain's Art
+pageTitle: Sketches
+metaTitle: Josh Crain's Sketches
 metaDescription: A place for art. Mostly still figuring it out. I would like to see a lot more here.
 ---
 <p class="lead">{{metaDescription}}</p>
 <ul class="flex--articles flex--articles--3 pull--both">
-    {% for post in collections.art reversed%}
+    {% for post in collections.sketches reversed%}
     <li>
         <a href="{{ post.url }}" class="text--larger"><img src="{{post.data.metaImage}}"
                 alt="Artwork {{ post.data.pageTitle }}">

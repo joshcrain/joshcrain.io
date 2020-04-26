@@ -14,7 +14,7 @@ priority: "1.0"
 I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook.
 
 <ul class="flex--articles flex--articles--3" style="padding-top:2em;">
-{% for post in collections.art limit:9 reversed %}
+{% for post in collections.sketches limit:9 reversed %}
 <li>    
     <!--<img class="lazy" data-src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->
     <a href="{{ post.url }}" class="text--larger">{{ post.data.pageTitle }}</a>

@@ -1,6 +1,6 @@
 ---
 pageTitle: Self-Portraits
-tags: art
+tags: sketches
 metaDescription: Digital art created with an iPad Mini and Procreate. 
 metaImage: /images/procreate-self-portraits/420/procreate-self-portrait-1.jpg
 date: 2019-07-29
