@@ -1,18 +1,17 @@
 ---
 layout: layout.liquid
-pageTitle: Josh Crain
+pageTitle: Hi I’m Josh Crain, a designer that likes working with code.
 metaTitle: Josh Crain - Product designer, developer, artist in training
 metaDescription: Josh Crain has experience as a web designer, product designer, and front-end developer. Design allows Josh to make an impact through user advocacy, research, web standards, and code.
 changefreq: monthly
 priority: "1.0"
 ---
-<p class="text--larger"><span class="dropcap">H</span>ello! My name is Josh Crain. I have experience as a web designer, product designer, and front-end developer. Design allows me to make an impact through user advocacy, research, web standards, and code. Most recently, my professional interests have focused on how to deliver smart, reusable patterns in a design system. I’m also excited to explore the new possibilities of “static” publishing.</p>
-<p class="text--larger">I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook. There are also <a href="/about/">other interesting things</a>.</p>
+<p class="text--larger">I have experience as a web designer, product designer, and front-end developer. Design allows me to make an impact through user advocacy, research, web standards, and code. There are also <a href="/about/">other interesting things</a>.</p>
 
 <hr>
  
 ## Sketches and studies
-Digital, gouache, and watercolor. Some are new some are old. Some are slightly embarassing.
+I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook.
 
 <ul class="flex--articles flex--articles--3" style="padding-top:2em;">
 {% for post in collections.art limit:9 reversed %}
@@ -26,7 +25,7 @@ Digital, gouache, and watercolor. Some are new some are old. Some are slightly e
 
 <hr>
 
-## Recent Notes
+## Notes
 <ul class="list--articles">
 {% for post in collections.notes limit:9 reversed%}
 <li>    
