@@ -1,6 +1,6 @@
 ---
 layout: layout.liquid
-pageTitle: Hi I’m Josh Crain, a designer that likes working with code.
+pageTitle: Hi, I’m Josh Crain, a designer that likes working with code.
 metaTitle: Josh Crain - Product designer, developer, artist in training
 metaDescription: Josh Crain has experience as a web designer, product designer, and front-end developer. Design allows Josh to make an impact through user advocacy, research, web standards, and code.
 changefreq: monthly
