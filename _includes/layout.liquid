@@ -7,11 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preload" href="/fonts/eb-garamond-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
         <link rel="preload" href="/fonts/eb-garamond-v13-latin-italic.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
-        <!-- capture the CSS content as a Nunjucks variable -->
         {% capture css %}
-            {% include "styles.css" %}
+            {% include styles.min.css %}
         {% endcapture %}
-        <!-- feed it through our cssmin filter to minify -->
         <style>
         {{ css | cssmin | safe }}
         </style>
