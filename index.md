@@ -27,7 +27,7 @@ I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook
 
 ## Notes
 <ul class="list--articles">
-{% for post in collections.notes limit:9 reversed%}
+{% for post in collections.notes reversed %}
 <li>    
     <a href="{{ post.url }}" class="text--larger">{{ post.data.pageTitle }}</a>
     <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription strip_html truncate: 280 }}</p>
