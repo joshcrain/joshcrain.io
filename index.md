@@ -10,7 +10,7 @@ priority: "1.0"
 
 <hr>
  
-## Sketches and studies
+## Sketch and studies
 I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook.
 
 <ul class="flex--articles flex--articles--3" style="padding-top:2em;">

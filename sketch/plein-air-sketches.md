@@ -1,5 +1,5 @@
 ---
-pageTitle: Plein Air Sketches
+pageTitle: Plein Air Sketch
 tags: sketches
 metaDescription: Some of my first paintings in Gouache were done outside.
 metaImage: /images/plein-air-sketches/420/walnut-woods.jpg
