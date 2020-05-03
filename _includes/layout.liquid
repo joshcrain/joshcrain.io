@@ -19,20 +19,22 @@
     <body>
         <header class="site_header">
             <div class="wrapper">
-                <div class="pull--both media">
+                <div class="media">
                     <span class="media_body"><ul class="list--horizontal list--m--larger"><li><a href="/" class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"/><circle cx="40" cy="17" r="5"/><circle cx="5" cy="17" r="5"/><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"/></svg></a></li></ul></span>
                     <nav class="media_right" aria-label="nav-primary"><ul class="list--horizontal list--m--larger"">{% if category != "Ancestry" %}<li><a href="/sketch/">Sketch</a></li><li><a href="/notes/">Notes</a></li><li><a href="/about/">About</a></li>{% else %}<li><a href="/ancestry/" class="text_accent">Crain Ancestry</a></li><li><a href="/ancestry/ancestors/">Ancestors</a></li><li><a href="/ancestry/heraldry/">Heraldry</a></li><li><a href="/ancestry/sources/">Sources</a></li>{% endif %}</ul></nav>
                 </div>
             </div>
         </header>
-        <main class="page_content">
-            <header class="wrapper text_center">
+        <main class="site_content">
+        <div class="wrapper {% if pageType == "home" %}home{% endif %}">
+            <header {% if pageType != "home" %}class="text_center"{% endif %}>
                 <h1>{{ pageTitle }}</h1> 
                 {% if date != blank %}<div class="small-caps text--smaller">{{ date | date: "%d %b %Y" }}&nbsp;&nbsp;⁃&nbsp;&nbsp;{{ category }}</div>{% endif %} 
             </header>
-            <div class="wrapper">
-                {{ content }} 
-            </div>
+            {% if pageType != "home" %}<div class="grid-layout_page"><div></div><div>{% endif %} 
+                {{ content }}
+            {% if pageType != "home" %}</div></div>{% endif %} 
+        </div>
         </main>
         <footer class="site_footer">
             <div class="wrapper text_center">

@@ -1,6 +1,8 @@
 ---
 pageTitle:  Weeknote 15/2020
-tags: notes
+tags:
+  - notes
+  - weeknotes
 metaDescription: Painting, inclusive inputs, evening run, the Supermoon, masks. What I was up to the 15th week of 2020.
 date: 2020-04-11
 ---

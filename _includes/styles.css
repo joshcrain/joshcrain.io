@@ -55,11 +55,11 @@ p:last-of-type {margin-bottom:1.5em;}
 a {color:rgba(var(--colorAccent), 1);text-decoration: none;}
 a:hover {text-decoration: underline;}
   h1 {margin:.5em 0;line-height: 1em;font-size:2.5em;font-weight: 400;}
-h2 {font-weight:normal;margin-bottom:.5em}
-h3 {font-weight:normal;margin-bottom:.25em;}
+h2 {font-weight:normal;margin-bottom:.5em;line-height: 1;}
+h3 {font-weight:normal;margin-bottom:.25em;line-height: 1;}
 img{margin-bottom:-10px;max-width:100%;line-height:1;}
-hr {margin: 2em 0;border: 0;outline: 0;padding: 0;position: relative;line-height:1;}
-  hr:before, main footer:before {opacity:.25;display: block;left: 0;right: 0;top: 0;bottom: 0;padding:.75em;content: "•\00a0\00a0\00a0\00a0\00a0•\00a0\00a0\00a0\00a0\00a0•";text-align: center;font-size:1.25em;}
+hr {margin: 3em 0;border: 1px dashed rgba(var(--colorFore), .25);outline: 0;padding: 0;line-height:1;}
+hr+h2{margin-top:0}
 table{width:100%;border-collapse: collapse;font-family: monospace;font-size: .75em;margin-bottom:3em;}
 table th{text-align:left;border-bottom:2px solid rgba(var(--colorFore), 1)}
 table td{border:0;border-bottom:1px solid rgba(var(--colorFore), .8);padding:.5em 1em .5em 0;}
@@ -76,16 +76,78 @@ blockquote{margin:1.5em var(--margin);font-style: italic;font-size:1.15em;}
 blockquote cite {display:block;font-size:.875em;text-align: right;}
   blockquote cite:before {content:'– ';}
 code {font-size: .875em;}
-.site_header, .site_footer {padding:1.5em;}
+.site_header, .site_footer {padding:1.5em 5vmax;}
 .site_header{line-height: 1;}
   .site_header a{color:inherit;}
   a.text_accent,.site_header a:hover {color:rgba(var(--colorAccent), 1)}
 .site_footer{font-size:.875em;}
 .site_footer a{color:inherit;}
-.page_content{padding:4em 1.5em 6em;}
-  .page_content header{margin:0 auto 3em auto;}
-.wrapper {max-width:768px;margin:0 auto;}
+.site_content{padding:4em 4vmax 6em;}
+  .site_content header{margin:0 auto 3em auto;}
+.wrapper {max-width:1214px;margin:0 auto;}
 .wrapper p{-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;}
+.wrapper.home h1 {font-size: 5vmax;}
+
+.grid-layout_home {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 3vw;
+  grid-template-rows: 1fr;
+}
+
+.grid-layout_page {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;;
+  grid-column-gap: 3vw;
+  grid-template-rows: 1fr;
+}
+
+.grid-layout_home h2 {margin-top:0;}
+
+.grid-section {
+  grid-area : section;
+}
+.grid-content {
+  grid-area : contentarea;
+}
+
+.grid-layout_home {
+  grid-template-areas:
+    "section contentarea";
+}
+.grid-layout_page {
+  grid-template-areas:
+    "blank contentarea";
+}
+
+
+
+
+.grid{display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-column-gap: 3vw;
+  grid-row-gap: 2vh;
+}
+
+  .grid-full\@l{
+    grid-column: span 12;
+  }
+  .grid-quarter\@l{
+    grid-column: span 3;
+  }
+
+  .grid-third\@l{
+    grid-column: span 4;
+  }
+
+  .tile {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    padding-bottom:4vh;
+  }
+  .tile p {margin:0;}
+
  
 .list--horizontal {list-style:none;margin:0 -1.25em}
   .list--horizontal > li{padding:0 1.25em;vertical-align:middle;display:inline-block;line-height:1;}
@@ -94,9 +156,9 @@ code {font-size: .875em;}
   .list--horizontal.list--m--smaller {margin:0 -.625em}
   .list--horizontal.list--m--smaller > li{padding:0 .625em;}
 .list--articles, .flex--articles {margin:0;padding:0;}
-  .list--articles li{margin:0;list-style:none;}
-.flex--articles {display: flex;justify-content: space-between;font-size:.875em;flex-flow: row wrap;}
-  .flex--articles li{padding:0;list-style:none;width:47.5%;}
+  .list--articles li{margin-bottom:1.5em;list-style:none;}
+.flex--articles {display: flex;justify-content: space-between;font-size:.875em;flex-flow: row wrap;margin-bottom:-1.5em}
+  .flex--articles li{padding:0;list-style:none;width:47.5%;margin-bottom:1.5em;}
   .flex--articles.flex--articles--3 li{width:30.833%;}
   .flex--articles li img{margin:0 0 .25em;}
 
@@ -112,6 +174,7 @@ code {font-size: .875em;}
 .text--smallest {font-size:.875rem;}
 .text--smaller {font-size:1rem;}
 .text--larger {font-size:1.5rem;}
+.text--largest {font-size:1.75rem;}
 .text--secondary {text-transform: uppercase;}
 
 .m--around--0_5 {margin:.5em!important;}
@@ -134,10 +197,32 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 .btn {font-size:1em;font-family: inherit;border:2px solid rgba(var(--colorAccent),1);background:rgba(var(--colorFore),0);color:rgba(var(--colorAccent),1);padding:.5em .75em;border-radius: 0;}
 
-@media only screen and (min-width: 1024px) {
-  .pull--both {margin-left:calc(var(--margin) * -4)!important;margin-right:calc(var(--margin) * -4)!important;width:auto;}
-  .pull--right {margin-right:calc(var(--margin) * -4)!important;float:right;margin:0 0 0 1em;}
-  .pull--left {margin-left:calc(var(--margin) * -4)!important;float:left;}
+@media only screen and (max-width: 1024px) {
+  .grid-layout_home {
+    grid-template-areas:
+      "section"
+      "contentarea";
+  }
+  .grid-layout_page {
+    grid-template-areas:
+      "contentarea"
+      "blank";
+  }
+
+  .grid-layout_page {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;;
+    grid-column-gap: 3vw;
+    grid-template-rows: 1fr;
+  }
+
+  .grid-layout_home {
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-rows: 2fr;
+  }
+
+
 } 
 
 @media only screen and (max-width: 768px) {
@@ -146,6 +231,16 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .site_header .list--horizontal {margin:0 -1.25em;align-items: center;
     justify-content: center;}
   .site_header .list--horizontal li{padding:0 1.25em;flex:1;text-align: center}  
+  .grid-third\@l{
+    grid-column: span 6;
+  }
+  .grid-layout_page {
+    display: grid;
+    grid-template-columns: 12fr;;
+    grid-column-gap: 3vw;
+    grid-template-rows: 1fr;
+  }
+  
 }
 
 @media only screen and (max-width: 480px) {
@@ -156,6 +251,12 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .site_footer .list--horizontal li{padding:0 .5em;flex-grow:1;}  
   .flex--articles  {flex-direction: column}
   .flex--articles li {width:100%!important;} 
+
+  .grid-third\@l{
+    grid-column: span 12;
+  }
+
+  
 }
 
 @media only print {

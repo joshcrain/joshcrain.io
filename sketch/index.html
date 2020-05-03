@@ -5,7 +5,7 @@ metaTitle: Josh Crain's Sketch
 metaDescription: A place for art. Mostly still figuring it out. I would like to see a lot more here.
 ---
 <p class="lead">{{metaDescription}}</p>
-<ul class="flex--articles flex--articles--3 pull--both">
+<ul class="flex--articles flex--articles--3">
     {% for post in collections.sketches reversed%}
     <li>
         <a href="{{ post.url }}" class="text--larger"><img src="{{post.data.metaImage}}"

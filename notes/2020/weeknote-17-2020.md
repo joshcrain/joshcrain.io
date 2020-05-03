@@ -1,6 +1,8 @@
 ---
 pageTitle:  Weeknote 17/2020
-tags: notes
+tags:
+  - notes
+  - weeknotes
 metaDescription: Mysterious tracks, a run, accessibility, and patterns. What I’ve been up to the 17th week of 2020.
 date: 2020-04-25
 ---

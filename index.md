@@ -1,41 +1,65 @@
 ---
 layout: layout.liquid
+pageType: home
 pageTitle: Hi, I’m Josh Crain.
 metaTitle: Josh Crain - Product designer, developer, artist in training
 metaDescription: Josh Crain has experience as a web designer, product designer, and front-end developer. Design allows Josh to make an impact through user advocacy, research, web standards, and code.
 changefreq: monthly
 priority: "1.0"
 ---
-<p class="text--larger">I have experience as a web designer, product designer, and front-end developer. Design allows me to make an impact through user advocacy, research, web standards, and code. There are also <a href="/about/">other interesting things</a>.</p>
-
+<div class="grid-layout_home"> 
+<div class="grid-content">
+<p class="text--largest">I am an experienced web designer, product designer, and front-end developer. Design allows me to make an impact through user advocacy, research, web standards, and code. There are also <a href="/about/">other interesting things</a>.</p>
+</div>
+</div>
 <hr>
- 
-## Sketch and studies
-I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook.
-
-<ul class="flex--articles flex--articles--3" style="padding-top:2em;">
+<section class="grid-layout_home">
+<div class="layout-section"> 
+    <h2>Sketches &amp; studies</h2>
+    <p>I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook.</p>
+</div>
+<div class="grid-content">
+<div class="grid">
 {% for post in collections.sketches limit:9 reversed %}
-<li>    
+<div class="grid-third@l tile">
     <!--<img class="lazy" data-src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->
-    <a href="{{ post.url }}" class="text--larger">{{ post.data.pageTitle }}</a>
+    <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
     <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription }}</p>
-</li>
+    
+</div>
 {% endfor %} 
-</ul>
-
+</div>
+</div>
+</section>
 <hr>
-
-## Notes
-<ul class="list--articles">
-{% for post in collections.notes reversed %}
-<li>    
-    <a href="{{ post.url }}" class="text--larger">{{ post.data.pageTitle }}</a>
-    <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription strip_html truncate: 280 }}</p>
-</li>
+<section class="grid-layout_home">
+<div class="layout-section"> 
+    <h2>Weeknotes</h2>
+</div>
+<div class="grid-content">
+<div class="grid">
+{% assign allblogposts = collections.weeknotes | limit:2 %}
+{% for post in allblogposts reversed %} 
+<div class="grid-third@l tile">
+    <div>
+        <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
+        <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription strip_html truncate: 280 }}</p>
+    </div>
+</div>
 {% endfor %} 
-</ul>
-
+</div>
+</div>
+</section>
 <hr>
-
-## Say Hello
-I’d love to hear from you! To get in touch simply [say hello here](/say-hello/). My social medias can be found in the footer of this site, though I have been spending less and less time there. 
+<section class="grid-layout_home">
+<div class="layout-section"> 
+    <h2>Say Hello</h2>
+</div>
+<div class="grid-content">
+<div class="grid">
+<div class="grid-full@l tile">
+<p class="text--larger">I’d love to hear from you! To get in touch simply <a href="/say-hello/">say hello here</a>. My social medias can be found in the footer of this site, though I have been spending less and less time there.</p>
+</div>
+</div>
+</div>
+</section>
