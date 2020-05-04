@@ -5,7 +5,7 @@ tags: about
 metaDescription: A little more about Josh Crain; his work, history, and personal records. 
 date: 2019-01-22
 ---
-<p class="lead">A collection of other intriguing facts and figures.</p>
+<p class="lead">A little more about Josh Crain; his work, history, and personal records.</p>
 
 Josh Crain is an Iowa native, designer, developer, and student of art. He studied art and design at the University of Northern Iowa and received a Bachelor of Fine Arts degree. He has worked as a web designer, product designer, and UI developer. He doesn’t love talking about himself in the third person, so he's going to stop that now if you don’t mind.
 
@@ -13,7 +13,7 @@ Josh Crain is an Iowa native, designer, developer, and student of art. He studie
 <figure style="float:right;margin:0 0 1em 1em;width:auto;max-width:100px;width:25%;"> <img src="https://joshcrain.github.io/ancestry/images/crane-coat-of-arms.png" alt="Crane of Suffolk, England Coat Of Arms. Argent, a fesse between three crosses crosslet fitchée Guls, crest a crane ppr.">
 </figure>
 
-I am a 12th generation descendant of colonial settlers. I only know after researching my family history for about a year. I created a website of <a href="/ancestry/">Crain family ancestry</a> as a way to explore my interest in heritage and progeny, and as place to catalog my findings. I learned some interesting things about <em>heraldry</em>&mdash;something I knew nothing about. You are most welcome to <a href="/say-hello/">contact me</a> with any interest.
+I am a 12th generation descendant of colonial settlers. I created a website of <a href="/ancestry/">Crain family ancestry</a> as a way to explore my interest in heritage and progeny, and as place to catalog my findings. I learned some interesting things about <em>heraldry</em>&mdash;something I knew nothing about. You are most welcome to <a href="/say-hello/">contact me</a> with any interest.
 
 ## Personal Records
 <table>
