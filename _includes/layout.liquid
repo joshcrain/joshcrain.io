@@ -6,7 +6,6 @@
         <title>{{ metaTitle }}{% if metaTitle == blank %}{{ pageTitle }}{% endif %}</title>
         <meta name="description" content="{{ metaDescription strip_html truncate: 160 }}"/>
         <link rel="preload" href="/fonts/eb-garamond-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
-        <link rel="preload" href="/fonts/eb-garamond-v13-latin-italic.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
         {% capture css %}{% include styles.min.css %}{% endcapture %}<style>{{ css | cssmin | safe }}</style>
     </head>
     <body>

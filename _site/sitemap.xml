@@ -13,6 +13,90 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://joshcrain.io/notes/</loc>
+    <lastmod>2019-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/ancestors/zebulon-crane/</loc>
+    <lastmod>2019-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/ancestors/arthur-crain/</loc>
+    <lastmod>2019-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/ancestors/ebenezer-crain/</loc>
+    <lastmod>2019-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/ancestors/john-crane/</loc>
+    <lastmod>2019-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/ancestors/</loc>
+    <lastmod>2019-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/ancestors/john-crane-england/</loc>
+    <lastmod>2019-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/ancestors/benjamin-crane/</loc>
+    <lastmod>2019-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/ancestors/lemuel-crane/</loc>
+    <lastmod>2019-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/ancestors/jonathan-crane/</loc>
+    <lastmod>2019-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/heraldry/</loc>
+    <lastmod>2019-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/sources/</loc>
+    <lastmod>2019-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/ancestors/ebenezer-crain-jr/</loc>
+    <lastmod>2019-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/ancestry/</loc>
+    <lastmod>2019-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://joshcrain.io/notes/2019/a-run/</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -49,82 +133,16 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/ancestry/ancestors/arthur-crain/</loc>
+    <loc>https://joshcrain.io/drafts/cheats/</loc>
     <lastmod>2019-11-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/ancestry/ancestors/benjamin-crane/</loc>
-    <lastmod>2019-11-07</lastmod>
+    <loc>https://joshcrain.io/say-hello/</loc>
+    <lastmod>2019-11-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/ancestry/ancestors/ebenezer-crain-jr/</loc>
-    <lastmod>2019-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/ancestry/ancestors/ebenezer-crain/</loc>
-    <lastmod>2019-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/ancestry/ancestors/john-crane-england/</loc>
-    <lastmod>2019-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/ancestry/ancestors/john-crane/</loc>
-    <lastmod>2019-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/ancestry/ancestors/jonathan-crane/</loc>
-    <lastmod>2019-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/ancestry/ancestors/lemuel-crane/</loc>
-    <lastmod>2019-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/ancestry/ancestors/zebulon-crane/</loc>
-    <lastmod>2019-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/ancestry/heraldry/</loc>
-    <lastmod>2019-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/ancestry/</loc>
-    <lastmod>2019-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/ancestry/sources/</loc>
-    <lastmod>2019-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/ancestry/ancestors/</loc>
-    <lastmod>2019-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://joshcrain.io/notes/colophon/</loc>
@@ -139,6 +157,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://joshcrain.io/sitemap.xml</loc>
+    <lastmod>2020-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://joshcrain.io/README/</loc>
     <lastmod>2020-01-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -149,12 +173,6 @@
     <lastmod>2020-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/sitemap.xml</loc>
-    <lastmod>2020-02-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://joshcrain.io/notes/2020/love-bears-all-things/</loc>
@@ -199,6 +217,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://joshcrain.io/tags/weeknotes/</loc>
+    <lastmod>2020-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://joshcrain.io/notes/2020/weeknote-15-2020/</loc>
     <lastmod>2020-04-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -217,6 +241,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://joshcrain.io/</loc>
+    <lastmod>2020-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/sketch/</loc>
+    <lastmod>2020-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://joshcrain.io/notes/2020/weeknote-18-2020/</loc>
     <lastmod>2020-05-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -227,41 +263,5 @@
     <lastmod>2020-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/drafts/cheats/</loc>
-    <lastmod>2020-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/</loc>
-    <lastmod>2020-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/notes/</loc>
-    <lastmod>2020-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/say-hello/</loc>
-    <lastmod>2020-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/sketch/</loc>
-    <lastmod>2020-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://joshcrain.io/tags/weeknotes/</loc>
-    <lastmod>2020-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
 </urlset>
