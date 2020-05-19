@@ -20,6 +20,7 @@ nightButton.addEventListener('click', () => {
 });
 
 //lazy load images
+/*
 document.addEventListener("DOMContentLoaded", function() {
     var lazyloadImages;    
   
@@ -70,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
       window.addEventListener("orientationChange", lazyload);
     }
   })
-
+*/
   // ServiceWorker is a progressive technology. Ignore unsupported browsers
   /*
   if ('serviceWorker' in navigator) {

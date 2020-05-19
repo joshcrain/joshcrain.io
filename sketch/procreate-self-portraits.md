@@ -12,7 +12,7 @@ Digital art created with an iPad Mini and Procreate. At the time I did not have 
     <figcaption>Self-Portrait, Procreate on iPad Mini. 2014.</figcaption>
 </figure>
 <figure>
-    <img class="lazy" data-src="/images/procreate-self-portraits/640/procreate-self-portrait-2.jpg" alt="Digital self-portrait">
+    <img src="/images/procreate-self-portraits/640/procreate-self-portrait-2.jpg" alt="Digital self-portrait">
     <figcaption>Self-Portrait, Procreate on iPad Mini. 2014.</figcaption>
 </figure>
 

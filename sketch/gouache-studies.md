@@ -12,23 +12,23 @@ In 2014 I received a set of designer gouache as a gift. That winter I did some s
     <figcaption>Gouache study, handmade sketchbook. 2014.</figcaption>
 </figure>
 <figure>
-    <img class="lazy" data-src="/images/gouache-studies/640/sketchbook-1.jpg" alt="Gouache study">
+    <img src="/images/gouache-studies/640/sketchbook-1.jpg" alt="Gouache study">
     <figcaption>Gouache study, sketchbook. 2014.</figcaption>
 </figure>
 <figure>
-    <img class="lazy" data-src="/images/gouache-studies/640/sketchbook-2.jpg" alt="Gouache study">
+    <img src="/images/gouache-studies/640/sketchbook-2.jpg" alt="Gouache study">
     <figcaption>Gouache study, handmade sketchbook. 2014.</figcaption>
 </figure>
 <figure>
-    <img class="lazy" data-src="/images/gouache-studies/640/sketchbook-3.jpg" alt="Gouache study">
+    <img src="/images/gouache-studies/640/sketchbook-3.jpg" alt="Gouache study">
     <figcaption>Gouache study, handmade sketchbook. 2014.</figcaption>
 </figure>
 <figure>
-    <img class="lazy" data-src="/images/gouache-studies/640/gouache-1.jpg" alt="Gouache study">
+    <img src="/images/gouache-studies/640/gouache-1.jpg" alt="Gouache study">
     <figcaption>Gouache study on watercolor paper. 2014.</figcaption>
 </figure>
 <figure>
-    <img class="lazy" data-src="/images/gouache-studies/640/gouache-4.jpg" alt="Gouache study">
+    <img src="/images/gouache-studies/640/gouache-4.jpg" alt="Gouache study">
     <figcaption>Gouache study on watercolor paper. 2014.</figcaption>
 </figure>
 

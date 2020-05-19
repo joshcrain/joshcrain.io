@@ -22,7 +22,7 @@ priority: "1.0"
 <div class="grid">
 {% for post in collections.sketches limit:9 reversed %}
 <div class="grid-third@l tile">
-    <!--<img class="lazy" data-src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->
+    <!--<img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->
     <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
     <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription }}</p>
     
