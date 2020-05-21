@@ -1,18 +1,19 @@
 ---
 layout: layout.liquid
+pageType: section
 pageTitle: Sketch
 metaTitle: Josh Crain's Sketch
 metaDescription: A place for art. Mostly still figuring it out. I would like to see a lot more here.
 ---
 <p class="lead">{{metaDescription}}</p>
-<ul class="flex--articles flex--articles--3">
+<div class="grid">
     {% for post in collections.sketches reversed%}
-    <li>
+    <div class="grid-third@l tile">
         <a href="{{ post.url }}" class="text--larger"><img src="{{post.data.metaImage}}"
                 alt="Artwork {{ post.data.pageTitle }}">
             {{ post.data.pageTitle }}</a>
         <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash;
             {{ post.data.metaDescription }}</p>
-    </li>
+    </div>
     {% endfor %}
-</ul>
+</div>

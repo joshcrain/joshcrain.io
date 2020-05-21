@@ -25,9 +25,9 @@
                 <h1>{{ pageTitle }}</h1> 
                 {% if date != blank %}<div class="small-caps text--smaller">{{ date | date: "%d %b %Y" }}&nbsp;&nbsp;⁃&nbsp;&nbsp;{{ category }}</div>{% endif %} 
             </header>
-            {% if pageType != "home" %}<div class="grid-layout_page"><div></div><div>{% endif %} 
+            {% if pageType != "home" %}{% if pageType != "section" %}<div class="grid-layout_page"><div></div><div>{% endif %}{% endif %}  {% if pageType == "section" %}<div class="grid-layout_section">{% endif %}
                 {{ content }}
-            {% if pageType != "home" %}</div></div>{% endif %} 
+            {% if pageType != "home" %}{% if pageType != "section" %}</div></div>{% endif %}{% endif %}  {% if pageType == "section" %}</div>{% endif %} 
         </div>
         </main>
         <footer class="site_footer">
