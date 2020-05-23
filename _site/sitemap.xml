@@ -133,12 +133,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/notes/reading-list/</loc>
-    <lastmod>2019-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://joshcrain.io/README/</loc>
     <lastmod>2020-01-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -253,12 +247,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/sketch/</loc>
-    <lastmod>2020-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://joshcrain.io/tags/weeknotes/</loc>
     <lastmod>2020-05-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -275,5 +263,11 @@
     <lastmod>2020-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/sketch/</loc>
+    <lastmod>2020-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

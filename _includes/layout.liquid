@@ -7,9 +7,10 @@
         <meta name="description" content="{{ metaDescription strip_html truncate: 160 }}"/>
         <link rel="preload" href="/fonts/eb-garamond-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
         <link rel="preload" href="/fonts/eb-garamond-v13-latin-italic.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
-        {% capture css %}{% include styles.min.css %}{% endcapture %}<style>{{ css | cssmin | safe }}</style>
+        {% capture css %}{% include styles.min.css %}{% endcapture %}<style type="text/css">{{ css | cssmin | safe }}</style>
     </head>
     <body>
+        <div class="visuallyhidden"><a href="#content">Skip Content</a></div>
         <header class="site_header">
             <div class="wrapper">
                 <div class="media">
@@ -18,15 +19,15 @@
                 </div>
             </div>
         </header>
-        <main class="site_content">
+        <main class="site_content" id="content">
         <div class="wrapper {% if pageType == "home" %}home{% endif %}">
             <header {% if pageType != "home" %}class="text_center"{% endif %}>
                 <h1>{{ pageTitle }}</h1> 
                 {% if date != blank %}<div class="small-caps text--smaller">{{ date | date: "%d %b %Y" }}&nbsp;&nbsp;⁃&nbsp;&nbsp;{{ category }}</div>{% endif %} 
             </header>
-            {% if pageType != "home" %}<div class="grid-layout_page"><div></div><div>{% endif %} 
+            {% if pageType != "home" %}{% if pageType != "section" %}<div class="grid-layout_page"><div></div><div>{% endif %}{% endif %}  {% if pageType == "section" %}<div class="grid-layout_section">{% endif %}
                 {{ content }}
-            {% if pageType != "home" %}</div></div>{% endif %} 
+            {% if pageType != "home" %}{% if pageType != "section" %}</div></div>{% endif %}{% endif %}  {% if pageType == "section" %}</div>{% endif %} 
         </div>
         </main>
         <footer class="site_footer">
