@@ -35,6 +35,7 @@ priority: "1.0"
 <section class="grid-layout_home">
 <div class="layout-section"> 
     <h2>Weeknotes</h2>
+    <p>Short notes recorded each week. </p>
 </div>
 <div class="grid-content">
 <div class="grid">
