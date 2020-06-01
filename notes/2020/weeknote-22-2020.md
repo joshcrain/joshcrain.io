@@ -1,6 +1,6 @@
 ---
 pageTitle:  Weeknote 22/2020
-tags: ['notes', 'weeknotes']
+tags: ['weeknotes']
 metaDescription: Memorial day, negative COVID test, plants and landscaping.
 date: 2020-05-30
 ---

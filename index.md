@@ -25,7 +25,25 @@ priority: "1.0"
     <!--<img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->
     <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
     <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription }}</p>
-    
+</div>
+{% endfor %} 
+</div>
+</div>
+</section>
+<hr>
+<section class="grid-layout_home">
+<div class="layout-section"> 
+    <h2>Notes</h2>
+    <p>Writing about the web and other things. </p>
+</div>
+<div class="grid-content">
+<div class="grid">
+{% for post in collections.notes limit:3 reversed %}
+<div class="grid-third@l tile">
+    <div>
+        <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
+        <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription strip_html truncate: 280 }}</p>
+    </div>
 </div>
 {% endfor %} 
 </div>
@@ -39,8 +57,7 @@ priority: "1.0"
 </div>
 <div class="grid-content">
 <div class="grid">
-{% assign allblogposts = collections.weeknotes | limit:2 %}
-{% for post in allblogposts reversed %} 
+{% for post in collections.weeknotes limit:9 reversed %}
 <div class="grid-third@l tile">
     <div>
         <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>

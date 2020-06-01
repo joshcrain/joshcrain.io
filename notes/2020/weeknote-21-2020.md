@@ -1,6 +1,6 @@
 ---
 pageTitle:  Weeknote 21/2020
-tags: ['notes', 'weeknotes']
+tags: ['weeknotes']
 metaDescription: Birthday parades, static sites, and design systems.
 date: 2020-05-23
 ---

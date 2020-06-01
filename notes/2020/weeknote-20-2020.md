@@ -1,8 +1,6 @@
 ---
 pageTitle: Weeknote 20/2020
-tags:
-- notes
-- weeknotes
+tags: ['weeknotes']
 metaDescription: Visits to the vet and Chic-fil-A. What I’ve been up to the 20th week of 2020.
 date: 2020-05-17
 ---

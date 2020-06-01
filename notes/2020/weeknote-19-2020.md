@@ -1,8 +1,6 @@
 ---
 pageTitle:  Weeknote 19/2020
-tags: 
-  - notes
-  - weeknotes
+tags: ['weeknotes']
 metaDescription: Improved VS Code workflow, COVID close to home, office announcment ... What I’ve been up to the 19th week of 2020.
 date: 2020-05-09
 ---

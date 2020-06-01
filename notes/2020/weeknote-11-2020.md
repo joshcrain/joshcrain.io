@@ -1,9 +1,6 @@
 ---
 pageTitle:  Weeknote 11/2020
-tags: 
-  - notes
-  - weeknotes
-  - covid-19
+tags: ['weeknotes']
 metaDescription: What I’ve been up to the 11th week of 2020.
 date: 2020-03-13
 ---

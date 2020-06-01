@@ -1,9 +1,6 @@
 ---
 pageTitle:  Weeknote 13/2020
-tags: 
-  - notes
-  - weeknotes
-  - covid-19
+tags: ['weeknotes']
 metaDescription: What I’ve been up to the 13th week of 2020. Runs, top 200 Eleventy performance, isolation, limits, and free toilet paper. 
 date: 2020-03-28
 ---
