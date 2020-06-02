@@ -20,7 +20,7 @@ priority: "1.0"
 </div>
 <div class="grid-content">
 <div class="grid">
-{% for post in collections.sketches limit:9 reversed %}
+{% for post in collections.sketches limit:6 reversed %}
 <div class="grid-third@l tile">
     <!--<img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->
     <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
@@ -38,7 +38,7 @@ priority: "1.0"
 </div>
 <div class="grid-content">
 <div class="grid">
-{% for post in collections.notes limit:3 reversed %}
+{% for post in collections.notes limit:6 reversed %}
 <div class="grid-third@l tile">
     <div>
         <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
@@ -57,7 +57,7 @@ priority: "1.0"
 </div>
 <div class="grid-content">
 <div class="grid">
-{% for post in collections.weeknotes limit:9 reversed %}
+{% for post in collections.weeknotes limit:6 reversed %}
 <div class="grid-third@l tile">
     <div>
         <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
@@ -65,19 +65,6 @@ priority: "1.0"
     </div>
 </div>
 {% endfor %} 
-</div>
-</div>
-</section>
-<hr>
-<section class="grid-layout_home">
-<div class="layout-section"> 
-    <h2>Say Hello</h2>
-</div>
-<div class="grid-content">
-<div class="grid">
-<div class="grid-full@l tile">
-<p class="text--larger">I’d love to hear from you! To get in touch simply <a href="/say-hello/">say hello here</a> or <a href="https://twitter.com/thejoshcrain/" rel="noopener">follow me on Twitter</a>.</p>
-</div>
 </div>
 </div>
 </section>
