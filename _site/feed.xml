@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Josh Crain Notes</title>
+  <subtitle>I am an experienced web designer, product designer, and front-end developer. Design allows me to make an impact through user advocacy, research, web standards, and code.</subtitle>
+  <link href="https://joshcrain.io/feed.xml" rel="self"/>
+  <link href="https://joshcrain.io/"/>
+  <updated>2020-03-15T19:00:00-05:00</updated>
+  <id>https://joshcrain.io/</id>
+  <author>
+    <name>Josh Crain</name>
+    <email>josh.crain+io.com</email>
+  </author>
+  
+  <entry>
+    <title></title>
+    <link href="https://joshcrain.io/notes/2019/a-run/"/>
+    <updated>2019-05-28T19:00:00-05:00</updated>
+    <id>https://joshcrain.io/notes/2019/a-run/</id>
+    <content type="html">&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;T&lt;/span&gt;hat was the night I planned to run six but instead ended up on a gravel road in the middle of a twelve-mile loop. There was enough light to see, even beyond the glow of the city lights, because the moon was full and the night was clear. The night sky was black as ink, and the moon was bright against it. I noticed my shadow over my right shoulder, clear against the soft glow of the light blue limestone. It looked so much different than during the day.&lt;/p&gt;
+&lt;p&gt;For a while, I only listened to the rocks under my feet and my steady breaths. I began to wonder why I’d changed my mind. Why didn’t I run what I’d planned? If you’d asked me earlier in the day I’m sure I would have given you a long list of reasons not to. We put in a lot of miles the week before, and besides it was late. As a runner, you always think about how the run fits into the completed and upcoming mileage. In the morning, when your body aches and creaks you curse your poor judgment from the day before. Still, there is something about running at night that’s different than the day. Something, I’m sure I’ll forget by morning.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&quot;https://joshcrain.io/images/a-day-in-the-life-video-still_3821176372_o.jpg&quot; alt=&quot;A day in the life. Video still.&quot;&gt;
+    &lt;figcaption&gt;A Day In The Life. Senior BFA project. Video still.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;I felt much different than the day before. This was the first run in a long time to feel this way. It was an intoxicating feeling, the “runner’s high” everyone talks about. I left the house an hour or so before, and it took a moment to remember what had prompted me to run when I did. I thought hard to recall the exact words, but couldn’t. I was frustrated, my head burned and my mind raced. I laced up my shoes and started my watch on the way out the front door. It happened earlier that week too, maybe Tuesday, but it was hard to remember. My memory faded and I again focused on my shadow. I was only a few feet from the ditch and my outline became a bit more obscure against the tall grass.&lt;/p&gt;
+&lt;p&gt;I looked at my watch and figured my split for the second half seemed a little faster. I was only about a quarter mile from town, so the lights began to overtake the night sky. The only thing I heard between my breaths were my near silent feet on the black grass next to the sidewalk. The sky wasn’t as dark as a few moments before, the moon nearly extinguished by the amber street lights. As I approached each light my shadow caught me from behind and then lengthened out in front of my feet as I passed. I watched my shadow for a while and then noticed the pace the ground traveled under my feet. I had started to feel tired a couple miles back, but had I quickened the pace? I looked at my watch. I was faster—by a couple minutes.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://joshcrain.io/notes/colophon/"/>
+    <updated>2019-12-23T18:00:00-06:00</updated>
+    <id>https://joshcrain.io/notes/colophon/</id>
+    <content type="html">&lt;p&gt;I created this site using VSCode on a Mac with HTML, Markdown, Liquid, CSS, and Javascript. This site uses standards compliant mark-up and a custom responsive layout with the goal of simplicity and speed.&lt;/p&gt;
+&lt;h2&gt;Publishing&lt;/h2&gt;
+&lt;p&gt;To help with this goal I use &lt;a href=&quot;https://11ty.io/&quot; rel=&quot;noopener&quot;&gt;Eleventy&lt;/a&gt; for static page generation and &lt;a href=&quot;https://www.netlify.com/&quot; rel=&quot;noopener&quot;&gt;Netlify&lt;/a&gt; for hosting. &lt;a href=&quot;https://www.filamentgroup.com/lab/build-a-blog/&quot; rel=&quot;noopener&quot;&gt;An article&lt;/a&gt; from Filament Group got me started.&lt;/p&gt;
+&lt;h2&gt;Assets&lt;/h2&gt;
+&lt;p&gt;The serif typeface is &lt;a href=&quot;https://fonts.google.com/specimen/EB+Garamond&quot; rel=&quot;noopener&quot;&gt;EB Garamond&lt;/a&gt;. Foreground and background colors have a 4.5:1 contrast ratio at Level AA or better as specified by &lt;a href=&quot;https://www.w3.org/TR/WCAG20/&quot; rel=&quot;noopener&quot;&gt;WCAG 2.0&lt;/a&gt;. SVG Icons are from &lt;a href=&quot;https://fontawesome.com/&quot; rel=&quot;noopener&quot;&gt;FontAwesome&lt;/a&gt; with the exception of the &lt;a href=&quot;https://vscopress.co/media-kit/&quot; rel=&quot;noopener&quot;&gt;VSCO logo&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://joshcrain.io/notes/2020/yamaha-shs-10/"/>
+    <updated>2020-02-04T18:00:00-06:00</updated>
+    <id>https://joshcrain.io/notes/2020/yamaha-shs-10/</id>
+    <content type="html">&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;B&lt;/span&gt;ack in 2006, I stumbled upon a website called &lt;a href=&quot;http://lifeinvector.com/&quot;&gt;Life In Vector&lt;/a&gt;. At the time I was still learning what Illustrator could do, the work was eye-opening. I followed the &lt;a href=&quot;http://lifeinvector.com/downloads/&quot;&gt;gradient mesh tutorial&lt;/a&gt; for a red pepper (I cannot believe this is still online) and learned a lot about working more effectively with layers and gradients.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&quot;https://joshcrain.io/images/keytar/yamaha-shs-10.png&quot; alt=&quot;Yamaha SHS-10 Keytar&quot;&gt;
+    &lt;figcaption&gt;Yamaha SHS-10 rendered in Adobe Illustrator.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Everything rendered this way seemed to have a plastic quality so I began to look for something that &lt;em&gt;was&lt;/em&gt; plastic. At the time I played the keytar in a band called Dr. Mike (&lt;a href=&quot;https://www.amazon.com/Mighty-Love-Dr-Mike/dp/B000FSMMNK/&quot;&gt;Amazon&lt;/a&gt;,  &lt;a href=&quot;https://itunes.apple.com/us/album/a-mighty-love/97175026&quot;&gt;iTunes&lt;/a&gt;). The SHS-10 was perfect. I spent the next several weeks over lunch breaks working on it. I still see this image in searches for the Yamaha SHS-10, even though it’s been at least ten years since I last published it online.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://joshcrain.io/notes/2020/love-bears-all-things/"/>
+    <updated>2020-02-13T18:00:00-06:00</updated>
+    <id>https://joshcrain.io/notes/2020/love-bears-all-things/</id>
+    <content type="html">&lt;p&gt;A year ago for Valentine’s Day I made a couple bears in love. Illustration in CSS and HTML is completely unnecessary—but fun!&lt;/p&gt;
+&lt;figure&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;687&quot; data-theme-id=&quot;light&quot; data-default-tab=&quot;result&quot; data-user=&quot;joshcrain&quot; data-slug-hash=&quot;yGZBGr&quot; style=&quot;height: 687px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Love Bears All Things - CSS Illustration&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/joshcrain/pen/yGZBGr/&quot;&gt;
+  Love Bears All Things - CSS Illustration&lt;/a&gt; by Josh Crain (&lt;a href=&quot;https://codepen.io/joshcrain&quot;&gt;@joshcrain&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;figcaption&gt;Originally posted on &lt;a href=&quot;https://twitter.com/thejoshcrain/status/1096067158512152582&quot; rel=&quot;noopener&quot;&gt;Twitter&lt;/a&gt;. Edit 1/21/2020: Something has happened to their arms in Chrome! Still good in Safari and FF. &lt;/figcaption&gt;
+&lt;/figure&gt; </content>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://joshcrain.io/notes/2020/becoming-a-front-end-master/"/>
+    <updated>2020-03-15T19:00:00-05:00</updated>
+    <id>https://joshcrain.io/notes/2020/becoming-a-front-end-master/</id>
+    <content type="html">&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;R&lt;/span&gt;ecently, I encountered &lt;a href=&quot;https://css-tricks.com/become-a-front-end-master-in-2020-with-these-10-project-ideas/&quot;&gt;an article&lt;/a&gt; last November from Chris Coyer which was very helpful. This last year has been really rough for a number of reasons. I haven’t felt like myself, much less a &lt;em&gt;front-end master&lt;/em&gt;. Chris’ article prompted me to explore some new things in the free moments I have and practice my skills in small but meaningful ways. In the following weeks and months I followed the recommendations—and I’ve learned a lot.&lt;/p&gt;
+&lt;h2&gt;Try out a static site generator&lt;/h2&gt;
+&lt;p&gt;Check. This site uses &lt;a href=&quot;https://www.11ty.io/&quot;&gt;Eleventy&lt;/a&gt; for static site generation. Changes are tracked with Git and pushed to &lt;a href=&quot;https://github.com/joshcrain/eleventy-intro&quot;&gt;a Github repo&lt;/a&gt; using command line. The site is deployed automatically by Netlify using &lt;a href=&quot;https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git&quot;&gt;continuous deployment&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Read a bit about Serverless&lt;/h2&gt;
+&lt;p&gt;This &lt;em&gt;was&lt;/em&gt; an area where needed to do some &lt;a href=&quot;https://serverless.css-tricks.com/about/&quot;&gt;reading&lt;/a&gt;. With so many &lt;a href=&quot;https://serverless.css-tricks.com/services/major&quot;&gt;services&lt;/a&gt; out there, there’s a lot to follow. Often the best way to get started is to build something. The next challenge was helpful.&lt;/p&gt;
+&lt;h2&gt;Build a beautiful form in HTML/CSS&lt;/h2&gt;
+&lt;p&gt;I spent some time to learn &lt;a href=&quot;https://css-tricks.com/form-validation-part-1-constraint-validation-html/&quot;&gt;all about form validation&lt;/a&gt; and see how much can be done in just HTML, then HTML &lt;em&gt;plus&lt;/em&gt; some CSS, then with some vanilla JavaScript. I cannot get over how easy it was to implement a form with &lt;a href=&quot;https://docs.netlify.com/forms/setup/&quot;&gt;Netlify forms&lt;/a&gt;. Take a look and &lt;a href=&quot;https://joshcrain.io/say-hello/&quot;&gt;say hello&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Install the Axe accessibility plugin for DevTools&lt;/h2&gt;
+&lt;h3&gt;Landmarks must have an accessible name&lt;/h3&gt;
+&lt;p&gt;Landmarks (i.e. &lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;, etc.) need to have a unique role or label. In addition, it was also a good time to review &lt;a href=&quot;https://css-tricks.com/how-to-section-your-html/&quot;&gt;how to section your HTML&lt;/a&gt; (I had an &lt;code&gt;&amp;lt;aside&amp;gt;&lt;/code&gt; inside the &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;).&lt;/p&gt;
+&lt;h3&gt;Alternative text should not be repeated as text&lt;/h3&gt;
+&lt;p&gt;This can be a more annoying one to achieve when working with a CMS or templated build. Especially when the image is used as navigation. It’s easy to just reuse the label for the page name instead of a creating a new value for the ALT attribute.&lt;/p&gt;
+&lt;h2&gt;Spin up a copy of Fractal&lt;/h2&gt;
+&lt;p&gt;This &lt;em&gt;has&lt;/em&gt; helped me think about how I would build a front-end as components. Fractal isn’t tied to a specific framework, which I really like. I have experimented with React and ... for this purpose in my day job, but I’m not ready make a decision. Fractal gives me a chance to build and document a strategy ahead of time without any commitment.&lt;/p&gt;
+&lt;p&gt;It was helpful to see how others have structured their Pattern Libraries in Fractal.  &lt;a href=&quot;http://patterns.perchcms.com/&quot;&gt;Perch Pattern Library&lt;/a&gt; and &lt;a href=&quot;http://bits.24ways.org/&quot;&gt;Bits for 24 Ways&lt;/a&gt; are a few good examples.&lt;/p&gt;
+&lt;h2&gt;Implement an SVG icon system&lt;/h2&gt;
+&lt;p&gt;Icon fonts are so easy to implement, but also have &lt;a href=&quot;https://css-tricks.com/icon-fonts-vs-svg/&quot;&gt;some negatives&lt;/a&gt;. Inline SVGs are a great approach especially if the icons are used in the build template. Chris’ book, &lt;a href=&quot;https://abookapart.com/products/practical-svg&quot;&gt;Practical SVG&lt;/a&gt; introduced me to a lot more than I knew existed about SVG for web.&lt;/p&gt;
+&lt;p&gt;This site is all about simplicity so it uses in-lined SVG—&lt;a href=&quot;https://css-tricks.com/pretty-good-svg-icon-system/&quot;&gt;a pretty good icon system&lt;/a&gt;. For the larger application I work on, &lt;a href=&quot;https://css-tricks.com/creating-svg-icon-system-react/&quot;&gt;maybe something like this&lt;/a&gt;. For a large application, icon fonts are still somewhat appealing because of the ease of caching.&lt;/p&gt;
+&lt;h2&gt;Implement a service worker&lt;/h2&gt;
+&lt;p&gt;Read &lt;a href=&quot;https://abookapart.com/products/going-offline&quot;&gt;a book about them&lt;/a&gt;. Do something  &lt;a href=&quot;https://simpleoffline.website/&quot;&gt;very small&lt;/a&gt;. Check out  &lt;a href=&quot;https://developers.google.com/web/tools/workbox&quot;&gt;a framework&lt;/a&gt; centered around them. Service workers install the front-end of &lt;em&gt;this site&lt;/em&gt; directly on your device after the first visit. In practice, a service worker can offer great performance benefits that go beyond traditional caching.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
