@@ -9,14 +9,14 @@
     "feedUrl": "https://joshcrain.io/feed.xml",
     "author": {
       "name": "Josh Crain",
-      "email": "josh.crain+io.com"
+      "email": "josh.crain+io.gmail.com"
     }
   }
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ metadata.title }}</title>
+  <title>{{ metadata.pageTitle }}</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
@@ -29,7 +29,7 @@
   {%- for post in collections.notes %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
-    <title>{{ post.data.title }}</title>
+    <title>{{ post.data.pageTitle }}</title>
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | rssDate }}</updated>
     <id>{{ absolutePostUrl }}</id>
