@@ -24,7 +24,7 @@ priority: "1.0"
 <div class="grid-third@l tile">
     <!--<img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->
     <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
-    <p>{{ post.data.metaDescription }}</p>
+    <p class="line-clamp">{{ post.data.metaDescription }}</p>
 </div>
 {% endfor %} 
 </div>
@@ -42,7 +42,7 @@ priority: "1.0"
 <div class="grid-third@l tile">
     <div>
         <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
-        <p>{{ post.data.metaDescription strip_html truncate: 280 }}</p>
+        <p class="line-clamp">{{ post.data.metaDescription truncate: 280 }}</p>
     </div>
 </div>
 {% endfor %} 
@@ -61,7 +61,7 @@ priority: "1.0"
 <div class="grid-third@l tile">
     <div>
         <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
-        <p>{{ post.data.metaDescription strip_html truncate: 280 }}</p>
+        <p class="line-clamp">{{ post.data.metaDescription truncate: 280 }}</p>
     </div>
 </div>
 {% endfor %} 
