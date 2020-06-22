@@ -4,7 +4,7 @@
   <subtitle>I am an experienced web designer, product designer, and front-end developer. Design allows me to make an impact through user advocacy, research, web standards, and code.</subtitle>
   <link href="https://joshcrain.io/feed.xml" rel="self"/>
   <link href="https://joshcrain.io/"/>
-  <updated>2020-06-05T19:00:00-05:00</updated>
+  <updated>2020-03-15T19:00:00-05:00</updated>
   <id>https://joshcrain.io/</id>
   <author>
     <name>Josh Crain</name>
@@ -96,23 +96,6 @@
 &lt;p&gt;This site is all about simplicity so it uses in-lined SVG—&lt;a href=&quot;https://css-tricks.com/pretty-good-svg-icon-system/&quot;&gt;a pretty good icon system&lt;/a&gt;. For the larger application I work on, &lt;a href=&quot;https://css-tricks.com/creating-svg-icon-system-react/&quot;&gt;maybe something like this&lt;/a&gt;. For a large application, icon fonts are still somewhat appealing because of the ease of caching.&lt;/p&gt;
 &lt;h2&gt;Implement a service worker&lt;/h2&gt;
 &lt;p&gt;Read &lt;a href=&quot;https://abookapart.com/products/going-offline&quot;&gt;a book about them&lt;/a&gt;. Do something  &lt;a href=&quot;https://simpleoffline.website/&quot;&gt;very small&lt;/a&gt;. Check out  &lt;a href=&quot;https://developers.google.com/web/tools/workbox&quot;&gt;a framework&lt;/a&gt; centered around them. Service workers install the front-end of &lt;em&gt;this site&lt;/em&gt; directly on your device after the first visit. In practice, a service worker can offer great performance benefits that go beyond traditional caching.&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>Weeknote 23/2020</title>
-    <link href="https://joshcrain.io/notes/2020/weeknote-23-2020/"/>
-    <updated>2020-06-05T19:00:00-05:00</updated>
-    <id>https://joshcrain.io/notes/2020/weeknote-23-2020/</id>
-    <content type="html">&lt;ul&gt;
-&lt;li&gt;I experimented more with &lt;a href=&quot;https://fractal.build/&quot;&gt;Fractal&lt;/a&gt; this week. I transitioned all of my components from &lt;a href=&quot;https://handlebarsjs.com/&quot;&gt;Handlebars&lt;/a&gt; to &lt;a href=&quot;https://mozilla.github.io/nunjucks/&quot;&gt;Nunjucks&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;I created a new component based static site for prototypes. It uses Nunjucks and Eleventy to render static pages with a higher level of templating than before. I am able to supply data that cascades to multiple pages keeping data and components consistent.&lt;/li&gt;
-&lt;li&gt;I also spun up a &lt;em&gt;different&lt;/em&gt; site consuming components directly from Fractal, though there &lt;a href=&quot;https://github.com/visual-framework/vf-roadmap/issues/17&quot;&gt;might not be a way forward&lt;/a&gt;—namely with sub-components.&lt;/li&gt;
-&lt;li&gt;Added a RSS feed to this site using an &lt;a href=&quot;https://www.11ty.dev/docs/plugins/rss/&quot;&gt;Eleventy plugin&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;In our new reality I spend more time at home and more time outside. Tuesday morning I saw a bald eagle fly overhead. It was really quite something to see, especially this late in the year.&lt;/li&gt;
-&lt;li&gt;The police forced back peaceful protesters so the President could leave the White House, walk down the street, and have a photo opp in front of St. John’s Cathedral with a Bible. It begs the question, &lt;a href=&quot;https://www.christianitytoday.com/news/2020/may/george-floyd-ministry-houston-third-ward-church.html&quot;&gt;who leaves a greater gospel legacy&lt;/a&gt;?&lt;/li&gt;
-&lt;li&gt;Sunday night: The third night of protests. We are hearing sirens in the distance. There is a 9 pm curfew tonight in Polk County. The Windsor Heights Walmart has closed. Bags of mulch are used to barricade the front doors. Many of the stores at Merle Hay Mall have put plywood over the windows and doors. As of 7:40 pm tear gas had been disbursed. Protesters are inside theTarget.&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>

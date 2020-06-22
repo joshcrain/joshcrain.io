@@ -20,7 +20,7 @@ priority: "1.0"
 </div>
 <div class="grid-content">
 <div class="grid">
-{% for post in collections.sketches limit:6 reversed %}
+{% for post in collections.sketches reversed limit:6 %}
 <div class="grid-third@l tile">
     <!--<img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->
     <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
@@ -38,7 +38,7 @@ priority: "1.0"
 </div>
 <div class="grid-content">
 <div class="grid">
-{% for post in collections.notes limit:6 reversed %}
+{% for post in collections.notes reversed limit:6 %}
 <div class="grid-third@l tile">
     <div>
         <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
@@ -57,7 +57,7 @@ priority: "1.0"
 </div>
 <div class="grid-content">
 <div class="grid">
-{% for post in collections.weeknotes limit:6 reversed %}
+{% for post in collections.weeknotes reversed limit:6 %}
 <div class="grid-third@l tile">
     <div>
         <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>

@@ -1,6 +1,6 @@
 ---
 pageTitle:  Weeknote 23/2020
-tags: ['notes', 'weeknotes']
+tags: ['weeknotes']
 metaDescription: Static sites, components, RSS feed, injustice, and unrest.
 date: 2020-06-06
 ---
