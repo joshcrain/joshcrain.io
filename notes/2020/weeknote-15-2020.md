@@ -4,7 +4,7 @@ tags: ['weeknotes']
 metaDescription: Painting, inclusive inputs, evening run, the Supermoon, masks. What I was up to the 15th week of 2020.
 date: 2020-04-11
 ---
-* I am such a fan of Tad Retz. I keep thinking of this video of [painting in the Trapp Forest](https://youtu.be/wRYNCPFgdwA). His sketches remind me of *John F. Carlson*. 
+* I am such a fan of Tad Retz. I keep thinking of this video of [painting in the Trapp Forest](https://youtu.be/wRYNCPFgdwA). His sketches remind me of  *John F. Carlson*. 
 * I found an article about [inclusive inputs](https://www.ovl.design/text/inclusive-inputs/) helpful enough to incorporate aspects into a design system. 
 * I ran in the evening for first time in maybe a year. Venus was bright in the west and the bats were active overhead. I didn’t notice the moon rising in the east until I turned for home. I passed a couple about my age along the trail who had stopped to enjoy the view of the Supermoon through the trees. 
 * Tuesday, more than 100 new confirmed cases of Covid-19 in Iowa. This was the first day the count was greater than 100. 
