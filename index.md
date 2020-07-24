@@ -49,22 +49,3 @@ priority: "1.0"
 </div>
 </div>
 </section>
-<hr>
-<section class="grid-layout_home">
-<div class="layout-section"> 
-    <h2>Weeknotes</h2>
-    <p>Short notes recorded each week. </p>
-</div>
-<div class="grid-content">
-<div class="grid">
-{% for post in collections.weeknotes reversed limit:6 %}
-<div class="grid-third@l tile">
-    <div>
-        <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
-        <p class="line-clamp">{{ post.data.metaDescription truncate: 280 }}</p>
-    </div>
-</div>
-{% endfor %} 
-</div>
-</div>
-</section>
