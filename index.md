@@ -15,24 +15,6 @@ priority: "1.0"
 <hr>
 <section class="grid-layout_home">
 <div class="layout-section"> 
-    <h2>Sketches &amp; studies</h2>
-    <p>I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook.</p>
-</div>
-<div class="grid-content">
-<div class="grid">
-{% for post in collections.sketches reversed limit:6 %}
-<div class="grid-third@l tile">
-    <!--<img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->
-    <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
-    <p class="line-clamp">{{ post.data.metaDescription }}</p>
-</div>
-{% endfor %} 
-</div>
-</div>
-</section>
-<hr>
-<section class="grid-layout_home">
-<div class="layout-section"> 
     <h2>Notes</h2>
     <p>Writing about the web and other things. </p>
 </div>
@@ -44,6 +26,24 @@ priority: "1.0"
         <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
         <p class="line-clamp">{{ post.data.metaDescription truncate: 280 }}</p>
     </div>
+</div>
+{% endfor %} 
+</div>
+</div>
+</section>
+<hr>
+<section class="grid-layout_home">
+<div class="layout-section"> 
+    <h2>Sketches &amp; studies</h2>
+    <p>I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook.</p>
+</div>
+<div class="grid-content">
+<div class="grid">
+{% for post in collections.sketches reversed limit:6 %}
+<div class="grid-third@l tile">
+    <!--<img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->
+    <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
+    <p class="line-clamp">{{ post.data.metaDescription }}</p>
 </div>
 {% endfor %} 
 </div>
