@@ -74,7 +74,11 @@ figure{margin:1em 0;display:inline-block;text-align: center;width:100%;}
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
-
+.amp {
+  font-family: Baskerville, "Goudy Old Style", Palatino, "Book Antiqua", serif;
+  font-style: italic;
+  font-weight: normal;
+}
 p.lead {font-style:italic;margin-bottom:1.5em;font-size:1em;text-align: center}
 blockquote{margin:1.5em var(--margin);font-style: italic;font-size:1.15em;}
   blockquote p:before{content:'“';margin-left:-.27em;}
