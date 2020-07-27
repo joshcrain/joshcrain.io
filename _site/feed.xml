@@ -4,7 +4,7 @@
   <subtitle>I am an experienced web designer, product designer, and front-end developer. Design allows me to make an impact through user advocacy, research, web standards, and code.</subtitle>
   <link href="https://joshcrain.io/feed.xml" rel="self"/>
   <link href="https://joshcrain.io/"/>
-  <updated>2020-03-15T19:00:00-05:00</updated>
+  <updated>2020-07-26T19:00:00-05:00</updated>
   <id>https://joshcrain.io/</id>
   <author>
     <name>Josh Crain</name>
@@ -96,6 +96,20 @@
 &lt;p&gt;This site is all about simplicity so it uses in-lined SVG—&lt;a href=&quot;https://css-tricks.com/pretty-good-svg-icon-system/&quot;&gt;a pretty good icon system&lt;/a&gt;. For the larger application I work on, &lt;a href=&quot;https://css-tricks.com/creating-svg-icon-system-react/&quot;&gt;maybe something like this&lt;/a&gt;. For a large application, icon fonts are still somewhat appealing because of the ease of caching.&lt;/p&gt;
 &lt;h2&gt;Implement a service worker&lt;/h2&gt;
 &lt;p&gt;Read &lt;a href=&quot;https://abookapart.com/products/going-offline&quot;&gt;a book about them&lt;/a&gt;. Do something  &lt;a href=&quot;https://simpleoffline.website/&quot;&gt;very small&lt;/a&gt;. Check out  &lt;a href=&quot;https://developers.google.com/web/tools/workbox&quot;&gt;a framework&lt;/a&gt; centered around them. Service workers install the front-end of &lt;em&gt;this site&lt;/em&gt; directly on your device after the first visit. In practice, a service worker can offer great performance benefits that go beyond traditional caching.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>The launch of this website</title>
+    <link href="https://joshcrain.io/notes/2020/website-launch/"/>
+    <updated>2020-07-26T19:00:00-05:00</updated>
+    <id>https://joshcrain.io/notes/2020/website-launch/</id>
+    <content type="html">&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;W&lt;/span&gt;hen I began work on this site more than a year ago my goal was to build something other than a web designer’s personal website. I wanted to publish words and images more than maintain code.&lt;/p&gt;
+&lt;p&gt;The site would need to be fast, inclusive, easy to manage, with minimal friction to deploy. I did not want to spend all my time endlessly tinkering and never get around to the content. Simplicity would be of the upmost importance and would be my guiding principle. I chose &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt; for this very reason. The documentation was uncomplicated, and well written with helpful examples. The initial build took a few hours and I was mostly up and running.&lt;/p&gt;
+&lt;p&gt;Contrary to my initial plans, I have allowed the process to be slow and ongoing. Even in small bursts I have learned a lot and have had a chance to experiment. These skills have translated to my day job where I’ve added build tools to my workflow. The focus and work for this site has been different than I had hoped for but valuable none-the-less.&lt;/p&gt;
+&lt;p&gt;Although I’ve had personal and portfolio sites in the past I was ready to begin anew. It had been more than a few years since I had maintained a personal site of any kind. Much of the content I have to draw from is not the direction of this site. I’ve been keeping &lt;a href=&quot;https://joshcrain.io/tags/weeknotes/&quot;&gt;weeknotes&lt;/a&gt; each week, publishing what I write on my phone in the time between things. It’s all I can do some months and that’s better than nothing.&lt;/p&gt;
+&lt;p&gt;The domain name, joshcrain.io, is a new one. Another more &lt;em&gt;common&lt;/em&gt; domain has been taken for many years.&lt;/p&gt;
+&lt;p&gt;Though the site went live on January 15, 2020, I’ve avoided any sort of acknowledgment of it existence. I’m not sure when I’ll feel comfortable with saying it’s done, maybe never. This I will say—&lt;em&gt;it is live&lt;/em&gt;.&lt;/p&gt;
 </content>
   </entry>
 </feed>
