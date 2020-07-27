@@ -12,7 +12,7 @@ Contrary to my initial plans, I have allowed the process to be slow and ongoing.
 
 Although I’ve had personal and portfolio sites in the past I was ready to begin anew. It had been more than a few years since I had maintained a personal site of any kind. Much of the content I have to draw from is not the direction of this site. I’ve been keeping [weeknotes](/tags/weeknotes/) each week, publishing what I write on my phone in the time between things. It’s all I can do some months and that’s better than nothing. 
 
-The domain name, joshcrain.io, is a new one. Another more _common_ domain has been taken for many years. 
+The domain name, [joshcrain.io](https://joshcrain.io/), is a new one. Another more _common_ domain has been taken for many years. 
 
 Though the site went live on January 15, 2020, I’ve avoided any sort of acknowledgment of it existence. I’m not sure when I’ll feel comfortable with saying it’s done, maybe never. This I will say—_it is live_.
 
