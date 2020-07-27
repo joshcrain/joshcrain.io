@@ -7,7 +7,7 @@
         <meta name="description" content="{{ metaDescription strip_html truncate: 160 }}"/>
         <link rel="preload" href="/fonts/eb-garamond-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
         <link rel="preload" href="/fonts/eb-garamond-v13-latin-italic.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
-        {% capture css %}{% include styles.min.css %}{% endcapture %}<style type="text/css">{{ css | cssmin | safe }}</style>
+        {% capture css %}{% include styles.css %}{% endcapture %}<style type="text/css">{{ css | cssmin | safe }}</style>
         <link rel="alternate" type="application/atom+xml" title="RSS Feed for joshcrain.io" href="/feed.xml" />
     </head>
     <body>

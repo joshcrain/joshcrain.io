@@ -46,10 +46,10 @@
 ::selection {background:rgba(var(--colorAccentAlt),.25) /* WebKit/Blink Browsers */}
 body {color:rgba(var(--colorFore), 1);font-family:var(--fontPrimary);font-weight:400;margin:0;font-size:1.333rem;line-height:1.5;background:rgba(var(--colorBack), 1);text-rendering: optimizeLegibility;-webkit-font-smoothing: subpixel-antialiased;}
 ul, ol {padding:0;} 
-.wrapper > p+p,.wrapper > h2+p,.wrapper > h3+p,.wrapper > figure+p {margin:0;}
+.grid-layout_page > div > p+p,.grid-layout_page > div > h2+p,.grid-layout_page > div > h3+p,.grid-layout_page > div > figure+p {margin:0;}
 :not(blockquote):not(ol):not(ul):not(dl):not(hr):not(pre)+p:not(img)+p,:not(figure)+p{text-indent: var(--margin);}
 p:first-of-type, h2+p, h3+p, .lead+p{text-indent: 0;margin:0;}
-.wrapper blockquote > p, cite+p{text-indent: 0;}
+.grid-layout_page > div blockquote > p, cite+p{text-indent: 0;}
 p:last-of-type {margin-bottom:1.5em;}
 .visuallyhidden { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
 a {color:rgba(var(--colorAccent), 1);text-decoration: none;}
