@@ -14,10 +14,10 @@ pagination:
 permalink: /tags/{{ tag }}/
 ---
 <h1>Tagged “{{ tag }}”</h1>
-<ol>
+<ul class="list--articles">
 {% set taglist = collections[ tag ] %}
 {% for post in taglist | reverse %}
   <li><a href="{{ post.url | url }}">{{ post.data.pageTitle }}</a>
-  <p><span class="text--secondary small-caps">{{ post.date }}</span> &mdash; {{ post.data.metaDescription }}</p></li>
+  <p>{{ post.data.metaDescription }}</p></li>
 {% endfor %}
-</ol>
+</ul>
