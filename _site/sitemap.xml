@@ -253,12 +253,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/</loc>
-    <lastmod>2020-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://joshcrain.io/notes/</loc>
     <lastmod>2020-06-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -299,5 +293,11 @@
     <lastmod>2020-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/</loc>
+    <lastmod>2020-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
