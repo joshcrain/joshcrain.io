@@ -10,16 +10,7 @@ To get started I opened a free trial account on ancestry.com. This helped me ide
 
 It is my understanding the United States centennial prompted a renewed interest in the foundation of the country. Families known to be in the country for some time commissioned books as a way to claim their participation in the founding of the country. For a year I traced down as many other [sources](/ancestry/sources/) as I could and the sketch of my family history began to take shape. The results of my research wouldn’t have been possible without the aid of these public domain books. 
 
-Other resources:
-* [Google Books](https://books.google.com)
-* [Find A Grave](https://www.findagrave.com)
-
 When I learned one of my ancestors was involved in the Revolutionary War I wanted to visit some of those locations. In the fall of 2015 I visited the [Saratoga Battlefield](https://www.nps.gov/sara/index.htm), [Fort Ticonderoga](https://www.fortticonderoga.org), and [Mount Independence](https://historicsites.vermont.gov/mount-independence) on a trip from Buffalo to New Hampshire. 
-
-Other locations I’ve visited: 
-* Village Cemetery. Surry, New Hampshire. 
-* Southwest Burying Yard. Surry, New Hampshire. 
-* Trumbull Cemetery. Lebanon, Connecticut. Date. 
 
 It was after the visit to Saratoga I made contact with a park ranger and historian. He set me straight on some details of my ancestors’s military service. Others have reached out after visiting the website and have offered assistance. One individual shared a 40 page pension document for the revolutionary war.
 
