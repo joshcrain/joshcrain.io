@@ -1,0 +1,28 @@
+---
+pageTitle:  Crain Family Ancestry 
+tags: Notes 
+metaDescription: How I became involved, the resources I found valuable, and the places I’ve visited in search of a Crain family history. 
+date: 2020-08-07
+---
+<span class="dropcap">M</span>y dad began work on a family history at a time when the only way to do so by letter correspondence. He made inquiries off and on for years until health issues prevented him from doing more. Years passed and much of his work became lost through a variety of circumstances. I remember a phone conversation with him where he was particularly lucid. He expressed the devastation he felt at the loss of all the work. It was during that conversation I decided to help with his project. 
+
+To get started I opened a free trial account on ancestry.com. This helped me identify a list of names and dates and establish a family tree. Right away I had more generations, branches, and names than I had expected. I was unsure if what I had found was accurate, it seemed too good to be true. I began to cross-reference names and dates using a variety of web searches. I rediscovered the [Internet Archive](http://www.archive.org/) which is where I found most of the sources. It was the first two books, _Genealogy Of The Crane Family, Volumes I & II_, by Ellery Bicknell Crane that proved to be the most valuable. They trace the family lineage to two brothers, Benjamin and Henry. Both lived in the Connecticut Colony as early as 1655. 
+
+It is my understanding the United States centennial prompted a renewed interest in the foundation of the country. Families known to be in the country for some time commissioned books as a way to claim their participation in the founding of the country. For a year I traced down as many other [sources](/ancestry/sources/) as I could and the sketch of my family history began to take shape. The results of my research wouldn’t have been possible without the aid of these public domain books. 
+
+Other resources:
+* [Google Books](https://books.google.com)
+* [Find A Grave](https://www.findagrave.com)
+
+When I learned one of my ancestors was involved in the Revolutionary War I wanted to visit some of those locations. In the fall of 2015 I visited the [Saratoga Battlefield](https://www.nps.gov/sara/index.htm), [Fort Ticonderoga](https://www.fortticonderoga.org), and [Mount Independence](https://historicsites.vermont.gov/mount-independence) on a trip from Buffalo to New Hampshire. 
+
+Other locations I’ve visited: 
+* Village Cemetery. Surry, New Hampshire. 
+* Southwest Burying Yard. Surry, New Hampshire. 
+* Trumbull Cemetery. Lebanon, Connecticut. Date. 
+
+It was after the visit to Saratoga I made contact with a park ranger and historian. He set me straight on some details of my ancestors’s military service. Others have reached out after visiting the website and have offered assistance. One individual shared a 40 page pension document for the revolutionary war.
+
+There were surprises along the way. The spelling of our name changed from _Crane_ to _Crain_ around 1863. The headstones of a husband and wife stand side-by-side with different spellings of the same last name. The reason is unknown, but likely the family (or the headstone carver) was illiterate. The spelling change had been an obstacle for my dad. Who would expect the spelling of a man’s name would happen so late in life?
+
+There were many impactful moments during this project. During my research I gained a new appreciation for the history and found great enjoyment in the work. The [Crain Ancestry](/ancestry/) project began a way to for me to help my dad and restore what he had lost. The realization of how easily history, even family history, can be lost or forgotten. Papers can be misplaced, but how could names be _forgotten_ after four or five generations? These were people whose lives led to my life, who were completely unknown to my father and grandfather. The fragility of _this_ history was a reminder of how important it is to preserve  our past. 
