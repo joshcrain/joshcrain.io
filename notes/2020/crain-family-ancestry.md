@@ -1,10 +1,10 @@
 ---
 pageTitle:  Crain Family Ancestry 
-tags: Notes 
+tags: notes 
 metaDescription: How I became involved, the resources I found valuable, and the places I’ve visited in search of a Crain family history. 
 date: 2020-08-07
 ---
-<span class="dropcap">M</span>y dad began work on a family history at a time when the only way to do so by letter correspondence. He made inquiries off and on for years until health issues prevented him from doing more. Years passed and much of his work became lost through a variety of circumstances. I remember a phone conversation with him where he was particularly lucid. He expressed the devastation he felt at the loss of all the work. It was during that conversation I decided to help with his project. 
+<span class="dropcap">M</span>y dad began work on a family history at a time when the only way to do so by letter correspondence. He made inquiries off and on for years until health issues prevented him from doing more. Years passed and much of his work became lost through a variety of circumstances. I remember a phone conversation with him where he was particularly lucid. He expressed the devastation he felt at the loss of all the work. It was during that conversation I decided to help with his project.
 
 To get started I opened a free trial account on ancestry.com. This helped me identify a list of names and dates and establish a family tree. Right away I had more generations, branches, and names than I had expected. I was unsure if what I had found was accurate, it seemed too good to be true. I began to cross-reference names and dates using a variety of web searches. I rediscovered the [Internet Archive](http://www.archive.org/) which is where I found most of the sources. It was the first two books, _Genealogy Of The Crane Family, Volumes I & II_, by Ellery Bicknell Crane that proved to be the most valuable. They trace the family lineage to two brothers, Benjamin and Henry. Both lived in the Connecticut Colony as early as 1655. 
 
