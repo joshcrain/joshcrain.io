@@ -16,7 +16,7 @@ priority: "1.0"
 <section class="grid-layout_home">
 <div class="layout-section"> 
     <h2>Notes</h2>
-    <p>Words about myself, my work, this site, and what I’m learning. </p>
+    <p>Notes about my work, this site, and what I’m learning. </p>
 </div>
 <div class="grid-content">
 <div class="grid">
