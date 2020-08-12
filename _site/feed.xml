@@ -28,19 +28,6 @@
   </entry>
   
   <entry>
-    <title>Colophon</title>
-    <link href="https://joshcrain.io/notes/colophon/"/>
-    <updated>2019-12-23T18:00:00-06:00</updated>
-    <id>https://joshcrain.io/notes/colophon/</id>
-    <content type="html">&lt;p&gt;I created this site using VSCode on a Mac with HTML, Markdown, Liquid, CSS, and Javascript. This site uses standards compliant mark-up and a custom responsive layout with the goal of simplicity and speed.&lt;/p&gt;
-&lt;h2&gt;Publishing&lt;/h2&gt;
-&lt;p&gt;To help with this goal I use &lt;a href=&quot;https://11ty.io/&quot; rel=&quot;noopener&quot;&gt;Eleventy&lt;/a&gt; for static page generation and &lt;a href=&quot;https://www.netlify.com/&quot; rel=&quot;noopener&quot;&gt;Netlify&lt;/a&gt; for hosting. &lt;a href=&quot;https://www.filamentgroup.com/lab/build-a-blog/&quot; rel=&quot;noopener&quot;&gt;An article&lt;/a&gt; from Filament Group got me started.&lt;/p&gt;
-&lt;h2&gt;Assets&lt;/h2&gt;
-&lt;p&gt;The serif typeface is &lt;a href=&quot;https://fonts.google.com/specimen/EB+Garamond&quot; rel=&quot;noopener&quot;&gt;EB Garamond&lt;/a&gt;. Foreground and background colors have a 4.5:1 contrast ratio at Level AA or better as specified by &lt;a href=&quot;https://www.w3.org/TR/WCAG20/&quot; rel=&quot;noopener&quot;&gt;WCAG 2.0&lt;/a&gt;. SVG Icons are from &lt;a href=&quot;https://fontawesome.com/&quot; rel=&quot;noopener&quot;&gt;FontAwesome&lt;/a&gt; with the exception of the &lt;a href=&quot;https://vscopress.co/media-kit/&quot; rel=&quot;noopener&quot;&gt;VSCO logo&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry>
     <title>Yamaha SHS-10</title>
     <link href="https://joshcrain.io/notes/2020/yamaha-shs-10/"/>
     <updated>2020-02-04T18:00:00-06:00</updated>
