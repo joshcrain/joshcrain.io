@@ -10,7 +10,9 @@ The site would need to be fast, inclusive, easy to manage, with minimal friction
 
 Contrary to my initial plans, I have allowed the process to be slow and ongoing. Even in small bursts I have learned a lot and have had a chance to experiment. These skills have translated to my day job where I’ve added build tools to my workflow. The focus and work for this site has been different than I had hoped for but valuable none-the-less.
 
-Although I’ve had personal and portfolio sites in the past I was ready to begin anew. It had been more than a few years since I had maintained a personal site of any kind. Much of the content I have to draw from is not the direction of this site. I’ve been keeping [weeknotes](/tags/weeknotes/) each week, publishing what I write on my phone in the time between things. It’s all I can do some months and that’s better than nothing. 
+Although I’ve had personal and portfolio sites in the past I was ready to begin anew. It had been more than a few years since I had maintained a personal site of any kind. Much of the content I have to draw from is not the direction of this site. This limited content has also lended itself to slow, evolving design process. 
+
+I keep [weeknotes](/tags/weeknotes/) each week, publishing what I write on my phone during the moments between things. It’s all I can do some months and that’s better than nothing. 
 
 The domain name, [joshcrain.io](https://joshcrain.io/), is a new one. Another more _common_ domain has been taken for many years. 
 
