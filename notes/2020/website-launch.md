@@ -12,7 +12,7 @@ Although I’ve had personal and portfolio sites in the past I was ready to begi
 
 I keep [weeknotes](/tags/weeknotes/) each week, publishing what I write on my phone during the moments between things. It’s all I can do some months and that’s better than nothing. 
 
-The domain name, [joshcrain.io](https://joshcrain.io/), is a new one. Another more _common_ domain has been taken for many years. I chose use [Eleventy](https://www.11ty.dev/) for publishing because of it’s simplicity. The documentation was uncomplicated, and well written with helpful examples. The initial build took a few hours and I was mostly up and running. 
+The domain name, [joshcrain.io](https://joshcrain.io/), is a new one. Another more _common_ domain has been taken for many years. I chose use [Eleventy](https://www.11ty.dev/) for publishing because of it’s simplicity. The documentation was uncomplicated, and well written with helpful examples. <a href="https://www.filamentgroup.com/lab/build-a-blog/" rel="noopener">An article</a> from Filament Group got me started. The initial build took a few hours and I was mostly up and running. 
 
 Though the site went live on January 15, 2020, I’ve avoided any sort of acknowledgment of it existence. There is still plenty to do. Much left unfinished. I may never get to where I feel it’s done, so why wait. This I will say—_it is live_.
 
