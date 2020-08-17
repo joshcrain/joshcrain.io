@@ -51,7 +51,7 @@ Todo
 Todo
 
 ## <a name="code"></a>Code
-Todo
+`<div></div>`
 
 ## <a name="tables"></a>Tables
 | Tables        | Are           | Cool  |
