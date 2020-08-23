@@ -110,6 +110,7 @@ code {font-size: .875em;}
 }
 
 .grid-layout_home h2 {margin-top:0;}
+.grid-layout_home .grid-content .grid {margin-top:.75em;}
 
 .grid-section {
   grid-area : section;

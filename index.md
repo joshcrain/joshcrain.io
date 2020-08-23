@@ -16,7 +16,7 @@ priority: "1.0"
 <section class="grid-layout_home">
 <div class="layout-section"> 
     <h2>Notes</h2>
-    <p>Notes about my work, this site, and what I’m learning. </p>
+    <p>Notes about my work, this site, and what I’m learning. Occasionally I keep <a href="/tags/weeknotes/">weeknotes</a> to mark events. &nbsp; <a href="/notes/"><i>All&nbsp;notes&nbsp;</i>→</a></p>
 </div>
 <div class="grid-content">
 <div class="grid">
@@ -35,7 +35,7 @@ priority: "1.0"
 <section class="grid-layout_home">
 <div class="layout-section"> 
     <h2>Sketches <span class="amp">&amp;</span> studies</h2>
-    <p>I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook.</p>
+    <p>I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook. &nbsp; <a href="/sketch/"><i>All&nbsp;sketches&nbsp;</i>→</a></p>
 </div>
 <div class="grid-content">
 <div class="grid">
