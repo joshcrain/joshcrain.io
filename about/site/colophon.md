@@ -2,8 +2,10 @@
 pageTitle: Colophon
 tags: about
 metaDescription: Notes on the tools, languages, publishing methods, and assets used in the production of this website. 
-date: 2019-12-24
+date: 2020-08-24
 ---
- This site was created with VSCode on a Mac with HTML, Markdown, Liquid, Nunjucks, CSS, and Javascript. This site uses standards compliant mark-up and a custom responsive layout with the goal of simplicity and speed. I use <a href="https://11ty.io/" rel="noopener">Eleventy</a> for static page generation and <a href="https://www.netlify.com" rel="noopener">Netlify</a> for hosting. 
+ <span class="dropcap">T</span>his website was created with Visual Studio Code on a Mac. It is written in HTML, Markdown, Liquid, Nunjucks, CSS, and Javascript. The mark-up is written to be compliant with web standards. The layout uses CSS Grid for a custom layout. 
+ 
+ Eleventy is used for static page generation. Git is used for version control. Github is used to store the repository. Netlify hosts the website. The site uses <a href="https://speedlify-joshcrain.netlify.app/">a copy of Speedlify</a> to continuiously measure site performance.
 
- The serif typeface is <a href="https://fonts.google.com/specimen/EB+Garamond" rel="noopener">EB Garamond</a>. Foreground and background colors have a 4.5:1 contrast ratio at Level AA or better as specified by <a href="https://www.w3.org/TR/WCAG20/" rel="noopener">WCAG 2.0</a>. 
+ The serif typeface is <a href="https://fonts.google.com/specimen/EB+Garamond" rel="noopener">EB Garamond</a>. Special effort has been made to give the foreground and background colors a high contrast for those with limited sight. Text has a 4.5:1 contrast ratio at Level AA or better, as specified by <a href="https://www.w3.org/TR/WCAG20/" rel="noopener">WCAG 2.0</a>. 
