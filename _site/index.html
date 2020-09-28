@@ -106,20 +106,19 @@ code {font-size: .875em;}
 
 .grid-layout_home {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 6fr;
   grid-column-gap: 3vw;
   grid-template-rows: 1fr;
 }
 
 .grid-layout_page {
   display: grid;
-  grid-template-columns: 2fr 8fr 2fr;;
+  grid-template-columns: 2fr 8fr 2fr;
   grid-column-gap: 3vw;
   grid-template-rows: 1fr;
 }
 
 .grid-layout_home h2 {margin-top:0;}
-.grid-layout_home .grid-content .grid {margin-top:.75em;}
 
 .grid-section {
   grid-area : section;
@@ -158,14 +157,17 @@ code {font-size: .875em;}
     grid-column: span 4;
   }
 
+  .grid-half\@l{
+    grid-column: span 6;
+  }
+
   .tile {
     display: flex;
     flex-direction: column;
     /*justify-content: space-between;*/
-    padding-bottom:4vh;
+    padding-bottom:3vh;
   }
   .tile p {margin:0;}
-
  
 .list--horizontal {list-style:none;margin:0 -1.25em}
   .list--horizontal > li{padding:0 1.25em;vertical-align:middle;display:inline-block;line-height:1;}
@@ -187,7 +189,7 @@ code {font-size: .875em;}
 .small-caps{font-variant-caps: small-caps;text-transform:uppercase;letter-spacing:.0625em;font-size: .8em;}
 .text--smallest {font-size:.875rem;}
 .text--smaller {font-size:1rem;}
-.text--larger {font-size:1.5rem;}
+.text--larger {font-size:1.5rem;line-height: 1em;}
 .text--largest {font-size:1.75rem;}
 .text--secondary {text-transform: uppercase;}
 
@@ -210,6 +212,18 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 .form_field:not(:focus):invalid {outline-color:rgba(var(--colorDanger),1); }
 
 .btn {font-size:1em;font-family: inherit;border:2px solid rgba(var(--colorAccent),1);background:rgba(var(--colorFore),0);color:rgba(var(--colorAccent),1);padding:.5em .75em;border-radius: 0;}
+
+.square {
+  position:relative;
+  max-width:420px;
+  display:block;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
 
 @media only screen and (max-width: 1024px) {
   .grid-layout_home {
@@ -236,8 +250,21 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
     grid-template-rows: 2fr;
   }
 
+  .grid-quarter\@l{
+    grid-column: span 4;
+  }
+
 
 } 
+
+
+.square img {width:100%;object-fit: cover;height:100%;max-width:100%;position: absolute;border-radius: .5vh;}
+
+.square .name {width:100%;height:100%;max-width:100%;position: absolute;display: grid;place-items: center;color:rgba(255,255,255,0);background:rgba(var(--colorAccent),0);transition: all 0.25s ease;border-radius: .75vh;}
+
+.square .name:hover, .square .name:focus{background:rgba(var(--colorAccent),.8);color:rgba(255,255,255,1);}
+
+
 
 @media only screen and (max-width: 768px) {
   body{font-size:1.1875rem;} 
@@ -248,6 +275,10 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .grid-third\@l{
     grid-column: span 6;
   }
+  .grid-quarter\@l{
+    grid-column: span 4;
+  }
+
   .grid-layout_page {
     display: grid;
     grid-template-columns: 12fr;;
@@ -263,7 +294,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .site_header .list--horizontal li{padding:0 .75em;font-size:.95em}  
 
 
-  .grid-third\@l{
+  .grid-third\@l, .grid-half\@l{
     grid-column: span 12;
   }
 
@@ -293,53 +324,52 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
                  
             </header>
               
-                <div class="grid-layout_home"> 
+                <div class="grid-layout_home">
 <div class="grid-content">
-<p class="text--largest">I am an experienced web designer, product designer, and front-end developer. My work allows me to make an impact through user advocacy, research, web standards, and code. There are also <a href="/about/">other interesting things</a>.</p>
+<p class="text--largest">I am a product designer with experience as a web designer and front-end developer. My work allows me to make an impact through user advocacy, research, web standards, and code. There are also <a href="/about/">other interesting things</a>.</p>
 </div>
 </div>
 <hr>
 <section class="grid-layout_home">
 <div class="layout-section"> 
     <h2>Notes</h2>
-    <p>Notes about my work, this site, and what I’m learning. Occasionally I keep <a href="/tags/weeknotes/">weeknotes</a> to mark events. &nbsp; <a href="/notes/"><i>All&nbsp;notes&nbsp;</i>→</a></p>
 </div>
 <div class="grid-content">
 <div class="grid">
-<div class="grid-third@l tile">
+<div class="grid-half@l">
     <div>
-        <a href="/notes/2020/crain-family-ancestry/">Crain Family Ancestry</a>
-        <p class="line-clamp">How I became involved, the resources I found valuable, and the places I’ve visited in search of a Crain family history.</p>
-    </div>
-</div>
-<div class="grid-third@l tile">
-    <div>
-        <a href="/notes/2020/website-launch/">The launch of this website</a>
-        <p class="line-clamp">The (much delayed) launch of a personal website, joshcrain.io.</p>
-    </div>
-</div>
-<div class="grid-third@l tile">
-    <div>
-        <a href="/notes/2020/becoming-a-front-end-master/">Becoming a front-end master</a>
-        <p class="line-clamp">Readings and exercises to guide me towards front-end mastery.</p>
-    </div>
-</div>
-<div class="grid-third@l tile">
-    <div>
-        <a href="/notes/2020/love-bears-all-things/">Love Bears All Things</a>
+        <a href="/notes/2020/love-bears-all-things/" class="text--larger">Love Bears All Things</a>
         <p class="line-clamp">A year ago for Valentine’s Day I made a couple bears in love. Illustration in CSS and HTML is completely unnecessary—but fun!</p>
     </div>
 </div>
-<div class="grid-third@l tile">
+<div class="grid-half@l">
     <div>
-        <a href="/notes/2020/yamaha-shs-10/">Yamaha SHS-10</a>
+        <a href="/notes/2020/yamaha-shs-10/" class="text--larger">Yamaha SHS-10</a>
         <p class="line-clamp">The Yamaha SHS-10 keytar is rendered in Adobe Illustrator. Created in about 2006.</p>
     </div>
 </div>
-<div class="grid-third@l tile">
+<div class="grid-half@l">
     <div>
-        <a href="/notes/2019/a-run/">A Run</a>
+        <a href="/notes/2020/forsaken/" class="text--larger">Forsaken</a>
+        <p class="line-clamp">Forsaken places.</p>
+    </div>
+</div>
+<div class="grid-half@l">
+    <div>
+        <a href="/notes/2020/arizona-and-utah/" class="text--larger">Arizona &amp; Utah</a>
+        <p class="line-clamp">Paria Movie Site, Montezuma Castle, Grand Canyon and Bryce Canyon.</p>
+    </div>
+</div>
+<div class="grid-half@l">
+    <div>
+        <a href="/notes/2019/a-run/" class="text--larger">A Run</a>
         <p class="line-clamp">That was the night I planned to run six but instead ended up on a gravel road in the middle of a twelve-mile loop...</p>
+    </div>
+</div>
+<div class="grid-half@l">
+    <div>
+        <a href="/notes/2020/the-camp-fire/" class="text--larger">140 miles from the Camp Fire</a>
+        <p class="line-clamp">The Camp Fire began the day we arrived.</p>
     </div>
 </div>
 </div>
@@ -347,26 +377,26 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 </section>
 <hr>
 <section class="grid-layout_home">
-<div class="layout-section"> 
-    <h2>Sketches <span class="amp">&amp;</span> studies</h2>
-    <p>I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook. &nbsp; <a href="/sketch/"><i>All&nbsp;sketches&nbsp;</i>→</a></p>
-</div>
+<h2>Sketches</h2>
 <div class="grid-content">
 <div class="grid">
-<div class="grid-third@l tile">
-    <!--<img src="/images/plein-air-sketches/768/walnut-woods.jpg" alt="Artwork Plein Air Sketch">-->
-    <a href="/sketch/plein-air-sketches/">Plein Air Sketch</a>
-    <p class="line-clamp">Some of my first paintings in Gouache were done outside.</p>
+<div class="grid-quarter@l tile">
+    <a href="/sketch/digital-studies/" class="square">
+    <img src="/images/digital-studies/420/flower-still-life.jpg" alt="Artwork Digital Studies">
+    <span class="name">Digital Studies</span>
+    </a>
 </div>
-<div class="grid-third@l tile">
-    <!--<img src="/images/gouache-studies/420/gouache-2.jpg" alt="Artwork Gouache Studies">-->
-    <a href="/sketch/gouache-studies/">Gouache Studies</a>
-    <p class="line-clamp">I was introduced to Gouache, here are some of the first studies.</p>
+<div class="grid-quarter@l tile">
+    <a href="/sketch/plein-air-sketches/" class="square">
+    <img src="/images/plein-air-sketches/jordon-pond.png" alt="Artwork Plein Air Sketch">
+    <span class="name">Plein Air Sketch</span>
+    </a>
 </div>
-<div class="grid-third@l tile">
-    <!--<img src="/images/procreate-self-portraits/420/procreate-self-portrait-1.jpg" alt="Artwork Self-Portraits">-->
-    <a href="/sketch/procreate-self-portraits/">Self-Portraits</a>
-    <p class="line-clamp">Digital art created with an iPad Mini and Procreate.</p>
+<div class="grid-quarter@l tile">
+    <a href="/sketch/gouache-studies/" class="square">
+    <img src="/images/gouache-studies/420/gouache-2.jpg" alt="Artwork Gouache Studies">
+    <span class="name">Gouache Studies</span>
+    </a>
 </div>
 </div>
 </div>

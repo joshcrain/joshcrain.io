@@ -7,23 +7,23 @@ metaDescription: Josh Crain has experience as a web designer, product designer, 
 changefreq: monthly
 priority: "1.0"
 ---
-<div class="grid-layout_home"> 
+<div class="grid-layout_home">
 <div class="grid-content">
-<p class="text--largest">I am an experienced web designer, product designer, and front-end developer. My work allows me to make an impact through user advocacy, research, web standards, and code. There are also <a href="/about/">other interesting things</a>.</p>
+
+<p class="text--largest">I am a product designer with experience as a web designer and front-end developer. My work allows me to make an impact through user advocacy, research, web standards, and code. There are also <a href="/about/">other interesting things</a>.</p>
 </div>
 </div>
 <hr>
 <section class="grid-layout_home">
 <div class="layout-section"> 
     <h2>Notes</h2>
-    <p>Notes about my work, this site, and what I’m learning. Occasionally I keep <a href="/tags/weeknotes/">weeknotes</a> to mark events. &nbsp; <a href="/notes/"><i>All&nbsp;notes&nbsp;</i>→</a></p>
 </div>
 <div class="grid-content">
 <div class="grid">
 {% for post in collections.notes reversed limit:6 %}
-<div class="grid-third@l tile">
+<div class="grid-half@l">
     <div>
-        <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
+        <a href="{{ post.url }}" class="text--larger">{{ post.data.pageTitle }}</a>
         <p class="line-clamp">{{ post.data.metaDescription truncate: 280 }}</p>
     </div>
 </div>
@@ -33,17 +33,15 @@ priority: "1.0"
 </section>
 <hr>
 <section class="grid-layout_home">
-<div class="layout-section"> 
-    <h2>Sketches <span class="amp">&amp;</span> studies</h2>
-    <p>I want to spend <em>a lot more time</em> drawing, painting, and in my sketchbook. &nbsp; <a href="/sketch/"><i>All&nbsp;sketches&nbsp;</i>→</a></p>
-</div>
+<h2>Sketches</h2>
 <div class="grid-content">
 <div class="grid">
 {% for post in collections.sketches reversed limit:6 %}
-<div class="grid-third@l tile">
-    <!--<img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">-->
-    <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
-    <p class="line-clamp">{{ post.data.metaDescription }}</p>
+<div class="grid-quarter@l tile">
+    <a href="{{ post.url }}" class="square">
+    <img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">
+    <span class="name">{{ post.data.pageTitle }}</span>
+    </a>
 </div>
 {% endfor %} 
 </div>

@@ -106,14 +106,14 @@ code {font-size: .875em;}
 
 .grid-layout_home {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   grid-column-gap: 3vw;
   grid-template-rows: 1fr;
 }
 
 .grid-layout_page {
   display: grid;
-  grid-template-columns: 2fr 8fr 2fr;;
+  grid-template-columns: 2fr 8fr 2fr;
   grid-column-gap: 3vw;
   grid-template-rows: 1fr;
 }
@@ -158,14 +158,17 @@ code {font-size: .875em;}
     grid-column: span 4;
   }
 
+  .grid-half\@l{
+    grid-column: span 6;
+  }
+
   .tile {
     display: flex;
     flex-direction: column;
     /*justify-content: space-between;*/
-    padding-bottom:4vh;
+    padding-bottom:3vh;
   }
   .tile p {margin:0;}
-
  
 .list--horizontal {list-style:none;margin:0 -1.25em}
   .list--horizontal > li{padding:0 1.25em;vertical-align:middle;display:inline-block;line-height:1;}
@@ -187,7 +190,7 @@ code {font-size: .875em;}
 .small-caps{font-variant-caps: small-caps;text-transform:uppercase;letter-spacing:.0625em;font-size: .8em;}
 .text--smallest {font-size:.875rem;}
 .text--smaller {font-size:1rem;}
-.text--larger {font-size:1.5rem;}
+.text--larger {font-size:1.5rem;line-height: 1em;}
 .text--largest {font-size:1.75rem;}
 .text--secondary {text-transform: uppercase;}
 
@@ -239,6 +242,26 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 } 
 
+.square {
+  position:relative;
+  max-width:420px;
+  display:block;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.square img {width:100%;object-fit: cover;height:100%;max-width:100%;position: absolute;border-radius: .75vh;}
+
+.square .name {width:100%;height:100%;max-width:100%;position: absolute;display: grid;place-items: center;color:rgba(255,255,255,0);background:rgba(var(--colorAccent),0);transition: all 0.25s ease;border-radius: .75vh;}
+
+.square .name:hover, .square .name:focus{background:rgba(var(--colorAccent),.8);color:rgba(255,255,255,1);}
+
+
+
 @media only screen and (max-width: 768px) {
   body{font-size:1.1875rem;} 
   h1{font-size:2.25em;}
@@ -263,7 +286,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .site_header .list--horizontal li{padding:0 .75em;font-size:.95em}  
 
 
-  .grid-third\@l{
+  .grid-third\@l, .grid-half\@l{
     grid-column: span 12;
   }
 
