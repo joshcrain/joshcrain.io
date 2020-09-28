@@ -1,6 +1,6 @@
 ---
 pageTitle: Arizona &amp; Utah
-tags: drafts
+tags: notes
 metaDescription: Paria Movie Site, Montezuma Castle, Grand Canyon and Bryce Canyon.
 metaImage: /images/arizona-utah/420/bryce-canyon-4.jpeg
 date: 2019-07-18
