@@ -8,10 +8,11 @@ metaDescription: I want to spend a lot more time drawing, painting, and in my sk
 <p class="lead">{{metaDescription}}</p>
 <div class="grid">
     {% for post in collections.sketches reversed%}
-    <div class="grid-third@l tile">
-        <a href="{{ post.url }}"><img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">
-        <a href="{{ post.url }}" class="text--larger">{{ post.data.pageTitle }}</a>
-        <p><span class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</span> &mdash; {{ post.data.metaDescription }}</p>
+    <div class="grid-quarter@l tile">
+        <a href="{{ post.url }}" class="square">
+        <img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">
+        <span class="name">{{ post.data.pageTitle }}</span>
+        </a>
     </div>
     {% endfor %}
 </div>
