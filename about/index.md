@@ -9,7 +9,7 @@ date: 2019-01-22
 
 Josh Crain is an Iowa native, designer, developer, and student of art. He studied art and design at the University of Northern Iowa and received a Bachelor of Fine Arts degree. He has worked as a web designer, product designer, and UI developer. He doesn’t love talking about himself in the third person, so he's going to stop that now if you don’t mind.
 
-I want to get better at what I do. I created this site to practice and learn&mdash;practice the fundimentals of web design and learn more web development. I also wanted to share my work. There isn't much now, but over time I plan to add more design, illustration, and art. 
+I want to get better at what I do. I created this site to practice and learn&mdash;practice the fundamentals of web design and learn more web development. I also wanted to share my work. There isn't much now, but over time I plan to add more design, illustration, and art. 
 
 ## Family History
 <figure style="float:right;margin:0 0 1em 1em;width:auto;max-width:100px;width:25%;"> <img src="https://joshcrain.github.io/ancestry/images/crane-coat-of-arms.png" alt="Crane of Suffolk, England Coat Of Arms. Argent, a fesse between three crosses crosslet fitchée Guls, crest a crane ppr.">
