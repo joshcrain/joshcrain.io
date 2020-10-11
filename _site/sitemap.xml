@@ -283,12 +283,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/</loc>
-    <lastmod>2020-07-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://joshcrain.io/notes/2020/crain-family-ancestry/</loc>
     <lastmod>2020-08-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -321,6 +315,18 @@
   <url>
     <loc>https://joshcrain.io/sketch/digital-studies/</loc>
     <lastmod>2020-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/</loc>
+    <lastmod>2020-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/notes/2020/weeknote-41-2020/</loc>
+    <lastmod>2020-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
