@@ -20,14 +20,20 @@ priority: "1.0"
 </div>
 <div class="grid-content">
 <div class="grid">
-{% for post in collections.notes reversed limit:6 %}
+{% assign items = collections.notes | reverse %}
+{% for post in items limit:6 %}
 <div class="grid-half@l">
     <div>
         <a href="{{ post.url }}" class="text--larger">{{ post.data.pageTitle }}</a>
-        <p class="line-clamp">{{ post.data.metaDescription truncate: 280 }}</p>
+        <p class="line-clamp"><time class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</time> &mdash; {{ post.data.metaDescription truncate: 280 }}</p>
     </div>
 </div>
-{% endfor %} 
+{% endfor %}
+<div class="grid-full@l">
+    <div>
+        <p><i>See <a href="/notes/">all notes</a> or a list of semi-weekly <a href="/tags/weeknotes/">weeknotes</a>. </i></p>
+    </div>
+</div>
 </div>
 </div>
 </section>
