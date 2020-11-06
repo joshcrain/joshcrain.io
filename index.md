@@ -13,7 +13,6 @@ priority: "1.0"
 <p class="text--largest">I am a product designer with experience as a web designer and front-end developer. My work allows me to make an impact through user advocacy, research, web standards, and code. There are also <a href="/about/">other interesting things</a>.</p>
 </div>
 </div>
-<hr>
 <section class="grid-layout_home">
 <div class="layout-section"> 
     <h2>Notes</h2>
@@ -37,7 +36,6 @@ priority: "1.0"
 </div>
 </div>
 </section>
-<hr>
 <section class="grid-layout_home">
 <h2>Sketches</h2>
 <div class="grid-content">

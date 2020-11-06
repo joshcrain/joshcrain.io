@@ -28,7 +28,14 @@
             </header>
             {% if pageType != "home" %}{% if pageType != "section" %}<div class="grid-layout_page"><div></div><div>{% endif %}{% endif %}  {% if pageType == "section" %}<div class="grid-layout_section">{% endif %}
                 {{ content }}
-            {% if pageType != "home" %}{% if pageType != "section" %}</div></div>{% endif %}{% endif %}  {% if pageType == "section" %}</div>{% endif %} 
+            {% if pageType != "home" %}{% if pageType != "section" %}
+            {% if tags >= "0" %}
+            <div class="article--tags">
+            Filed under: 
+            {% for tag in tags %}<span><a href="/tags/{{ tag }}/" aria-label="Pages tagged with {{tag}}">{{tag}}</a></span> {% endfor %}
+            {% endif %}
+            </div>
+            </div></div>{% endif %}{% endif %}  {% if pageType == "section" %}</div>{% endif %} 
         </div>
         </main>
         <footer class="site_footer">
