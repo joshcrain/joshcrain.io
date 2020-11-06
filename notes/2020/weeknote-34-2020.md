@@ -1,6 +1,6 @@
 ---
 pageTitle:  Weeknote 34/2020
-tags: ['weeknotes']
+tags: ['weeknotes','gif']
 metaDescription: Usability testing is all I have to share. 
 date: 2020-08-22
 ---

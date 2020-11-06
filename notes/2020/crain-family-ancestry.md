@@ -1,6 +1,6 @@
 ---
 pageTitle:  Crain Family Ancestry 
-tags: notes 
+tags: ['notes','ancestry'] 
 metaDescription: How I became involved, the resources I found valuable, and the places I’ve visited in search of a Crain family history. 
 date: 2020-08-07
 ---
