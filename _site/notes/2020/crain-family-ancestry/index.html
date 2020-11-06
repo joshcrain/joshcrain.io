@@ -59,7 +59,8 @@ ul, ol {padding:0;}
 :not(blockquote):not(ol):not(ul):not(dl):not(hr):not(pre)+p:not(img)+p,:not(figure)+p{text-indent: var(--margin);}
 p:first-of-type, h2+p, h3+p, .lead+p{text-indent: 0;margin:0;}
 .grid-layout_page > div blockquote > p, cite+p{text-indent: 0;}
-.grid p:last-of-type {margin-bottom:1em;}
+.grid-layout_home p:last-of-type {margin-bottom:1em;}
+.grid-layout_home:last-child {margin-bottom:0;}
 p:last-of-type {margin-bottom:1.5em;}
 .visuallyhidden { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
 a {color:rgba(var(--colorAccent), 1);text-decoration: none;}
@@ -110,6 +111,7 @@ code {font-size: .875em;}
   grid-template-columns: 1fr 6fr;
   grid-column-gap: 3vw;
   grid-template-rows: 1fr;
+  margin-bottom:4em;
 }
 
 .grid-layout_page {
@@ -169,6 +171,10 @@ code {font-size: .875em;}
     padding-bottom:3vh;
   }
   .tile p {margin:0;}
+
+  .article--tags {font-style: italic;margin-top:5rem}
+  .article--tags span:after {content:','}
+  .article--tags span:last-of-type:after {content:''}
  
 .list--horizontal {list-style:none;margin:0 -1.25em}
   .list--horizontal > li{padding:0 1.25em;vertical-align:middle;display:inline-block;line-height:1;}
@@ -333,6 +339,13 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 <p>There were surprises along the way. The spelling of our name changed from <em>Crane</em> to <em>Crain</em> around 1863. The headstones of a husband and wife stand side-by-side with different spellings of the same last name. The reason is unknown, but likely the family (or the headstone carver) was illiterate. The spelling change had been an obstacle for my dad. Who would expect the spelling of a man’s name would happen so late in life?</p>
 <p>There were many impactful moments during this project. During my research I gained a new appreciation for the history and found great enjoyment in the work. The <a href="/ancestry/">Crain Ancestry</a> project began a way to for me to help my dad and restore what he had lost. The realization of how easily history, even family history, can be lost or forgotten. Papers can be misplaced, but how could names be <em>forgotten</em> after four or five generations? These were people whose lives led to my life, who were completely unknown to my father and grandfather. The fragility of <em>this</em> history was a reminder of how important it is to preserve  our past.</p>
 
+            
+            
+            <div class="article--tags">
+            Filed under: 
+            <span><a href="/tags/notes/" aria-label="Pages tagged with notes">notes</a></span> <span><a href="/tags/ancestry/" aria-label="Pages tagged with ancestry">ancestry</a></span> 
+            
+            </div>
             </div></div>   
         </div>
         </main>

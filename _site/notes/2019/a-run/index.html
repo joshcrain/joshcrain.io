@@ -59,7 +59,8 @@ ul, ol {padding:0;}
 :not(blockquote):not(ol):not(ul):not(dl):not(hr):not(pre)+p:not(img)+p,:not(figure)+p{text-indent: var(--margin);}
 p:first-of-type, h2+p, h3+p, .lead+p{text-indent: 0;margin:0;}
 .grid-layout_page > div blockquote > p, cite+p{text-indent: 0;}
-.grid p:last-of-type {margin-bottom:1em;}
+.grid-layout_home p:last-of-type {margin-bottom:1em;}
+.grid-layout_home:last-child {margin-bottom:0;}
 p:last-of-type {margin-bottom:1.5em;}
 .visuallyhidden { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
 a {color:rgba(var(--colorAccent), 1);text-decoration: none;}
@@ -110,6 +111,7 @@ code {font-size: .875em;}
   grid-template-columns: 1fr 6fr;
   grid-column-gap: 3vw;
   grid-template-rows: 1fr;
+  margin-bottom:4em;
 }
 
 .grid-layout_page {
@@ -169,6 +171,10 @@ code {font-size: .875em;}
     padding-bottom:3vh;
   }
   .tile p {margin:0;}
+
+  .article--tags {font-style: italic;margin-top:5rem}
+  .article--tags span:after {content:','}
+  .article--tags span:last-of-type:after {content:''}
  
 .list--horizontal {list-style:none;margin:0 -1.25em}
   .list--horizontal > li{padding:0 1.25em;vertical-align:middle;display:inline-block;line-height:1;}
@@ -334,6 +340,13 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 <p>I felt much different than the day before. This was the first run in a long time to feel this way. It was an intoxicating feeling, the “runner’s high” everyone talks about. I left the house an hour or so before, and it took a moment to remember what had prompted me to run when I did. I thought hard to recall the exact words, but couldn’t. I was frustrated, my head burned and my mind raced. I laced up my shoes and started my watch on the way out the front door. It happened earlier that week too, maybe Tuesday, but it was hard to remember. My memory faded and I again focused on my shadow. I was only a few feet from the ditch and my outline became a bit more obscure against the tall grass.</p>
 <p>I looked at my watch and figured my split for the second half seemed a little faster. I was only about a quarter mile from town, so the lights began to overtake the night sky. The only thing I heard between my breaths were my near silent feet on the black grass next to the sidewalk. The sky wasn’t as dark as a few moments before, the moon nearly extinguished by the amber street lights. As I approached each light my shadow caught me from behind and then lengthened out in front of my feet as I passed. I watched my shadow for a while and then noticed the pace the ground traveled under my feet. I had started to feel tired a couple miles back, but had I quickened the pace? I looked at my watch. I was faster—by a couple minutes.</p>
 
+            
+            
+            <div class="article--tags">
+            Filed under: 
+            <span><a href="/tags/notes/" aria-label="Pages tagged with notes">notes</a></span> 
+            
+            </div>
             </div></div>   
         </div>
         </main>

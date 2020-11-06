@@ -59,7 +59,8 @@ ul, ol {padding:0;}
 :not(blockquote):not(ol):not(ul):not(dl):not(hr):not(pre)+p:not(img)+p,:not(figure)+p{text-indent: var(--margin);}
 p:first-of-type, h2+p, h3+p, .lead+p{text-indent: 0;margin:0;}
 .grid-layout_page > div blockquote > p, cite+p{text-indent: 0;}
-.grid p:last-of-type {margin-bottom:1em;}
+.grid-layout_home p:last-of-type {margin-bottom:1em;}
+.grid-layout_home:last-child {margin-bottom:0;}
 p:last-of-type {margin-bottom:1.5em;}
 .visuallyhidden { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
 a {color:rgba(var(--colorAccent), 1);text-decoration: none;}
@@ -110,6 +111,7 @@ code {font-size: .875em;}
   grid-template-columns: 1fr 6fr;
   grid-column-gap: 3vw;
   grid-template-rows: 1fr;
+  margin-bottom:4em;
 }
 
 .grid-layout_page {
@@ -169,6 +171,10 @@ code {font-size: .875em;}
     padding-bottom:3vh;
   }
   .tile p {margin:0;}
+
+  .article--tags {font-style: italic;margin-top:5rem}
+  .article--tags span:after {content:','}
+  .article--tags span:last-of-type:after {content:''}
  
 .list--horizontal {list-style:none;margin:0 -1.25em}
   .list--horizontal > li{padding:0 1.25em;vertical-align:middle;display:inline-block;line-height:1;}
@@ -332,6 +338,13 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 </figure>
 <p>Everything rendered this way seemed to have a plastic quality so I began to look for something that <em>was</em> plastic. At the time I played the keytar in a band called Dr. Mike (<a href="https://www.amazon.com/Mighty-Love-Dr-Mike/dp/B000FSMMNK/">Amazon</a>,  <a href="https://itunes.apple.com/us/album/a-mighty-love/97175026">iTunes</a>). The SHS-10 was perfect. I spent the next several weeks over lunch breaks working on it. I still see this image in searches for the Yamaha SHS-10, even though it’s been at least ten years since I last published it online.</p>
 
+            
+            
+            <div class="article--tags">
+            Filed under: 
+            <span><a href="/tags/notes/" aria-label="Pages tagged with notes">notes</a></span> <span><a href="/tags/illustration/" aria-label="Pages tagged with illustration">illustration</a></span> 
+            
+            </div>
             </div></div>   
         </div>
         </main>

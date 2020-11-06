@@ -59,6 +59,8 @@ ul, ol {padding:0;}
 :not(blockquote):not(ol):not(ul):not(dl):not(hr):not(pre)+p:not(img)+p,:not(figure)+p{text-indent: var(--margin);}
 p:first-of-type, h2+p, h3+p, .lead+p{text-indent: 0;margin:0;}
 .grid-layout_page > div blockquote > p, cite+p{text-indent: 0;}
+.grid-layout_home p:last-of-type {margin-bottom:1em;}
+.grid-layout_home:last-child {margin-bottom:0;}
 p:last-of-type {margin-bottom:1.5em;}
 .visuallyhidden { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
 a {color:rgba(var(--colorAccent), 1);text-decoration: none;}
@@ -89,11 +91,8 @@ figure{margin:1em 0;display:inline-block;text-align: center;width:100%;}
   font-weight: normal;
 }
 p.lead {font-style:italic;margin-bottom:1.5em;font-size:1em;text-align: center}
-blockquote{margin:1.5em var(--margin);font-style: italic;font-size:1.15em;}
-  blockquote p:before{content:'“';margin-left:-.27em;}
-  blockquote p:after{content:'”'}
+blockquote{margin:1.5em var(--margin);font-style: italic;}
 blockquote cite {display:block;font-size:.875em;text-align: right;}
-  blockquote cite:before {content:'– ';}
 code {font-size: .875em;}
 .site_header, .site_footer {padding:1.5em 5vmax;}
 .site_header{line-height: 1;}
@@ -109,14 +108,15 @@ code {font-size: .875em;}
 
 .grid-layout_home {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 6fr;
   grid-column-gap: 3vw;
   grid-template-rows: 1fr;
+  margin-bottom:4em;
 }
 
 .grid-layout_page {
   display: grid;
-  grid-template-columns: 2fr 8fr 2fr;;
+  grid-template-columns: 2fr 8fr 2fr;
   grid-column-gap: 3vw;
   grid-template-rows: 1fr;
 }
@@ -160,14 +160,21 @@ code {font-size: .875em;}
     grid-column: span 4;
   }
 
+  .grid-half\@l{
+    grid-column: span 6;
+  }
+
   .tile {
     display: flex;
     flex-direction: column;
     /*justify-content: space-between;*/
-    padding-bottom:4vh;
+    padding-bottom:3vh;
   }
   .tile p {margin:0;}
 
+  .article--tags {font-style: italic;margin-top:5rem}
+  .article--tags span:after {content:','}
+  .article--tags span:last-of-type:after {content:''}
  
 .list--horizontal {list-style:none;margin:0 -1.25em}
   .list--horizontal > li{padding:0 1.25em;vertical-align:middle;display:inline-block;line-height:1;}
@@ -189,7 +196,7 @@ code {font-size: .875em;}
 .small-caps{font-variant-caps: small-caps;text-transform:uppercase;letter-spacing:.0625em;font-size: .8em;}
 .text--smallest {font-size:.875rem;}
 .text--smaller {font-size:1rem;}
-.text--larger {font-size:1.5rem;}
+.text--larger {font-size:1.5rem;line-height: 1em;}
 .text--largest {font-size:1.75rem;}
 .text--secondary {text-transform: uppercase;}
 
@@ -212,6 +219,18 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 .form_field:not(:focus):invalid {outline-color:rgba(var(--colorDanger),1); }
 
 .btn {font-size:1em;font-family: inherit;border:2px solid rgba(var(--colorAccent),1);background:rgba(var(--colorFore),0);color:rgba(var(--colorAccent),1);padding:.5em .75em;border-radius: 0;}
+
+.square {
+  position:relative;
+  max-width:420px;
+  display:block;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
 
 @media only screen and (max-width: 1024px) {
   .grid-layout_home {
@@ -238,8 +257,21 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
     grid-template-rows: 2fr;
   }
 
+  .grid-quarter\@l{
+    grid-column: span 4;
+  }
+
 
 } 
+
+
+.square img {width:100%;object-fit: cover;height:100%;max-width:100%;position: absolute;border-radius: .5vh;}
+
+.square .name {width:100%;height:100%;max-width:100%;position: absolute;display: grid;place-items: center;color:rgba(255,255,255,0);background:rgba(var(--colorAccent),0);transition: all 0.25s ease;border-radius: .75vh;}
+
+.square .name:hover, .square .name:focus{background:rgba(var(--colorAccent),.8);color:rgba(255,255,255,1);}
+
+
 
 @media only screen and (max-width: 768px) {
   body{font-size:1.1875rem;} 
@@ -250,6 +282,10 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .grid-third\@l{
     grid-column: span 6;
   }
+  .grid-quarter\@l{
+    grid-column: span 4;
+  }
+
   .grid-layout_page {
     display: grid;
     grid-template-columns: 12fr;;
@@ -265,7 +301,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .site_header .list--horizontal li{padding:0 .75em;font-size:.95em}  
 
 
-  .grid-third\@l{
+  .grid-third\@l, .grid-half\@l{
     grid-column: span 12;
   }
 
@@ -291,26 +327,56 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
         <main class="site_content" id="content">
         <div class="wrapper ">
             <header class="text_center">
-                <h1>Tagged “Notes”</h1> 
+                <h1>Tagged “notes”</h1> 
                  
             </header>
             <div class="grid-layout_page"><div></div><div>  
-                <p class="lead">Here are all articles tagged with “Notes.” </p>
+                <p class="lead">Here are all articles tagged with “notes.” </p>
 <ul class="list--articles">
 
+
+  <li><a href="/notes/2020/the-camp-fire/">140 miles from the Camp Fire</a>
+  <p>The Camp Fire began the day we arrived.</p></li>
+
+  <li><a href="/notes/2019/a-run/">A Run</a>
+  <p>That was the night I planned to run six but instead ended up on a gravel road in the middle of a twelve-mile loop...</p></li>
+
+  <li><a href="/notes/2020/arizona-and-utah/">Arizona &amp;amp; Utah</a>
+  <p>Paria Movie Site, Montezuma Castle, Grand Canyon and Bryce Canyon.</p></li>
+
+  <li><a href="/notes/2020/forsaken/">Forsaken</a>
+  <p>Forsaken places.</p></li>
+
+  <li><a href="/notes/2020/yamaha-shs-10/">Yamaha SHS-10</a>
+  <p>The Yamaha SHS-10 keytar is rendered in Adobe Illustrator. Created in about 2006.</p></li>
+
+  <li><a href="/notes/2020/love-bears-all-things/">Love Bears All Things</a>
+  <p>A year ago for Valentine’s Day I made a couple bears in love. Illustration in CSS and HTML is completely unnecessary—but fun!</p></li>
+
+  <li><a href="/notes/2020/becoming-a-front-end-master/">Becoming a front-end master</a>
+  <p>Readings and exercises to guide me towards front-end mastery.</p></li>
+
+  <li><a href="/notes/2020/website-launch/">The launch of this website</a>
+  <p>The (much delayed) launch of a personal website, joshcrain.io.</p></li>
 
   <li><a href="/notes/2020/crain-family-ancestry/">Crain Family Ancestry</a>
   <p>How I became involved, the resources I found valuable, and the places I’ve visited in search of a Crain family history.</p></li>
 
+  <li><a href="/notes/2020/first-weeks-october/">The First Weeks of October</a>
+  <p>Haikus to commemorate extra time outdoors during the first three weeks of October 2020.</p></li>
+
 </ul>
+            
+            
+            </div>
             </div></div>   
         </div>
         </main>
         <footer class="site_footer">
             <div class="wrapper text_center">
-                <nav aria-label="nav-primary-footer"><ul class="list--horizontal m--around--1"><li><a href="/notes/">Notes</a></li><li><a href="/sketch/">Sketch</a></li><li><a href="/about/">About</a></li><li><a href="/say-hello/">Contact</a></li><li><a href="/feed.xml">RSS</a></li></ul></nav>
+                <nav aria-label="nav-primary-footer"><ul class="list--horizontal m--around--1"><li><a href="/notes/">Notes</a></li><li><a href="/sketch/">Sketch</a></li><li><a href="/about/">About</a></li><li><a href="/say-hello/">Contact</a></li></ul></nav>
                 <p class="m--around--1">&copy; Josh Crain. 2020. All rights reserved. </p>
-                <ul class="list--horizontal m--around--1"><li><a href="/notes/colophon/" class="opacity_75 text--small"><i>Colophon</i></a></li></ul>
+                <ul class="list--horizontal m--around--1"><li><a href="/about/site/colophon/" class="opacity_75 text--small"><i>Colophon</i></a></li><li><a href="/feed.xml" class="opacity_75 text--small"><i>RSS</i></a></li></ul>
             </div>
         </footer>
         <nav class="view" aria-label="nav-view">

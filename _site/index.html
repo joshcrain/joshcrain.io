@@ -59,7 +59,8 @@ ul, ol {padding:0;}
 :not(blockquote):not(ol):not(ul):not(dl):not(hr):not(pre)+p:not(img)+p,:not(figure)+p{text-indent: var(--margin);}
 p:first-of-type, h2+p, h3+p, .lead+p{text-indent: 0;margin:0;}
 .grid-layout_page > div blockquote > p, cite+p{text-indent: 0;}
-.grid p:last-of-type {margin-bottom:1em;}
+.grid-layout_home p:last-of-type {margin-bottom:1em;}
+.grid-layout_home:last-child {margin-bottom:0;}
 p:last-of-type {margin-bottom:1.5em;}
 .visuallyhidden { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
 a {color:rgba(var(--colorAccent), 1);text-decoration: none;}
@@ -110,6 +111,7 @@ code {font-size: .875em;}
   grid-template-columns: 1fr 6fr;
   grid-column-gap: 3vw;
   grid-template-rows: 1fr;
+  margin-bottom:4em;
 }
 
 .grid-layout_page {
@@ -169,6 +171,10 @@ code {font-size: .875em;}
     padding-bottom:3vh;
   }
   .tile p {margin:0;}
+
+  .article--tags {font-style: italic;margin-top:5rem}
+  .article--tags span:after {content:','}
+  .article--tags span:last-of-type:after {content:''}
  
 .list--horizontal {list-style:none;margin:0 -1.25em}
   .list--horizontal > li{padding:0 1.25em;vertical-align:middle;display:inline-block;line-height:1;}
@@ -330,7 +336,6 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 <p class="text--largest">I am a product designer with experience as a web designer and front-end developer. My work allows me to make an impact through user advocacy, research, web standards, and code. There are also <a href="/about/">other interesting things</a>.</p>
 </div>
 </div>
-<hr>
 <section class="grid-layout_home">
 <div class="layout-section"> 
     <h2>Notes</h2>
@@ -381,7 +386,6 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 </div>
 </div>
 </section>
-<hr>
 <section class="grid-layout_home">
 <h2>Sketches</h2>
 <div class="grid-content">
