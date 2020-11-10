@@ -1,7 +1,7 @@
 ---
 pageTitle: Becoming a front-end master
 tags: ['notes']
-metaDescription: Readings and exercises to guide me towards front-end mastery. 
+metaDescription: Chris' readings and exercises to guide me towards front-end mastery. 
 date: 2020-03-16
 ---
 
