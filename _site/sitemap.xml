@@ -259,7 +259,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/tags/about/</loc>
+    <loc>https://joshcrain.io/tags/sketches/</loc>
     <lastmod>2020-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -339,6 +339,12 @@
   <url>
     <loc>https://joshcrain.io/notes/2020/weeknote-45-2020/</loc>
     <lastmod>2020-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/notes/2020/weeknote-46-2020/</loc>
+    <lastmod>2020-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
