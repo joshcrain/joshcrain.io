@@ -1,7 +1,7 @@
 ---
 pageTitle:  Weeknote 46/2020
 tags: ['weeknotes']
-metaDescription: 
+metaDescription: Covid cases on the rise, finished Empire of the Summer Moon, Click to GIF for a11y. 
 date: 2020-11-14
 ---
 * Our small tree was loaded with leaves Sunday morning, by afternoon there were less than 40 leaves left. Temperatures are dipping into the 20s by the end of the week. 
