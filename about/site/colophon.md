@@ -1,7 +1,7 @@
 ---
 pageTitle: Colophon
 tags: about
-metaDescription: Notes on the tools, languages, publishing methods, and assets used in the production of this website. 
+metaDescription: Notes about the tools, languages, publishing methods, and assets used in the production of this website. 
 date: 2020-08-24
 ---
  <span class="dropcap">T</span>his website was created with Visual Studio Code on a Mac. It is written in HTML, Markdown, Liquid, Nunjucks, CSS, and Javascript. The mark-up is written to be compliant with web standards. The layout uses CSS Grid for a custom layout. 
