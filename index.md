@@ -1,5 +1,5 @@
 ---
-layout: layout.liquid
+layout: layout.njk
 pageType: home
 pageTitle: Hi, I’m Josh Crain.
 metaTitle: Josh Crain - Product designer, developer, artist in training

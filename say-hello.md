@@ -1,5 +1,5 @@
 ---
-layout: layout.liquid
+layout: layout.njk
 pageTitle: Say Hello!
 metaDescription: Say Hello
 ---

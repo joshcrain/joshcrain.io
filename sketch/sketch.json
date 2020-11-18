@@ -1,5 +1,5 @@
 {
-    "layout": "layout.liquid",
+    "layout": "layout.njk",
     "category": "Sketch",
     "changefreq": "monthly",
     "priority": "0.8"
