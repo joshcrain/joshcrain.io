@@ -4,7 +4,6 @@ const moment = require("moment");
 
 module.exports = function(eleventyConfig) {
   // clean css
-  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
