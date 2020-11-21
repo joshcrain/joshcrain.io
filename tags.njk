@@ -13,6 +13,6 @@ permalink: /tags/{{ tag }}/
 {% set taglist = collections[ tag ] %}
 {% for post in taglist | reverse %}
   <li><a href="{{ post.url | url }}">{{ post.data.pageTitle }}</a>
-  <p><time class="text--secondary small-caps">{{ post.date|date("D MMM Y") }}</time> &mdash; {{ post.data.metaDescription }}</p></li>
+  <p><time class="text--secondary small-caps">{{ post.date | date("D MMM Y") }}</time> &mdash; {{ post.data.metaDescription }}</p></li>
 {% endfor %}
 </ul>
