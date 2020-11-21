@@ -283,12 +283,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://joshcrain.io/notes/2020/weeknote-47-2020/</loc>
-    <lastmod>2020-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://joshcrain.io/notes/2020/weeknote-34-2020/</loc>
     <lastmod>2020-08-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -353,5 +347,11 @@
     <lastmod>2020-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://joshcrain.io/notes/2020/weeknote-47-2020/</loc>
+    <lastmod>2020-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
