@@ -30,7 +30,7 @@ priority: "1.0"
 {% endfor %}
 <div class="grid-full@l">
     <div>
-        <p><i>See <a href="/notes/">all notes</a> or a list of semi-weekly <a href="/tags/weeknotes/">weeknotes</a>. </i></p>
+        <p><i>See <a href="/notes/">all notes</a> or a list of semi-weekly <a href="/tags/weeknotes/">weeknotes</a>. The most recent is {% assign items = collections.weeknotes | reverse %}{% for post in items limit:1 %}<a href="{{ post.url }}">{{ post.data.pageTitle }}</a>{% endfor %}.</i></p>
     </div>
 </div>
 </div>
