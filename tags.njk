@@ -11,8 +11,8 @@ permalink: /tags/{{ tag }}/
 <p class="lead">Here are all articles tagged with “{{ tag }}.” </p>
 <ul class="list--articles">
 {% set taglist = collections[ tag ] %}
-{% for post in taglist | reverse %}
+{% for post in taglist %}
   <li><a href="{{ post.url | url }}">{{ post.data.pageTitle }}</a>
-  <p><time class="text--secondary small-caps">{{ post.date | date("D MMM Y") }}</time> &mdash; {{ post.data.metaDescription }}</p></li>
+  <p><time class="text--secondary small-caps">{{ date|date("D MMM Y") }}</time> &mdash; {{ post.data.metaDescription }}</p></li>
 {% endfor %}
 </ul>
