@@ -201,6 +201,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 .logo svg{height:1.75em;fill:rgba(var(--colorAccent), 1)}
 .site_footer a:hover svg{fill:rgba(var(--colorAccent), 1)}
 .site_footer svg{height:1.25em;fill:rgba(var(--colorFore), 1)}
+.no-js .view {display:none;}
 .view a{border-radius:50%;background:rgba(var(--colorBase), 1);padding:.5em;position: fixed;right:2em;bottom:2em;line-height:.8}
 .view svg{height:1.25em;fill:rgba(var(--colorAccent), 1);}
 
