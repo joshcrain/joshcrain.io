@@ -10,7 +10,7 @@
         {% set css %}{% include "styles.css" %}{% endset %}<style type="text/css">{{ css | cssmin | safe }}</style>
         <link rel="alternate" type="application/atom+xml" title="RSS Feed for joshcrain.io" href="/feed.xml" />
     </head>
-    <body>
+    <body class="no-js" onload='jscheck()'>
         <div class="visuallyhidden"><a href="#content">Skip Content</a></div>
         <header class="site_header">
             <div class="wrapper">

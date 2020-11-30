@@ -1,3 +1,6 @@
+function jscheck() {
+  document.getElementsByTagName("BODY")[0].classList.remove("no-js");
+}
 //theming local storage
 if (localStorage.getItem("theme") != null) {
     getColour = localStorage.theme;
