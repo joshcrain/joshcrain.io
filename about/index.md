@@ -2,8 +2,8 @@
 pageTitle: A little about Josh Crain
 metaTitle: About Josh Crain
 tags: about
-metaDescription: A little more about Josh Crain; his work, history, and personal records. 
-date: 2019-01-22
+metaDescription: Josh Crain; his work, history, and personal records. 
+
 ---
 <p class="lead">A little more about Josh Crain; his work, history, and personal records.</p>
 

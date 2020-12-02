@@ -2,7 +2,7 @@
 pageTitle: Style Guide
 tags: about
 metaDescription: Notes about the style guide for this site.  
-date: 2020-08-11
+
 ---
 ## Contents
 * [Typography](#typography)
