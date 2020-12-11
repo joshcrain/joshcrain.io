@@ -55,7 +55,3 @@ I am a 12th generation descendant of colonial settlers. I created a website of <
 
 ## Keytarist
 Many summers ago I played the <a href="/notes/2020/yamaha-shs-10/">keytar</a> in <em>Dr. Mike</em>, one the the greatest bands of all time. You should buy our album, <em>A Mighty Love</em>, on <a href="https://www.amazon.com/Mighty-Love-Dr-Mike/dp/B000FSMMNK/" rel="noopener">Amazon</a> or <a href="https://music.apple.com/us/album/a-mighty-love/97175026" rel="noopener">iTunes</a>. You'll thank me. 
-<figure>
-    <img src="/images/IMG_374x768.jpg" alt="Josh Crain"/>
-    <figcaption>Photo by Nicole Harmon.</figcaption>
-</figure>
