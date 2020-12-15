@@ -87,10 +87,10 @@ blockquote cite {display:block;font-size:.875em;text-align: right;}
 code {font-size: .875em;}
 .site_header, .site_footer {padding:1.5em 5vmax;}
 .site_header{line-height: 1;}
-  .site_header a{color:inherit;}
+  .site_header a{color:inherit;min-height: 48px;display: flex;align-items: center;}
   a.text_accent,.site_header a:hover {color:rgba(var(--colorAccent), 1)}
 .site_footer{font-size:.875em;}
-.site_footer a{color:inherit;}
+.site_footer a{color:inherit;min-height: 48px;display: flex;align-items: center;}
 .site_content{padding:4em 4vmax 6em;}
   .site_content header{margin:0 auto 3em auto;}
 .wrapper {max-width:1214px;margin:0 auto;}
@@ -198,7 +198,7 @@ code {font-size: .875em;}
 .lightTheme .night {display:none;}
 .darkTheme .day {display:none;}
 a:hover svg {fill:rgba(var(--colorFore), 1)}
-.logo svg{height:1.75em;fill:rgba(var(--colorAccent), 1)}
+.logo svg{fill:rgba(var(--colorAccent), 1)}
 .site_footer a:hover svg{fill:rgba(var(--colorAccent), 1)}
 .site_footer svg{height:1.25em;fill:rgba(var(--colorFore), 1)}
 .no-js .view {display:none;}
