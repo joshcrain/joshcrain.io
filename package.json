@@ -20,7 +20,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.6.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "ava": "^1.0.1"
+    "ava": "^1.0.1",
+    "eleventy-plugin-lazyimages": "^2.1.0"
   },
   "dependencies": {
     "clean-css": "^4.2.3",
