@@ -14,9 +14,12 @@ module.exports = function(eleventyConfig) {
 
   // date filter
   eleventyConfig.addNunjucksFilter("date", function (date, format) {
-  return moment(date).format(format);
-  
+    return moment(date).format(format);
+  });
+
   // lazy images
-  eleventyConfig.addPlugin(lazyImagesPlugin);
-});
+  eleventyConfig.addPlugin(lazyImagesPlugin, {
+    transformImgPath: (imgPath) => imgPath.replace('/images/', './_site/images/'),
+  });
+
 };
