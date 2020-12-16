@@ -5,7 +5,7 @@ tags: about
 metaDescription: Josh Crain; his work, history, and personal records. 
 
 ---
-<p class="lead">Josh Crain is an Iowa native, designer, developer, and student of art.</p>
+<p class="lead">Josh Crain is a designer, developer, and student of art.</p>
 
 I have worked as a web designer, product designer, and front-end developer. I want to improve at what I do. I created this site to practice and learn&mdash;practice the fundamentals of web design and learn more web development. I also wanted to share my work. Over time I plan to add more design, illustration, and art to this site. 
 
@@ -33,7 +33,7 @@ I am a 12th generation descendant of colonial settlers. I created a website of <
     <tr>
         <td>3000m (indoor)</td>
         <td>8:18.01</td>
-        <td>Iowa State Classic</td>
+        <td>Iowa State University Classic</td>
     </tr>
     <tr>
         <td>5000m (indoor)</td>
