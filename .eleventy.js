@@ -19,8 +19,7 @@ module.exports = function(eleventyConfig) {
 
   // lazy images
   eleventyConfig.addPlugin(lazyImagesPlugin, {
-    transformImgPath: (imgPath) => imgPath.replace('/images/', './_site/images/'),
-    appendInitScript: false
+    transformImgPath: (imgPath) => imgPath.replace('/images/', './_site/images/')
   });
 
   // minify js
