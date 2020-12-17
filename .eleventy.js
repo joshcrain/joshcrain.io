@@ -19,7 +19,22 @@ module.exports = function(eleventyConfig) {
 
   // lazy images
   eleventyConfig.addPlugin(lazyImagesPlugin, {
-    transformImgPath: (imgPath) => imgPath.replace('/images/', './_site/images/'),
+    transformImgPath: (imgPath) => imgPath.replace('/images/', './_site/images/')
   });
 
+  // minify js
+  const { minify } = require("terser");
+  eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
+    code,
+    callback
+  ) {
+    try {
+      const minified = await minify(code);
+      callback(null, minified.code);
+    } catch (err) {
+      console.error("Terser error: ", err);
+      // Fail gracefully.
+      callback(null, code);
+    }
+  });
 };

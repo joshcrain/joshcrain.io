@@ -29,6 +29,7 @@
     "luxon": "^1.0.0",
     "moment": "^2.29.1",
     "posthtml": "^0.11.2",
-    "posthtml-urls": "1.0.0"
+    "posthtml-urls": "1.0.0",
+    "terser": "^5.5.1"
   }
 }
