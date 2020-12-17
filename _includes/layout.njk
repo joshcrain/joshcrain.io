@@ -51,4 +51,5 @@
         </nav>
     </body>
     {% set js %}{% include "init.js" %}{% endset %}<script>{{ js | jsmin | safe }}</script> 
+    {% set lazysizes %}{% include "lazysizes.js" %}{% endset %}<script>{{ lazysizes | jsmin | safe }}</script> 
 </html>
