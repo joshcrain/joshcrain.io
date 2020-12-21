@@ -61,25 +61,18 @@ h2 {font-weight:normal;margin-bottom:.5em;line-height: 1;}
 h3 {font-weight:normal;margin-bottom:.25em;line-height: 1;}
 img{margin-bottom:-10px;max-width:100%;height:auto;line-height:1;}
 hr {margin: 3em 0;border: 1px dashed rgba(var(--colorFore), .25);outline: 0;padding: 0;line-height:1;}
-hr+h2{margin-top:0}
 table{width:100%;border-collapse: collapse;font-family: monospace;font-size: .75em;margin-bottom:3em;}
 table th{text-align:left;border-bottom:2px solid rgba(var(--colorFore), 1)}
 table td{border:0;border-bottom:1px solid rgba(var(--colorFore), .8);padding:.5em 1em .5em 0;}
 figure{margin:1em 0;display:inline-block;text-align: center;width:100%;}
   figure img {max-height:768px;}
   figure figcaption{font-size:.875em;font-style: italic;padding:.5em 0;}
-.multiply {mix-blend-mode: multiply;}
 .opacity_75{opacity:.75;}
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  
   overflow: hidden;
-}
-.amp {
-  font-family: Baskerville, "Goudy Old Style", Palatino, "Book Antiqua", serif;
-  font-style: italic;
-  font-weight: normal;
 }
 p.lead {font-style:italic;margin-bottom:1.5em;font-size:1em;text-align: center}
 blockquote{margin:1.5em var(--margin);font-style: italic;}
