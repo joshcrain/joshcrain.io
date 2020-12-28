@@ -18,12 +18,13 @@
   },
   "homepage": "https://github.com/joshcrain/eleventy-intro#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.6.0",
+    "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "ava": "^1.0.1",
+    "ava": "^3.14.0",
     "eleventy-plugin-lazyimages": "^2.1.0"
   },
   "dependencies": {
+    "@11ty/eleventy-img": "^0.6.0",
     "clean-css": "^4.2.3",
     "debug": "^4.1.1",
     "luxon": "^1.0.0",
