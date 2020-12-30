@@ -378,4 +378,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://joshcrain.io/notes/2020/itll-all-be-over-by-christmas/</loc>
+    <lastmod>2020-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
