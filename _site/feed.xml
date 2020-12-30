@@ -20,6 +20,27 @@
   </entry>
   
   <entry>
+    <title type="html">Project Proposal Form</title>
+    <link href="https://joshcrain.io/notes/2020/project-proposal-form/"/>
+    <updated>2020-12-07T18:00:00-06:00</updated>
+    <id>https://joshcrain.io/notes/2020/project-proposal-form/</id>
+    <content type="html">A while back I wrote about the steps I had taken to become a front-end master. The article was in response to advice from one of my favorite web people Chris Coyer. It challenged me to learn new front-end concepts through a variety of small projects. I followed many of the suggestions except one—to recreate a Dribbble shot in HTML and CSS. I started the exercise but never finished.
+Recently I came across a design created between college and my first full-time design job. At that time I was looking at ways to build a portfolio of client work—the real-world stuff employers want to see. I was also broke, so the additional income would be helpful to pay rent.
+
+I became interested in how I could, even on a small scale, operate a design business using the skills that I was developing. I had taken on small projects but didn’t have a nice way to spec out the work for the client. I learned very quickly how important it is to be on the same page about the deliverable and the price. In practice, the form was used very little. It wasn’t easy enough to update and lacked flexibility since updates were managed directly in InDesign.
+Though it wasn’t successful in practice, I’ve always been pleased with it as a visual design. When I came across it again I thought of Chris’s challenge and wondered if it could be built in HTML. Building it in HTML might allow me to fix some of the original problems. The form could become more functional, dynamic, and accessible. As with the original, the final output could be printed on paper or as a PDF, then emailed to the client.
+
+See the Pen
+Client Proposal Form by Josh Crain (@joshcrain)
+on CodePen.
+
+Links
+
+Tables with irregular headers - a web accessibility tutorial from the W3C.
+Full page view (Codepen)</content>
+  </entry>
+  
+  <entry>
     <title type="html">The First Weeks of October</title>
     <link href="https://joshcrain.io/notes/2020/first-weeks-october/"/>
     <updated>2020-10-30T19:00:00-05:00</updated>
