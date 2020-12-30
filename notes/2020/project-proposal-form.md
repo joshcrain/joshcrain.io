@@ -1,6 +1,6 @@
 ---
 pageTitle:  Project Proposal Form 
-tags: ['notes', 'design']
+tags: ['notes', 'design', 'css', 'html']
 metaDescription: I challenged myself to rebuild a print form in HTML. 
 date: 2020-12-08
 ---
