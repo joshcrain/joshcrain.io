@@ -20,27 +20,31 @@ module.exports = function(eleventyConfig) {
 
   // responsive images
     // works also with addLiquidShortcode or addJavaScriptFunction
-  eleventyConfig.addNunjucksAsyncShortcode("responsiveimage", async function(src, alt, sizes = "100vw") {
+  eleventyConfig.addLiquidShortcode("responsiveimage", async function(src, alt, sizes = "100vw") {
     if(alt === undefined) {
       // You bet we throw an error on missing alt (alt="" works okay)
       throw new Error(`Missing \`alt\` on Image from: ${src}`);
     }
 
     let metadata = await Image(src, {
-      widths: [300, 600],
+      widths: [218, 438, 686, 750],
       formats: ['webp', 'jpeg'],
       outputDir: "./_site/img/",
     });
 
-    let lowestSrc = metadata["jpeg"][0];
-    let highResJpeg = metadata["jpeg"][1];
-    let lowReswebp = metadata["webp"][0];
-    let highReswebp = metadata["webp"][1];
+    let lowestSrc = metadata["jpeg"][1];
+    let mediumSrc = metadata["jpeg"][2];
+    let highResJpeg = metadata["jpeg"][3];
+    let lowReswebp = metadata["webp"][1];
+    let mediumReswebp = metadata["webp"][2];
+    let highReswebp = metadata["webp"][3];
 
-    const source = `<source type="image/webp" media="(max-width: 629px)" srcset="${lowReswebp.url}" >
-                    <source type="image/webp" media="(min-width: 630px)" srcset="${highReswebp.url}" >
-                    <source type="image/jpeg" media="(max-width: 529px)" srcset="${lowestSrc.url}" >
-                    <source type="image/jpeg" media="(min-width: 630px)" srcset="${highResJpeg.url}" >`;
+    const source = `<source type="image/webp" media="(max-width: 480px)" srcset="${lowReswebp.url}" >
+                    <source type="image/webp" media="(max-width: 768px)" srcset="${mediumReswebp.url}" >                
+                    <source type="image/webp" media="(min-width: 769px)" srcset="${highReswebp.url}" >
+                    <source type="image/jpeg" media="(max-width: 480px)" srcset="${lowestSrc.url}" >
+                    <source type="image/jpeg" media="(max-width: 768px)" srcset="${mediumSrc.url}" >
+                    <source type="image/jpeg" media="(min-width: 769px)" srcset="${highResJpeg.url}" >`;
 
                     const img = `<img 
                     loading="lazy" 
@@ -49,7 +53,7 @@ module.exports = function(eleventyConfig) {
                     height="${highResJpeg.height}"
                     src="${lowestSrc.url}">`;
     
-        return `<picture>${source}${img}</picture>`;
+                    return `<picture>${source}${img}</picture>`;
   });
 
   // lazy images
