@@ -51,7 +51,14 @@ Todo
 Todo
 
 ## <a name="code"></a>Code
-`<div></div>`
+`This is code`
+
+~~~~
+This is a 
+piece of code 
+in a block
+~~~~
+
 
 ## <a name="tables"></a>Tables
 | Tables        | Are           | Cool  |
