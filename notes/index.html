@@ -9,7 +9,7 @@ metaDescription: Words about myself, my work, this site, and what I’m learning
     {% assign items = collections.notes | reversed %}
     {% for post in items %}
     <li>
-        <a href="{{ post.url }}" class="text--larger">{{ post.data.pageTitle }}</a>
+        <a href="{{ post.url }}" class="text--largest">{{ post.data.pageTitle }}</a>
         <p><time class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</time> &mdash;
             {{ post.data.metaDescription }}</p>
     </li>

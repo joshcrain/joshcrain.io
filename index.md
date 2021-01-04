@@ -10,7 +10,7 @@ priority: "1.0"
 <div class="grid-layout_home">
 <div class="grid-content">
 
-<p class="text--largest">I am a product designer with experience as a web designer and front-end developer. My work allows me to make an impact through user advocacy, research, web standards, and code. There are also <a href="/about/">other interesting things</a>.</p>
+<p class="text--largest">I am a product designer and front-end developer. My work allows me to make an impact through design, user advocacy, web standards, research, and code. I study drawing and painting in my free time. It’s important for me to improve at what I do, this site helps with that goal. There are also <a href="/about/">other interesting things</a>.</p>
 </div>
 </div>
 <section class="grid-layout_home">
@@ -23,7 +23,7 @@ priority: "1.0"
 {% for post in items limit:6 %}
 <div class="grid-half@l">
     <div>
-        <a href="{{ post.url }}" class="text--larger">{{ post.data.pageTitle }}</a>
+        <a href="{{ post.url }}" class="text--largest">{{ post.data.pageTitle }}</a>
         <p class="line-clamp"><time class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</time> &mdash; {{ post.data.metaDescription truncate: 280 }}</p>
     </div>
 </div>
