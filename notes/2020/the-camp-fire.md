@@ -3,7 +3,7 @@ pageTitle: 140 miles from the Camp Fire
 tags: ['notes','photo']
 metaDescription: The Camp Fire began the day we arrived.
 metaImage: /images/camp-fire/420/camp-fire-2.jpg
-date: 2018-11-22
+date: 2019-06-18
 ---
 <p class="lead">The Camp Fire was the deadliest and most destructive wildfire in California history. The fire began on November 8, 2018&mdash;the day we arrived.</p>
 
