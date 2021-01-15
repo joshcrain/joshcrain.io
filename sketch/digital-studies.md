@@ -9,7 +9,7 @@ Digital art.
 
 <figure>
     <img src="/images/digital-studies/640/flower-still-life.jpg" alt="Flower Still LIfe">
-    <figcaption>Flower Still Life. Digital. 2020.</figcaption>
+    <figcaption>Master study. Digital. 2020.</figcaption>
 </figure>
 
 <figure>
