@@ -156,7 +156,7 @@ code {font-size: .875em;}
   }
   .tile p {margin:0;}
 
-  .article--tags {font-style: italic;margin-top:5rem}
+  .article--tags {margin-top:5rem}
   .article--tags span:after {content:','}
   .article--tags span:last-of-type:after {content:''}
  
