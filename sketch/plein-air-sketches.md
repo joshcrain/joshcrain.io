@@ -14,4 +14,3 @@ date: 2019-07-31
     <figcaption>Jordan Pond, Acadia National Park. Watercolor &amp; gouache. 2017.</figcaption>
 </figure>
 
-

@@ -1,6 +1,6 @@
 ---
 pageTitle:  The launch of this website
-tags: ['notes']
+tags: ['notes', 'webdev']
 metaDescription: The (much delayed) launch of a personal website, joshcrain.io. 
 date: 2020-07-27
 ---

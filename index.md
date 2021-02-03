@@ -24,7 +24,8 @@ priority: "1.0"
 <div class="grid-half@l">
     <div>
         <a href="{{ post.url }}" class="text--largest">{{ post.data.pageTitle }}</a>
-        <p class="line-clamp"><time class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</time> &mdash; {{ post.data.metaDescription truncate: 280 }}</p>
+        <p class="line-clamp"><span class="small-caps"><time>{{ post.date | date: "%d %b %Y" }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> </br>
+        {{ post.data.metaDescription truncate: 280 }}</p>
     </div>
 </div>
 {% endfor %}
