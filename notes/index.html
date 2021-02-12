@@ -10,7 +10,7 @@ metaDescription: Words about myself, my work, this site, and what I’m learning
     {% for post in items %}
     <li>
         <a href="{{ post.url }}" class="text--largest">{{ post.data.pageTitle }}</a>
-        <p><time class="text--secondary small-caps">{{ post.date | date: "%d %b %Y" }}</time> &mdash;
+        <p><span class="small-caps"><time>{{ post.date | date: "%d %b %Y" }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> </br>
             {{ post.data.metaDescription }}</p>
     </li>
     {% endfor %}
