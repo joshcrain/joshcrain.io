@@ -109,7 +109,7 @@ transition: transform .3s cubic-bezier(.86,0,.07,1);
   .site_content header{margin:0 auto 3em auto;}
 .wrapper {max-width:1214px;margin:0 auto;}
 .wrapper p{-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;}
-.wrapper.home h1 {font-size: 5vmax;}
+.wrapper.home h1 {font-size:3.5em;}
 
 .grid-layout_home {
   display: grid;
@@ -281,7 +281,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 @media only screen and (max-width: 768px) {
   body{font-size:1.1875rem;} 
-  .wrapper.home h1{font-size:3.5em;}
+  
   h1{font-size:2.25em;}
   .site_header .list--horizontal {margin:0 -1.25em;align-items: center;
     justify-content: center;}
