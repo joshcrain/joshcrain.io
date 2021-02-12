@@ -1,6 +1,6 @@
 ---
 pageTitle: Becoming a front-end master
-tags: ['notes']
+tags: ['notes','webdev']
 metaDescription: Chris’ readings and exercises to guide me towards front-end mastery. 
 date: 2020-03-16
 ---
