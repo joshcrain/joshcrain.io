@@ -205,16 +205,12 @@ transition: transform .3s cubic-bezier(.86,0,.07,1);
 .text--largest {font-size:1.75rem;}
 .text--secondary {text-transform: uppercase;}
 
-.m--around--0_5 {margin:.5em!important;}
-.m--around--0_75 {margin:.75em!important;}
 .m--around--1 {margin:1em!important;}
 
 .lightTheme .night {display:none;}
 .darkTheme .day {display:none;}
 a:hover svg {fill:rgba(var(--colorFore), 1)}
 .logo svg{fill:rgba(var(--colorAccent), 1)}
-.site_footer a:hover svg{fill:rgba(var(--colorAccent), 1)}
-.site_footer svg{height:1.25em;fill:rgba(var(--colorFore), 1)}
 .no-js .view {display:none;}
 .view a{border-radius:50%;background:rgba(var(--colorBase), 1);padding:.5em;position: fixed;right:2em;bottom:2em;line-height:.8}
 .view svg{height:1.25em;fill:rgba(var(--colorAccent), 1);}
