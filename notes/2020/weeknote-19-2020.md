@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 19/2020
+title:  Weeknote 19/2020
 tags: ['weeknotes']
-metaDescription: Improved VS Code workflow, COVID close to home, office announcment ... What I’ve been up to the 19th week of 2020.
+description: Improved VS Code workflow, COVID close to home, office announcment ... What I’ve been up to the 19th week of 2020.
 date: 2020-05-09
 ---
 * [Improved my VS Code workflow](https://css-tricks.com/some-little-improvements-to-my-vs-code-workflow-workspaces-icons-tasks/): Saved VS Code workspaces to my computer’s dock, made custom icons, added a `tasks.json` to [automatically run](https://code.visualstudio.com/docs/editor/tasks#_run-behavior) the correct terminal commands when each workspace is opened. Additionally, I added a [Terminal alias](https://mattmazur.com/2012/01/27/how-to-add-terminal-aliases-in-mac-os-x-lion/) to quickly [mount an SMB share from command line](https://apple.stackexchange.com/a/171822). 

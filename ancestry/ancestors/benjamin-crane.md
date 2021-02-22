@@ -1,8 +1,8 @@
 ---
-pageTitle: Benjamin Crane
+title: Benjamin Crane
 tags: ancestry
 
-metaDescription: Benjamin Crane is our family's first recorded ancestor, and first in Colonial England. There a lot we know about Benjamin and his life in the colonies, but there is no record of his arrival or birth and no record of parents or grandparents.
+description: Benjamin Crane is our family's first recorded ancestor, and first in Colonial England. There a lot we know about Benjamin and his life in the colonies, but there is no record of his arrival or birth and no record of parents or grandparents.
 ---
 <p><i>Benjamin Crane</i> is our family's first recorded ancestor, and first in Colonial England. There a lot we know about Benjamin and his life in the colonies, but there is no record of his arrival or birth and no record of parents or grandparents. We do know Benjamin had a brother named Henry, but he also has no clear historical record prior to 1655. It is possible he and his brother were apprenticed outside the home or that their parents had died or moved back to England. </p>
     <p>Benjamin was married to Mary Backus, daughter of William and Sarah (Charles) Backus, April 23, 1655. The name Backus also suggests England as a country of origin. They had 9 children. In the years 1655 and 1656 Benjamin was involved in two lawsuits, in which he was the defendant. He was granted the status of <em>Freeman</em> May 12, 1658, which meant he could own land, become a member of a church and vote in civic matters. </p>

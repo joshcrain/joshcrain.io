@@ -1,7 +1,7 @@
 ---
-pageTitle: Love Bears All Things
+title: Love Bears All Things
 tags: ['notes','illustration']
-metaDescription: A year ago for Valentine’s Day I made a couple bears in love. Illustration in CSS and HTML is completely unnecessary—but fun!
+description: A year ago for Valentine’s Day I made a couple bears in love. Illustration in CSS and HTML is completely unnecessary—but fun!
 date: 2020-02-14
 
 ---

@@ -1,8 +1,8 @@
 ---
-pageTitle: Zebulon Crane
+title: Zebulon Crane
 tags: ancestry
 
-metaDescription: Zebulon Crane was born February 21, 1753. He married Rhoda Thompson on November 27, 1777, who was also of Alstead, New Hampshire by a Justice of the Peace. 
+description: Zebulon Crane was born February 21, 1753. He married Rhoda Thompson on November 27, 1777, who was also of Alstead, New Hampshire by a Justice of the Peace. 
 ---
 <p><span class="small-caps">ZEBULON CRANE</span> was born February 21, 1753. He married Rhoda Thompson on November 27, 1777, who was also of Alstead, New Hampshire by a Justice of the Peace. Rhoda&rsquo;s maiden name, Thompson, suggests a English or Scottish origin. Pension documents state they had 5 children: Thedosia, Ebenezer, Eunice, Elijah and Nabby. One child, Tryphena, died at two years of age (E.B. Crane).</p>
 <p>Zebulon served twice in the Revolutionary War. He later received financial help through the Revolutionary War Pension Act of 1818. Zebulon first enlisted in November or December of 1775. He served in the New Hampshire line in Captain Jason Waits' Company, <a href="http://en.wikipedia.org/wiki/Bedel's_Regiment">Colonel Bedel&rsquo;s Regiment</a>.</p>

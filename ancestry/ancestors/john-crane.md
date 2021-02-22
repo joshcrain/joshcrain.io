@@ -1,8 +1,8 @@
 ---
-pageTitle: John Crane
+title: John Crane
 tags: ancestry
 
-metaDescription: John Crane was born Oct. 1, 1687 the third of 10 children. John married Sarah Spencer on September 16, 1708 at Windham, she died September 15, 1715&mdash;one day before their 7th wedding anniversary. 
+description: John Crane was born Oct. 1, 1687 the third of 10 children. John married Sarah Spencer on September 16, 1708 at Windham, she died September 15, 1715&mdash;one day before their 7th wedding anniversary. 
 ---
 <p><i>John Crane</i> was born Oct. 1, 1687 the third of 10 children. John married Sarah Spencer on September 16, 1708 at Windham, she died September 15, 1715&mdash;one day before their 7th wedding anniversary. They had 3 children: John, Abiah and Eunice. </p>
 <p>John was remarried on April 18, 1716 to Prudence Belding. They had 8 children together including <a href="/ancestry/ancestors/lemuel-crane/">Lemuel</a>, the next ancestor in our family history. Belding suggests origins in the county of Lincolnshire, England. They lived near a place called Fort Hill, where his father had given him a house and land between 1710 and 1711. On April 10, 1728 he sold land and a dwelling to a Mr. John Walden. On April 9, 1730 it is recorded John advised the town clerk of Wethersfield not to divide any land that belonged to his grandfather Benjamin Crane. Perhaps in an effort to consolidate family land, John transfered ownership of some remaining land to his older brother Jonathan on May 16, 1735; at which time he was a resident of Coventry, Connecticut. </p>

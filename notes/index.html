@@ -1,17 +1,17 @@
 ---
 layout: layout.njk
-pageTitle: Notes
+title: Notes
 metaTitle: Josh Crain's Notes
-metaDescription: Words about myself, my work, this site, and what I’m learning. 
+description: Words about myself, my work, this site, and what I’m learning. 
 ---
-<p class="lead">{{metaDescription}}</p>
+<p class="lead">{{description}}</p>
 <ul class="list--articles">
     {% assign items = collections.notes | reversed %}
     {% for post in items %}
     <li>
-        <a href="{{ post.url }}" class="text--largest">{{ post.data.pageTitle }}</a>
+        <a href="{{ post.url }}" class="text--largest">{{ post.data.title }}</a>
         <p><span class="small-caps"><time>{{ post.date | date: "%d %b %Y" }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> </br>
-            {{ post.data.metaDescription }}</p>
+            {{ post.data.description }}</p>
     </li>
     {% endfor %}
 </ul>

@@ -1,8 +1,8 @@
 ---
-pageTitle: Jonathan Crane
+title: Jonathan Crane
 tags: ancestry
 
-metaDescription: Jonathan Crane the second of 9 children, was born December 1, 1658. Jonathan was married to Deborah Griswold Dec. 19, 1678. 
+description: Jonathan Crane the second of 9 children, was born December 1, 1658. Jonathan was married to Deborah Griswold Dec. 19, 1678. 
 ---
 <p><i>Jonathan Crane</i>, the second of 9 children, was born December 1, 1658. Jonathan was married to Deborah Griswold Dec. 19, 1678. They had 10 children, two of which died shortly after birth. The name Griswold suggests a lineage from England in the county of Warwickshire. </p>
     <p>  He was one of the most active and influential men in Windham, Connecticut. On Oct. 6, 1691, he was an original petitioner at the General Court in Hartford for Windham's town charter. He served on various committees, procured a minister, sold tracts of land to settlers and in 1715 he built a sawmill in Windham. He was successful in business, and known well in Windham, Norwich and Lebanon.</p>

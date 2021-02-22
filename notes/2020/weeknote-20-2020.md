@@ -1,7 +1,7 @@
 ---
-pageTitle: Weeknote 20/2020
+title: Weeknote 20/2020
 tags: ['weeknotes']
-metaDescription: Visits to the vet and Chic-fil-A. What I’ve been up to the 20th week of 2020.
+description: Visits to the vet and Chic-fil-A. What I’ve been up to the 20th week of 2020.
 date: 2020-05-17
 ---
 * It might have been the long day at home after 2 months of quarantine, but the level of teamwork and efficiency of the drive through staff at Chic-fil-A was downright inspiring. 

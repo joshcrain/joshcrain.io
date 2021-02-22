@@ -1,7 +1,7 @@
 ---
-pageTitle: Style Guide
+title: Style Guide
 tags: about
-metaDescription: Notes about the style guide for this site.  
+description: Notes about the style guide for this site.  
 
 ---
 ## Contents

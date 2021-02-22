@@ -1,8 +1,8 @@
 ---
-pageTitle: Ebenezer Crain
+title: Ebenezer Crain
 tags: ancestry
 
-metaDescription: Ebenezer Crain was born April 1, 1781, the second of 5 children who lived to adulthood. Ebenezer married Hannah Rice February 5, 1807. Hannah was born August, 1779. 
+description: Ebenezer Crain was born April 1, 1781, the second of 5 children who lived to adulthood. Ebenezer married Hannah Rice February 5, 1807. Hannah was born August, 1779. 
 ---
 <p><i>Ebenezer Crain</i> was born April 1, 1781, the second of 5 children who lived to adulthood. Ebenezer married Hannah Rice February 5, 1807. Hannah was born August, 1779. At the time of their marraige she was of Walpole, New Hampshire. At the time of  the 1900 U.S. Census, Ebenezer, their youngest son, indicated his father  was born in New Hampshire and his mother Hannah was born in England. The name Rice  suggests a Welsh lineage which seems to back up that claim. </p>
     <p>Hannah died March 24, 1844 at the age of 65. Ebenezer died on June 23, 1863 at the age of 83 during a walk back from the Major Grant Farm just northwest of the Gilbert Crain residence. Their burial location is at the <em>Southwest Burial Yard</em> in Surry, New Hampshire just a mile south of where they lived. A number of his family including his son Gilbert (d. July 18, 1882), Gilbert&rsquo;s wife Harriett (d. January 15, 1885) and daughter (d. May 8, 1902) are buried in the northeast corner of the Village Cemetery behind the Town Hall. </p>

@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ metaTitle }}{% if metaTitle == blank %}{{ pageTitle }}{% endif %}</title>
-        <meta name="description" content="{{ metaDescription | safe }}"/>
+        <title>{{ metaTitle }}{% if metaTitle == blank %}{{ title }}{% endif %}</title>
+        <meta name="description" content="{{ description | safe }}"/>
         <link rel="preload" href="/fonts/eb-garamond-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
         <link rel="preload" href="/fonts/eb-garamond-v13-latin-italic.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
         {% set css %}{% include "styles.css" %}{% endset %}<style type="text/css">{{ css | cssmin | safe }}</style>
@@ -23,7 +23,7 @@
         <main class="site_content" id="content">
         <div class="wrapper {% if pageType == "home" %}home{% endif %}">
             <header {% if pageType != "home" %}class="text_center"{% endif %}>
-                <h1>{{ pageTitle }}{% if tag %}Tagged “{{ tag }}”{% endif %}</h1> 
+                <h1>{{ title }}{% if tag %}Tagged “{{ tag }}”{% endif %}</h1> 
                 {% if date != blank %}<div class="small-caps"><time>{{ date|date("D MMM Y") }}</time>&nbsp;&nbsp;⁃&nbsp;&nbsp;{{ category }}</div>{% endif %} 
             </header>
             {% if pageType != "home" %}{% if pageType != "section" %}<div class="grid-layout_page"><div></div><div>{% endif %}{% endif %}  {% if pageType == "section" %}<div class="grid-layout_section">{% endif %}

@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 45/2020
+title:  Weeknote 45/2020
 tags: ['weeknotes']
-metaDescription: Warmer weather, a11y, and the 2020 election.
+description: Warmer weather, a11y, and the 2020 election.
 date: 2020-11-07
 ---
 * Highs in the 70s this week. It is quite the change from last week which had October’s 3rd snowfall. 

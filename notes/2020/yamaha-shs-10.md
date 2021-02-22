@@ -1,7 +1,7 @@
 ---
-pageTitle: Yamaha SHS-10
+title: Yamaha SHS-10
 tags: ['notes','illustration']
-metaDescription: The Yamaha SHS-10 keytar is rendered in Adobe Illustrator. Created in about 2006. 
+description: The Yamaha SHS-10 keytar is rendered in Adobe Illustrator. Created in about 2006. 
 date: 2020-02-05
 
 ---

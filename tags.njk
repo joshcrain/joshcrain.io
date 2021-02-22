@@ -12,7 +12,7 @@ permalink: /tags/{{ tag }}/
 <ul class="list--articles">
 {% set taglist = collections[ tag ] %}
 {% for post in taglist %}
-  <li><a href="{{ post.url | url }}" class="text--largest">{{ post.data.pageTitle }}</a>
-  <p>{% if post.data.date %}<time class="text--secondary small-caps">{{ post.data.date|date("D MMM Y") }}</time> &mdash; {% endif %}{{ post.data.metaDescription }}</p></li>
+  <li><a href="{{ post.url | url }}" class="text--largest">{{ post.data.title }}</a>
+  <p>{% if post.data.date %}<time class="text--secondary small-caps">{{ post.data.date|date("D MMM Y") }}</time> &mdash; {% endif %}{{ post.data.description }}</p></li>
 {% endfor %}
 </ul>

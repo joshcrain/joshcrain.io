@@ -1,7 +1,7 @@
 ---
-pageTitle: Plein Air Sketch
+title: Plein Air Sketch
 tags: ['sketches','gouache','watercolor']
-metaDescription: Some of my first paintings in Gouache were done outside.
+description: Some of my first paintings in Gouache were done outside.
 metaImage: /images/plein-air-sketches/jordon-pond.png
 date: 2019-07-31
 ---

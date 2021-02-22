@@ -1,8 +1,8 @@
 ---
-pageTitle: A Run
+title: A Run
 tags: ['notes', 'narrative']
 
-metaDescription: That was the night I planned to run six but instead ended up on a gravel road in the middle of a twelve-mile loop...
+description: That was the night I planned to run six but instead ended up on a gravel road in the middle of a twelve-mile loop...
 date: 2019-05-29
 ---
 

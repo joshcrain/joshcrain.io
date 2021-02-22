@@ -1,8 +1,8 @@
 ---
-pageTitle: Ebenezer Crain Jr.
+title: Ebenezer Crain Jr.
 tags: ancestry
 
-metaDescription: Ebenezer Crain Jr. was born in Surry, New Hampshire in 1819. He married Calista Coburn, of Chesterfield, New Hampshire in 1841. 
+description: Ebenezer Crain Jr. was born in Surry, New Hampshire in 1819. He married Calista Coburn, of Chesterfield, New Hampshire in 1841. 
 ---
 <p><i>Ebenezer Crain Jr.</i> was born in Surry, New Hampshire in 1819. He married Calista Coburn, of Chesterfield, New Hampshire in 1841. She was born in March, 1824. The name Coburn suggests a Scottish lineage.</p>
     <p> They lived in Surry, New Hampshire as late as the 1850 U.S census. At that time, at the age of 32, he did not own any land although he worked in agriculture. At the time of the 1870 U.S. Census (June, 18) Ebenezer and Calista lived in Belle Plaine, Wisconsin with 7 children: Albert, Louisa, Alva, Arthur, Agnes, Alice and Emma. The family eventually settled in Zearing, Iowa and lived near the Sunset post office. At the time of the 1900 U.S. Census  (June 15), Ebenezer and Calista lived in the Lincoln Township in Story County, Iowa and had been married 59 years.  </p>

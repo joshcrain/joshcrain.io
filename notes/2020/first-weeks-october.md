@@ -1,7 +1,7 @@
 ---
-pageTitle: The First Weeks of October 
+title: The First Weeks of October 
 tags: ['notes','haiku','poetry']
-metaDescription: Haikus to commemorate extra time outdoors during the first three weeks of October 2020.
+description: Haikus to commemorate extra time outdoors during the first three weeks of October 2020.
 date: 2020-10-31
 ---
 ## I. 

@@ -1,7 +1,7 @@
 ---
-pageTitle: Weeknote 08/2021
+title: Weeknote 08/2021
 tags: ['weeknotes']
-metaDescription: A very cold start to the week, my art fix, and trying out Obsidian for notes management. 
+description: A very cold start to the week, my art fix, and trying out Obsidian for notes management. 
 date: 2021-02-16
 ---
 * The previous week was very cold with lows around 2 above. When I woke up Tuesday morning the temperature was -17 degrees. 

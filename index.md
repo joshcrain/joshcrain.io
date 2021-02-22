@@ -1,9 +1,9 @@
 ---
 layout: layout.njk
 pageType: home
-pageTitle: Hi, I’m Josh Crain.
+title: Hi, I’m Josh Crain.
 metaTitle: Josh Crain - Product designer, developer, artist in training
-metaDescription: Josh Crain has experience as a web designer, product designer, and front-end developer. Design allows Josh to make an impact through user advocacy, research, web standards, and code.
+description: Josh Crain has experience as a web designer, product designer, and front-end developer. Design allows Josh to make an impact through user advocacy, research, web standards, and code.
 changefreq: monthly
 priority: "1.0"
 ---
@@ -23,15 +23,15 @@ priority: "1.0"
 {% for post in items limit:6 %}
 <div class="grid-half@l">
     <div>
-        <a href="{{ post.url }}" class="text--largest">{{ post.data.pageTitle }}</a>
+        <a href="{{ post.url }}" class="text--largest">{{ post.data.title }}</a>
         <p class="line-clamp"><span class="small-caps"><time>{{ post.date | date: "%d %b %Y" }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> </br>
-        {{ post.data.metaDescription truncate: 280 }}</p>
+        {{ post.data.description truncate: 280 }}</p>
     </div>
 </div>
 {% endfor %}
 <div class="grid-full@l">
     <div>
-        <p><i>See <a href="/notes/">all notes</a> or a list of semi-weekly <a href="/tags/weeknotes/">weeknotes</a>. The most recent is {% assign items = collections.weeknotes | reverse %}{% for post in items limit:1 %}<a href="{{ post.url }}">{{ post.data.pageTitle }}</a>{% endfor %}.</i></p>
+        <p><i>See <a href="/notes/">all notes</a> or a list of semi-weekly <a href="/tags/weeknotes/">weeknotes</a>. The most recent is {% assign items = collections.weeknotes | reverse %}{% for post in items limit:1 %}<a href="{{ post.url }}">{{ post.data.title }}</a>{% endfor %}.</i></p>
     </div>
 </div>
 </div>
@@ -44,8 +44,8 @@ priority: "1.0"
 {% for post in collections.sketches reversed limit:6 %}
 <div class="grid-quarter@l tile">
     <a href="{{ post.url }}" class="square">
-    <img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">
-    <span class="name">{{ post.data.pageTitle }}</span>
+    <img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.title }}">
+    <span class="name">{{ post.data.title }}</span>
     </a>
 </div>
 {% endfor %} 

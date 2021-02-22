@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 16/2020
+title:  Weeknote 16/2020
 tags: ['weeknotes']
-metaDescription: Easter, snow, tomato plants. What I’ve been up to the 16th week of 2020.
+description: Easter, snow, tomato plants. What I’ve been up to the 16th week of 2020.
 date: 2020-04-18
 ---
 * Woke up Friday morning to a winter wonderland. The third snow event this week. 

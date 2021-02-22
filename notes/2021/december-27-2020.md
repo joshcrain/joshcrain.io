@@ -1,7 +1,7 @@
 ---
-pageTitle: December 27th, 2020
+title: December 27th, 2020
 tags: ['notes','narrative']
-metaDescription: I stepped outside into the crisp December morning. 
+description: I stepped outside into the crisp December morning. 
 date: 2021-01-15
 ---
 <span class="dropcap">I</span> stepped outside into the crisp December morning.  My feet crunched the frozen grass as I moved into the yard to get a better view of the sunrise. The first lights of the morning were ablaze in the east, beyond a restful grove of trees. The branches framed the warms and cools like a lattice of leaded glass. I walked further into the yard and stopped. Nothing stirred, no bird chirped, no dog barked, and the wind was perfectly still. The silence was startling. The morning was as quiet as the sanctuary of a lonely country church. I felt the slightest twinge of shame as if I had carelessly disrupted something solemn. My ears grasped for a sound, any sound, further and further toward the horizon. The flames in the windows of nature’s great cathedral grew higher and I wondered how much longer this great convergence of heaven and earth would last. My ears pressed for anything until finally, I heard a sound. It was faint and soft, and far away and it frightened me. I wondered if it might be the sound of the sunrise brushing up against the stars. I breathed a quiet prayer without words and stood motionless amidst the dawn. Nothing moved except the advancing sun.

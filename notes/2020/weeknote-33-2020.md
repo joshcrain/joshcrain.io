@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 33/2020
+title:  Weeknote 33/2020
 tags: ['weeknotes']
-metaDescription: New concrete, FedEx, a derecho, loss of power, and the clean-up.
+description: New concrete, FedEx, a derecho, loss of power, and the clean-up.
 date: 2020-08-15
 ---
 * 2020 continues to amaze. 

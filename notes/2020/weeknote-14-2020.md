@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 14/2020
+title:  Weeknote 14/2020
 tags: ['weeknotes']
-metaDescription: What I’ve been up to the 14th week of 2020. Gardening, early starts, and bear hunts. 
+description: What I’ve been up to the 14th week of 2020. Gardening, early starts, and bear hunts. 
 date: 2020-04-04
 ---
 * Saturday’s run was a little faster than normal. 6:43, 6:43, 6:47 for 3 miles. I was in the woods north of Hickman when the warning sirens began to wail for their routine test.  A bit eerie. 

@@ -1,7 +1,7 @@
 ---
-pageTitle: Gouache Studies
+title: Gouache Studies
 tags: ['sketches','gouache']
-metaDescription: I was introduced to Gouache, here are some of the first studies.
+description: I was introduced to Gouache, here are some of the first studies.
 metaImage: /images/gouache-studies/420/gouache-2.jpg
 date: 2019-07-30
 ---

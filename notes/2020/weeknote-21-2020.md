@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 21/2020
+title:  Weeknote 21/2020
 tags: ['weeknotes']
-metaDescription: Birthday parades, static sites, and design systems.
+description: Birthday parades, static sites, and design systems.
 date: 2020-05-23
 ---
 * Saturday afternoon we had another birthday parade on our block and our first visitor to the house in two and a half months.  

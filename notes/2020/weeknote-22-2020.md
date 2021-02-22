@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 22/2020
+title:  Weeknote 22/2020
 tags: ['weeknotes']
-metaDescription: Memorial day, negative COVID test, plants and landscaping.
+description: Memorial day, negative COVID test, plants and landscaping.
 date: 2020-05-30
 ---
 * Landscaping in the backyard. The tomatoes have not done well since moving them outside. I transferred them to 5 gallon buckets, hopefully a larger container and consistent moisture will help. 

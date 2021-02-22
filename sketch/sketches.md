@@ -1,7 +1,7 @@
 ---
-pageTitle: Sketches
+title: Sketches
 tags: ['sketches','digital']
-metaDescription: Sketches. 
+description: Sketches. 
 metaImage: /images/fbc3a03f-438.jpeg
 date: 2021-01-28
 ---

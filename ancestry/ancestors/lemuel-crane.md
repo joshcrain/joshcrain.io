@@ -1,8 +1,8 @@
 ---
-pageTitle: Lemuel Crane
+title: Lemuel Crane
 tags: ancestry
 
-metaDescription: Lemuel Crane was born July 12, 1725, the 8th of 11 children from two marriages. Lemuel was likely born near a place called &ldquo;Fort Hill&rdquo; in Connecticut.
+description: Lemuel Crane was born July 12, 1725, the 8th of 11 children from two marriages. Lemuel was likely born near a place called &ldquo;Fort Hill&rdquo; in Connecticut.
 ---
 <p><i>Lemuel Crane</i> was born July 12, 1725, the 8th of 11 children from two marriages. Lemuel was likely born near a place called &ldquo;Fort Hill&rdquo; in Connecticut. At around the age of 3 his father sold land and a dwelling (presumably the family home). </p>
     <p>Lemuel was married to Jershua Crane, daughter of Jonathan, on May 13, 1752. They settled in Lebanon, Connecticut and had 3 children (E. B. Crane, p. 44-45). Based on limited research, it appears Lemuel and Jershua were first cousins. Their fathers, <a href="/ancestry/ancestors/john-crane">John</a> and Jonathan, were brothers. </p>

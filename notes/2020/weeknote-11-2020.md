@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 11/2020
+title:  Weeknote 11/2020
 tags: ['weeknotes']
-metaDescription: What I’ve been up to the 11th week of 2020.
+description: What I’ve been up to the 11th week of 2020.
 date: 2020-03-13
 ---
 * Took a close look at [Perch Pattern Library](http://patterns.perchcms.com/) and [Bits for 24 Ways](http://bits.24ways.org/) to see how others have used Fractal to create a Pattern Library. 

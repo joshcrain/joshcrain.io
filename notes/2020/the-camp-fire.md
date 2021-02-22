@@ -1,7 +1,7 @@
 ---
-pageTitle: 140 miles from the Camp Fire
+title: 140 miles from the Camp Fire
 tags: ['notes','photo']
-metaDescription: The Camp Fire began the day we arrived.
+description: The Camp Fire began the day we arrived.
 metaImage: /images/camp-fire/420/camp-fire-2.jpg
 date: 2019-06-18
 ---

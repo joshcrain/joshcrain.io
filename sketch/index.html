@@ -1,17 +1,17 @@
 ---
 layout: layout.njk
 pageType: section
-pageTitle: Sketch
+title: Sketch
 metaTitle: Josh Crain's Sketch
-metaDescription: I want to spend a lot more time drawing, painting, and in my sketchbook.
+description: I want to spend a lot more time drawing, painting, and in my sketchbook.
 ---
-<p class="lead">{{metaDescription}}</p>
+<p class="lead">{{description}}</p>
 <div class="grid">
     {% for post in collections.sketches reversed%}
     <div class="grid-quarter@l tile">
         <a href="{{ post.url }}" class="square">
-        <img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.pageTitle }}">
-        <span class="name">{{ post.data.pageTitle }}</span>
+        <img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.title }}">
+        <span class="name">{{ post.data.title }}</span>
         </a>
     </div>
     {% endfor %}

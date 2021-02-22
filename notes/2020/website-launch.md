@@ -1,7 +1,7 @@
 ---
-pageTitle:  The launch of this website
+title:  The launch of this website
 tags: ['notes', 'webdev']
-metaDescription: The (much delayed) launch of a personal website, joshcrain.io. 
+description: The (much delayed) launch of a personal website, joshcrain.io. 
 date: 2020-07-27
 ---
 <span class="dropcap">W</span>hen I began work on this site more than a year ago my goal was to  build something other than a web designer’s personal website. I’ll start  off by saying I failed at that. I had ideas, grand in their understatement, that led to struggles and then indecision. Those  struggles made way for what was natural—a web designer’s  website, because of course, that’s my job.

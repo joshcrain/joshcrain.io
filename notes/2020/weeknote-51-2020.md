@@ -1,7 +1,7 @@
 ---
-pageTitle: Weeknote 51/2020
+title: Weeknote 51/2020
 tags: ['weeknotes']
-metaDescription: Lazy loading images, tap targets, minification. 
+description: Lazy loading images, tap targets, minification. 
 date: 2020-12-19
 ---
 * Last week was filled with anticipation and anxiety. For two days all I could do was listen, paralyzed to do anything else.

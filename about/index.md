@@ -1,8 +1,8 @@
 ---
-pageTitle: A little about Josh Crain
+title: A little about Josh Crain
 metaTitle: About Josh Crain
 tags: about
-metaDescription: Josh Crain; his work, history, and personal records. 
+description: Josh Crain; his work, history, and personal records. 
 
 ---
 <p class="lead">Josh Crain is a designer, developer, and student of art.</p>

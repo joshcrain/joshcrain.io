@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 9/2020
+title:  Weeknote 9/2020
 tags: ['weeknotes']
-metaDescription: What I’ve been up to the 9th week of 2020.
+description: What I’ve been up to the 9th week of 2020.
 date: 2020-02-28
 ---
 I’ve decided to do something different and more intentional. Each week I spend time learning new things, but rarely keep any record of it. Maybe I like a tweet or pen, but it’s nowhere I can easily reference later. So here we are, this is why I created this blog in the first place. 

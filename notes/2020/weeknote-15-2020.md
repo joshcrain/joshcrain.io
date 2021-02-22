@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 15/2020
+title:  Weeknote 15/2020
 tags: ['weeknotes']
-metaDescription: Painting, inclusive inputs, evening run, the Supermoon, masks. What I was up to the 15th week of 2020.
+description: Painting, inclusive inputs, evening run, the Supermoon, masks. What I was up to the 15th week of 2020.
 date: 2020-04-11
 ---
 * I am such a fan of Tad Retz. I keep thinking of this video of [painting in the Trapp Forest](https://youtu.be/wRYNCPFgdwA). His sketches remind me of  *John F. Carlson*. 

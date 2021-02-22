@@ -1,8 +1,8 @@
 ---
-pageTitle: Arthur Crain
+title: Arthur Crain
 tags: ancestry
 
-metaDescription: Arthur Crain was born on July 13, 1860 in Cheshire County, New Hampshire. In 1876 he moved with his family from Shawano, Wisconsin to Iowa.
+description: Arthur Crain was born on July 13, 1860 in Cheshire County, New Hampshire. In 1876 he moved with his family from Shawano, Wisconsin to Iowa.
 ---
 <p><i>Arthur Crain</i> was born on July 13, 1860 in Cheshire County, New Hampshire. In 1876 he moved with his family from Shawano, Wisconsin to Iowa. He married Caroline Bailey, on June 5th, 1881 near Zearing, Iowa. She was born on December 31, 1860 in Iberia, Missouri. The name Bailey suggests an English family lineage, although we know her parents were born in Kentucky.</p>
     <p> Albert and Caroline were the parents of 5 children: Charles, Estella, Hillis, Albert and Jessie (Reed married name). They moved to Hardin County in 1890 where they had a farm. Unable to find a sustainable income, Arthur and his brother Albert moved  to Chippawa Falls, Wisconsin to find work.</p>

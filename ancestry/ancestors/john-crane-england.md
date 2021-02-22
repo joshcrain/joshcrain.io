@@ -1,8 +1,8 @@
 ---
-pageTitle: John Crane
+title: John Crane
 tags: ancestry
 
-metaDescription: John Crane is the ancestor by which the Crane family claims a tie to England. John Crane of the “Muddy Brook” section of Boston.
+description: John Crane is the ancestor by which the Crane family claims a tie to England. John Crane of the “Muddy Brook” section of Boston.
 ---
 <p><i>&ldquo;John&rdquo; Crane</i> is the ancestor by which the Crane family claims a tie to England. John Crane of the “Muddy Brook” section of Boston is thought to be the father of <a href="/ancestry/ancestors/benjamin-crane/">Benjamin</a> and brother Henry. According to E. B. Crane, ancestors “claim decent from a John Crane from Norfolk County, England” (p. 47). Nash claims decent from Suffolk County, England. </p>
 

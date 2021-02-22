@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 41/2020
+title:  Weeknote 41/2020
 tags: ['weeknotes']
-metaDescription: Eleventy leaderboard, exploring color charts, and Haikus. 
+description: Eleventy leaderboard, exploring color charts, and Haikus. 
 date: 2020-10-10
 ---
 * In week 35 I created my own instance of [Speedlify](https://speedlify-joshcrain.netlify.app/) to continuously track the performance of this site. And then...

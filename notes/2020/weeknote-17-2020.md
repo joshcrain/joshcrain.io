@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 17/2020
+title:  Weeknote 17/2020
 tags: ['weeknotes']
-metaDescription: Mysterious tracks, a run, accessibility, and patterns. What I’ve been up to the 17th week of 2020.
+description: Mysterious tracks, a run, accessibility, and patterns. What I’ve been up to the 17th week of 2020.
 date: 2020-04-25
 ---
 * Made significant progress on an updated patterns library I started [a few weeks back](/notes/2020/weeknote-9-2020/). Started to think a bit more about how I can use _web components_ to take the next step towards a ‘living’ project.

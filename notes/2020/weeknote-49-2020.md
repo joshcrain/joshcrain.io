@@ -1,7 +1,7 @@
 ---
-pageTitle: Weeknote 49/2020
+title: Weeknote 49/2020
 tags: ['weeknotes']
-metaDescription: Progressive enhancement, changes to this site, finished another Phillip Marlowe novel, positive COVID tests. 
+description: Progressive enhancement, changes to this site, finished another Phillip Marlowe novel, positive COVID tests. 
 date: 2020-12-05
 ---
 * This week is much cooler than last. The leaves are all raked and Christmas lights hang on the bushes, all before we lost another ten degrees. Considering all the unplanned events of the the last several months this feels especially well played. 

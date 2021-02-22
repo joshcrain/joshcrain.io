@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 43/2020
+title:  Weeknote 43/2020
 tags: ['weeknotes']
-metaDescription: Eleventy leaderboard, front-end dev, runs, and the end of a long book. 
+description: Eleventy leaderboard, front-end dev, runs, and the end of a long book. 
 date: 2020-10-24 
 ---
 * This site dropped 6 places to 8th on the [Eleventy Leaderboards](https://www.11ty.dev/speedlify/). 

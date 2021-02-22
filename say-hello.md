@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
-pageTitle: Say Hello!
-metaDescription: Say Hello
+title: Say Hello!
+description: Say Hello
 ---
 <p class="lead">Tell me anything. </p>
 

@@ -1,7 +1,7 @@
 ---
-pageTitle:  Crain Family Ancestry 
+title:  Crain Family Ancestry 
 tags: ['notes','ancestry'] 
-metaDescription: How I became involved, the resources I found valuable, and the places I’ve visited in search of a Crain family history. 
+description: How I became involved, the resources I found valuable, and the places I’ve visited in search of a Crain family history. 
 date: 2020-08-07
 ---
 <span class="dropcap">M</span>y dad began work on a family history at a time when the only way to do so by letter correspondence. He made inquiries off and on for years until health issues prevented him from doing more. Years passed and much of his work became lost through a variety of circumstances. I remember a phone conversation with him where he was particularly lucid. He expressed the devastation he felt at the loss of all the work. It was during that conversation I decided to help with his project.

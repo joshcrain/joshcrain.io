@@ -1,7 +1,7 @@
 ---
-pageTitle: It’ll all be over by... Christmas
+title: It’ll all be over by... Christmas
 tags: ['notes','webcomic']
-metaDescription: Slow and steady is the race. Onward to 2021. 
+description: Slow and steady is the race. Onward to 2021. 
 metaImage: 
 date: 2020-12-29
 ---

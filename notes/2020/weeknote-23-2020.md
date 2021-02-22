@@ -1,7 +1,7 @@
 ---
-pageTitle:  Weeknote 23/2020
+title:  Weeknote 23/2020
 tags: ['weeknotes']
-metaDescription: Static sites, components, RSS feed, injustice, and unrest.
+description: Static sites, components, RSS feed, injustice, and unrest.
 date: 2020-06-06
 ---
 * I experimented more with [Fractal](https://fractal.build) this week. I transitioned all of my components from [Handlebars](https://handlebarsjs.com/) to [Nunjucks](https://mozilla.github.io/nunjucks/). 

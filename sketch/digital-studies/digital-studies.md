@@ -1,7 +1,7 @@
 ---
-pageTitle: Digital Studies
+title: Digital Studies
 tags: ['sketches','digital']
-metaDescription: Digital art. 
+description: Digital art. 
 metaImage: /images/digital-studies/420/flower-still-life.jpg
 date: 2020-09-01
 ---

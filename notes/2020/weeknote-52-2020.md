@@ -1,7 +1,7 @@
 ---
-pageTitle: Weeknote 52/2020
+title: Weeknote 52/2020
 tags: ['weeknotes']
-metaDescription: The Great Conjunction, wild temprature swings, slow and steady webcomic, and Christmas. 
+description: The Great Conjunction, wild temprature swings, slow and steady webcomic, and Christmas. 
 date: 2020-12-26
 ---
 * Witnessed the [Great Conjunction](https://en.wikipedia.org/wiki/Great_conjunction) or “Christmas Star” on the 21st as Jupiter came visually closer to Saturn. The two did not merge into one star has I had expected. Jupiter appeared larger and brighter, lower and to the left of Saturn. I was surprised to be able to see it from the house, through the tops of the trees. 
