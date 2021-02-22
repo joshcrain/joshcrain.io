@@ -24,7 +24,7 @@
         <div class="wrapper {% if pageType == "home" %}home{% endif %}">
             <header {% if pageType != "home" %}class="text_center"{% endif %}>
                 <h1>{{ pageTitle }}{% if tag %}Tagged “{{ tag }}”{% endif %}</h1> 
-                {% if date != blank %}<div class="small-caps text--smaller"><time>{{ date|date("D MMM Y") }}</time>&nbsp;&nbsp;⁃&nbsp;&nbsp;{{ category }}</div>{% endif %} 
+                {% if date != blank %}<div class="small-caps"><time>{{ date|date("D MMM Y") }}</time>&nbsp;&nbsp;⁃&nbsp;&nbsp;{{ category }}</div>{% endif %} 
             </header>
             {% if pageType != "home" %}{% if pageType != "section" %}<div class="grid-layout_page"><div></div><div>{% endif %}{% endif %}  {% if pageType == "section" %}<div class="grid-layout_section">{% endif %}
                 {{ content | safe }}
