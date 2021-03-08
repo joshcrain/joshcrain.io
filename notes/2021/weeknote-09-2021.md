@@ -1,7 +1,7 @@
 ---
 title: Weeknote 09/2021
 tags: ['weeknotes']
-description:  
+description: Upgraded internet and the state of design.
 date: 2021-02-22
 ---
 - “[The State of Design in 2021](https://abstract.com/state-of-design)” by [@goabstract](https://twitter.com/goabstract) speaks some truth. 
