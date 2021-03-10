@@ -2,7 +2,7 @@
   --colorBase: 245, 245, 250;
   --colorBack: 255, 255, 255;
   --colorFore: 0, 0, 0;
-  --fontPrimary: Palatino, "Palatino Linotype", Georgia, "Times New Roman", serif /*'EB Garamond', serif*/;
+  --fontPrimary: Georgia, Palatino, "Palatino Linotype", "Times New Roman", serif /*'EB Garamond', serif*/;
   --margin: 1.85rem; 
   --colorAccent: 114,96,18;
   --colorDanger: 192, 24, 35;
@@ -198,7 +198,7 @@ transition: transform .3s cubic-bezier(.86,0,.07,1);
 .text_center {text-align:center;}
 .dropcap {line-height:.9;font-size:4.5rem;float:left;display:inline-block;margin:0 .1em -.15em 0;color:rgba(var(--colorAccent), 1)}
   .text--larger .dropcap {font-size: 4.9rem;}
-.small-caps{font-variant-caps: small-caps;text-transform:uppercase;letter-spacing:.0625em;font-size: .8em;}
+.small-caps{letter-spacing:.0625em;font-variant: all-small-caps;}
 .text--smallest {font-size:.875rem;}
 .text--smaller {font-size:1rem;}
 .text--larger {font-size:1.5rem;line-height: 1em;}
