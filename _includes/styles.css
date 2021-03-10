@@ -2,7 +2,7 @@
   --colorBase: 245, 245, 250;
   --colorBack: 255, 255, 255;
   --colorFore: 0, 0, 0;
-  --fontPrimary: 'EB Garamond', serif;
+  --fontPrimary: Palatino, "Palatino Linotype", Georgia, "Times New Roman", serif /*'EB Garamond', serif*/;
   --margin: 1.85rem; 
   --colorAccent: 114,96,18;
   --colorDanger: 192, 24, 35;
@@ -22,24 +22,24 @@
     --colorAccent: 199,171,227;
   }
 }
-/* eb-garamond-regular - latin */
+/* eb-garamond-regular - latin 
 @font-face {
   font-family: 'EB Garamond';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('/fonts/eb-garamond-v13-latin-regular.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/eb-garamond-v13-latin-regular.woff2') format('woff2'); 
        font-display: swap;
-}
-/* eb-garamond-italic - latin */
+}*/
+/* eb-garamond-italic - latin 
 @font-face {
   font-family: 'EB Garamond';
   font-style: italic;
   font-weight: 400;
   src: local(''),
-       url('/fonts/eb-garamond-v13-latin-italic.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/eb-garamond-v13-latin-italic.woff2') format('woff2'); 
        font-display: swap;
-}
+}*/
 html{overflow-y:scroll}
 body {color:rgba(var(--colorFore), 1);font-family:var(--fontPrimary);font-weight:400;margin:0;font-size:1.333rem;line-height:1.5;background:rgba(var(--colorBack), 1);text-rendering: optimizeLegibility;-webkit-font-smoothing: subpixel-antialiased;}
 ul, ol {padding:0;} 
