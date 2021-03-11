@@ -8,4 +8,4 @@ description: Notes about the tools, languages, publishing methods, and assets us
  
  Eleventy is used for static page generation. Git is used for version control. Github is used to store the repository. Netlify hosts the website. The site uses <a href="https://speedlify-joshcrain.netlify.app/" rel="noopener">a copy of Speedlify</a> to continuiously measure site speed and accessibility.
 
- The serif typeface is <a href="https://fonts.google.com/specimen/EB+Garamond" rel="noopener">EB Garamond</a>. Special effort has been made to give the foreground and background colors a high contrast for those with limited sight. Text has a 4.5:1 contrast ratio at Level AA or better, as specified by <a href="https://www.w3.org/TR/WCAG20/" rel="noopener">WCAG 2.0</a>. 
+ The serif typeface is Georgia. Special effort has been made to give the foreground and background colors a high contrast for those with limited sight. Text has a 4.5:1 contrast ratio at Level AA or better, as specified by <a href="https://www.w3.org/TR/WCAG20/" rel="noopener">WCAG 2.0</a>. 
