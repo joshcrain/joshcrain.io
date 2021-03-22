@@ -2,7 +2,7 @@
   --colorBase: 245, 245, 250;
   --colorBack: 255, 255, 255;
   --colorFore: 0, 0, 0;
-  --fontPrimary: Georgia, Palatino, "Palatino Linotype", "Times New Roman", serif /*'EB Garamond', serif*/;
+  --fontPrimary: Palatino, "Palatino Linotype", "Times New Roman", serif /*'EB Garamond', serif*/;
   --margin: 1.85rem; 
   --colorAccent: 114,96,18;
   --colorDanger: 192, 24, 35;
@@ -41,7 +41,7 @@
        font-display: swap;
 }*/
 html{overflow-y:scroll}
-body {color:rgba(var(--colorFore), 1);font-family:var(--fontPrimary);font-weight:400;margin:0;font-size:1.333rem;line-height:1.5;background:rgba(var(--colorBack), 1);text-rendering: optimizeLegibility;-webkit-font-smoothing: subpixel-antialiased;}
+body {color:rgba(var(--colorFore), 1);font-family:var(--fontPrimary);font-weight:400;margin:0;font-size:1.333rem;line-height:1.666;background:rgba(var(--colorBack), 1);text-rendering: optimizeLegibility;-webkit-font-smoothing: subpixel-antialiased;}
 ul, ol {padding:0;} 
 .grid-layout_page > div > p+p,.grid-layout_page > div > h2+p,.grid-layout_page > div > h3+p,.grid-layout_page > div > figure+p {margin:0;}
 :not(blockquote):not(ol):not(ul):not(dl):not(hr):not(pre)+p:not(img)+p,:not(figure)+p{text-indent: var(--margin);}
@@ -196,7 +196,7 @@ transition: transform .3s cubic-bezier(.86,0,.07,1);
 .media_left {margin-left: 0;margin-right: .75rem;}
 
 .text_center {text-align:center;}
-.dropcap {line-height:.9;font-size:4.5rem;float:left;display:inline-block;margin:0 .1em -.15em 0;color:rgba(var(--colorAccent), 1)}
+.dropcap {line-height:1.1;font-size:4.6rem;float:left;display:inline-block;margin:0 .1em -.15em 0;color:rgba(var(--colorAccent), 1)}
   .text--larger .dropcap {font-size: 4.9rem;}
 .small-caps{letter-spacing:.0625em;font-variant: all-small-caps;}
 .text--smallest {font-size:.875rem;}
