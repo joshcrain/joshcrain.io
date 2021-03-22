@@ -1,7 +1,7 @@
 ---
 title: Weeknote 10/2021
 tags: ['weeknotes']
-description:  
+description: First run since January, SmolCSS, Speedlify leaderboard. 
 date: 2021-03-03
 ---
 - Went for a run. 3 miles, 20:56 (6:58 min/mi). My first run since January. 
