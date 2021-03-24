@@ -106,7 +106,7 @@ transition: transform .3s cubic-bezier(.86,0,.07,1);
 .site_footer{font-size:.875em;}
 .site_footer a{color:inherit;min-height: 48px;display: flex;align-items: center;}
 .site_content{padding:4em 3ch 6em;}
-  .site_content header{margin:0 auto 3em auto;}
+  .site_content header{margin-bottom:3em;}
 .wrapper {max-width:1214px;margin:0 auto;}
 .wrapper p{-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;}
 .wrapper.home h1 {font-size:3.5em;}
@@ -215,6 +215,30 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 .view a{border-radius:50%;background:rgba(var(--colorBase), 1);padding:.5em;position: fixed;right:2em;bottom:2em;line-height:.8;transition: all .1s ease-in-out;}
 .view a:hover {transform: scale(1.2);}
 .view svg{height:1.25em;fill:rgba(var(--colorAccent), 1);}
+
+.fade-in {
+  transform: translate3d(0,0,0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation: fadeInUp .5s ease;
+}
+@keyframes fadeInUp {
+  0% {
+   opacity:0;
+   transform:translateY(20px)
+  }
+  100% {
+   opacity:1;
+   transform:translateY(0)
+  }
+ }
+
+ .hero {display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;margin-bottom:4em;}
+
+  .hero header {margin-bottom:0;}
 
 .form .form_item {margin-bottom:1em;}
 .form .form_item .form_field {border:0;color:rgba(var(--colorFore),1);background:rgba(var(--colorFore),.075);outline:2px solid rgba(var(--colorFore),1);width:100%;padding:.5em;font-size:1em;font-family: inherit;}

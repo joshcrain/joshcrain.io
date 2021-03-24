@@ -13,6 +13,7 @@ priority: "1.0"
 <p class="text--largest">I am a product designer and front-end developer. My work allows me to make an impact through design, user advocacy, web standards, research, and code. I study drawing and painting in my free time. It’s important for me to improve at what I do, this site helps with that goal. There are also <a href="/about/">other interesting things</a>.</p>
 </div>
 </div>
+</div><!--/fade-in-->
 <section class="grid-layout_home">
 <div class="layout-section"> 
     <h2>Notes</h2>
