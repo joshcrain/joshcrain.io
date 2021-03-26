@@ -44,10 +44,11 @@ priority: "1.0"
 <div class="grid">
 {% for post in collections.sketches reversed limit:6 %}
 <div class="grid-quarter@l tile">
-    <a href="{{ post.url }}" class="square">
-    <img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.title }}">
-    <span class="name">{{ post.data.title }}</span>
-    </a>
+<img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.title }}">
+    <div class="tile_inner">
+        <a href="{{ post.url }}" class="tile_link"><span class="tile_name">{{ post.data.title }}</span></a>
+        <span class="tile_desc text--smaller">{{ post.data.description }}</span>
+    </div>
 </div>
 {% endfor %} 
 </div>
