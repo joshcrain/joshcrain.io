@@ -311,7 +311,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
     .tile_inner .tile_desc {
     transform: translateY(10px);
   }
-
+}
 
 @media only screen and (max-width: 1024px) {
   .grid-layout_home {
