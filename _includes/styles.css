@@ -125,6 +125,9 @@ transition: transform .3s cubic-bezier(.86,0,.07,1);
   grid-template-rows: 1fr;
 }
 
+.grid-layout_page a {text-decoration: underline;}
+.grid-layout_page a:hover {text-decoration: none;}
+
 .grid-layout_home h2 {margin-top:0;}
 
 .grid-section {

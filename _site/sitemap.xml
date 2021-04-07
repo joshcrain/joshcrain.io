@@ -456,4 +456,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://joshcrain.io/notes/2021/weeknote-15-2021/</loc>
+    <lastmod>2021-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
