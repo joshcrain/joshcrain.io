@@ -10,7 +10,7 @@
 :root .darkTheme{
   --colorFore: 249, 240, 255;
   --colorBase: 0, 0, 0;
-  --colorBack: 10, 10, 25;
+  --colorBack: 10, 10, 25; /*HSL: 240° 50% 7%*/
   --colorAccent: 199,171,227;
 }
 @media (prefers-color-scheme: dark) {
@@ -18,7 +18,7 @@
   :root{
     --colorFore: 249, 240, 255;
     --colorBase: 0, 0, 0;
-    --colorBack: 10, 10, 25;
+    --colorBack: 10, 10, 25; /*HSL: 240° 50% 7%*/
     --colorAccent: 199,171,227;
   }
 }
