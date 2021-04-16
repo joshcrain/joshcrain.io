@@ -80,7 +80,7 @@ p.lead {font-style:italic;margin-bottom:2em;font-size:1em;text-align: center}
 blockquote{margin:1.5em var(--margin);font-style: italic;}
 blockquote cite {display:block;font-size:.875em;text-align: right;}
 code {font-size: .875em;padding:0.0625em;border-radius: 2px;background: rgba(var(--colorAccent), .1);}
-pre code {padding:2em;display: block;}
+pre code {padding:2em;display: block;max-width: 100%;}
 .site_header, .site_footer {padding:1.5em 3ch;}
 .site_header{line-height: 1;}
   .site_header a{color:inherit;min-height: 48px;display: flex;align-items: center;border-bottom:5px solid transparent;position:relative}
