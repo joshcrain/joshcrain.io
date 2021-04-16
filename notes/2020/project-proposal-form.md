@@ -1,7 +1,7 @@
 ---
 title:  Project Proposal Form 
 tags: ['notes', 'design', 'css', 'html']
-description: I challenged myself to rebuild a print form in HTML. 
+description: Rebuild an old design, a print form, in HTML. 
 date: 2020-12-08
 ---
 <span class="dropcap">A</span> while back I wrote about the steps I had taken to [become a front-end master](/notes/2020/becoming-a-front-end-master/). The article was in response to [advice](https://css-tricks.com/become-a-front-end-master-in-2020-with-these-10-project-ideas/) from one of my favorite web people Chris Coyer. It challenged me to learn new front-end concepts through a variety of small projects. I followed many of the suggestions except one—to recreate a Dribbble shot in HTML and CSS. I [started](https://codepen.io/joshcrain/pen/zYOEbxg) the exercise but never finished. 

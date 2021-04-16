@@ -4,12 +4,30 @@
   <subtitle>I am an experienced web designer, product designer, and front-end developer. Design allows me to make an impact through user advocacy, research, web standards, and code.</subtitle>
   <link href="https://joshcrain.io/feed.xml" rel="self"/>
   <link href="https://joshcrain.io/"/>
-  <updated>2021-01-14T18:00:00-06:00</updated>
+  <updated>2021-04-13T19:00:00-05:00</updated>
   <id>https://joshcrain.io/</id>
   <author>
     <name>Josh Crain</name>
     <email>josh.crain.gmail.com</email>
   </author>
+  
+  <entry>
+    <title type="html">Find Whitespace in VSCode</title>
+    <link href="https://joshcrain.io/notes/2021/whitespace-on-vscode/"/>
+    <updated>2021-04-13T19:00:00-05:00</updated>
+    <id>https://joshcrain.io/notes/2021/whitespace-on-vscode/</id>
+    <content type="html">&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt; am a little dangerous when it comes to regular expressions (or very dangerous depending on how you look at it). I&#39;ve used online tools like &lt;a href=&quot;https://regex101.com/&quot;&gt;this&lt;/a&gt; and &lt;a href=&quot;https://regexr.com/&quot;&gt;this&lt;/a&gt; to help me learn and troubleshoot regex patterns. But the other day I found myself more lost than usual when I attempted to find whitespace &lt;em&gt;and/or&lt;/em&gt; new line characters. I wanted to find and replace a series of HTML tags that were not unique, except as a group. Though the group was unique there was still a lot of variability of whitespace  between the tags.&lt;/p&gt;
+&lt;h2&gt;Whitespace &lt;em&gt;and&lt;/em&gt; new line regex in VSCode&lt;/h2&gt;
+&lt;p&gt;The tools I mentioned suggested I use &lt;code&gt;\s&lt;/code&gt; to target whitespace &lt;em&gt;and&lt;/em&gt; new line characters—which is exactly what I needed. But when I tested it in VSCode I could not get the results I expected and there were also no errors. Through much trial and error and searching I learned  &lt;code&gt;\s&lt;/code&gt; does &lt;em&gt;not&lt;/em&gt; target new line characters in VSCode (though it does in other systems)—thanks to an article from &lt;a href=&quot;https://remisharrock.fr/post/regex-search-and-replace-visual-studio-code/&quot;&gt;Rémi Sharrock&lt;/a&gt;.To target new line characters I needed to also use &lt;code&gt;\r&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Any single whitespace or new line character: &lt;code&gt;[\s\r]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Any group of whitespace or new line character: &lt;code&gt;(\s*\r*\s*)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I used the latter to target the unique HTML tags and effectively ignore the varying whitespace. My searched looked something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;&amp;lt;/section&amp;gt;(\s*\r*\s*)&amp;lt;/main&amp;gt;(\s*\r*\s*)&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
   
   <entry>
     <title type="html">December 27th, 2020</title>

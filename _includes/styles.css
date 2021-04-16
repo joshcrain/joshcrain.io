@@ -60,7 +60,7 @@ main a:not(.text--largest) {text-decoration: underline;}
 main a:not(.text--largest):hover, main :not(.text--largest) a:hover, main .text--largest a {text-decoration: none;}
 footer a {text-decoration: underline;}
 footer a:hover {text-decoration: none;}
-  h1 {margin:.5em 0;line-height: 1em;font-size:2.75em;font-weight: 400;}
+  h1 {margin:.5em 0;line-height: 1.2em;font-size:2.75em;font-weight: 400;}
 h2 {font-weight:normal;margin-bottom:.5em;line-height: 1;}
 h3 {font-weight:normal;margin-bottom:.25em;line-height: 1;}
 img{margin-bottom:-10px;max-width:100%;height:auto;line-height:1;}
@@ -79,7 +79,8 @@ figure{margin:1em 0;display:inline-block;text-align: center;width:100%;}
 p.lead {font-style:italic;margin-bottom:2em;font-size:1em;text-align: center}
 blockquote{margin:1.5em var(--margin);font-style: italic;}
 blockquote cite {display:block;font-size:.875em;text-align: right;}
-code {font-size: .875em;}
+code {font-size: .875em;padding:0.0625em;border-radius: 2px;background: rgba(var(--colorAccent), .1);}
+pre code {padding:2em;display: block;}
 .site_header, .site_footer {padding:1.5em 3ch;}
 .site_header{line-height: 1;}
   .site_header a{color:inherit;min-height: 48px;display: flex;align-items: center;border-bottom:5px solid transparent;position:relative}
@@ -208,6 +209,7 @@ transition: transform .3s cubic-bezier(.86,0,.07,1);
 .text--smaller {font-size:1rem;}
 .text--larger {font-size:1.5rem;line-height: 1em;}
 .text--largest {font-size:1.75rem;}
+.grid .text--largest {line-height:1.2em}
 .text--secondary {text-transform: uppercase;}
 
 .m--around--1 {margin:1em!important;}
