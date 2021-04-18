@@ -81,7 +81,7 @@ blockquote{margin:1.5em var(--margin);font-style: italic;}
 blockquote cite {display:block;font-size:.875em;text-align: right;}
 code {font-size: .875em;padding:0.0625em;border-radius: 2px;background: rgba(var(--colorAccent), .1);}
 pre {max-width: 100%;overflow-x: auto;display: block;}
-pre code {padding:2em;display: table;}
+pre code {padding:2em;display: table;width: 100%;box-sizing: border-box;}
 .site_header, .site_footer {padding:1.5em 3ch;}
 .site_header{line-height: 1;}
   .site_header a{color:inherit;min-height: 48px;display: flex;align-items: center;border-bottom:5px solid transparent;position:relative}
@@ -194,7 +194,6 @@ transition: transform .3s cubic-bezier(.86,0,.07,1);
  
 .list--horizontal {list-style:none;margin:0 -1.25em}
   .list--horizontal > li{padding:0 1.25em;vertical-align:middle;display:inline-block;line-height:1;}
-  .list--horizontal.list--m--larger {margin:0 -1.75em}
   .list--horizontal.list--m--larger > li{padding:0 1.75em;}
   .list--horizontal.list--m--smaller {margin:0 -.625em}
   .list--horizontal.list--m--smaller > li{padding:0 .625em;}
