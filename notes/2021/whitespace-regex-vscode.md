@@ -1,7 +1,7 @@
 ---
 title: Find Whitespace in VSCode
 tags: ['notes', 'webdev']
-description: Something I learned about whitespace (and new line character) regex search on VSCode.
+description: Something I learned about whitespace (and new line character) regex search in VSCode.
 date: 2021-04-14
 ---
 <span class="dropcap">I</span> am a little dangerous when it comes to regular expressions (or very dangerous depending on how you look at it). I've used online tools like [this](https://regex101.com/) and [this](https://regexr.com/) to help me learn and troubleshoot regex patterns. But the other day I found myself more lost than usual when I attempted to find whitespace _and/or_ new line characters. I wanted to find and replace a series of HTML tags that were not unique, except as a group. Though the group was unique there was still a lot of variability of whitespace  between the tags. 
