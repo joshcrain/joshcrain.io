@@ -80,8 +80,8 @@ p.lead {font-style:italic;margin-bottom:2em;font-size:1em;text-align: center}
 blockquote{margin:1.5em var(--margin);font-style: italic;}
 blockquote cite {display:block;font-size:.875em;text-align: right;}
 code {font-size: .875em;padding:0.0625em;border-radius: 2px;background: rgba(var(--colorAccent), .1);}
-pre {max-width: 100%;overflow-x: auto;}
-pre code {padding:2em;display: block;}
+pre {max-width: 100%;overflow-x: auto;display: block;}
+pre code {padding:2em;display: table;}
 .site_header, .site_footer {padding:1.5em 3ch;}
 .site_header{line-height: 1;}
   .site_header a{color:inherit;min-height: 48px;display: flex;align-items: center;border-bottom:5px solid transparent;position:relative}
@@ -127,6 +127,10 @@ transition: transform .3s cubic-bezier(.86,0,.07,1);
   grid-template-columns: 2fr 8fr 2fr;
   grid-column-gap: 3vw;
   grid-template-rows: 1fr;
+}
+
+.grid-layout_page > * {
+  min-width:0;
 }
 
 .grid-layout_home h2 {margin-top:0;}
