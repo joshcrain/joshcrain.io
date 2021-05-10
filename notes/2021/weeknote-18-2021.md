@@ -14,6 +14,7 @@ date: 2021-04-28
 ### Introductions to Web Components
 - [Using custom elements - Web Components | MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
 - [An Introduction to Web Components | CSS-Tricks](https://css-tricks.com/an-introduction-to-web-components/)
+- [Web Components Are Easier Than You Think](https://css-tricks.com/web-components-are-easier-than-you-think/)
 - [Crafting Reusable HTML Templates | CSS-Tricks](https://css-tricks.com/crafting-reusable-html-templates/)
 - [Creating a Custom Element from Scratch | CSS-Tricks](https://css-tricks.com/creating-a-custom-element-from-scratch/)
 - [Using Modern Web Components](https://coryrylan.com/blog/using-modern-web-components)
