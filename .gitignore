@@ -5,3 +5,4 @@ node_modules
 .DS_Store
 .obsidian
 notes/_templates
+_site
