@@ -2,7 +2,6 @@ const CleanCSS = require("clean-css");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const moment = require("moment");
 const Image = require("@11ty/eleventy-img");
-const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 
 module.exports = function(eleventyConfig) {
   // clean css
@@ -54,12 +53,6 @@ module.exports = function(eleventyConfig) {
                     src="${lowestSrc.url}">`;
     
                     return `<picture>${source}${img}</picture>`;
-  });
-
-  // lazy images
-  eleventyConfig.addPlugin(lazyImagesPlugin, {
-    transformImgPath: (imgPath) => imgPath.replace('/images/', './_site/images/'),
-    appendInitScript: false
   });
 
   // minify js
