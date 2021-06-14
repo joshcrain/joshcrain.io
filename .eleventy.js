@@ -17,6 +17,15 @@ module.exports = function(eleventyConfig) {
     return moment(date).format(format);
   });
 
+  eleventyConfig.addPassthroughCopy("images");
+  // You can return your Config object (optional).
+  return {
+    dir: {
+      input: "images",
+      output: "_site/images"
+    }
+  };
+
   // responsive images
     // works also with addLiquidShortcode or addJavaScriptFunction
   eleventyConfig.addLiquidShortcode("responsiveimage", async function(src, alt, sizes = "100vw") {
