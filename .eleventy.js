@@ -17,13 +17,14 @@ module.exports = function(eleventyConfig) {
     return moment(date).format(format);
   });
 
-  eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("images"), function () {
   // You can return your Config object (optional).
   return {
     dir: {
       input: "images",
       output: "_site/images"
     }
+  };
   };
 
   // responsive images
