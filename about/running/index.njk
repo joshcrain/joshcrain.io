@@ -1,0 +1,18 @@
+---
+title: Running Log
+metaTitle: Running Log
+tags: about
+description: Running activity.
+---
+<p class="lead">Running activity tracked with a Garmin Forerunner 45 and logged in Garmin Connect. </p>
+<ol class="list--articles">
+{% for item in running.garmin.activityList %}
+  {% if item.sportTypeId == "1" %}<li>
+  <span class="small-caps">{{ item.startTimeLocal | date("D MMM Y") }}, {{ item.startTimeLocal | date("hh:mm A")}}</span><br>
+  <span class="text--largest">{% if item.favorite == true %}⭐{% endif %}{% if item.pr == true %}🏆{% endif %}<a href="https://connect.garmin.com/modern/activity/{{ item.activityId }}">{{ item.distance | miles }} miles in {{ item.duration | duration("mm:ss") }}</a></span> ({{ ((item.duration)/(item.distance | miles)) | duration("m:ss") }} per mile)<br>
+  {{ item.activityName }}{% if item.description %} - {{ item.description }}{% endif %}<br>
+  {{ item.averageHR }} <acronym title="beats per minute">bpm</acronym> Average | {{ item.maxHR }} <acronym title="beats per minute">bpm</acronym> Max {% if item.vO2MaxValue %}| {{ item.vO2MaxValue }} VO<sub>2</sub> Max{% endif %}</li>{% endif %}
+{% endfor %}
+</ol>
+notes<br> 
+importa that we add a dummy date: https://stackoverflow.com/questions/39587084/convert-seconds-into-hhmmss-format-using-moment-js<br>https://connect.garmin.com/proxy/activitylist-service/activities/8ee2fc52-fe2a-403a-9cc3-5113d520ab51?limit=100<br>https://www.11ty.dev/docs/quicktips/eliminate-js/<br>next.js - https://mxd.codes/articles/fetching-and-storing-activities-from-garmin-connect-with-strapi-and-visualizing-them-with-next-js
