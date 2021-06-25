@@ -14,5 +14,3 @@ description: Running activity.
   {{ item.averageHR }} <acronym title="beats per minute">bpm</acronym> ({{ item.maxHR }} Max) {% if item.vO2MaxValue %}| {{ item.vO2MaxValue }} <abbr title="beats per minute">VO<sub>2</sub> Max</abbr>{% endif %}</li>{% endif %}
 {% endfor %}
 </ol>
-notes<br> 
-importa that we add a dummy date: https://stackoverflow.com/questions/39587084/convert-seconds-into-hhmmss-format-using-moment-js<br>https://connect.garmin.com/proxy/activitylist-service/activities/8ee2fc52-fe2a-403a-9cc3-5113d520ab51?limit=100<br>https://www.11ty.dev/docs/quicktips/eliminate-js/<br>next.js - https://mxd.codes/articles/fetching-and-storing-activities-from-garmin-connect-with-strapi-and-visualizing-them-with-next-js
