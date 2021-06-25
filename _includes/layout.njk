@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ metaTitle }}{% if metaTitle == blank %}{{ title }}{% endif %}</title>
         <meta name="description" content="{{ description | safe }}"/>
+        <meta name="theme-color" content="rgb(255, 255, 255)">
         {% set css %}{% include "styles.css" %}{% endset %}<style type="text/css">{{ css | cssmin | safe }}</style>
         <link rel="alternate" type="application/atom+xml" title="RSS Feed for joshcrain.io" href="/feed.xml" />
     </head>

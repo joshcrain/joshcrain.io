@@ -1,5 +1,5 @@
 function jscheck() {
-  document.getElementsByTagName("BODY")[0].classList.remove("no-js");
+    document.getElementsByTagName("BODY")[0].classList.remove("no-js");
 }
 //theming local storage
 if (localStorage.getItem("theme") != null) {
@@ -8,11 +8,14 @@ if (localStorage.getItem("theme") != null) {
 }
 else { document.body.classList.add('lightTheme') }
 
+let scheme = document.querySelector('meta[name="theme-color"]')
+
 const dayButton = document.getElementById('night');
 dayButton.addEventListener('click', () => {
     setColour = "lightTheme"
     document.body.className = setColour
     localStorage.setItem("theme", setColour);
+    scheme.setAttribute('content', 'rgb(255, 255, 255)');
 });
 
 const nightButton = document.getElementById('day');
@@ -20,4 +23,5 @@ nightButton.addEventListener('click', () => {
     setColour = "darkTheme"
     document.body.className = setColour
     localStorage.setItem("theme", setColour);
+    scheme.setAttribute('content', 'rgb(10, 10, 25)');
 });
