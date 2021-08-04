@@ -1,7 +1,7 @@
 ---
 title: Weeknote 31/2021
 tags: ['weeknotes']
-description: 
+description: SVG favicons. Viewbox, height, and width refresher. SVG favicons inline with base64 encoding with an example. 
 date: 2021-07-29
 ---
 - I added a [SVG favicon](https://css-tricks.com/svg-favicons-in-action/) to this site. I needed a refresher on [scaling SVG](https://css-tricks.com/scale-svg/).
