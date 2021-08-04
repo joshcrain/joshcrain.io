@@ -19,7 +19,7 @@ description: Running activity.
    </thead>
    {% for item in running.garmin.activityList %}
   {% if item.sportTypeId == "1" %}
-  <tr>
+  <tr id="{{ item.activityId }}">
     <th scope="rowgroup" {% if (item.description) or (item.favorite == true) or (item.pr == true) %}rowspan="2"{% endif %}><a href="https://connect.garmin.com/modern/activity/{{ item.activityId }}">{{ item.startTimeLocal | date("M/D/Y") }}</a><br> {{ item.startTimeLocal | date("h:mm A")}}</th>
     <td>{{ item.distance | miles }} mi</td>
     <td>{{ item.duration | duration("mm:ss") }}</td>
