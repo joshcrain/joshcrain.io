@@ -6,3 +6,4 @@ node_modules
 .obsidian
 notes/_templates
 _site
+package-lock.json
