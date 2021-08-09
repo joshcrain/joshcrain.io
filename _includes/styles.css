@@ -44,7 +44,7 @@ html{overflow-y:scroll}
 body {color:rgba(var(--colorFore), 1);font-family:var(--fontPrimary);font-weight:400;margin:0;font-size:1.333rem;line-height:1.666;background:rgba(var(--colorBack), 1);text-rendering: optimizeLegibility;-webkit-font-smoothing: subpixel-antialiased;}
 .site_header ul, .site_header ol,.site_footer ul, .site_footer ol {padding:0;} 
 .grid-layout_page > div > p+p,.grid-layout_page > div > h2+p,.grid-layout_page > div > h3+p,.grid-layout_page > div > figure+p {margin:0;}
-:not(blockquote):not(ol):not(ul):not(dl):not(hr):not(pre)+p:not(img)+p:not(figure)+p{text-indent: var(--margin);}
+:not(blockquote):not(ol):not(ul):not(dl):not(hr):not(pre)+p:not(img)+p:not(figure)+p, p{text-indent: var(--margin);}
 p:first-of-type, h2+p, h3+p, .lead+p{text-indent: 0;margin:0;}
 .grid-layout_page > div blockquote > p, cite+p{text-indent: 0;}
 .grid-layout_home p:last-of-type {margin-bottom:1em;}
