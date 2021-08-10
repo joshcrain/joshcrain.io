@@ -374,7 +374,22 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
     grid-column-gap: 3vw;
     grid-template-rows: 1fr;
   }
-  
+  .table_rwd thead{position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;}
+  .table_rwd [data-tblColumn]{display:block;}
+  .table_rwd [data-tblColumn]:before {content: attr(data-tblColumn);display: inline-block;
+    padding: inherit;
+    padding-top: 0;
+    padding-left: 0;
+    font-weight: bold;
+    width: 120px;}
+  .table_rwd [data-tblColumn] br{display: none;}
+
+  .table_rwd :not(:first-child) td,table :not(:first-child) th{border:0;border-bottom:1px solid rgba(var(--colorFore),.8);}
+  .table_rwd {border-top:1px solid rgba(var(--colorFore),.8)}
 }
 
 
