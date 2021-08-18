@@ -29,9 +29,7 @@ description: A running log to track dates, distance, time, pace, heart rate, and
   </tr>
   {% if (item.description) or (item.favorite == true) or (item.pr == true) %}<tr>
     <td colspan="5" data-tblColumn="Description">
-      <p>{% if item.description %}{{ item.description }} {% endif %}
-      {% if item.favorite == true %}⭐ Marked as one of my favorites. {% endif %}
-      {% if item.pr == true %}🏆 Includes a personal record.{% endif %}</p>
+      <p>{% if item.description %}{{ item.description }} {% endif %}</p>
     </td>
   </tr>{% endif %}
   {% endif %}
