@@ -4,7 +4,7 @@ tags: ['notes','running','eleventy']
 description: Use Eleventy to log Garmin Connect activities on a website and automate the process with Zapier and Netlify. 
 date: 2021-08-09
 ---
-I like to run. I used to do it a lot more in my younger days when I ran competitively. During that time I tracked my runs in a log book and learned a lot about how to train. Get It helped me understand the cumulative effects of training had on my body. In those days GPS wasn't really an option, if I wanted to measure a distance I needed to drive the route and check the car’s odometer.
+I like to run. I used to do it a lot more in my younger days when I ran competitively. During that time I tracked my runs in a log book and learned a lot about how to train. It helped me understand the cumulative effects of training had on my body. In those days GPS wasn't really an option, if I wanted to measure a distance I needed to drive the route and check the car’s odometer.
 
 Christmas of 2019 I was given my first smart watch, a Garmin Forerunner 45. This was exciting for me because I would be able to track data associated with exercise—and even the rest in between. I downloaded the app, created a [Garmin Connect](https://connect.garmin.com/) account, and began using my new watch. 
 
