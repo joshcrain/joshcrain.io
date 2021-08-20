@@ -21,8 +21,8 @@ description: A running log to track dates, distance, time, pace, heart rate, and
   {% if item.sportTypeId == "1" %}
   <tr id="{{ item.activityId }}">
     <th scope="rowgroup" {% if (item.description) or (item.favorite == true) or (item.pr == true) %}rowspan="2"{% endif %}><a href="https://connect.garmin.com/modern/activity/{{ item.activityId }}">{{ item.startTimeLocal | date("M/D/Y") }}</a><br> {{ item.startTimeLocal | date("h:mm A")}}</th>
-    <td data-tblColumn="Time">{{ item.distance | miles }} mi</td>
-    <td data-tblColumn="Distance">{{ item.duration | duration("mm:ss") }}</td>
+    <td data-tblColumn="Distance">{{ item.distance | miles }} mi</td>
+    <td data-tblColumn="Time">{{ item.duration | duration("mm:ss") }}</td>
     <td data-tblColumn="Pace">{{ ((item.duration)/(item.distance | miles)) | duration("m:ss") }}/mi</td>
     <td data-tblColumn="Heart Rate">{{ item.averageHR }} <acronym title="beats per minute">bpm</acronym><br> ({{ item.maxHR }}&nbsp;Max)</td>
     <td data-tblColumn="VO2 Max">{% if item.vO2MaxValue %}{{ item.vO2MaxValue }} <abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</abbr>{% endif %}</td>
