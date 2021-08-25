@@ -25,7 +25,7 @@ priority: "1.0"
 <div class="grid-half@l">
     <div>
         <a href="{{ post.url }}" class="text--largest">{{ post.data.title }}</a>
-        <p class="line-clamp"><span class="small-caps"><time>{{ post.date | date: "%d %b %Y" }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> </br>
+        <p class="line-clamp"><span class="small-caps"><time>{{ post.date | date: "%d %b %Y" }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags limit:2 %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> </br>
         {{ post.data.description truncate: 280 }}</p>
     </div>
 </div>
