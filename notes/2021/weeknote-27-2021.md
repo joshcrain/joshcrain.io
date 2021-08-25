@@ -1,7 +1,7 @@
 ---
 title: Weeknote 27/2021
 tags: ['weeknotes']
-description: 
+description: Worked on my outdoor kitchen and fixed Emmet for Nunjucks files. 
 date: 2021-06-28
 ---
 - Ordered a cover for the chuckbox I made. Even though we aren't camping right now, I've been using the chuckbox for an outdoor kitchen when smoking meat. A few weeks ago I built a dolly to help move it around. 
