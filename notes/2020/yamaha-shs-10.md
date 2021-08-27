@@ -5,7 +5,7 @@ description: The Yamaha SHS-10 keytar is rendered in Adobe Illustrator. Created 
 date: 2020-02-05
 
 ---
-<span class="dropcap">B</span>ack in 2006, I stumbled upon a website called [Life In Vector](http://lifeinvector.com). At the time I was still learning what Illustrator could do, the work was eye-opening. I followed the [gradient mesh tutorial](http://lifeinvector.com/downloads/) for a red pepper (I cannot believe this is still online) and learned a lot about working more effectively with layers and gradients. 
+Back in 2006, I stumbled upon a website called [Life In Vector](http://lifeinvector.com). At the time I was still learning what Illustrator could do, the work was eye-opening. I followed the [gradient mesh tutorial](http://lifeinvector.com/downloads/) for a red pepper (I cannot believe this is still online) and learned a lot about working more effectively with layers and gradients. 
 
 <figure>
     <img src="/images/keytar/yamaha-shs-10.png" alt="Yamaha SHS-10 Keytar">

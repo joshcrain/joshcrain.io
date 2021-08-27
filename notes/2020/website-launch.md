@@ -4,7 +4,7 @@ tags: ['notes', 'webdev']
 description: The (much delayed) launch of a personal website, joshcrain.io. 
 date: 2020-07-27
 ---
-<span class="dropcap">W</span>hen I began work on this site more than a year ago my goal was to  build something other than a web designer’s personal website. I’ll start  off by saying I failed at that. I had ideas, grand in their understatement, that led to struggles and then indecision. Those  struggles made way for what was natural—a web designer’s  website, because of course, that’s my job.
+When I began work on this site more than a year ago my goal was to  build something other than a web designer’s personal website. I’ll start  off by saying I failed at that. I had ideas, grand in their understatement, that led to struggles and then indecision. Those  struggles made way for what was natural—a web designer’s  website, because of course, that’s my job.
 
 The site would need to be fast, inclusive, easy to manage, with  minimal friction to deploy. I did not want to spend all my time  tinkering and never get around to the content. Simplicity  would be of the upmost importance and would be my guiding principle.  This goal was successful and has allowed me to focus on _some_ content  and learning new things. I have allowed the process to be slow and  ongoing. Even in small bursts I have learned a lot and have had a chance  to experiment. These skills have translated to the real world where  I’ve added build tools to my workflow. The focus and work for this site  has been different than I had hoped for but valuable none-the-less.
 

@@ -4,7 +4,7 @@ tags: ['notes', 'design', 'css', 'html']
 description: Rebuild an old design, a print form, in HTML. 
 date: 2020-12-08
 ---
-<span class="dropcap">A</span> while back I wrote about the steps I had taken to [become a front-end master](/notes/2020/becoming-a-front-end-master/). The article was in response to [advice](https://css-tricks.com/become-a-front-end-master-in-2020-with-these-10-project-ideas/) from one of my favorite web people Chris Coyer. It challenged me to learn new front-end concepts through a variety of small projects. I followed many of the suggestions except one—to recreate a Dribbble shot in HTML and CSS. I [started](https://codepen.io/joshcrain/pen/zYOEbxg) the exercise but never finished. 
+A while back I wrote about the steps I had taken to [become a front-end master](/notes/2020/becoming-a-front-end-master/). The article was in response to [advice](https://css-tricks.com/become-a-front-end-master-in-2020-with-these-10-project-ideas/) from one of my favorite web people Chris Coyer. It challenged me to learn new front-end concepts through a variety of small projects. I followed many of the suggestions except one—to recreate a Dribbble shot in HTML and CSS. I [started](https://codepen.io/joshcrain/pen/zYOEbxg) the exercise but never finished. 
 
 Recently I came across [a design](https://www.flickr.com/photos/joshuacrain/4949551963/in/album-72157623021882338/) created between college and my first full-time design job. At that time I was looking at ways to build a portfolio of client work—the real-world stuff employers want to see. I was also broke, so the additional income would be helpful to pay rent. 
 

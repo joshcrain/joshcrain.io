@@ -1,6 +1,6 @@
 ---
 title: A Running Log - Garmin Connect and Eleventy
-tags: ['notes','running','eleventy']
+tags: ['notes','running','eleventy','webdev']
 description: Use Eleventy to log Garmin Connect activities on a website and automate the process with Zapier and Netlify. 
 date: 2021-08-09
 ---

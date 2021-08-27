@@ -4,7 +4,7 @@ tags: about
 description: Notes about the tools, languages, publishing methods, and assets used in the production of this website. 
 
 ---
- <span class="dropcap">T</span>his website was created with Visual Studio Code on a Mac. It is written in HTML, Markdown, Liquid, Nunjucks, CSS, and Javascript. The mark-up is written to be compliant with web standards. The layout uses CSS Grid for a custom layout. 
+This website was created with Visual Studio Code on a Mac. It is written in HTML, Markdown, Liquid, Nunjucks, CSS, and Javascript. The mark-up is written to be compliant with web standards. The layout uses CSS Grid for a custom layout. 
  
  Eleventy is used for static page generation. Git is used for version control. Github is used to store the repository. Netlify hosts the website. [This site is fast](https://twitter.com/eleven_ty/status/1424715642884739074). It uses <a href="https://speedlify-joshcrain.netlify.app/" rel="noopener">a copy of Speedlify</a> to continuously measure site speed and accessibility.
 

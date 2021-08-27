@@ -6,7 +6,7 @@ description: That was the night I planned to run six but instead ended up on a g
 date: 2019-05-29
 ---
 
-<span class="dropcap">T</span>hat was the night I planned to run six but instead ended up on a gravel road in the middle of a twelve-mile loop. There was enough light to see, even beyond the glow of the city lights, because the moon was full and the night was clear. The night sky was black as ink, and the moon was bright against it. I noticed my shadow over my right shoulder, clear against the soft glow of the light blue limestone. It looked so much different than during the day.
+That was the night I planned to run six but instead ended up on a gravel road in the middle of a twelve-mile loop. There was enough light to see, even beyond the glow of the city lights, because the moon was full and the night was clear. The night sky was black as ink, and the moon was bright against it. I noticed my shadow over my right shoulder, clear against the soft glow of the light blue limestone. It looked so much different than during the day.
 
 For a while, I only listened to the rocks under my feet and my steady breaths. I began to wonder why I’d changed my mind. Why didn’t I run what I’d planned? If you’d asked me earlier in the day I’m sure I would have given you a long list of reasons not to. We put in a lot of miles the week before, and besides it was late. As a runner, you always think about how the run fits into the completed and upcoming mileage. In the morning, when your body aches and creaks you curse your poor judgment from the day before. Still, there is something about running at night that’s different than the day. Something, I’m sure I’ll forget by morning.
 

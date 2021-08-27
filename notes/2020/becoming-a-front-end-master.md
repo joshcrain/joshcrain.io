@@ -5,7 +5,7 @@ description: Chris’ readings and exercises to guide me towards front-end maste
 date: 2020-03-16
 ---
 
-<span class="dropcap">R</span>ecently, I encountered [an article](https://css-tricks.com/become-a-front-end-master-in-2020-with-these-10-project-ideas/) last November from Chris Coyer which was very helpful. This last year has been really rough for a number of reasons. I haven’t felt like myself, much less a _front-end master_. Chris’ article prompted me to explore some new things in the free moments I have and practice my skills in small but meaningful ways. In the following weeks and months I followed the recommendations—and I’ve learned a lot. 
+Recently, I encountered [an article](https://css-tricks.com/become-a-front-end-master-in-2020-with-these-10-project-ideas/) last November from Chris Coyer which was very helpful. This last year has been really rough for a number of reasons. I haven’t felt like myself, much less a _front-end master_. Chris’ article prompted me to explore some new things in the free moments I have and practice my skills in small but meaningful ways. In the following weeks and months I followed the recommendations—and I’ve learned a lot. 
 
 ##  Try out a static site generator
 Check. This site uses [Eleventy](https://www.11ty.io) for static site generation. Changes are tracked with Git and pushed to [a Github repo](https://github.com/joshcrain/eleventy-intro) using command line. The site is deployed automatically by Netlify using [continuous deployment](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git). 

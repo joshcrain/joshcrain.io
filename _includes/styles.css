@@ -205,8 +205,17 @@ transition: transform .3s cubic-bezier(.86,0,.07,1);
 .media_left {margin-left: 0;margin-right: .75rem;}
 
 .text_center {text-align:center;}
-.dropcap {line-height:1.1;font-size:4.6rem;float:left;display:inline-block;margin:0 .1em -.15em 0;color:rgba(var(--colorAccent), 1)}
-  .text--larger .dropcap {font-size: 4.9rem;}
+.grid-layout_page > div > p:first-child:not(.lead)::first-letter {line-height: .5em;
+  font-size: 4.9rem;
+  float: left;
+  margin: .1em .15em 0 0;
+  color: rgba(var(--colorAccent),1);
+  font-style: unset;
+  font-variant: unicase;
+  font-family: goudy;
+  font-family: Baskerville, "Goudy Old Style", Palatino, "Book Antiqua", serif;
+  font-style: normal;
+}
 .small-caps{letter-spacing:.0625em;font-variant: all-small-caps;}
 .text--smallest {font-size:.875rem;}
 .text--smaller {font-size:1rem;}
