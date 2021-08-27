@@ -1,0 +1,25 @@
+---
+title: 2021 Running Log
+metaTitle: 2021 Running Log
+tags: ['about','running']
+description: A 2021 running log to track dates, distance, time, pace, heart rate, and Vo2 Max.
+---
+<p class="lead">Running activity from 2021 tracked with a Garmin Forerunner 45, logged in Garmin Connect, and published here with Eleventy. More <a href="/notes/2021/eleventy-garmin-connect/">about the project</a>. </p>
+
+<table class="full_width table_rwd">
+  <thead>
+  <tr>
+    <th>When</th>
+    <th>Distance</th>
+    <th>Time</th>
+    <th>Pace</th>
+    <th>Heart Rate</th>
+    <th><abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</th>
+    </tr>
+   </thead>
+   {% for item in running.garmin.activityList %}
+  {% if (item.sportTypeId == "1") and (item.startTimeLocal | date("Y") == "2021") %}
+   {% include "_page_partial/running-columns.njk" %}
+  {% endif %}
+{% endfor %}
+</table>
