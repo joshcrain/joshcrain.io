@@ -1,0 +1,37 @@
+---
+title: 2020 Running Log
+metaTitle: 2020 Running Log
+tags: ['about','running']
+description: A 2020 running log to track dates, distance, time, pace, heart rate, and Vo2 Max.
+---
+<p class="lead">Running activity tracked with a Garmin Forerunner 45, logged in Garmin Connect, and published here with Eleventy. More <a href="/notes/2021/eleventy-garmin-connect/">about the project</a>. </p>
+
+<table class="full_width table_rwd">
+  <thead>
+  <tr>
+    <th>When</th>
+    <th>Distance</th>
+    <th>Time</th>
+    <th>Pace</th>
+    <th>Heart Rate</th>
+    <th><abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</th>
+    </tr>
+   </thead>
+   {% for item in running.garmin.activityList %}
+  {% if (item.sportTypeId == "1") and (item.startTimeLocal | date("Y") == "2020") %}
+  <tr id="{{ item.activityId }}">
+    <th scope="rowgroup" {% if (item.description) or (item.favorite == true) or (item.pr == true) %}rowspan="2"{% endif %}><a href="https://connect.garmin.com/modern/activity/{{ item.activityId }}">{{ item.startTimeLocal | date("M/D/Y") }}</a><br> {{ item.startTimeLocal | date("h:mm A")}}</th>
+    <td data-tblColumn="Distance">{{ item.distance | miles }} mi</td>
+    <td data-tblColumn="Time">{{ item.duration | duration("mm:ss") }}</td>
+    <td data-tblColumn="Pace">{{ ((item.duration)/(item.distance | miles)) | duration("m:ss") }}/mi</td>
+    <td data-tblColumn="Heart Rate">{{ item.averageHR }} <acronym title="beats per minute">bpm</acronym><br> ({{ item.maxHR }}&nbsp;Max)</td>
+    <td data-tblColumn="VO2 Max">{% if item.vO2MaxValue %}{{ item.vO2MaxValue }} <abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</abbr>{% endif %}</td>
+  </tr>
+  {% if (item.description) or (item.favorite == true) or (item.pr == true) %}<tr>
+    <td colspan="5" data-tblColumn="Description">
+      <p>{% if item.description %}{{ item.description }} {% endif %}</p>
+    </td>
+  </tr>{% endif %}
+  {% endif %}
+{% endfor %}
+</table>
