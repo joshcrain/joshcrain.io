@@ -283,7 +283,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   height: 100%;
   object-fit: cover;
   object-position: center;}
-
+  .tile_link {text-decoration: none;}
   .tile_link::after {
     content: '';
     position: absolute;
@@ -291,7 +291,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1;text-decoration: none;}
+    z-index: 1;}
 .tile_inner .tile_name {color:#FFF;word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
