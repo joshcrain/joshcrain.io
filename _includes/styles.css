@@ -51,15 +51,15 @@ p:first-of-type, h2+p, h3+p, .lead+p{text-indent: 0;margin:0;}
 .grid-layout_home:last-child {margin-bottom:0;}
 p:last-of-type {margin-bottom:1.5em;}
 .visuallyhidden { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
-a {color:rgba(var(--colorAccent), 1);text-decoration: none;}
+a {color:rgba(var(--colorAccent), 1);}
+a:hover {text-decoration: dotted;}
 
 main a:hover {border-bottom-color:rgba(var(--colorAccent),1)}
-main a.text--largest, main .text--largest a {border-bottom: 3px solid rgba(var(--colorAccent),0.45);}
-main a.text--largest:hover, main .text--largest a:hover {border-bottom-color:rgba(var(--colorAccent),1)}
-main a:not(.text--largest) {text-decoration: underline;}
-main a:not(.text--largest):hover, main :not(.text--largest) a:hover, main .text--largest a {text-decoration: none;}
-footer a {text-decoration: underline;}
-footer a:hover {text-decoration: none;}
+main a.text--largest, main .text--largest a {border-bottom: 3px solid rgba(var(--colorAccent),0.45);text-decoration: none;}
+main a.text--largest:hover, main .text--largest a:hover {border-bottom-color:rgba(var(--colorAccent),1);text-decoration: none;}
+main a.tile_link {text-decoration: none;}
+.site_header a {text-decoration: none;}
+.site_header a:hover {text-decoration: none;}
   h1 {margin:.5em 0;line-height: 1.2em;font-size:2.75em;font-weight: 400;}
 h2 {font-weight:normal;margin-bottom:.5em;line-height: 1;}
 h3 {font-weight:normal;margin-bottom:.25em;line-height: 1;}
@@ -283,7 +283,6 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   height: 100%;
   object-fit: cover;
   object-position: center;}
-  .tile_link {text-decoration: none;}
   .tile_link::after {
     content: '';
     position: absolute;
