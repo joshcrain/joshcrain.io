@@ -1,7 +1,7 @@
 ---
 title: The Fastest
 tags: ['notes','webdev','eleventy']
-description: Hey! I have the fastest site on The Eleventy Leaderboard for Week 15!
+description: Hey! I have the fastest site on The Eleventy Leaderboard for No. 15!
 date: 2021-09-27
 ---
 I like a good race. Racing isn't always about being the most powerful, often much of the work is about finding what contributes to the drag, like aerodynamics and weight. The runner's shoes, the swimmer's suit, and the car's body are all optimized to prevent drag. Websites are the same. I think it goes without saying that a lighter website that takes fewer trips will load faster. Removing small contributors to drag can add up to big improvements, but they aren't always easy to spot. When I heard about [Speedlify](https://github.com/zachleat/speedlify/), which measures and analyzes site speed over time, I knew I had to give it a try. Who doesn't want a faster site? 
