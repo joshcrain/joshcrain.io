@@ -1,0 +1,13 @@
+---
+title: Weeknote 42/2021
+tags: ['weeknotes']
+description: State of Eleventy cameo. 
+date: 2021-10-11
+---
+- I just realized this website makes an appearance (sort of) in The State of Eleventy 2021 (leaderboards), which I might have seen at the [Jamstack Conf 2021](https://jamstackconf.com/) if I'd had time to attend that day. 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The State of <a href="https://twitter.com/eleven_ty?ref_src=twsrc%5Etfw">@eleven_ty</a> in Two Minutes (2021 edition)<br><br>(as seen at <a href="https://twitter.com/jamstackconf?ref_src=twsrc%5Etfw">@jamstackconf</a>) <a href="https://t.co/WPmo8S28DV">pic.twitter.com/WPmo8S28DV</a></p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/1446511824912977921?ref_src=twsrc%5Etfw">October 8, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+- Topped the Eleventy Leaderboard again for No. 16!
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Eleventy Leaderboards №16 via <a href="https://twitter.com/speedlify?ref_src=twsrc%5Etfw">@speedlify</a><a href="https://t.co/oYzgrbmok5">https://t.co/oYzgrbmok5</a><br><br>🥇 <a href="https://twitter.com/thejoshcrain?ref_src=twsrc%5Etfw">@thejoshcrain</a><br>🥈 <a href="https://twitter.com/smthdotuk?ref_src=twsrc%5Etfw">@smthdotuk</a> ⏫20<br>🥉 <a href="https://twitter.com/lamplightdev?ref_src=twsrc%5Etfw">@lamplightdev</a><br>#4 <a href="https://twitter.com/piraces_?ref_src=twsrc%5Etfw">@piraces_</a><br>#5 <a href="https://twitter.com/nraboy?ref_src=twsrc%5Etfw">@nraboy</a><br>#6 <a href="https://twitter.com/wilto?ref_src=twsrc%5Etfw">@wilto</a> ⏫135<br>#7 <a href="https://twitter.com/cramforce?ref_src=twsrc%5Etfw">@cramforce</a><br>#8 <a href="https://twitter.com/khawkins98?ref_src=twsrc%5Etfw">@khawkins98</a> ⏫130<br>#9 <a href="https://twitter.com/tannerdolby?ref_src=twsrc%5Etfw">@tannerdolby</a> ⬆️9<br>#10 <a href="https://twitter.com/Accudio?ref_src=twsrc%5Etfw">@accudio</a> ⬆️5<br>#11 <a href="https://twitter.com/JoeLamyman?ref_src=twsrc%5Etfw">@JoeLamyman</a> ⬆️6<a href="https://twitter.com/____lighthouse?ref_src=twsrc%5Etfw">@____lighthouse</a> v8.5</p>&mdash; Eleventy (1.0.0-beta.2) (@eleven_ty) <a href="https://twitter.com/eleven_ty/status/1448348220787249152?ref_src=twsrc%5Etfw">October 13, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
