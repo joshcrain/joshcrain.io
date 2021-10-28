@@ -13,3 +13,7 @@ Recently, I decided to see if there was something I could do about it. I removed
 On August 9th [I learned](https://twitter.com/thejoshcrain/status/1424729680385544193) I topped the leaderboard for the first time. The others in the Top 11 are all people I look up to, including software engineers at Google and Microsoft. 
 
 Who knows how long I'll be on the list! _Quick!_ I'd better publish this article while I'm still on top!
+
+---
+
+☆ Update: I also topped the [Eleventy Leaderboards for №16](https://twitter.com/eleven_ty/status/1448348220787249152)!
