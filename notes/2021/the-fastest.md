@@ -10,7 +10,7 @@ Soon after, I found that others were being ranked on the [Eleventy Leaderboard](
 
 Recently, I decided to see if there was something I could do about it. I removed a plugin I used to lazy load images. Images are an important factor used to determine the score, and I had effectively removed them from the mix. 
 
-On August 9th [I learned](https://twitter.com/thejoshcrain/status/1424729680385544193) I topped the leaderboard for the first time. The others in the Top 11 are all people I look up to, including software engineers at Google and Microsoft. 
+On August 9th [I learned](https://twitter.com/thejoshcrain/status/1424729680385544193) this site topped the №15 leaderboard. The others in the Top 11 are all people I look up to, including software engineers at Google and Microsoft. 
 
 Who knows how long I'll be on the list! _Quick!_ I'd better publish this article while I'm still on top!
 
