@@ -22,7 +22,7 @@
         </header>
         <main class="site_content" id="content">
         <div class="wrapper {% if pageType == "home" %}home{% endif %}">
-         {% if pageType == "home" %}<div class="hero fade-in">{% endif %}
+        {% if pageType == "home" %}<div class="hero fade-in">{% endif %}
             <header {% if pageType != "home" %}class="text_center"{% endif %}>
                 <h1>{{ title }}{% if tag %}<span style="text-transform:capitalize;">{{ tag }}</span>{% endif %}</h1> 
                 {% if date != blank %}<div class="small-caps"><time>{{ date|date("D MMM Y") }}</time>&nbsp;&nbsp;⁃&nbsp;&nbsp;{{ category }}</div>{% endif %} 
@@ -41,9 +41,7 @@
         </main>
         <footer class="site_footer">
             <div class="wrapper text_center">
-
-                    <nav aria-label="nav-primary-footer"><ul class="list--horizontal"><li>&copy; 2019-2021 ⁃ Josh Crain</li><li><a href="/about/site/colophon/" class="text--small"><i>Colophon</i></a></li><li><a href="/ancestry/" class="text--small"><i>Ancestry</i></a></li><li><a href="/about/running/" class="text--small"><i>Running</i></a></li><li><a href="/feed.xml" class="text--small"><i>RSS</i></a></li></ul></nav>
-
+                <nav aria-label="nav-primary-footer"><ul class="list--horizontal"><li>&copy; <time>2019</time>-<time>{{ date|date("YYYY") }}</time> ⁃ Josh Crain</li><li><a href="/about/site/colophon/" class="text--small"><i>Colophon</i></a></li><li><a href="/ancestry/" class="text--small"><i>Ancestry</i></a></li><li><a href="/about/running/" class="text--small"><i>Running</i></a></li><li><a href="/feed.xml" class="text--small"><i>RSS</i></a></li></ul></nav>
             </div>
         </footer>
         <nav class="view" aria-label="nav-view">
