@@ -6,45 +6,45 @@ metaImage: /images/arizona-utah/420/bryce-canyon-4.jpeg
 date: 2019-07-18
 ---
 <figure class="pull--both">
-    <img src="/images/arizona-utah/1024/montezuma-1.jpeg" alt="Montezuma Castle">
+    <img src="/images/arizona-utah/1024/montezuma-1.jpeg" loading="lazy" alt="Montezuma Castle">
 <figcaption>
 Montezuma Castle National Monument, Arizona.</figcaption>
 </figure>
 <figure class="pull--both">
-    <img src="/images/arizona-utah/1024/bryce-canyon-1.jpeg" alt="Bryce Canyon">
+    <img src="/images/arizona-utah/1024/bryce-canyon-1.jpeg" loading="lazy" alt="Bryce Canyon">
 <figcaption>Bryce Canyon National Park, Utah.</figcaption>
 </figure>
 <figure>
-    <img src="/images/arizona-utah/768/bryce-canyon-2.jpeg" alt="Bryce Canyon">
+    <img src="/images/arizona-utah/768/bryce-canyon-2.jpeg" loading="lazy" alt="Bryce Canyon">
 <figcaption>Bryce Canyon National Park, Utah.</figcaption>
 </figure> 
 <figure>
-    <img src="/images/arizona-utah/768/bryce-canyon-3.jpeg" alt="Bryce Canyon">
+    <img src="/images/arizona-utah/768/bryce-canyon-3.jpeg" loading="lazy" alt="Bryce Canyon">
     <figcaption>Bryce Canyon National Park, Utah.</figcaption>
 </figure>
 <figure class="pull--both">
-        <img src="/images/arizona-utah/1024/bryce-canyon-4.jpeg" alt="Bryce Canyon">
+        <img src="/images/arizona-utah/1024/bryce-canyon-4.jpeg" loading="lazy" alt="Bryce Canyon">
     <figcaption>Natural Bridge. Bryce Canyon National Park, Utah. </figcaption>
 </figure>
 <figure class="pull--both">
-    <img src="/images/arizona-utah/1024/bryce-canyon-5.jpeg" alt="Bryce Canyon">
+    <img src="/images/arizona-utah/1024/bryce-canyon-5.jpeg" loading="lazy" alt="Bryce Canyon">
     <figcaption>Bryce Canyon National Park, Utah. </figcaption>
 </figure>
 
 <figure>
-    <img src="/images/arizona-utah/768/bryce-canyon-7.jpeg" alt="Bryce Canyon">
+    <img src="/images/arizona-utah/768/bryce-canyon-7.jpeg" loading="lazy" alt="Bryce Canyon">
     <figcaption>Bryce Canyon National Park, Utah.</figcaption>
 </figure>
 <figure>
-    <img src="/images/arizona-utah/1024/grand-canyon-1.jpeg" alt="Grand Canyon">
+    <img src="/images/arizona-utah/1024/grand-canyon-1.jpeg" loading="lazy" alt="Grand Canyon">
     <figcaption>Grand Canyon National Park, Arizona. </figcaption>
 </figure>
 <figure class="pull--both">
-    <img src="/images/arizona-utah/1024/grand-canyon-2.jpeg" alt="Grand Canyon">
+    <img src="/images/arizona-utah/1024/grand-canyon-2.jpeg" loading="lazy" alt="Grand Canyon">
     <figcaption> Inner Canyon. Grand Canyon National Park, Arizona. </figcaption>
 </figure>
 <figure class="pull--both">
-    <img src="/images/arizona-utah/1024/paria-ut-1.jpeg" alt="Paria">
+    <img src="/images/arizona-utah/1024/paria-ut-1.jpeg" loading="lazy" alt="Paria">
     <figcaption>Banded hills of the Chinle Formation, near the Paria movie set. Grand Staircase-Escalante National Monument, Utah. </figcaption>
 </figure>
 
