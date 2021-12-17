@@ -5,12 +5,12 @@ description: Paria Movie Site, Montezuma Castle, Grand Canyon and Bryce Canyon.
 metaImage: /images/arizona-utah/420/bryce-canyon-4.jpeg
 date: 2019-07-18
 ---
-<figure class="pull--both">
+<figure class="full_width">
     <img src="/images/arizona-utah/1024/montezuma-1.jpeg" loading="lazy" alt="Montezuma Castle">
 <figcaption>
 Montezuma Castle National Monument, Arizona.</figcaption>
 </figure>
-<figure class="pull--both">
+<figure class="full_width">
     <img src="/images/arizona-utah/1024/bryce-canyon-1.jpeg" loading="lazy" alt="Bryce Canyon">
 <figcaption>Bryce Canyon National Park, Utah.</figcaption>
 </figure>
@@ -22,11 +22,11 @@ Montezuma Castle National Monument, Arizona.</figcaption>
     <img src="/images/arizona-utah/768/bryce-canyon-3.jpeg" loading="lazy" alt="Bryce Canyon">
     <figcaption>Bryce Canyon National Park, Utah.</figcaption>
 </figure>
-<figure class="pull--both">
+<figure class="full_width">
         <img src="/images/arizona-utah/1024/bryce-canyon-4.jpeg" loading="lazy" alt="Bryce Canyon">
     <figcaption>Natural Bridge. Bryce Canyon National Park, Utah. </figcaption>
 </figure>
-<figure class="pull--both">
+<figure class="full_width">
     <img src="/images/arizona-utah/1024/bryce-canyon-5.jpeg" loading="lazy" alt="Bryce Canyon">
     <figcaption>Bryce Canyon National Park, Utah. </figcaption>
 </figure>
@@ -39,11 +39,11 @@ Montezuma Castle National Monument, Arizona.</figcaption>
     <img src="/images/arizona-utah/1024/grand-canyon-1.jpeg" loading="lazy" alt="Grand Canyon">
     <figcaption>Grand Canyon National Park, Arizona. </figcaption>
 </figure>
-<figure class="pull--both">
+<figure class="full_width">
     <img src="/images/arizona-utah/1024/grand-canyon-2.jpeg" loading="lazy" alt="Grand Canyon">
     <figcaption> Inner Canyon. Grand Canyon National Park, Arizona. </figcaption>
 </figure>
-<figure class="pull--both">
+<figure class="full_width">
     <img src="/images/arizona-utah/1024/paria-ut-1.jpeg" loading="lazy" alt="Paria">
     <figcaption>Banded hills of the Chinle Formation, near the Paria movie set. Grand Staircase-Escalante National Monument, Utah. </figcaption>
 </figure>
