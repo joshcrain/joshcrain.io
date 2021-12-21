@@ -1,7 +1,7 @@
 ---
 title: Weeknote 20/2021
 tags: ['weeknotes']
-description: YAML anchors, 
+description: YAML anchors and deploying to Amazon S3. 
 date: 2021-05-10
 ---
 - Set up [YAML anchors](https://support.atlassian.com/bitbucket-cloud/docs/yaml-anchors/) to reuse portions of a Bitbucket build pipeline with a little help from their online [YAML validator](https://bitbucket-pipelines.prod.public.atl-paas.net/validator). 
