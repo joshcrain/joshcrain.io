@@ -1,7 +1,7 @@
 ---
 title: Weeknote 49/2021
 tags: ['weeknotes', 'css']
-description: 
+description: Contemplating CSS resets. 
 date: 2021-12-01
 ---
 - Nearing another new year... I realized the copyright date in the footer of this site was static text so I updated the template to use a [Moment](https://momentjs.com/) filter to output the current year. 
