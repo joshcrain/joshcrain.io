@@ -7,15 +7,26 @@ description: Josh Crain has experience as a web designer, product designer, and 
 changefreq: monthly
 priority: "1.0"
 ---
-<div class="grid-layout_home">
-<div class="grid-content">
-<p class="text--largest">I design and build websites. My work allows me to make an impact through design, user advocacy, web standards, research, and code. I run and sketch in my spare time. There are also <a href="/about/">other interesting things</a>.</p>
+<div class="hero">
+    <div class="wrapper fade-in">
+    <header>
+        <h1>{{ title }}</h1> 
+    </header>
+    <div class="grid-layout_home">
+        <div class="layout-section text_center"> 
+            <!--<div class="profile_img"><div class="profile_inner"><img src="/images/josh-crain_400x400.png" loading="lazy" style="mix-blend-mode: multiply;" alt="self portrait" ></div></div>-->
+        </div>
+        <div class="grid-content">
+            <p class="text--largest">I design and build websites. My work allows me to make an impact through design, user advocacy, web standards, research, and code. I run and sketch in my spare time. There are also <a href="/about/">other interesting things</a>.</p>
+        </div>
+    </div>
 </div>
 </div>
-</div><!--/fade-in-->
+<div class="wrapper">
 <section class="grid-layout_home">
     <div class="layout-section"> 
         <h2>Notes</h2>
+        <span class="text--smaller">{{ collections.notes | length }} posts</span>
     </div>
     <div class="grid-content">
     <div class="grid">
@@ -24,7 +35,7 @@ priority: "1.0"
     <div class="grid-half@l">
         <div>
             <a href="{{ post.url }}" class="text--largest">{{ post.data.title }}</a>
-            <p class="line-clamp"><span class="small-caps"><time>{{ post.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> </br>
+            <p class="line-clamp"><span class="small-caps"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br/>
             {{ post.data.description }}</p>
         </div>
     </div>
@@ -37,8 +48,13 @@ priority: "1.0"
     </div>
     </div>
     </section>
+</div>
+<div class="wrapper">
 <section class="grid-layout_home">
-<h2>Sketches</h2>
+    <div class="layout-section">
+        <h2>Sketches</h2>
+        <span class="text--smaller">{{ collections.sketches | length }} pages</span>
+    </div>
 <div class="grid-content">
 <div class="grid">
 {% for post in collections.sketches | reverse %}
@@ -53,8 +69,13 @@ priority: "1.0"
 </div>
 </div>
 </section>
+</div>
+<div class="wrapper">
 <section class="grid-layout_home">
-<h2>Running</h2>
+    <div class="layout-section">
+        <h2>Running</h2>
+        <span class="text--smaller">{{ running.garmin.activityList | length }} activities</span>
+    </div>
 <div class="grid-content">
     <table class="table_rwd">
         <thead>
@@ -64,7 +85,7 @@ priority: "1.0"
             <th scope="col">Time</th>
             <th scope="col">Pace</th>
             <th scope="col">Heart Rate</th>
-            <th scope="col"><abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</th>
+            <th scope="col"><abbr title="volume, oxygen, maximum">VO<sub>2</sub></abbr> Max</th>
         </tr>
         </thead>
         {% set rundata = running.garmin.activityList %}
@@ -74,6 +95,7 @@ priority: "1.0"
             {% endif %}
         {% endfor %}
     </table>
-    <p><i>See <a href="/about/running/">all running activity</a> or activity for the years <a href="/about/running/2021/">2021</a> and <a href="/about/running/2020/">2020</a>. More <a href="/notes/2021/eleventy-garmin-connect/">about the project</a>.</i></p>
+    <p><i>See <a href="/about/running/">all running activity</a> or activity for the years <a href="/about/running/2020/">2020</a>, <a href="/about/running/2021/">2021</a>,  and <a href="/about/running/2022/">2022</a>. More <a href="/notes/2021/eleventy-garmin-connect/">about the project</a>.</i></p>
 </div>
 </section>
+</div>
