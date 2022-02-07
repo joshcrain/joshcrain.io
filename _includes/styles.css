@@ -221,7 +221,7 @@ transition: transform .3s cubic-bezier(.86,0,.07,1);
   font-family: Baskerville, "Goudy Old Style", Palatino, "Book Antiqua", serif;
   font-style: normal;
 }
-.small-caps{letter-spacing:.05em;font-family: monospace;font-size:.75em;text-transform: uppercase;}
+.small-caps{letter-spacing:.05em;font-size:.875em;text-transform: capitalize;font-variant:petite-caps;}
 .text--smallest {font-size:.875rem;}
 .text--smaller {font-size:1rem;}
 .text--larger {font-size:1.5rem;line-height: 1em;}
