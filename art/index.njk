@@ -5,7 +5,7 @@ description: Artwork to share.
 ---
 {% for item in art %} 
 <figure>
-    <a href="/art/{{ item.title | slug }}/"><img src="https://res.cloudinary.com/joshcrain/image/upload/w_400,q_95,c_scale/art/{{ item.date | date('YYYY') }}/{{ item.file }}" alt="{{ item.alt }}" loading="lazy"></a>
+    <a href="/art/{{ item.title | slug }}/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,g_face,h_200,w_200/r_max/e_sharpen/art/{{ item.date | date('YYYY') }}/{{ item.file }}" alt="{{ item.alt }}" loading="lazy"></a>
     <figcaption>{{ item.title }}. {{ item.date | date("YYYY") }}. {{ item.medium }}. {{ item.description }}</figcaption>
 </figure>    
 {% endfor %}
