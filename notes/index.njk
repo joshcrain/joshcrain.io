@@ -1,5 +1,4 @@
 ---
-layout: layout.njk
 title: Notes
 metaTitle: Josh Crain's Notes
 description: What thinking about, what I’ve learned, and what I’ve made. 
@@ -9,8 +8,8 @@ description: What thinking about, what I’ve learned, and what I’ve made.
     {% set items = collections.notes | reverse %}
     {% for post in items %} 
     <li>
-        <a href="{{ post.url }}" class="text--largest">{{ post.data.title }}</a>
-        <p><span class="small-caps"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> </br>
+        <a href="{{ post.url }}" class="text--larger">{{ post.data.title }}</a>
+        <p><span class="small-caps"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br>
             {{ post.data.description }}</p>
     </li>
     {% endfor %}

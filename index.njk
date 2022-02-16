@@ -14,10 +14,9 @@ priority: "1.0"
     </header>
     <div class="grid-layout_home">
         <div class="layout-section text_center"> 
-            <!--<div class="profile_img"><div class="profile_inner"><img src="/images/josh-crain_400x400.png" loading="lazy" style="mix-blend-mode: multiply;" alt="self portrait" ></div></div>-->
         </div>
         <div class="grid-content">
-            <p class="text--largest">I design and build websites. My work allows me to make an impact through design, user advocacy, web standards, research, and code. I <a href="/about/running/">run</a> and <a href="/sketch/">sketch</a> in my spare time. There are also <a href="/about/">other interesting things</a>.</p>
+            <p class="text--larger">I design and build for the web. My work allows me to make an impact through user advocacy, web standards, research, and code. I <a href="/about/running/">run</a> and <a href="/sketch/">sketch</a> in my spare time. There are also <a href="/about/">other interesting things</a>.</p>
         </div>
     </div>
 </div>
@@ -29,12 +28,12 @@ priority: "1.0"
         <span class="text--smaller">{{ collections.notes | length }} posts</span>
     </div>
     <div class="grid-content">
-    <div class="grid">
+    <div class="subgrid">
     {% set items = collections.notes | reverse %}
     {% for post in items.slice(0, 6) %}
     <div class="grid-half@l">
         <div>
-            <a href="{{ post.url }}" class="text--largest">{{ post.data.title }}</a>
+            <a href="{{ post.url }}" class="text--larger">{{ post.data.title }}</a>
             <p class="line-clamp"><span class="small-caps"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br/>
             {{ post.data.description }}</p>
         </div>
@@ -56,7 +55,7 @@ priority: "1.0"
         <span class="text--smaller">{{ collections.sketches | length }} pages</span>
     </div>
 <div class="grid-content">
-<div class="grid">
+<div class="subgrid">
 {% for post in collections.sketches | reverse %}
 <div class="grid-quarter@l tile">
 <img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.title }}" loading="lazy">
@@ -89,7 +88,7 @@ priority: "1.0"
         </tr>
         </thead>
         {% set rundata = running.garmin.activityList %}
-        {% for item in rundata.slice(0, 3) %}
+        {% for item in rundata.slice(0, 5) %}
             {% if item.sportTypeId == "1" %}
                 {% include "_page_partial/running-columns.njk" %}
             {% endif %}

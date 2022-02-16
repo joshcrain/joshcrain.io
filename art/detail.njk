@@ -1,0 +1,13 @@
+---
+pagination:
+    data: art
+    size: 1
+    alias: art
+permalink: "art/{{ art.title | slug }}/"
+---
+
+<figure>
+    <img src="" alt="{{ art.alt }}">
+    <figcaption>{{ art.title }}. {{ art.date | date("YYYY") }}. {{ art.medium }}. {{ art.description }}</figcaption>
+</figure>   
+

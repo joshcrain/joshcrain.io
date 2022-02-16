@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Indicating Brickwork Study",
+        "date": "2022-02-13",
+        "medium": "Pencil",
+        "file": "",
+        "description": "",
+        "tags": ["analog", "drawing", "sketchbook"],
+        "alt": "drawing of a brick house"
+    },
+    {
+        "title": "Cardinal",
+        "date": "2022-01-24",
+        "medium": "Digital",
+        "file": "",
+        "description": "",
+        "tags": ["digital", "drawing"],
+        "alt": "drawing of a bird"
+    },
+    {
+        "title": "Self Portrait",
+        "date": "2021-12-23",
+        "medium": "Digital",
+        "file": "self-portrait-2021.jpg",
+        "description": "",
+        "tags": ["digital", "drawing"],
+        "alt": "drawing self portrait"
+    }
+]

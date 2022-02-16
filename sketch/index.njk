@@ -6,7 +6,7 @@ metaTitle: Josh Crain’s Sketches
 description: I want to spend a lot more time drawing, painting, and in my sketchbook.
 ---
 <p class="lead">{{description}}</p>
-<div class="grid">
+<div class="subgrid">
     {% for post in collections.sketches | reverse %}
     <div class="grid-quarter@l tile">
         <img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.title }}" loading="lazy">
