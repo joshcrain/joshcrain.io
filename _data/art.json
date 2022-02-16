@@ -50,15 +50,6 @@
         "description": "",
         "alt": "digital painting",
         "tags": ["digital", "painting"],
-        "featured": true,
-            "secondary": [{
-                "title": "",
-                "date": "",
-                "medium": "",
-                "file": "",
-                "description": "",
-                "alt": ""
-            }
-        ]
+        "featured": true
     }
 ]

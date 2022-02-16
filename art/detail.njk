@@ -7,7 +7,7 @@ permalink: "art/{{ art.group | slug }}/"
 ---
 
 <figure>
-    <a href="/art/{{ art.title | slug }}/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_scale,q_auto,w_742/art/{{ art.date | date('YYYY') }}/{{ art.file }}" alt="{{ art.alt }}" loading="lazy"></a>
+    <img src="https://res.cloudinary.com/joshcrain/image/upload/c_scale,q_auto,w_742/art/{{ art.date | date('YYYY') }}/{{ art.file }}" alt="{{ art.alt }}" loading="lazy">
     <figcaption>{{ art.title }}. {{ art.date | date("YYYY") }}. {{ art.medium }}. {{ art.description }}</figcaption>
 </figure>   
 
