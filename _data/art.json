@@ -1,29 +1,44 @@
 [
     {
+        "group": "Broadstroke",
         "title": "Indicating Brickwork Study",
         "date": "2022-02-13",
         "medium": "Pencil",
         "file": "indicating-brickwork.jpg",
         "description": "",
+        "alt": "drawing of a brick house",
         "tags": ["analog", "drawing", "sketchbook"],
-        "alt": "drawing of a brick house"
+        "featured": false
     },
-    {
+    {   
+        "group": "Birds",
         "title": "Cardinal",
         "date": "2022-01-24",
         "medium": "Digital",
         "file": "cardinal.png",
         "description": "",
+        "alt": "drawing of a cardinal",
         "tags": ["digital", "drawing"],
-        "alt": "drawing of a bird"
+        "featured": true,
+            "secondary": [{
+                "title": "Chickadee",
+                "date": "2021-12-31",
+                "medium": "Digital",
+                "file": "chickadee.png",
+                "description": "",
+                "alt": "drawing of a chickadee"
+            }
+        ]
     },
     {
-        "title": "Self Portrait",
+        "group": "Self Portrait",
+        "title": "Self Portrait 2021",
         "date": "2021-12-23",
         "medium": "Digital",
         "file": "self-portrait-2021.jpg",
         "description": "",
+        "alt": "drawing self portrait",
         "tags": ["digital", "drawing"],
-        "alt": "drawing self portrait"
+        "featured": false
     }
 ]

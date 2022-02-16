@@ -255,7 +255,6 @@ main a.tile_link {text-decoration: none;}
     display: flex;
     flex-direction: column;
     position: relative;
-    height:277px;
     border-radius: var(--size-2);
     overflow: hidden;
   }

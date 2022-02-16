@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ metaTitle }}{% if metaTitle == blank %}{{ title }}{% endif %}{{ art.title }}{% if (title or art.title) == blank %}“{{ tag }}”{% endif %}</title>
+        <title>{{ metaTitle }}{% if metaTitle == blank %}{{ title }}{% endif %}{{ art.group }}{% if (title or art.group) == blank %}“{{ tag }}”{% endif %}</title>
         <meta name="description" content="{{ description | safe }}">
         <meta name="author" content="Josh Crain">
         <meta name="theme-color" content="rgb(255, 255, 255)">
@@ -27,7 +27,7 @@
         {% else %}
             <div class="wrapper">
                 <header class="text_center">
-                    <h1>{{ title }}{{ art.title }}{% if tag %}<i>“{{ tag }}”</i>{% endif %}</h1> 
+                    <h1>{{ title }}{{ art.group }}{% if tag %}<i>“{{ tag }}”</i>{% endif %}</h1> 
                     {% if date != blank %}<div class="small-caps"><time datetime="{{ date | date('YYYY-MM-DD HH:mm') }}">{{ date|date("D MMM Y") }}</time>&nbsp; ⁃ &nbsp;{{ category }}</div>{% endif %} 
                 </header>
                 {% if pageType == "section" %}

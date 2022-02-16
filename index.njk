@@ -68,6 +68,32 @@ priority: "1.0"
 </div>
 </div>
 </section>
+<section class="grid-layout_home">
+    <div class="layout-section">
+        <h2>Art</h2>
+        <span class="text--smaller">{{ art | length }} artworks</span>
+    </div>
+<div class="grid-content">
+<div class="subgrid">
+{% for item in art %}
+    {% if item.featured == true  %}
+    <div class="grid-quarter@l tile">
+    <a href="/art/{{ item.title | slug }}/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,g_face,h_300,w_300/art/{{ item.date | date('YYYY') }}/{{ item.file }}" alt="{{ item.alt }}" loading="lazy"></a>
+        <div class="tile_inner">
+            <a href="/art/{{ item.group | slug }}/" class="tile_link"><span class="tile_name">{{ item.group }}</span></a>
+            <span class="tile_desc text--smaller">{{ item.date | date("YYYY") }}. {{ item.medium }}. {{ item.description }}</span>
+        </div>
+    </div>
+    {% endif %}
+{% endfor %}
+<div class="grid-full@l">
+    <div>
+        <p><i>See <a href="/art/">all art</a>. The most recent is titled {% set items = art %}{% for item in items.slice(0, 1) %}<a href="/art/{{ item.group | slug }}/">{{ item.title }}</a>{% endfor %}.</i></p>
+    </div>
+</div>
+</div>
+</div>
+</section>
 </div>
 <div class="wrapper">
 <section class="grid-layout_home">
