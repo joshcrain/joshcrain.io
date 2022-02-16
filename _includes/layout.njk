@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ metaTitle }}{% if metaTitle == blank %}{{ title }}{% endif %}{% if title == blank %}“{{ tag }}”{% endif %}</title>
+        <title>{{ metaTitle }}{% if metaTitle == blank %}{{ title }}{% endif %}{{ art.title }}{% if (title or art.title) == blank %}“{{ tag }}”{% endif %}</title>
         <meta name="description" content="{{ description | safe }}">
         <meta name="author" content="Josh Crain">
         <meta name="theme-color" content="rgb(255, 255, 255)">
