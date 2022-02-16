@@ -40,5 +40,25 @@
         "alt": "drawing self portrait",
         "tags": ["digital", "drawing"],
         "featured": false
+    },
+    {   
+        "group": "Digital Painting",
+        "title": "Watercolor Study",
+        "date": "2021-06-30",
+        "medium": "Digital",
+        "file": "fresco-2021-06-30.png",
+        "description": "",
+        "alt": "digital painting",
+        "tags": ["digital", "painting"],
+        "featured": true,
+            "secondary": [{
+                "title": "",
+                "date": "",
+                "medium": "",
+                "file": "",
+                "description": "",
+                "alt": ""
+            }
+        ]
     }
 ]
