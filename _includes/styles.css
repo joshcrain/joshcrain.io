@@ -1,6 +1,6 @@
 :where(html) {
   --colorBase: 245, 245, 250;
-  --colorBack: 255, 255, 255;
+  --colorBack: 239, 233, 228;
   --colorFore: 0, 0, 0;
   --colorAccent: 114,96,18;
   --colorDanger: 192, 24, 35;
@@ -65,7 +65,7 @@ h2 {font-weight:normal;margin-bottom:var(--size-2);line-height: 1;}
 h3 {font-weight:normal;margin-bottom:.25em;line-height: 1;}
 img{margin-bottom:-10px;max-width:100%;height:auto;line-height:1;}
 hr {margin: var(--size-8) 0;border: var(--border-size-1) dashed rgba(var(--colorFore), .25);outline: 0;padding: 0;line-height:1;}
-table{font-size:.75em;width:100%;border-collapse:collapse;font-family:monospace;margin-bottom:var(--size-8);border-bottom:var(--border-size-1) solid rgba(var(--colorFore),.8);}table th{text-align:left;white-space: nowrap;font-weight: normal;}table thead th {letter-spacing:.05em;text-transform:uppercase;border-bottom:var(--border-size-2) solid rgba(var(--colorFore),1);padding:var(--size-2) var(--size-3);}table :not(:first-child) td,table :not(:first-child) th{vertical-align:top;border:0;border-top:var(--border-size-1) solid rgba(var(--colorFore),.8);padding:var(--size-2) var(--size-3);}table td[colspan]{border:0;}[scope="rowgroup"] {background: rgba(var(--colorFore),.1);}table :last-child{margin-bottom:0;}
+table{font-size:.75em;width:100%;border-collapse:collapse;font-family:monospace;margin-bottom:var(--size-8);border-bottom:var(--border-size-1) solid rgba(var(--colorFore),.8);}table th{text-align:left;white-space: nowrap;font-weight: normal;}table thead th {letter-spacing:.05em;text-transform:uppercase;border-bottom:var(--border-size-2) solid rgba(var(--colorFore),1);padding:var(--size-2) var(--size-3);}table :not(:first-child) td,table :not(:first-child) th{vertical-align:top;border:0;border-top:var(--border-size-1) solid rgba(var(--colorFore),.8);padding:var(--size-2) var(--size-3);}table td[colspan]{border:0;}[scope="rowgroup"] {background: rgba(var(--colorFore),.05);}table :last-child{margin-bottom:0;}
 figure{margin:var(--size-3) 0;display:inline-block;text-align: center;width:100%;}
   figure figcaption{font-size:.875em;font-style: italic;padding:var(--size-2) 0;}
 blockquote{margin:var(--size-6) var(--size-6);font-style: italic;}
