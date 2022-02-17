@@ -257,6 +257,8 @@ main a.tile_link {text-decoration: none;}
     position: relative;
     border-radius: var(--size-2);
     overflow: hidden;
+    max-width: 300px;
+    margin:0 auto;
   }
   .tile p {margin:0;}
 
@@ -455,7 +457,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   }
 
   .grid-quarter\@l {
-    grid-column: span 6;
+    grid-column: span 12;
 }
 
   
