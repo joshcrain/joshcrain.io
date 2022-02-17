@@ -12,7 +12,7 @@ In the last year I’ve noticed a transition to a more sustainable cadence of wo
 Progress, as it has for a number of years, has been disappointing. It seems though, I have set myself up for failure. I have wanted to paint. I have had an ideal that I’ve measured against which has created an obstacle more than a goal. Painting requires time, preparation, materials, and space. I have not had any of these things in any great quantity and so I find myself stuck, never able to execute. The basic and most essential thing I must do is draw, so I'll do that. 
 
 <figure>
-	<img src="https://res.cloudinary.com/joshcrain/image/upload/w_400,q_95,c_scale/joshcrain_io/self-portrait-2021.jpg" alt="Digital Self-Portrait" loading="lazy">
+	<img src="https://res.cloudinary.com/joshcrain/image/upload/w_400,q_95,c_scale/art/2021/self-portrait-2021.jpg" alt="Digital Self-Portrait" loading="lazy">
 	<figcaption>Self Portrait, December 2021. Digital. </figcaption>
 </figure>
 
