@@ -16,7 +16,7 @@ priority: "1.0"
         <div class="layout-section text_center"> 
         </div>
         <div class="grid-content">
-            <p class="text--larger">I design and build for the web. My work allows me to make an impact through user advocacy, web standards, research, and code. I <a href="/about/running/">run</a> and <a href="/sketch/">sketch</a> in my spare time. There are also <a href="/about/">other interesting things</a>.</p>
+            <p class="text--larger">I design and build for the web. My work allows me to make an impact through user advocacy, web standards, research, and code. I <a href="/about/running/">run</a> and <a href="/art/">sketch</a> in my spare time. There are also <a href="/about/">other interesting things</a>.</p>
         </div>
     </div>
 </div>
@@ -51,25 +51,6 @@ priority: "1.0"
 <div class="wrapper">
 <section class="grid-layout_home">
     <div class="layout-section">
-        <h2>Sketches</h2>
-        <span class="text--smaller">{{ collections.sketches | length }} pages</span>
-    </div>
-<div class="grid-content">
-<div class="subgrid">
-{% for post in collections.sketches | reverse %}
-<div class="grid-quarter@l tile">
-<img src="{{post.data.metaImage}}" alt="Artwork {{ post.data.title }}" loading="lazy">
-    <div class="tile_inner">
-        <a href="{{ post.url }}" class="tile_link"><span class="tile_name">{{ post.data.title }}</span></a>
-        <span class="tile_desc text--smaller">{{ post.data.description }}</span>
-    </div>
-</div>
-{% endfor %} 
-</div>
-</div>
-</section>
-<section class="grid-layout_home">
-    <div class="layout-section">
         <h2>Art</h2>
         <span class="text--smaller">{{ art | length }} artworks</span>
     </div>
@@ -77,7 +58,7 @@ priority: "1.0"
 <div class="subgrid">
 {% for item in art %}
     {% if item.featured == true  %}
-    <div class="grid-quarter@l tile">
+    <div class="grid-third@l tile">
     <a href="/art/{{ item.group | slug }}/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,h_300,w_300/art/{{ item.date | date('YYYY') }}/{{ item.file }}" alt="{{ item.alt }}" loading="lazy"></a>
         <div class="tile_inner">
             <a href="/art/{{ item.group | slug }}/" class="tile_link"><span class="tile_name">{{ item.group }}</span></a>
