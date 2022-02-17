@@ -1,7 +1,7 @@
 [
     {
         "group": "Broadstroke",
-        "title": "Indicating Brickwork Study",
+        "title": "Indicating Brickwork, Study",
         "date": "2022-02-13",
         "medium": "Pencil",
         "file": "indicating-brickwork.jpg",
@@ -11,7 +11,7 @@
         "featured": false
     },
     {   
-        "group": "Birds",
+        "group": "Drawing",
         "title": "Cardinal",
         "date": "2022-01-24",
         "medium": "Digital",
@@ -43,13 +43,22 @@
     },
     {   
         "group": "Digital Painting",
-        "title": "Watercolor Study",
+        "title": "Watercolor, Study",
         "date": "2021-06-30",
         "medium": "Digital",
         "file": "fresco-2021.png",
         "description": "",
         "alt": "digital painting",
         "tags": ["digital", "painting"],
-        "featured": true
+        "featured": true,
+        "secondary": [{
+            "title": "Purple, Study",
+            "date": "2021-03-05",
+            "medium": "Digital",
+            "file": "purple-study.png",
+            "description": "",
+            "alt": "purple painting of a waterway"
+        }
+    ]
     }
 ]
