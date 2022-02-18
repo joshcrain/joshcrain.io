@@ -59,10 +59,17 @@
         "tags": ["digital", "painting"],
         "featured": true,
         "secondary": [{
+            "title": "Lemons, Study",
+            "date": "2021-03-09",
+            "medium": "Digital",
+            "file": "lemons-2.png",
+            "description": "",
+            "alt": "painting of lemons"
+        },{
             "title": "Purple, Study",
             "date": "2021-03-05",
             "medium": "Digital",
-            "file": "purple-study.png",
+            "file": "purple-study-2.png",
             "description": "",
             "alt": "purple painting of a waterway"
         }
