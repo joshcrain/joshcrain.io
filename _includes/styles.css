@@ -4,7 +4,7 @@
   --colorFore: 0, 0, 0;
   --colorAccent: 114,96,18;
   --colorDanger: 192, 24, 35;
-  --fontPrimary: Palatino, "Palatino Linotype", "Times New Roman", serif /*'EB Garamond', serif*/;
+  --fontPrimary: ui-serif, Palatino, "Palatino Linotype", "Times New Roman", serif /*'EB Garamond', serif*/;
   --border-size-1: 1px;
   --border-size-2: 2px;
   --border-size-3: 5px;
@@ -65,7 +65,7 @@ h2 {font-weight:normal;margin-bottom:var(--size-2);line-height: 1;}
 h3 {font-weight:normal;margin-bottom:.25em;line-height: 1;}
 img{margin-bottom:-10px;max-width:100%;height:auto;line-height:1;}
 hr {margin: var(--size-8) 0;border: var(--border-size-1) dashed rgba(var(--colorFore), .25);outline: 0;padding: 0;line-height:1;}
-table{font-size:.75em;width:100%;border-collapse:collapse;font-family:monospace;margin-bottom:var(--size-8);border-bottom:var(--border-size-1) solid rgba(var(--colorFore),.8);}table th{text-align:left;white-space: nowrap;font-weight: normal;}table thead th {letter-spacing:.05em;text-transform:uppercase;border-bottom:var(--border-size-2) solid rgba(var(--colorFore),1);padding:var(--size-2) var(--size-3);}table :not(:first-child) td,table :not(:first-child) th{vertical-align:top;border:0;border-top:var(--border-size-1) solid rgba(var(--colorFore),.8);padding:var(--size-2) var(--size-3);}table td[colspan]{border:0;}[scope="rowgroup"] {background: rgba(var(--colorFore),.05);}table :last-child{margin-bottom:0;}
+table{font-size:.75em;width:100%;border-collapse:collapse;font-family:ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro","Fira Mono", "Droid Sans Mono", monospace;;margin-bottom:var(--size-8);border-bottom:var(--border-size-1) solid rgba(var(--colorFore),.8);}table th{text-align:left;white-space: nowrap;font-weight: normal;}table thead th {letter-spacing:.05em;text-transform:uppercase;border-bottom:var(--border-size-2) solid rgba(var(--colorFore),1);padding:var(--size-2) var(--size-3);}table :not(:first-child) td,table :not(:first-child) th{vertical-align:top;border:0;border-top:var(--border-size-1) solid rgba(var(--colorFore),.8);padding:var(--size-2) var(--size-3);}table td[colspan]{border:0;}[scope="rowgroup"] {background: rgba(var(--colorFore),.05);}table :last-child{margin-bottom:0;}
 figure{margin:var(--size-3) 0;display:inline-block;text-align: center;width:100%;}
   figure figcaption{font-size:.875em;font-style: italic;padding:var(--size-2) 0;}
 blockquote{margin:var(--size-6) var(--size-6);font-style: italic;}
@@ -109,17 +109,15 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   /* typography */
 .grid-layout_page > div > p+p,.grid-layout_page > div > h2+p,.grid-layout_page > div > h3+p,.grid-layout_page > div > figure+p {margin:0;}
 :not(pre)+p:not(img)+p:not(figure)+p,:is(p){text-indent: var(--size-6);}
-p:first-of-type, .lead+p, :not(p)+p,p:last-of-type{text-indent: 0;margin:0;}
+p:first-of-type, .lead+p, :not(p)+p,p:last-of-type{text-indent: 0;}
 .grid-layout_page > div blockquote > p, cite+p{text-indent: 0;}
 p:last-of-type {margin-bottom:var(--size-6);}
 .grid-layout_page > div > p:first-child:not(.lead)::first-letter {line-height: var(--size-2);
   font-size: 4.9rem;
+  line-height: 3.5rem;
   float: left;
-  margin: .1em .15em 0 0;
+  margin: .5rem .15em 0 0;
   color: rgba(var(--colorAccent),1);
-  font-style: unset;
-  font-variant: unicase;
-  font-family: goudy;
   font-family: Baskerville, "Goudy Old Style", Palatino, "Book Antiqua", serif;
   font-style: normal;
 }
@@ -128,7 +126,7 @@ p:last-of-type {margin-bottom:var(--size-6);}
 main a:hover {border-bottom-color:rgba(var(--colorAccent),1)}
 main a.text--larger, main .text--larger a {border-bottom: var(--border-size-2) solid rgba(var(--colorAccent),0.45);text-decoration: none;line-height: 1;}
 main a.text--larger:hover, main .text--larger a:hover {border-bottom-color:rgba(var(--colorAccent),1);text-decoration: none;}
-
+main a + p {margin-top:0;}
 /* define as navigation */
 main a.tile_link {text-decoration: none;}
 .site_header a {text-decoration: none;}
