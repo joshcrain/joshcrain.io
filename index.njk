@@ -52,7 +52,7 @@ priority: "1.0"
 <section class="grid-layout_home">
     <div class="layout-section">
         <h2>Art</h2>
-        <span class="text--smaller">{{ art | length }} artworks</span>
+        <span class="text--smaller">{{ art | length }} pages</span>
     </div>
 <div class="grid-content">
 <div class="subgrid">
@@ -62,7 +62,7 @@ priority: "1.0"
     <a href="/art/{{ item.group | slug }}/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,h_300,w_300/art/{{ item.date | date('YYYY') }}/{{ item.file }}" alt="{{ item.alt }}" loading="lazy"></a>
         <div class="tile_inner">
             <a href="/art/{{ item.group | slug }}/" class="tile_link"><span class="tile_name">{{ item.group }}</span></a>
-            <span class="tile_desc text--smaller">{{ item.date | date("YYYY") }}. {{ item.medium }}. {{ item.description }}</span>
+            <span class="tile_desc text--smaller">{{ item.date | date("YYYY") }}. {{ item.medium }}. {{ item.description }} ({{ item.secondary | length + 1}} items).</span>
         </div>
     </div>
     {% endif %}

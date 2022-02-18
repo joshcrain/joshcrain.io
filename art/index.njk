@@ -12,8 +12,12 @@ description: Artwork to share with you.
         <a href="/art/{{ item.group | slug }}/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,h_300,w_300/art/{{ item.date | date('YYYY') }}/{{ item.file }}" alt="{{ item.alt }}" loading="lazy"></a>
             <div class="tile_inner">
                 <a href="/art/{{ item.group | slug }}/" class="tile_link"><span class="tile_name">{% if item.group %}{{ item.group }}{% else %}{{ item.title }}{% endif %}</span></a>
-                <span class="tile_desc text--smaller">{{ item.date | date("YYYY") }}. {{ item.medium }}. {{ item.description }}</span>
+                <span class="tile_desc text--smaller">{{ item.date | date("YYYY") }}. {{ item.medium }}. {{ item.description }} ({{ item.secondary | length + 1}} items).</span>
             </div>
         </div>
     {% endfor %}
 </div> 
+
+{% for item in art.secondary %} 
+{{ item.title }}
+{% endfor %}
