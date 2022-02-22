@@ -74,5 +74,32 @@
             "alt": "purple painting of a waterway"
         }
     ]
+    },
+    {   
+        "group": "Watercolor & Gouache",
+        "title": "View From South Bubble",
+        "date": "2017-01-01",
+        "medium": "Watercolor & Gouache",
+        "file": "acadia-2017.jpg",
+        "description": "",
+        "alt": "painting view from a mountain",
+        "tags": ["gouache", "painting"],
+        "featured": true,
+            "secondary": [{
+                "title": "Gouache Sketchbook 1",
+                "date": "2015-01-21",
+                "medium": "Gouache",
+                "file": "gouache-sketchbook-2015-1.jpg",
+                "description": "",
+                "alt": "painting in a sketchbook"
+            },{
+                "title": "Gouache Sketchbook 2",
+                "date": "2015-01-21",
+                "medium": "Gouache",
+                "file": "gouache-sketchbook-2015-2.jpg",
+                "description": "",
+                "alt": "painting of trees and a path in a sketchbook"
+            }
+        ]
     }
 ]
