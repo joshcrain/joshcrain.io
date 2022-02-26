@@ -40,10 +40,44 @@
                     {{ content | safe }}
                 {% if pageType != "section" %}
                     {% if tags >= "0" %}
-                        <div class="article--tags">
+                        <p class="article--tags">
                         Filed under: 
                         {% for tag in tags %}<span><a href="/tags/{{ tag }}/" aria-label="Pages tagged with {{tag}}">{{tag}}</a></span> {% endfor %}
-                        </div>
+                        </p>
+                        <div class="subgrid paging">
+                            {% set previousNote = collections.notes | getPreviousCollectionItem(page) %}
+                            {% set nextNote = collections.notes | getNextCollectionItem(page) %}
+                            {% set previousWeeknote = collections.weeknotes | getPreviousCollectionItem(page) %}
+                            {% set nextWeeknote = collections.weeknotes | getNextCollectionItem(page) %}
+                            <div class="grid-half@l">
+                                {% if previousNote %}<div>
+                                    <div class="text--smaller"><i>Previously</i></div>
+                                    <a href="{{ previousNote.url }}">{{ previousNote.data.title }}</a>
+                                    <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ previousNote.date | date('YYYY-MM-DD HH:mm') }}">{{ previousNote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in previousNote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
+                                </div>{% endif %}
+                            </div>
+                            <div class="grid-half@l">
+                                {% if nextNote %}<div>
+                                    <div class="text--smaller"><i>Up next</i></div>
+                                    <a href="{{ nextNote.url }}">{{ nextNote.data.title }}</a>
+                                    <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextNote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextNote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
+                                </div>{% endif %}
+                            </div>
+                            <div class="grid-half@l">
+                                {% if previousWeeknote %}<div>
+                                    <div class="text--smaller"><i>Previously</i></div>
+                                    <a href="{{ previousWeeknote.url }}">{{ previousWeeknote.data.title }}</a>
+                                    <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ previousWeeknote.date | date('YYYY-MM-DD HH:mm') }}">{{ previousWeeknote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in previousWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
+                                </div>{% endif %}
+                            </div>
+                            <div class="grid-half@l">
+                                {% if nextWeeknote %}<div>
+                                    <div class="text--smaller"><i>Up next</i></div>
+                                    <a href="{{ nextWeeknote.url }}">{{ nextWeeknote.data.title }}</a>
+                                    <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextWeeknote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
+                                </div>{% endif %}
+                            </div>
+                        </div>    
                     {% endif %}
                         </div>
                     </div>
