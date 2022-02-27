@@ -136,7 +136,7 @@ main a.tile_link {text-decoration: none;}
 /* header */
 .site_header{padding:var(--size-6) 0;}
 .site_header{line-height: 1.1;}
-  .site_header a{color:inherit;min-height: 48px;display: flex;align-items: center;border-bottom:var(--border-size-3) solid transparent;position:relative}
+  .site_header a{color:inherit;min-height: 48px;min-width: 48px;place-content: center;display: flex;align-items: center;border-bottom:var(--border-size-3) solid transparent;position:relative}
   .site_header a[data-state='active'] {border-color:rgba(var(--colorAccent), 1)}
   .site_header a:hover {
     text-decoration: none;
