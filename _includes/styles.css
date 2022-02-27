@@ -76,12 +76,10 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 
 /* utilities */
   /*layout utilities*/
-    .list--horizontal {list-style:none;margin:0 -1.25em;padding:0;}
-    .list--horizontal > li{padding:0 1.25em;vertical-align:middle;display:inline-block;line-height:1.1;}
-    .list--horizontal.list--m--larger{margin:0 -1.75em;}
-      .list--horizontal.list--m--larger > li{padding:0 1.75em;}
-    .list--horizontal.list--m--smaller {margin:0 -.625em}
-      .list--horizontal.list--m--smaller > li{padding:0 .625em;}
+    .list--horizontal {list-style:none;padding:0;margin:0;display: flex;flex-flow: row;gap:var(--size-7);line-height:1.1;}
+    .list--horizontal > li{}
+      .list--horizontal.list--m--larger {gap:var(--size-9)}
+      .list--horizontal.list--m--smaller i{gap:var(--size-4);}
   .list--articles{margin:0;padding:0;}
     .list--articles li{list-style:none;}
 
@@ -163,7 +161,8 @@ main a.tile_link {text-decoration: none;}
 
 /* footer */
 .site_footer{font-size:.875em;padding:var(--size-6) 0;}
-  .site_footer a{color:inherit;min-height: 48px;display: flex;align-items: center;}
+  .site_footer a{color:inherit;min-height: 48px;align-items: center;}
+  .site_footer .list--horizontal {flex-wrap: wrap;place-content: center;}
 
 
 .site_content{padding:var(--size-fluid-5) 0 var(--size-12);}
@@ -327,9 +326,9 @@ main a.tile_link {text-decoration: none;}
 a:hover svg {fill:rgba(var(--colorFore), 1)}
 .logo svg{fill:rgba(var(--colorAccent), 1)}
 .no-js .view {display:none;}
-.view a{border-radius:50%;background:rgba(var(--colorBase), 1);padding:var(--size-2);position: fixed;right:2em;bottom:2em;line-height:.8;transition: all .1s ease-in-out;}
+.view a{border-top-left-radius:50%;background:rgba(var(--colorBase), 1);padding:var(--size-2) var(--size-1) var(--size-1);position: fixed;right:0;bottom:0;line-height:.8;transition: all .1s ease-in-out;}
 .view a:hover {transform: scale(1.2);}
-.view svg{height:var(--size-4);fill:rgba(var(--colorAccent), 1);}
+.view svg{height:var(--size-6);fill:rgba(var(--colorAccent), 1);}
 
 /* fade small and big? - should be a utility */
 .fade-in {
@@ -415,8 +414,8 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 @media only screen and (max-width: 768px) {
   
-  .site_header .list--horizontal {margin:0 -1.25em;align-items: center;justify-content: center;}
-  .site_header .list--horizontal li{padding:0 1.25em;flex:1;text-align: center} 
+  .site_header .list--horizontal {gap:var(--size-5); place-items:center;}
+  .site_header .list--horizontal li{flex:1;text-align: center} 
   .site_header .media_right .list--horizontal li:first-child{display: none;} 
   .grid-third\@l{
     grid-column: span 6;
@@ -452,8 +451,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 
 @media only screen and (max-width: 480px) {
-  .site_header .list--horizontal {margin:0 -.75em}
-  .site_header .list--horizontal li{padding:0 .75em;}  
+
 
   .grid-third\@l, .grid-half\@l{
     grid-column: span 12;
