@@ -3,7 +3,7 @@ title: Notes
 metaTitle: Josh Crain's Notes
 description: What thinking about, what I’ve learned, and what I’ve made. 
 ---
-<p class="lead">{{description}}</p>
+
 <ul class="list--articles">
     {% set items = collections.notes | reverse %}
     {% for post in items %} 
@@ -14,4 +14,3 @@ description: What thinking about, what I’ve learned, and what I’ve made.
     </li>
     {% endfor %}
 </ul>
-<p class="lead">I also (try to) write a short weekly update called <a href="/tags/weeknotes/">weeknotes</a>.</p>
