@@ -60,7 +60,7 @@ html {
 body {color:rgba(var(--colorFore), 1);font-family:var(--fontPrimary);font-weight:400;margin:0;font-size:1.333rem;line-height:1.666;background:rgba(var(--colorBack), 1);text-rendering: optimizeLegibility;-webkit-font-smoothing: subpixel-antialiased;}
 a {color:rgba(var(--colorAccent), 1);}
   a:hover {text-decoration: none;}
-h1 {margin:var(--size-fluid-4) 0;line-height: 1.333;font-size:var(--size-fluid-4);font-weight: 400;}
+h1 {margin:var(--size-8) 0;line-height: 1.333;font-size:var(--size-fluid-4);font-weight: 400;}
 h2 {font-weight:normal;margin-bottom:var(--size-2);line-height: 1.333;}
 h3 {font-weight:normal;margin-bottom:.25em;line-height: 1.333;}
 img{margin-bottom:-10px;max-width:100%;height:auto;line-height:1;}
