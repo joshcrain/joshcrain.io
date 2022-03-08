@@ -5,7 +5,7 @@
   --colorAccent: 114,96,18;
   --colorDanger: 192, 24, 35;
   --fillAccent: 49, 72.7%, 50%;
-  --fillFore: 0, 0%, 0%;
+  --fillFore: 270, 50%, 20%;
   --fontPrimary: ui-serif, Palatino, "Palatino Linotype", "Times New Roman", serif /*'EB Garamond', serif*/;
   --border-size-1: 1px;
   --border-size-2: 2px;
@@ -33,7 +33,7 @@
   --colorAccent: 199,171,227;
 
   --fillAccent: 270, 50%, 30%;
-  --fillFore: 0, 0%, 70%;
+  --fillFore: 49, 72.7%, 90%;;
 }
 @media (prefers-color-scheme: dark) {
   #day, #night {display:none;}
@@ -44,7 +44,7 @@
     --colorAccent: 199,171,227;
 
     --fillAccent: 270, 50%, 30%;
-    --fillFore: 0, 0%, 70%;
+    --fillFore: 49, 72.7%, 90%;
   }
 }
 
