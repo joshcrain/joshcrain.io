@@ -33,7 +33,7 @@
   --colorAccent: 199,171,227;
 
   --fillAccent: 270, 50%, 30%;
-  --fillFore: 0, 0%, 80%;
+  --fillFore: 0, 0%, 70%;
 }
 @media (prefers-color-scheme: dark) {
   #day, #night {display:none;}
@@ -44,7 +44,7 @@
     --colorAccent: 199,171,227;
 
     --fillAccent: 270, 50%, 30%;
-    --fillFore: 0, 0%, 80%;
+    --fillFore: 0, 0%, 70%;
   }
 }
 
@@ -238,7 +238,7 @@ main a.tile_link {text-decoration: none;}
 /* miniums so no need for media queries */
 .subgrid{display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-column-gap: 3vw;
+  grid-column-gap: 4vw;
   grid-row-gap: 2vh;
 }
 
