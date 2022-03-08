@@ -436,6 +436,8 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   
   .site_header .list--horizontal {gap:var(--size-6);}
   .site_header .media_right .list--horizontal li:first-child{display: none;} 
+
+
   .grid-third\@l{
     grid-column: span 6;
   }
@@ -470,7 +472,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 
 @media only screen and (max-width: 480px) {
-
+  .intro {font-size: var(--size-fluid-4);display: block;}
 
   .grid-third\@l, .grid-half\@l{
     grid-column: span 12;
