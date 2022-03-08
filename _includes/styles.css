@@ -4,6 +4,8 @@
   --colorFore: 0, 0, 0;
   --colorAccent: 114,96,18;
   --colorDanger: 192, 24, 35;
+  --fillAccent: 49, 72.7%, 50%;
+  --fillFore: 0, 0%, 0%;
   --fontPrimary: ui-serif, Palatino, "Palatino Linotype", "Times New Roman", serif /*'EB Garamond', serif*/;
   --border-size-1: 1px;
   --border-size-2: 2px;
@@ -20,17 +22,18 @@
   --size-10: 5rem;
   --size-11: 7.5rem;
   --size-12: 10rem;
-  --size-13: 15rem;
-  --size-14: 20rem;
   --size-fluid-3: clamp(1.5rem, 3vw, 2rem);
   --size-fluid-4: clamp(3rem, 4vw, 4rem);
-  --size-fluid-5: clamp(4rem, 5vw, 5rem);
+  --size-fluid-5: clamp(3.5rem, 4.5vw, 4.5rem);
 } 
 :where(html) .darkTheme{
   --colorFore: 249, 240, 255;
   --colorBase: 0, 0, 0;
   --colorBack: 10, 10, 25; /*HSL: 240° 50% 7%*/
   --colorAccent: 199,171,227;
+
+  --fillAccent: 270, 50%, 30%;
+  --fillFore: 0, 0%, 80%;
 }
 @media (prefers-color-scheme: dark) {
   #day, #night {display:none;}
@@ -39,6 +42,9 @@
     --colorBase: 0, 0, 0;
     --colorBack: 10, 10, 25; /*HSL: 240° 50% 7%*/
     --colorAccent: 199,171,227;
+
+    --fillAccent: 270, 50%, 30%;
+    --fillFore: 0, 0%, 80%;
   }
 }
 
@@ -60,7 +66,7 @@ html {
 body {color:rgba(var(--colorFore), 1);font-family:var(--fontPrimary);font-weight:400;margin:0;font-size:1.333rem;line-height:1.666;background:rgba(var(--colorBack), 1);text-rendering: optimizeLegibility;-webkit-font-smoothing: subpixel-antialiased;}
 a {color:rgba(var(--colorAccent), 1);}
   a:hover {text-decoration: none;}
-h1 {margin:var(--size-8) 0;line-height: 1.333;font-size:var(--size-fluid-4);font-weight: 400;}
+h1 {margin:0 0 var(--size-8) 0;line-height: 1.333;font-size:var(--size-fluid-4);font-weight: 400;}
 h2 {font-weight:normal;margin-bottom:var(--size-2);line-height: 1.333;}
 h3 {font-weight:normal;margin-bottom:.25em;line-height: 1.333;}
 img{margin-bottom:-10px;max-width:100%;height:auto;line-height:1;}
@@ -73,6 +79,9 @@ blockquote cite {display:block;font-size:.875em;text-align: right;}
 code {font-size: .875em;padding:0.0625em;border-radius: 2px;background: rgba(var(--colorAccent), .1);}
 pre {max-width: 100%;overflow-x: auto;display: block;}
   pre code {padding:var(--size-6);display: table;width: 100%;box-sizing: border-box;font-size:.75em;}
+
+.fill-fore {fill:hsl(var(--fillFore))}
+.fill-accent {fill:hsl(var(--fillAccent))}
 
 /* utilities */
   /*layout utilities*/
@@ -378,10 +387,10 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   }
   .layout-section {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: var(--size-8);
   }
   .hero .layout-section {
-    margin-bottom: 0;
+    margin-bottom: var(--size-6);;
   }
   .grid-layout_home h2::after {margin-right:auto;margin-left: auto;width:var(--size-9);}
 
@@ -410,8 +419,18 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 
 } 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
+  .hero .grid-layout_home {
+    display: flex;
+  }
 
+  .hero .layout-section {
+    
+    margin:0 var(--size-4) var(--size-4) 0;
+  }
+
+}
 
 @media only screen and (max-width: 768px) {
   
