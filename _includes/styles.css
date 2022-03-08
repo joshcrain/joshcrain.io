@@ -200,7 +200,7 @@ main a.tile_link {text-decoration: none;}
   grid-template-areas:
     "section contentarea";
 }
-.hero .grid-layout_home{padding-bottom:var(--size-11);}
+.hero .grid-layout_home{padding:var(--size-7) 0 var(--size-11) 0 ;}
 :not(.fade-in) > .grid-layout_home{  padding:var(--size-11) 0 0 0;}
 
 
