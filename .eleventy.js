@@ -36,6 +36,11 @@ module.exports = function(eleventyConfig) {
   };
   };
 
+  eleventyConfig.addPassthroughCopy("android-chrome-*.png");
+  eleventyConfig.addPassthroughCopy("apple-touch-icon.png");
+  eleventyConfig.addPassthroughCopy("site.webmanifest");
+  eleventyConfig.addPassthroughCopy("google88f9e8b0497a35bd.html");
+
   // responsive images
     // works also with addLiquidShortcode or addJavaScriptFunction
   eleventyConfig.addLiquidShortcode("responsiveimage", async function(src, alt, sizes = "100vw") {
