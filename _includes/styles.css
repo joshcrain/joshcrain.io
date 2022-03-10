@@ -119,6 +119,8 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 p:first-of-type, .lead+p, :not(p)+p,p:last-of-type{text-indent: 0;}
 .grid-layout_page > div blockquote > p, cite+p{text-indent: 0;}
 p:last-of-type {margin-bottom:var(--size-6);}
+p:last-child {margin-bottom:0;}
+p:first-child {margin-top:0;}
 .grid-layout_page > div > p:first-child:not(.lead)::first-letter {
   font-size: 4.9rem;
   line-height: 3.5rem;
