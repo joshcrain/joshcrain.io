@@ -89,7 +89,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
       .list--horizontal.list--m--larger {gap:var(--size-9)}
       .list--horizontal.list--m--smaller i{gap:var(--size-4);}
   .list--articles{margin:0;padding:0;}
-    .list--articles li{list-style:none;}
+    .list--articles li{list-style:none;margin-bottom:var(--size-6)}
 
   .media{display: -ms-flexbox;display: flex;-ms-flex-align: start;align-items: flex-start;}
   .media_body{-ms-flex: 1;flex: 1;min-width: 0;-ms-word-break: break-word;word-break: break-word;overflow-wrap: break-word;word-wrap: break-word;}
@@ -191,12 +191,11 @@ main a.tile_link {text-decoration: none;}
 
 .hero header {margin-bottom:0;}
 .home h1 {font-size:var(--size-fluid-5);margin-bottom: var(--size-fluid-3);}
-.hero p {margin:0;} /* blind owl instead*/
 
 .grid-layout_home {
   display: grid;
   grid-template-columns: 1fr 6fr;
-  grid-column-gap: 3vw;
+  grid-column-gap: var(--size-8);
   grid-template-rows: 1fr;
   place-content: center;
   grid-template-areas:
@@ -213,7 +212,7 @@ main a.tile_link {text-decoration: none;}
 .grid-layout_page {
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
-  grid-column-gap: 3vw;
+  grid-column-gap: var(--size-8);
   grid-template-rows: 1fr;
 }
 
@@ -240,8 +239,8 @@ main a.tile_link {text-decoration: none;}
 /* miniums so no need for media queries */
 .subgrid{display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-column-gap: 4vw;
-  grid-row-gap: 2vh;
+  gap: 5%;
+  grid-row-gap: 4vh;
 }
 
   .grid-full\@l{
@@ -405,8 +404,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .grid-layout_page {
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;;
-    grid-column-gap: 3vw;
-    grid-template-rows: 1fr;
+    gap: var(--size-8);
   }
 
   .grid-layout_home {
@@ -450,7 +448,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .grid-layout_page {
     display: grid;
     grid-template-columns: 12fr;;
-    grid-column-gap: 3vw;
+    grid-column-gap: var(--size-8);
     grid-template-rows: 1fr;
   }
   .table_rwd thead{position: absolute;
