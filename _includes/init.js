@@ -15,7 +15,7 @@ dayButton.addEventListener('click', () => {
     setColour = "lightTheme"
     document.body.className = setColour
     localStorage.setItem("theme", setColour);
-    scheme.setAttribute('content', 'rgb(255, 255, 255)');
+    scheme.setAttribute('content', 'rgb(239, 233, 228)');
 });
 
 const nightButton = document.getElementById('day');
@@ -25,3 +25,12 @@ nightButton.addEventListener('click', () => {
     localStorage.setItem("theme", setColour);
     scheme.setAttribute('content', 'rgb(10, 10, 25)');
 });
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    const newColorScheme = event.matches ? "darkTheme" : "lightTheme";
+    const metaColor = event.matches ? "rgb(10, 10, 25)" : "rgb(239, 233, 228)";
+    setColour = newColorScheme
+    document.body.className = setColour
+    scheme.setAttribute('content', metaColor);
+});
+

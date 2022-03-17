@@ -33,11 +33,11 @@
   --colorAccent: 199,171,227;
 
   --fillAccent: 270, 50%, 30%;
-  --fillFore: 49, 72.7%, 90%;;
+  --fillFore: 49, 72.7%, 90%;
+  
 }
 @media (prefers-color-scheme: dark) {
-  #day, #night {display:none;}
-  :where(html){
+  :root(html) {
     --colorFore: 249, 240, 255;
     --colorBase: 0, 0, 0;
     --colorBack: 10, 10, 25; /*HSL: 240° 50% 7%*/
@@ -47,6 +47,9 @@
     --fillFore: 49, 72.7%, 90%;
   }
 }
+
+.darkTheme .day {display:none;}
+.lightTheme .night {display:none;}
 
 /* resets */
 html {
@@ -331,8 +334,6 @@ main a.tile_link {text-decoration: none;}
 
 
 
-.lightTheme .night {display:none;}
-.darkTheme .day {display:none;}
 a:hover svg {fill:rgba(var(--colorFore), 1)}
 .logo svg{fill:rgba(var(--colorAccent), 1)}
 .no-js .view {display:none;}
@@ -403,7 +404,6 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .grid-layout_page {
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;;
-    gap: var(--size-8);
   }
 
   .grid-layout_home {
