@@ -11,13 +11,7 @@ else {
 
 }
 
-if (localStorage.getItem("theme") == lightTheme) {
-    scheme.setAttribute('content', 'rgb(239, 233, 228)');
-}
 
-if (localStorage.getItem("theme") == darkTheme) {
-    scheme.setAttribute('content', 'rgb(10, 10, 25)');
-}
 
 let scheme = document.querySelector('meta[name="theme-color"]')
 
@@ -45,3 +39,10 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
     scheme.setAttribute('content', metaColor);
 });
 
+if (localStorage.getItem("theme") == 'lightTheme') {
+    scheme.setAttribute('content', 'rgb(239, 233, 228)');
+}
+
+if (localStorage.getItem("theme") == 'darkTheme') {
+    scheme.setAttribute('content', 'rgb(10, 10, 25)');
+}
