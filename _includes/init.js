@@ -6,7 +6,18 @@ if (localStorage.getItem("theme") != null) {
     getColour = localStorage.theme;
     document.body.className = getColour;
 }
-else { document.body.classList.add('lightTheme') }
+else { 
+    document.body.classList.add('lightTheme') 
+
+}
+
+if (localStorage.getItem("theme") == lightTheme) {
+    scheme.setAttribute('content', 'rgb(239, 233, 228)');
+}
+
+if (localStorage.getItem("theme") == darkTheme) {
+    scheme.setAttribute('content', 'rgb(10, 10, 25)');
+}
 
 let scheme = document.querySelector('meta[name="theme-color"]')
 
