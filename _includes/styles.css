@@ -337,9 +337,11 @@ main a.tile_link {text-decoration: none;}
 a:hover svg {fill:rgba(var(--colorFore), 1)}
 .logo svg{fill:rgba(var(--colorAccent), 1)}
 .no-js .view {display:none;}
-.view a{border-top-left-radius:50%;background:rgba(var(--colorBase), 1);padding:var(--size-2) var(--size-1) var(--size-1);position: fixed;right:0;bottom:0;line-height:.8;transition: all .1s ease-in-out;}
+.view a{border-radius:50%;padding:var(--size-2) var(--size-1) var(--size-1);line-height:.8;transition: all .1s ease-in-out;position: fixed;right:var(--size-4);bottom:var(--size-4);}
 .view a:hover {transform: scale(1.2);}
-.view svg{height:var(--size-6);fill:rgba(var(--colorAccent), 1);}
+.view svg{height:var(--size-6);opacity: .8;}
+.view .night svg {fill:hsl(var(--fillFore));}
+.view .day svg {fill:rgba(var(--colorAccent),1);}
 
 /* fade small and big? - should be a utility */
 .fade-in {
