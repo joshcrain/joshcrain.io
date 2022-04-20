@@ -15,7 +15,7 @@ I have worked as a web designer, product designer, and front-end developer. I wa
 I am a 12th generation descendant of colonial settlers. I created a website of <a href="/ancestry/">Crain family ancestry</a> as a way to explore my interest in heritage and progeny, and as place to catalog my findings. I learned some interesting things about <em>heraldry</em>&mdash;something I knew nothing about. You are most welcome to <a href="/say-hello/">contact me</a> with any interest.
 
 ## Personal Records
-<table>
+<table class="table_rwd">
     <thead>
     <tr>
         <th>Event</th>
@@ -25,29 +25,29 @@ I am a 12th generation descendant of colonial settlers. I created a website of <
     </thead>
     <tbody>
     <tr>
-        <td>8000m (cross-country)</td>
-        <td>24:39</td>
-        <td>MVC Cross-Country Championships</td>
+        <td data-tblColumn="Event">8000m (cross-country)</td>
+        <td data-tblColumn="PR">24:39</td>
+        <td data-tblColumn="Meet">MVC Cross-Country Championships</td>
     </tr>
     <tr>
-        <td>3000m (indoor)</td>
-        <td>8:18.01</td>
-        <td>Iowa State University Classic</td>
+        <td data-tblColumn="Event">3000m (indoor)</td>
+        <td data-tblColumn="PR">8:18.01</td>
+        <td data-tblColumn="Meet">Iowa State University Classic</td>
     </tr>
     <tr>
-        <td>5000m (indoor)</td>
-        <td>14:26.26</td>
-        <td>MVC Indoor Championships</td>
+        <td data-tblColumn="Event">5000m (indoor)</td>
+        <td data-tblColumn="PR">14:26.26</td>
+        <td data-tblColumn="Meet">MVC Indoor Championships</td>
     </tr>
     <tr>
-        <td>5000m (outdoor)</td>
-        <td>14:21.11</td>
-        <td>Stanford Invitational</td>
+        <td data-tblColumn="Event">5000m (outdoor)</td>
+        <td data-tblColumn="PR">14:21.11</td>
+        <td data-tblColumn="Meet">Stanford Invitational</td>
     </tr>
     <tr>
-        <td>Bowling</td>
-        <td><a href="https://twitter.com/thejoshcrain/status/3592903958">221</a></td>
-        <td>Strike It Up Challenge</td>
+        <td data-tblColumn="Event">Bowling</td>
+        <td data-tblColumn="PR"><a href="https://twitter.com/thejoshcrain/status/3592903958">221</a></td>
+        <td data-tblColumn="Meet">Strike It Up Challenge</td>
     </tr>
     </tbody>
 </table>
