@@ -184,10 +184,7 @@ main a.tile_link {text-decoration: none;}
 .wrapper p{-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;}
 
 /* home */
-.hero {display: flex;
-  flex: 1 0 auto;
-  flex-direction: column;
-  justify-content: center;
+.hero {
   border-bottom:var(--border-size-2) solid rgba(var(--colorFore), .25);
 }
 
@@ -457,19 +454,25 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
     clip: rect(0 0 0 0);
     height: 1px;
     width: 1px;}
-  .table_rwd [data-tblColumn]{display:block;}
+  .table_rwd [data-tblColumn]{display: flex;}
   .table_rwd [data-tblColumn]:before {content: attr(data-tblColumn);display: inline-block;
     padding-top: 0;
     padding-left: 0;
     font-weight: bold;
-    width: 120px;}
+    flex-basis: 120px;
+    flex-grow: 0;
+    flex-shrink: 0;}
   .table_rwd [data-tblColumn] br{display: none;}
   .table_rwd [data-tblColumn] span{display: inline-block;}
 
   .table_rwd :not(:first-child) td,table :not(:first-child) th{border:0;border-bottom:var(--border-size-1) solid rgba(var(--colorFore),.8);}
-  .table_rwd {border-top:var(--border-size-1) solid rgba(var(--colorFore),.8)}
+
+  .table_rwd {border:0;}
+.table_rwd th, .table_rwd tr {display: block;}
+.table_rwd tr {border-left: solid rgb(var(--colorFore)) var(--border-size-3);border-bottom:0;}
+.table_rwd tr:not(:first-child):not(.has-colspan){margin-top: var(--size-5);}
 }
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
 
   .hero header {
     text-align: center;
@@ -478,7 +481,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 576px) {
   .intro {font-size: var(--size-fluid-4);display: block;}
 
   .grid-third\@l, .grid-half\@l{
@@ -489,10 +492,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
     grid-column: span 12;
 }
 
-.table_rwd {border:0;}
-.table_rwd th, .table_rwd tr {display: block;}
-.table_rwd tr {border-left: solid rgb(var(--colorFore)) var(--border-size-3);border-bottom:0;}
-.table_rwd tr[id]:not(:first-child){margin-top: var(--size-5);}
+
 
   
 }

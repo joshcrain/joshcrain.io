@@ -6,7 +6,7 @@
     <td data-tblColumn="Heart Rate"><span>{{ item.averageHR }} <abbr title="beats per minute">bpm</abbr><br> ({{ item.maxHR }}&nbsp;Max)</span></td>
     <td data-tblColumn="VO2 Max">{% if item.vO2MaxValue %}{{ item.vO2MaxValue }} <abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</abbr>{% endif %}</td>
   </tr>
-  {% if (item.description) or (item.favorite == true) or (item.pr == true) %}<tr>
+  {% if (item.description) or (item.favorite == true) or (item.pr == true) %}<tr class="has-colspan">
     <td colspan="5" data-tblColumn="Description">
       <span>{% if item.pr == true %}🏆&nbsp;New <abbr title="Personal Record">PR</abbr>!{% endif %} {% if item.description %}{{ item.description }}{% endif %}</span>
     </td>
