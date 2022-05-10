@@ -1,7 +1,7 @@
 ---
 title: Weeknote 18/2022
 tags: ['weeknotes']
-description: 
+description: An elm, a tumble, and a run. 
 date: 2022-04-25
 ---
 - Planted a “Lewis & Clark” [Prairie Expedition Elm](http://www.ndsuresearchfoundation.org/prairie_expedition), Ulmus americana, in the yard last Saturday. Up until recently I had not considered an Elm. Dutch Elm Disease swept through this part of the country during the last half of the last century killing almost all trees. Elms have not been considered a viable landscaping tree as a result. I saw the Prairie Expedition in my local nursery and read up on it. It has excellent DED resistance. 
