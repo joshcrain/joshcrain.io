@@ -102,13 +102,18 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 
 
   /* typography */
-.grid-layout_page > div > p+p:not([class]),.grid-layout_page > div > h2+p,.grid-layout_page > div > h3+p,.grid-layout_page > div > figure+p {margin:0;}
-:not(pre)+p:not(img)+p:not(figure)+p,:is(p){text-indent: var(--size-6);}
-p:first-of-type, .lead+p, :not(p)+p,p:last-of-type{text-indent: 0;}
-.grid-layout_page > div blockquote > p, cite+p{text-indent: 0;}
-p:last-of-type {margin-bottom:var(--size-6);}
-p:last-child {margin-bottom:0;}
-p:first-child {margin-top:0;}
+  .grid-layout_page > div > *:not([class]){margin:0;}
+
+  .grid-layout_page > div > *:not([class]) + *:not([class]) {
+    margin: 1em 0 0;
+  }
+
+  .grid-layout_page > div > p:not([class]) + p:not([class]) {
+    text-indent:var(--size-6);
+    margin-top: 0;}
+
+    
+
 .grid-layout_page > div > p:first-child:not(.lead)::first-letter {
   font-size: 4.9rem;
   line-height: 3.5rem;
