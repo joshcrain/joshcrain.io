@@ -292,6 +292,7 @@ main a + p {margin-top:0;}
     height: 100%;
     object-fit: cover;
     object-position: center;}
+    .tile_link {text-decoration: none;}
     .tile_link::after {
       content: '';
       position: absolute;
