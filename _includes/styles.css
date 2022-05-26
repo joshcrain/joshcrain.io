@@ -67,8 +67,12 @@ html {
 
 /* elements */
 body {color:rgba(var(--colorFore), 1);font-family:var(--fontPrimary);font-weight:400;margin:0;font-size:1.333rem;line-height:1.666;background:rgba(var(--colorBack), 1);text-rendering: optimizeLegibility;-webkit-font-smoothing: subpixel-antialiased;}
-a {color:rgba(var(--colorAccent), 1);}
-  a:hover {text-decoration: none;}
+a {color:rgba(var(--colorAccent), 1);
+  text-decoration-thickness: .2ex;
+  text-underline-offset: .3ex;
+  text-decoration-color: rgba(var(--colorAccent),.5);
+}
+  a:hover {text-decoration-color: rgba(var(--colorAccent),1);}
 h1 {margin:0 0 var(--size-8) 0;line-height: 1.333;font-size:var(--size-fluid-4);font-weight: 400;}
 h2 {font-weight:normal;margin-bottom:var(--size-2);line-height: 1.333;}
 h3 {font-weight:normal;margin-bottom:.25em;line-height: 1.333;}
@@ -124,12 +128,8 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   font-style: normal;
 }
 
-main a:hover {border-bottom-color:rgba(var(--colorAccent),1)}
-main a.text--larger, main .text--larger a {border-bottom: var(--border-size-2) solid rgba(var(--colorAccent),0.45);text-decoration: none;line-height: 1;}
-main a.text--larger:hover, main .text--larger a:hover {border-bottom-color:rgba(var(--colorAccent),1);text-decoration: none;}
 main a + p {margin-top:0;}
 /* define as navigation */
-main a.tile_link {text-decoration: none;}
 .site_header a {text-decoration: none;}
   
 
