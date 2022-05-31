@@ -60,7 +60,7 @@ html {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
-/* A more-intuitive box-sizing model. */
+/* box-sizing */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -73,9 +73,11 @@ a {color:rgba(var(--colorAccent), 1);
   text-decoration-color: rgba(var(--colorAccent),.5);
 }
   a:hover {text-decoration-color: rgba(var(--colorAccent),1);}
-h1 {margin:0 0 var(--size-8) 0;line-height: 1.333;font-size:var(--size-fluid-4);font-weight: 400;}
-h2 {font-weight:normal;margin-bottom:var(--size-2);line-height: 1.333;}
-h3 {font-weight:normal;margin-bottom:.25em;line-height: 1.333;}
+h1 {margin:0 0 var(--size-8) 0;line-height: 1.1;font-size:var(--size-fluid-4);font-weight: 400;}
+h2, .h2 {font-size:var(--size-6);font-weight:normal;margin-bottom:var(--size-2);line-height: 1.1;}
+h3, .h3 {font-size:var(--size-5);font-weight:normal;margin-bottom:.25em;line-height: 1.1;}
+  h2 + * {margin-top:.5em!important}
+  h3 + * {margin-top:.5em!important}
 img{margin-bottom:-10px;max-width:100%;height:auto;line-height:1;}
 hr {margin: var(--size-8) 0;border: var(--border-size-1) dashed rgba(var(--colorFore), .25);outline: 0;padding: 0;line-height:1;}
 table{font-size:.75em;width:100%;border-collapse:collapse;font-family:Dank Mono,Operator Mono,Inconsolata,Fira Mono,ui-monospace,SF Mono,Monaco,Droid Sans Mono,Source Code Pro,monospace;margin-bottom:var(--size-8);border-bottom:var(--border-size-1) solid rgba(var(--colorFore),.8);}table th{text-align:left;white-space: nowrap;font-weight: normal;}table thead th {letter-spacing:.05em;text-transform:uppercase;border-bottom:var(--border-size-2) solid rgba(var(--colorFore),1);padding:var(--size-2) var(--size-3);}table :not(:first-child) td,table :not(:first-child) th{vertical-align:top;border:0;border-top:var(--border-size-1) solid rgba(var(--colorFore),.8);padding:var(--size-2) var(--size-3);}table td[colspan]{border:0;}[scope="rowgroup"] {background: rgba(var(--colorFore),.05);}table :last-child{margin-bottom:0;}
@@ -128,7 +130,6 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   font-style: normal;
 }
 
-main a + p {margin-top:0;}
 /* define as navigation */
 .site_header a {text-decoration: none;}
   
