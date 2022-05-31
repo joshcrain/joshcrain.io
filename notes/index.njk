@@ -8,9 +8,9 @@ description: Writings. Some personal and some related to work as a web and produ
     {% set items = collections.notes | reverse %}
     {% for post in items %} 
     <li>
-        <a href="{{ post.url }}" class="text--larger">{{ post.data.title }}</a>
-        <p><span class="small-caps"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br>
-            {{ post.data.description }}</p>
+        <a href="{{ post.url }}" class="h2">{{ post.data.title }}</a>
+        <div><span class="small-caps"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br>
+            {{ post.data.description }}</div>
     </li>
     {% endfor %}
 </ul>
