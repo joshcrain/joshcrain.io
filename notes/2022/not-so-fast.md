@@ -10,3 +10,5 @@ This website began with one goal—to have a website again, a place to share my 
 Tinkering is something I enjoy. I tinker in the garage, in the garden, with bikes, and on house projects. The list goes on. It’s a great way to learn. I pick up hobbies like I’m going to live to be 200 years old. But earlier this year I realized I had avoided my initial goal. You see, tinkering is a way for me to make, build, or improve without any real commitment. In this case, it was a way for me to replace _proactive_ vision with _reactive_ metrics.
 
 Since March I focused more on a coherent design path. I’ve improved typography and refactored styles. I created an SVG self-portrait to dress up the homepage and started to make and share more artwork. I’m pleased with where I am and the renewed focus—even if it’s hard to see or measure. 
+
+☆ _Update 06/01/2021:_ I dropped from #1 to #25 for Eleventy Leaderboards for №18.  
