@@ -54,24 +54,48 @@ priority: "1.0"
 <section class="grid-layout_home">
     <div class="layout-section">
         <h2>Art</h2>
-        <span class="text--smaller">{{ art | length }} pages</span>
+        <span class="text--smaller">{{ artwork.cloudinary.resources | length }} items</span>
     </div>
 <div class="grid-content">
 <div class="subgrid">
-{% for item in art %}
-    {% if item.featured == true  %}
+    {% for item in drawing.cloudinary.resources | reverse %} 
+    {% if item.context.custom.featured == "true" %}
     <div class="grid-third@l tile">
-    <a href="/art/{{ item.group | slug }}/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,h_300,w_300/art/{{ item.date | date('YYYY') }}/{{ item.file }}" alt="{{ item.alt }}" loading="lazy"></a>
+    <a href="/art/drawing/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,h_300,w_300/{{ item.public_id }}.webp" alt="{{ item.context.custom.alt }}" loading="lazy"></a>
         <div class="tile_inner">
-            <a href="/art/{{ item.group | slug }}/" class="tile_link"><span class="tile_name">{{ item.group }}</span></a>
-            <span class="tile_desc text--smaller">{{ item.date | date("YYYY") }}. {{ item.medium }}. {{ item.description }} ({{ item.secondary | length + 1}} items).</span>
+            <a href="/art/drawing/" class="tile_link"><span class="tile_name">Drawing</span></a>
+            <span class="tile_desc text--smaller">A collection of drawings. ({{ drawing.cloudinary.resources | length }} items)</span>
         </div>
     </div>
     {% endif %}
-{% endfor %}
+    {% endfor %}
+
+    {% for item in painting.cloudinary.resources | reverse %} 
+    {% if item.context.custom.featured == "true" %}
+    <div class="grid-third@l tile">
+    <a href="/art/painting/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,h_300,w_300/{{ item.public_id }}.webp" alt="{{ item.context.custom.alt }}" loading="lazy"></a>
+        <div class="tile_inner">
+            <a href="/art/painting/" class="tile_link"><span class="tile_name">Painting</span></a>
+            <span class="tile_desc text--smaller">A collection of paintings. ({{ painting.cloudinary.resources | length }} items)</span>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    {% for item in sketchbook.cloudinary.resources | reverse %} 
+    {% if item.context.custom.featured == "true" %}
+    <div class="grid-third@l tile">
+    <a href="/art/sketchbook/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,h_300,w_300/{{ item.public_id }}.webp" alt="{{ item.context.custom.alt }}" loading="lazy"></a>
+        <div class="tile_inner">
+            <a href="/art/sketchbook/" class="tile_link"><span class="tile_name">Sketchbook</span></a>
+            <span class="tile_desc text--smaller">A collection of sketches. ({{ sketchbook.cloudinary.resources | length }} items)</span>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
 <div class="grid-full@l">
     <div>
-        <p><i>See <a href="/art/">all art</a>. The most recent is titled {% set items = art %}{% for item in items.slice(0, 1) %}<a href="/art/{{ item.group | slug }}/">{{ item.title }}</a>{% endfor %}.</i></p>
+        <p><i>See <a href="/art/">all art</a>. The most recent is titled {% set items = artwork.cloudinary.resources %}{% for item in items.slice(0, 1) %}<a href="/art/{{ item.context.custom.category | slug }}/">{{ item.context.custom.caption }}</a>{% endfor %}.</i></p>
     </div>
 </div>
 </div>

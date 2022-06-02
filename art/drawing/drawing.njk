@@ -1,0 +1,15 @@
+---
+pageType: section
+title: Drawing
+metaTitle: Josh Crain's Drawing
+description: A collection of drawings.
+---
+
+<p class="lead">{{description}}</p>
+
+{% for item in drawing.cloudinary.resources %} 
+<figure>
+    <img src="https://res.cloudinary.com/joshcrain/image/upload/c_limit,q_auto,w_742,h_742/{{ item.public_id }}.webp" alt="{{ item.context.custom.alt }}" loading="lazy"></a>
+    <figcaption>{{ item.context.custom.caption }}. {{ item.context.custom.year }}. {{ item.context.custom.medium }}.</figcaption>
+</figure>
+{% endfor %}
