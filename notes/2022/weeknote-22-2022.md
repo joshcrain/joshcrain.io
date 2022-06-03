@@ -1,7 +1,7 @@
 ---
 title: Weeknote 22/2022
 tags: ['weeknotes']
-description: 
+description: A good run, vertigo, no running. Chat widget tinkerings. 
 date: 2022-05-23
 ---
 - I had a [good run](https://joshcrain.io/about/running/#8874106348) on Sunday. 
