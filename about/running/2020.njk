@@ -17,7 +17,7 @@ description: A 2020 running log to track dates, distance, time, pace, heart rate
     <th><abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</th>
     </tr>
    </thead>
-   {% for item in running.garmin.activityList %}
+   {% for item in running20220616.activityList %}
   {% if (item.sportTypeId == "1") and (item.startTimeLocal | date("Y") == "2020") %}
    {% include "_page_partial/running-columns.njk" %}
   {% endif %}
