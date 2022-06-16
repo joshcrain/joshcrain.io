@@ -67,11 +67,9 @@ html {
 
 /* elements */
 body {color:rgba(var(--colorFore), 1);font-family:var(--fontPrimary);font-weight:400;margin:0;font-size:1.333rem;line-height:1.666;background:rgba(var(--colorBack), 1);text-rendering: optimizeLegibility;-webkit-font-smoothing: subpixel-antialiased;}
-a {color:rgba(var(--colorAccent), 1);
-  text-decoration-thickness: .2ex;
-  text-underline-offset: .3ex;
-  text-decoration-color: rgba(var(--colorAccent),.5);
+a {color:rgba(var(--colorAccent), 1);text-decoration-color: rgba(var(--colorAccent),.5);
 }
+a, abbr {text-decoration-thickness: .2ex;text-underline-offset: .3ex;}
   a:hover {text-decoration-color: rgba(var(--colorAccent),1);}
 h1 {margin:0 0 var(--size-8) 0;line-height: 1.1;font-size:var(--size-fluid-4);font-weight: 400;}
 h2, .h2 {font-size:var(--size-6);font-weight:normal;margin-bottom:var(--size-2);line-height: 1.1;}
