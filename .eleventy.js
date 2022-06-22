@@ -40,6 +40,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("apple-touch-icon.png");
   eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPassthroughCopy("google88f9e8b0497a35bd.html");
+  eleventyConfig.addPassthroughCopy("notes/*/*/*.jpg");
+  eleventyConfig.addPassthroughCopy("notes/*/*/*.png");
+  eleventyConfig.addPassthroughCopy("notes/*/*/*.gif");
 
   // responsive images
     // works also with addLiquidShortcode or addJavaScriptFunction
