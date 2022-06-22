@@ -8,7 +8,7 @@ On July 11th I attended an [art show](https://www.timesrepublican.com/news/today
 
 I arrived with about an hour left in the bidding. I felt rushed to survey the work and worried I might second guess my choice. There were a few pieces in a bright geometric and unfamiliar style that caught my eye. They were much different from the work I had seen from him before.
 
-Ray and Annice’s daughter Denise introduced me to several people—some that knew my dad. Among these I met [Chris Chantland](https://chrischantland.com/) a student of Ray’s and a talented artist in his own right. We exchanged memories of visits with Ray and Annice and shared photos of paintings on our phones. 
+Ray and Annice’s daughter Denise introduced me to several people—some that knew my dad. Among these I met [Chris Chantland](https://chrischantland.com/) a student of Ray’s and a talented artist in his own right. We exchanged memories of visits with Ray and Annice and shared photos of paintings on our phones. I shared a photo of a painting Ray made of my dad.
 
 <figure>
 <img src="sam-1975.jpg" alt="Painting in the style of a playing card">
