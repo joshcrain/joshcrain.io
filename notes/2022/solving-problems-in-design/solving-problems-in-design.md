@@ -14,4 +14,4 @@ More from YouTube:
 
 > In May 2022, an invitational exhibition titled Evolving Graphic Design was curated by graphic designer Yeohyun Ahn at the University of Wisconsin at Madison. This concluded in late June with a hybrid (both online and in-person) symposium, featuring short presentations by various exhibitors. This video on using problems in teaching design was presented by author and designer Roy R. Behrens.
 
-Even after retirement, at age 76, Professor Behrens continues to influence students. Today, he teaches online design courses for Drake University. 
+Even after retirement, at age 76, Professor Behrens continues to influence students. Today, he teaches online courses for Drake University. 
