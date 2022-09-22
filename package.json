@@ -1,22 +1,22 @@
 {
-  "name": "eleventy-intro",
+  "name": "josh-crain.io",
   "version": "1.0.0",
-  "description": "This site uses [Eleventy](https://www.11ty.io) for static site generation. Changes are tracked with Git and pushed [here](https://github.com/joshcrain/eleventy-intro) using command line. The site is deployed automatically by Netlify using [continuous deployment](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git).",
+  "description": "This site uses [Eleventy](https://www.11ty.io) for static site generation. Changes are tracked with Git and pushed [here](https://github.com/joshcrain/joshcrain.io) using command line. The site is deployed automatically by Netlify using [continuous deployment](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git).",
   "main": ".eleventy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshcrain/eleventy-intro.git"
+    "url": "git+https://github.com/joshcrain/josh-crain.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joshcrain/eleventy-intro/issues"
+    "url": "https://github.com/joshcrain/josh-crain.io/issues"
   },
-  "homepage": "https://github.com/joshcrain/eleventy-intro#readme",
+  "homepage": "https://github.com/joshcrain/josh-crain.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0-beta.8",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
