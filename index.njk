@@ -9,125 +9,111 @@ priority: "1.0"
 ---
 <div class="hero">
     <div class="wrapper fade-in">
-    <div class="grid-layout_home">
-        <div class="layout-section"> 
-            {% include "_svg/scandi-josh.svg" %} 
-        </div>
-        <div class="grid-content">
-            <header>
-                <h1><span class="intro">Hi, I’m</span> {{ title }}</h1> 
-            </header>
-            <p class="text--larger">I design and build for the web. My work allows me to make an impact through user advocacy, web standards, research, and code. I <a href="/about/running/">run</a> and <a href="/art/">sketch</a> in my spare time. There are also <a href="/about/">other interesting things</a>.</p>
-            <p><i>You are welcome to <a href="/say-hello/">say hello</a> or ask a question.</i></p>
+        <div class="grid-layout_home">
+            <div class="layout-section"> 
+                {% include "_svg/scandi-josh.svg" %} 
+            </div>
+            <div class="grid-content">
+                <header>
+                    <h1><span class="intro">Hi, I’m</span> {{ title }}</h1> 
+                </header>
+                <p class="text--larger">I design and build for the web. My work allows me to make an impact through user advocacy, web standards, research, and code. I <a href="/about/running/">run</a> and <a href="/art/">sketch</a> in my spare time. There are also <a href="/about/">other interesting things</a>.</p>
+                <p><i>You are welcome to <a href="/say-hello/">say hello</a> or ask a question.</i></p>
+            </div>
         </div>
     </div>
-</div>
 </div>
 <div class="wrapper">
-<section class="grid-layout_home">
-    <div class="layout-section"> 
-        <h2>Notes</h2>
-        <span class="text--smaller">{{ collections.notes | length }} posts</span>
-    </div>
-    <div class="grid-content">
-    <div class="subgrid">
-    {% set items = collections.notes | reverse %}
-    {% for post in items.slice(0, 4) %}
-    <div class="grid-half@l">
-        <div>
-            <a href="{{ post.url }}" class="h2">{{ post.data.title }}</a>
-            <p class="line-clamp"><span class="small-caps"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br/>
-            {{ post.data.description }}</p>
+    <section class="grid-layout_home">
+        <div class="layout-section"> 
+            <h2>Notes</h2>
+            <span class="text--smaller">{{ collections.notes | length }} posts</span>
         </div>
-    </div>
-    {% endfor %}
-    <div class="grid-full@l">
-        <div>
-            <p><i>See <a href="/notes/">all notes</a> or a list of semi-weekly <a href="/tags/weeknotes/">weeknotes</a>. The most recent is {% set items = collections.weeknotes | reverse %}{% for post in items.slice(0, 1) %}<a href="{{ post.url }}">{{ post.data.title }}</a>{% endfor %}.</i></p>
+        <div class="grid-content">
+            <div class="subgrid">
+                {% set items = collections.notes | reverse %}
+                {% for post in items.slice(0, 4) %}
+                <div class="grid-half@l">
+                    <div>
+                        <a href="{{ post.url }}" class="h2">{{ post.data.title }}</a>
+                        <p class="line-clamp"><span class="small-caps"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br/>
+                        {{ post.data.description }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="grid-full@l">
+                    <div>
+                        <p><i>See <a href="/notes/">all notes</a> or a list of semi-weekly <a href="/tags/weeknotes/">weeknotes</a>. The most recent is {% set items = collections.weeknotes | reverse %}{% for post in items.slice(0, 1) %}<a href="{{ post.url }}">{{ post.data.title }}</a>{% endfor %}.</i></p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-    </div>
     </section>
 </div>
 <div class="wrapper">
-<section class="grid-layout_home">
-    <div class="layout-section">
-        <h2>Art</h2>
-        <span class="text--smaller">{{ artwork.cloudinary.resources | length }} items</span>
-    </div>
-<div class="grid-content">
-<div class="subgrid">
-    {% for item in drawing.cloudinary.resources | reverse %} 
-    {% if item.context.custom.featured == "true" %}
-    <div class="grid-third@l tile">
-    <a href="/art/drawing/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,h_300,w_300/{{ item.public_id }}.webp" alt="{{ item.context.custom.alt }}" loading="lazy"></a>
-        <div class="tile_inner">
-            <a href="/art/drawing/" class="tile_link"><span class="tile_name">Drawing</span></a>
-            <span class="tile_desc text--smaller">A collection of drawings. ({{ drawing.cloudinary.resources | length }} items)</span>
+    <section class="grid-layout_home">
+        <div class="layout-section">
+            <h2>Art</h2>
+            <span class="text--smaller">{{ artwork.cloudinary.resources | length }} items</span>
         </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    {% for item in painting.cloudinary.resources | reverse %} 
-    {% if item.context.custom.featured == "true" %}
-    <div class="grid-third@l tile">
-    <a href="/art/painting/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,h_300,w_300/{{ item.public_id }}.webp" alt="{{ item.context.custom.alt }}" loading="lazy"></a>
-        <div class="tile_inner">
-            <a href="/art/painting/" class="tile_link"><span class="tile_name">Painting</span></a>
-            <span class="tile_desc text--smaller">A collection of paintings. ({{ painting.cloudinary.resources | length }} items)</span>
+        <div class="grid-content">
+            <div class="subgrid">
+                <div class="grid-third@l tile">
+                    <a href="/art/drawing/"><img src="/images/home/cardinal.webp" alt="drawing of a cardinal" loading="lazy"></a>
+                    <div class="tile_inner">
+                        <a href="/art/drawing/" class="tile_link"><span class="tile_name">Drawing</span></a>
+                        <span class="tile_desc text--smaller">A collection of sketches. ({{ drawing.cloudinary.resources | length }} items)</span>
+                    </div>
+                </div>
+                <div class="grid-third@l tile">
+                    <a href="/art/painting/"><img src="/images/home/fresco-2021.webp" alt="digital watercolor painting" loading="lazy"></a>
+                    <div class="tile_inner">
+                        <a href="/art/painting/" class="tile_link"><span class="tile_name">Painting</span></a>
+                        <span class="tile_desc text--smaller">A collection of sketches. ({{ painting.cloudinary.resources | length }} items)</span>
+                    </div>
+                </div>
+                <div class="grid-third@l tile">
+                    <a href="/art/sketchbook/"><img src="/images/home/gouache-sketchbook-2015-1.webp" alt="Gouache painting." loading="lazy"></a>
+                    <div class="tile_inner">
+                        <a href="/art/sketchbook/" class="tile_link"><span class="tile_name">Sketchbook</span></a>
+                        <span class="tile_desc text--smaller">A collection of sketches. ({{ sketchbook.cloudinary.resources | length }} items)</span>
+                    </div>
+                </div>
+                <div class="grid-full@l">
+                    <div>
+                        <p><i>See <a href="/art/">all art</a>. The most recent is titled {% set items = artwork.cloudinary.resources %}{% for item in items.slice(0, 1) %}{{ item.context.custom.caption }}{% endfor %}.</i></p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    {% for item in sketchbook.cloudinary.resources | reverse %} 
-    {% if item.context.custom.featured == "true" %}
-    <div class="grid-third@l tile">
-    <a href="/art/sketchbook/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,h_300,w_300/{{ item.public_id }}.webp" alt="{{ item.context.custom.alt }}" loading="lazy"></a>
-        <div class="tile_inner">
-            <a href="/art/sketchbook/" class="tile_link"><span class="tile_name">Sketchbook</span></a>
-            <span class="tile_desc text--smaller">A collection of sketches. ({{ sketchbook.cloudinary.resources | length }} items)</span>
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-<div class="grid-full@l">
-    <div>
-        <p><i>See <a href="/art/">all art</a>. The most recent is titled {% set items = artwork.cloudinary.resources %}{% for item in items.slice(0, 1) %}{{ item.context.custom.caption }}{% endfor %}.</i></p>
-    </div>
-</div>
-</div>
-</div>
-</section>
+    </section>
 </div>
 <div class="wrapper">
-<section class="grid-layout_home">
-    <div class="layout-section">
-        <h2>Running</h2>
-        <span class="text--smaller">{{ running.garmin.activityList | length }} activities</span>
-    </div>
-<div class="grid-content">
-    <table class="table_rwd">
-        <thead>
-        <tr>
-            <th scope="col">When</th>
-            <th scope="col">Distance</th>
-            <th scope="col">Time</th>
-            <th scope="col">Pace</th>
-            <th scope="col">Heart Rate</th>
-            <th scope="col"><abbr title="volume, oxygen, maximum">VO<sub>2</sub></abbr> Max</th>
-        </tr>
-        </thead>
-        {% set rundata = running.garmin.activityList %}
-        {% for item in rundata.slice(0, 5) %}
-            {% if item.sportTypeId == "1" %}
-                {% include "_page_partial/running-columns.njk" %}
-            {% endif %}
-        {% endfor %}
-    </table>
-    <p><i>See <a href="/about/running/">all running activity</a> or activity for the years <a href="/about/running/2020/">2020</a>, <a href="/about/running/2021/">2021</a>,  and <a href="/about/running/2022/">2022</a>. More <a href="/notes/2021/eleventy-garmin-connect/">about the project</a>.</i></p>
-</div>
-</section>
+    <section class="grid-layout_home">
+        <div class="layout-section">
+            <h2>Running</h2>
+            <span class="text--smaller">{{ running.garmin.activityList | length }} activities</span>
+        </div>
+        <div class="grid-content">
+            <table class="table_rwd">
+                <thead>
+                    <tr>
+                        <th scope="col">When</th>
+                        <th scope="col">Distance</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Pace</th>
+                        <th scope="col">Heart Rate</th>
+                        <th scope="col"><abbr title="volume, oxygen, maximum">VO<sub>2</sub></abbr> Max</th>
+                    </tr>
+                </thead>
+                {% set rundata = running.garmin.activityList %}
+                {% for item in rundata.slice(0, 5) %}
+                    {% if item.sportTypeId == "1" %}
+                        {% include "_page_partial/running-columns.njk" %}
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p><i>See <a href="/about/running/">all running activity</a> or activity for the years <a href="/about/running/2020/">2020</a>, <a href="/about/running/2021/">2021</a>,  and <a href="/about/running/2022/">2022</a>. More <a href="/notes/2021/eleventy-garmin-connect/">about the project</a>.</i></p>
+        </div>
+    </section>
 </div>
