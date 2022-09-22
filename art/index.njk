@@ -7,16 +7,18 @@ description: Artwork to share with you.
 
 <p class="lead">{{description}}</p>
 <div class="subgrid">
-    {% for item in drawing.cloudinary.resources | reverse %} 
-    {% if item.context.custom.featured == "true" %}
-    <div class="grid-third@l tile">
+    {% for item in artwork.cloudinary.resources %} 
+
+    <div class="grid-quarter@l tile">
     <a href="/art/drawing/"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,h_300,w_300/{{ item.public_id }}.webp" alt="{{ item.context.custom.alt }}" loading="lazy"></a>
         <div class="tile_inner">
-            <a href="/art/drawing/" class="tile_link"><span class="tile_name">Drawing</span></a>
-            <span class="tile_desc text--smaller">A collection of drawings. ({{ drawing.cloudinary.resources | length }} items)</span>
+            <span class="tile_desc">
+            <a href="/art/drawing/" class="tile_link"><span class="tile_name">{{ item.context.custom.caption }}</span></a>
+            <span class=" text--smaller">A collection of drawings. ({{ drawing.cloudinary.resources | length }} items)</span>
+        </span>
         </div>
     </div>
-    {% endif %}
+
     {% endfor %}
 
     {% for item in painting.cloudinary.resources | reverse %} 
