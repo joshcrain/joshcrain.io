@@ -4,7 +4,7 @@ tags: ['weeknotes']
 description: A good run, vertigo, no running. Chat widget tinkerings. 
 date: 2022-05-23
 ---
-- I had a [good run](https://joshcrain.io/about/running/#8874106348) on Sunday. 
+- I had a [good run](/about/running/2022/8874106348/) on Sunday. 
 - I made a [quick chat widget](https://codepen.io/joshcrain/pen/ExQwPaa) to test some ideas and learn a few things that may be helpful later. 
 
 <div>
