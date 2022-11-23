@@ -12,7 +12,7 @@ I have worked as a web designer, product designer, and front-end developer. I wa
 <figure style="float:right;margin:0 0 1em 1em;width:auto;max-width:100px;width:25%;"> <img src="https://joshcrain.github.io/ancestry/images/crane-coat-of-arms.png" alt="Crane of Suffolk, England Coat Of Arms. Argent, a fesse between three crosses crosslet fitchée Guls, crest a crane ppr.">
 </figure>
 
-I am a 12th generation descendant of colonial settlers. I created a website of <a href="/ancestry/">Crain family ancestry</a> as a way to explore my interest in heritage and progeny, and as place to catalog my findings. I learned some interesting things about <em>heraldry</em>&mdash;something I knew nothing about. You are most welcome to <a href="/say-hello/">contact me</a> with any interest.
+I created a website of <a href="/ancestry/">Crain family ancestry</a> as a way to explore my interest in heritage and progeny, and as place to catalog my findings. I learned some interesting things about <em>heraldry</em>&mdash;something I knew nothing about. You are most welcome to <a href="/say-hello/">contact me</a> with any interest.
 
 ## Personal Records
 <table class="table_rwd">
