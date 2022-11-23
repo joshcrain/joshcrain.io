@@ -1,0 +1,22 @@
+---
+pageType: page
+eleventyComputed:
+    title: "{{ item.context.custom.caption }}"
+    description: "Artwork created in {{ item.context.custom.year }} using {{ item.context.custom.medium }}." 
+tags: ['artwork']
+pagination:
+    data: artwork.cloudinary.resources
+    size: 1
+    alias: item
+    addAllPagesToCollections: true
+permalink: "art/{{ item.context.custom.caption | slugify }}/"
+--- 
+
+<figure>
+    <source srcset="https://res.cloudinary.com/joshcrain/image/upload/c_limit,q_auto,w_1484,h_1484/{{ item.public_id }}.webp 1x" media="(min-width: 75em)">
+    <source srcset="https://res.cloudinary.com/joshcrain/image/upload/c_limit,q_auto,w_371,h_371/{{ item.public_id }}.webp 1x, https://res.cloudinary.com/joshcrain/image/upload/c_limit,q_auto,w_742,h_742/{{ item.public_id }}.webp 2x" media="(min-width: 40em)">
+    <img src="https://res.cloudinary.com/joshcrain/image/upload/c_limit,q_auto,w_371,h_371/{{ item.public_id }}.webp" alt="{{ item.context.custom.alt }}" loading="lazy" decoding="async"
+    srcset="https://res.cloudinary.com/joshcrain/image/upload/c_limit,q_auto,w_742,h_742/{{ item.public_id }}.webp 1x, 
+    https://res.cloudinary.com/joshcrain/image/upload/c_limit,q_auto,w_1484,h_1484/{{ item.public_id }}.webp 2x"></a>
+    <figcaption>{{ item.context.custom.caption }}. {{ item.context.custom.year }}. {{ item.context.custom.medium }}.</figcaption>
+</figure>

@@ -1,0 +1,29 @@
+---
+eleventyComputed:
+    title: "Run Log: {{ item.startTimeLocal | date('M/D/Y') }}"
+    description: I went for a run on {{ item.startTimeLocal | date("M/D/Y") }} at {{ item.startTimeLocal | date("h:mm A")}}. 
+tags: ['runlog']
+pagination:
+    data: running.garmin.activityList
+    size: 1
+    alias: item
+    addAllPagesToCollections: true
+permalink: "about/running/{{ item.startTimeLocal | date('YYYY') }}/{{ item.activityId }}/"
+---
+<p class="lead">I went for a run on {{ item.startTimeLocal | date("M/D/Y") }} at {{ item.startTimeLocal | date("h:mm A")}}. <a href="/about/running/">See all</a>.</p>
+<table class="full_width table_rwd">
+  <thead>
+  <tr>
+    <th>When</th>
+    <th>Distance</th>
+    <th>Time</th>
+    <th>Pace</th>
+    <th>Heart Rate</th>
+    <th><abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</th>
+    </tr>
+   </thead>
+   <tbody>
+    {% include "_page_partial/running-columns.njk" %}
+    </tbody>
+</table>
+
