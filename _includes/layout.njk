@@ -52,6 +52,10 @@
                             {% set nextNote = collections.notes | getNextCollectionItem(page) %}
                             {% set previousWeeknote = collections.weeknotes | getPreviousCollectionItem(page) %}
                             {% set nextWeeknote = collections.weeknotes | getNextCollectionItem(page) %}
+                            {% set nextRun = collections.runlog | getPreviousCollectionItem(page) %}
+                            {% set previousRun = collections.runlog | getNextCollectionItem(page) %}
+                            {% set nextArt = collections.artwork | getPreviousCollectionItem(page) %}
+                            {% set previousArt = collections.artwork | getNextCollectionItem(page) %}
                             <div class="grid-half@l">
                                 {% if previousNote %}<div>
                                     <div class="text--smaller"><i>Previously</i></div>
@@ -66,6 +70,7 @@
                                     <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextNote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextNote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
                                 </div>{% endif %}
                             </div>
+                            
                             <div class="grid-half@l">
                                 {% if previousWeeknote %}<div>
                                     <div class="text--smaller"><i>Previously</i></div>
@@ -80,7 +85,32 @@
                                     <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextWeeknote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
                                 </div>{% endif %}
                             </div>
-                        </div>    
+
+                            <div class="grid-half@l">
+                                {% if previousRun %}<div>
+                                    <div class="text--smaller"><i>Previously</i></div>
+                                    <a href="{{ previousRun.url }}">{{ previousRun.data.title }}</a>
+                                </div>{% endif %}
+                            </div>
+                            <div class="grid-half@l">
+                                {% if nextRun %}<div>
+                                    <div class="text--smaller"><i>Up next</i></div>
+                                    <a href="{{ nextRun.url }}">{{ nextRun.data.title }}</a>
+                                </div>{% endif %}
+                            </div>
+
+                            <div class="grid-half@l">
+                                {% if previousArt %}<div>
+                                    <div class="text--smaller"><i>Previously</i></div>
+                                    <a href="{{ previousArt.url }}">{{ previousArt.data.title }}</a>
+                                </div>{% endif %}
+                            </div>
+                            <div class="grid-half@l">
+                                {% if nextArt %}<div>
+                                    <div class="text--smaller"><i>Up next</i></div>
+                                    <a href="{{ nextArt.url }}">{{ nextArt.data.title }}</a>
+                                </div>{% endif %}
+                            </div>
                     {% endif %}
                         </div>
                     </div>
@@ -91,7 +121,7 @@
         </main>
         <footer class="site_footer">
             <div class="wrapper">
-                <nav aria-label="nav-primary-footer"><ul class="list--horizontal"><li>&copy; <time datetime="2019-11-06 09:58">2019</time>-<time datetime="{{ date.now | date('YYYY-MM-DD HH:mm') }}">{{ date.now | date("YYYY") }}</time> ⁃ Josh Crain</li><li><a href="/about/site/colophon/" class="text--small">Colophon</a></li><li><a href="/ancestry/" class="text--small">Ancestry</a></li><li><a href="/about/running/" class="text--small">Running</a></li><li><a href="/feed.xml" class="text--small">RSS</a></li></ul></nav>
+                <nav aria-label="nav-primary-footer"><ul class="list--horizontal"><li>&copy; <time datetime="2019-11-06 09:58">2019</time>-<time datetime="{{ date.now | date('YYYY-MM-DD HH:mm') }}">{{ date.now | date("YYYY") }}</time> ⁃ Josh Crain</li><li><a href="/say-hello/" class="text--small">Contact</a></li><li><a href="/about/running/" class="text--small">Running</a></li><li><a href="/about/site/colophon/" class="text--small">Colophon</a></li><li><a href="/feed.xml" class="text--small">RSS</a></li></ul></nav>
             </div>
         </footer>
         <nav class="view" aria-label="nav-view">
