@@ -20,3 +20,8 @@ permalink: "art/{{ item.context.custom.caption | slugify }}/"
     https://res.cloudinary.com/joshcrain/image/upload/c_limit,q_auto,w_1484,h_1484/{{ item.public_id }}.webp 2x"></a>
     <figcaption>{{ item.context.custom.caption }}. {{ item.context.custom.year }}. {{ item.context.custom.medium }}.</figcaption>
 </figure>
+{% if item.context.custom.description %}
+<hr>
+<h2>Notes</h2>
+<p>{{ item.context.custom.description }}</p>
+{% endif %}
