@@ -71,46 +71,46 @@
                                 </div>{% endif %}
                             </div>
                             
-                            <div class="grid-half@l">
-                                {% if previousWeeknote %}<div>
+                            {% if previousWeeknote %}<div class="grid-half@l">
+                                <div>
                                     <div class="text--smaller"><i>Previously</i></div>
                                     <a href="{{ previousWeeknote.url }}">{{ previousWeeknote.data.title }}</a>
                                     <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ previousWeeknote.date | date('YYYY-MM-DD HH:mm') }}">{{ previousWeeknote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in previousWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
-                                </div>{% endif %}
-                            </div>
-                            <div class="grid-half@l">
-                                {% if nextWeeknote %}<div>
+                                </div>
+                            </div>{% endif %}
+                            {% if nextWeeknote %}<div class="grid-half@l">
+                                <div>
                                     <div class="text--smaller"><i>Up next</i></div>
                                     <a href="{{ nextWeeknote.url }}">{{ nextWeeknote.data.title }}</a>
                                     <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextWeeknote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
-                                </div>{% endif %}
-                            </div>
+                                </div>
+                            </div>{% endif %}
 
-                            <div class="grid-half@l">
-                                {% if previousRun %}<div>
+                            {% if previousRun %}<div class="grid-half@l">
+                                <div>
                                     <div class="text--smaller"><i>Previously</i></div>
                                     <a href="{{ previousRun.url }}">{{ previousRun.data.title }}</a>
-                                </div>{% endif %}
-                            </div>
-                            <div class="grid-half@l">
-                                {% if nextRun %}<div>
+                                </div>
+                            </div>{% endif %}
+                            {% if nextRun %}<div class="grid-half@l">
+                                <div>
                                     <div class="text--smaller"><i>Up next</i></div>
                                     <a href="{{ nextRun.url }}">{{ nextRun.data.title }}</a>
-                                </div>{% endif %}
-                            </div>
+                                </div>
+                            </div>{% endif %}
 
-                            <div class="grid-half@l">
-                                {% if previousArt %}<div>
+                            {% if previousArt %}<div class="grid-half@l">
+                                <div>
                                     <div class="text--smaller"><i>Previously</i></div>
                                     <a href="{{ previousArt.url }}">{{ previousArt.data.title }}</a>
-                                </div>{% endif %}
-                            </div>
-                            <div class="grid-half@l">
-                                {% if nextArt %}<div>
+                                </div>
+                            </div>{% endif %}
+                            {% if nextArt %}<div class="grid-half@l">
+                                <div>
                                     <div class="text--smaller"><i>Up next</i></div>
                                     <a href="{{ nextArt.url }}">{{ nextArt.data.title }}</a>
-                                </div>{% endif %}
-                            </div>
+                                </div>
+                            </div>{% endif %}
                     {% endif %}
                         </div>
                     </div>
