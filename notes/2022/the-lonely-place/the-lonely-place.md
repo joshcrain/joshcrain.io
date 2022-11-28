@@ -1,7 +1,7 @@
 ---
 title: The Lonely Place
 metaTitle: 
-tags: ['notes']
+tags: ['notes', 'narrative']
 description: The lonely place is the only place I will ever hear my own voice.
 date: 2022-11-28
 ---
