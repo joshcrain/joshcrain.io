@@ -38,6 +38,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("android-chrome-*.png");
   eleventyConfig.addPassthroughCopy("apple-touch-icon.png");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPassthroughCopy("google88f9e8b0497a35bd.html");
   eleventyConfig.addPassthroughCopy("notes/*/*/*.jpg");
