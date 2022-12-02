@@ -23,6 +23,7 @@
     "ava": "^3.15.0"
   },
   "dependencies": {
+    "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^0.6.0",
     "clean-css": "^4.2.3",
     "debug": "^4.3.1",
