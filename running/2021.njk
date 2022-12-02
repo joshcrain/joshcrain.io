@@ -1,10 +1,10 @@
 ---
-title: 2020 Running Log
-metaTitle: 2020 Running Log
-tags: ['about','running']
-description: A 2020 running log to track dates, distance, time, pace, heart rate, and Vo2 Max.
+title: 2021 Running Log
+metaTitle: 2021 Running Log
+tags: ['running']
+description: A 2021 running log to track dates, distance, time, pace, heart rate, and Vo2 Max. 
 ---
-<p class="lead">Running activity from 2020. <a href="/about/running/">See all</a>.  </p>
+<p class="lead">Running activity from 2021. <a href="/running/">See all</a>.  </p>
 
 <table class="full_width table_rwd">
   <thead>
@@ -18,7 +18,7 @@ description: A 2020 running log to track dates, distance, time, pace, heart rate
     </tr>
    </thead>
    {% for item in running20220616.activityList %}
-  {% if (item.sportTypeId == "1") and (item.startTimeLocal | date("Y") == "2020") %}
+  {% if (item.sportTypeId == "1") and (item.startTimeLocal | date("Y") == "2021") %}
    {% include "_page_partial/running-columns.njk" %}
   {% endif %}
 {% endfor %}

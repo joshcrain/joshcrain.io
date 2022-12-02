@@ -22,7 +22,7 @@ Site speed has been a priority for this site in 2021. I was [the fastest](/notes
 I didn't write much again this year. This is the 5th post of 2021. 
 
 ### Garmin Plugin
-I created an Eleventy plugin to create a [running log with Garmin Connect](/notes/2021/eleventy-garmin-connect/) data. I use it on this site to capture and log running activities over time. The site build process triggers automatically with a Zapier action after every run, so there's nothing needed to update the [running log](/about/running/)—I love it. 
+I created an Eleventy plugin to create a [running log with Garmin Connect](/notes/2021/eleventy-garmin-connect/) data. I use it on this site to capture and log running activities over time. The site build process triggers automatically with a Zapier action after every run, so there's nothing needed to update the [running log](/running/)—I love it. 
 
 ## What I Learned
 - I spent time learning about [Web Components](/notes/2021/weeknote-18-2021/).
@@ -36,12 +36,12 @@ I work on a team where I help design and build a web application. In 2020 I bega
 I work remotely from home. It has been good. I retired the desk I bought from Staples in 2002 after I moved my home office for the 3rd or 4th time. 
 
 ## Running 
-Working from home has made it possible to be more consistent with [running in 2021](/about/running/2021/), especially since the fall. I added a weekly 10K in October and continue to feel great. 
+Working from home has made it possible to be more consistent with [running in 2021](/running/2021/), especially since the fall. I added a weekly 10K in October and continue to feel great. 
 
 I averaged 6.4 miles per week for the year. 18.2 miles per week for the month of December, which is when all my best times for the year occurred: 
-- 1K: 3:41 on [12/23/2021](/about/running/2021/#8000744577)
-- 1 mile: 5:53 on [12/23/2021](/about/running/2021/#8000744577)
-- 5K: 19:51 on [12/23/2021](/about/running/2021/#8000744577)
-- 10K: 40:10 on [12/19/2021](/about/running/2021/#7983345732)
+- 1K: 3:41 on [12/23/2021](/running/2021/#8000744577)
+- 1 mile: 5:53 on [12/23/2021](/running/2021/#8000744577)
+- 5K: 19:51 on [12/23/2021](/running/2021/#8000744577)
+- 10K: 40:10 on [12/19/2021](/running/2021/#7983345732)
 
 No races this year, maybe in 2022. 

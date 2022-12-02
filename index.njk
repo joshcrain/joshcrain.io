@@ -17,7 +17,7 @@ priority: "1.0"
                 <header>
                     <h1><span class="intro">Hi, I’m</span> {{ title }}</h1> 
                 </header>
-                <p class="text--larger">I design and build for the web. My work allows me to make an impact through user advocacy, web standards, research, and code. I <a href="/about/running/">run</a> and <a href="/art/">sketch</a> in my spare time. There are also <a href="/about/">other interesting things</a>.</p>
+                <p class="text--larger">I design and build for the web. My work allows me to make an impact through user advocacy, web standards, research, and code. I <a href="/running/">run</a> and <a href="/art/">sketch</a> in my spare time. There are also <a href="/about/">other interesting things</a>.</p>
                 <p><i>You are welcome to <a href="/say-hello/">say hello</a> or ask a question.</i></p>
             </div>
         </div>
@@ -95,7 +95,7 @@ priority: "1.0"
                 {% endfor %}
             <div class="grid-full@l">
                 <div>
-                    <p><i>See <a href="/art/">all art</a>. The most recent is titled {% set items = artwork.cloudinary.resources %}{% for item in items.slice(0, 1) %}{{ item.context.custom.caption }}{% endfor %}.</i></p>
+                    <p><i>See <a href="/art/">all art</a>. The most recent is titled {% set items = artwork.cloudinary.resources %}{% for item in items.slice(0, 1) %}<a href="/art/{{ item.context.custom.caption | slugify }}">{{ item.context.custom.caption }}</a>{% endfor %}.</i></p>
                 </div>
             </div>
             </div>
@@ -127,7 +127,7 @@ priority: "1.0"
                     {% endif %}
                 {% endfor %}
             </table>
-            <p><i>See <a href="/about/running/">all running activity</a> or activity for the years <a href="/about/running/2020/">2020</a>, <a href="/about/running/2021/">2021</a>,  and <a href="/about/running/2022/">2022</a>. More <a href="/notes/2021/eleventy-garmin-connect/">about the project</a>.</i></p>
+            <p><i>See <a href="/running/">all running activity</a> or activity for the years <a href="/running/2020/">2020</a>, <a href="/running/2021/">2021</a>,  and <a href="/running/2022/">2022</a>. More <a href="/notes/2021/eleventy-garmin-connect/">about the project</a>.</i></p>
         </div>
     </section>
 </div>

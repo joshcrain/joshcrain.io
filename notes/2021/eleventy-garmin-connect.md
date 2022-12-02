@@ -8,7 +8,7 @@ I like to run. I used to do it a lot more in my younger days when I ran competit
 
 Christmas of 2019 I was given my first smart watch, a Garmin Forerunner 45. This was exciting for me because I would be able to track data associated with exercise—and even the rest in between. I downloaded the app, created a [Garmin Connect](https://connect.garmin.com/) account, and began using my new watch. 
 
-Around the same time I was learning a lot about [Eleventy](https://www.11ty.dev) and how to generate static websites (like this one). It occurred to me my running activities might be a data source I could use for a website. Publishing my Garmin Connect activities as [a _new_ type of running log](/about/running/)  sounded like a fun side project but I didn't really know where to begin.
+Around the same time I was learning a lot about [Eleventy](https://www.11ty.dev) and how to generate static websites (like this one). It occurred to me my running activities might be a data source I could use for a website. Publishing my Garmin Connect activities as [a _new_ type of running log](/running/)  sounded like a fun side project but I didn't really know where to begin.
 
 ## Garmin Connect data
 Garmin provides a publicly accessible JSON feed of your data. I have no idea what this is for, except perhaps, a preview for developers. The path for everyone is the same with the exception of the user ID, which is in the URL of your Garmin Connect profile. _Note: activities need to be public to be seen in this feed_. I've tripped over this several times. 
@@ -98,6 +98,6 @@ Garmin Connect doesn't have a Zapier integration but Strava does. [Strava](https
 That's it!
  
  Want to see more? Take a look: 
-- [My Running Log](/about/running/) 
+- [My Running Log](/running/) 
 - [Eleventy/Garmin Connect](https://github.com/joshcrain/eleventy-garmin-connect) on Github
 

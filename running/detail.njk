@@ -8,9 +8,9 @@ pagination:
     size: 1
     alias: item
     addAllPagesToCollections: true
-permalink: "about/running/{{ item.startTimeLocal | date('YYYY') }}/{{ item.activityId }}/"
+permalink: "running/{{ item.startTimeLocal | date('YYYY') }}/{{ item.activityId }}/"
 ---
-<p class="lead">I went for a run on {{ item.startTimeLocal | date("M/D/Y") }} at {{ item.startTimeLocal | date("h:mm A")}}. <a href="/about/running/">See all</a>.</p>
+<p class="lead">I went for a run on {{ item.startTimeLocal | date("M/D/Y") }} at {{ item.startTimeLocal | date("h:mm A")}}. <a href="/running/">See all</a>.</p>
 <table class="full_width table_rwd">
   <thead>
   <tr>
@@ -26,4 +26,3 @@ permalink: "about/running/{{ item.startTimeLocal | date('YYYY') }}/{{ item.activ
     {% include "_page_partial/running-columns.njk" %}
     </tbody>
 </table>
-

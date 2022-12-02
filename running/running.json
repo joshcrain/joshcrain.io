@@ -1,0 +1,6 @@
+{
+    "layout": "layout.njk",
+    "category": "Running",
+    "changefreq": "daily",
+    "priority": "0.5"
+}
