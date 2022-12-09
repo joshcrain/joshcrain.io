@@ -23,9 +23,24 @@ module.exports = function(eleventyConfig) {
   });
   // miles filter
   eleventyConfig.addNunjucksFilter("miles", function (miles) {
-    return parseFloat(miles/1609).toFixed(2);
+    return parseFloat(miles/1609.344).toFixed(2);
   });
 
+  // two decimal places filter
+  eleventyConfig.addNunjucksFilter("decimal", function (decimal) {
+    return parseFloat(decimal).toFixed(2);
+  });
+
+  // two decimal places filter
+  eleventyConfig.addNunjucksFilter("divide100", function (divide100) {
+    return parseFloat(divide100/100).toFixed(2);
+  });
+
+  // meters/second to mph
+  eleventyConfig.addNunjucksFilter("mph", function (mph) {
+    return parseFloat(mph*2.2369369).toFixed(2);
+  });
+  
   eleventyConfig.addPassthroughCopy("images"), function () {
   // You can return your Config object (optional).
   return {
