@@ -10,19 +10,55 @@ pagination:
     addAllPagesToCollections: true
 permalink: "running/{{ item.startTimeLocal | date('YYYY') }}/{{ item.activityId }}/"
 ---
-<p class="lead">I went for a run on {{ item.startTimeLocal | date("M/D/Y") }} at {{ item.startTimeLocal | date("h:mm A")}}. <a href="/running/">See all</a>.</p>
-<table class="full_width table_rwd">
-  <thead>
-  <tr>
-    <th>When</th>
-    <th>Distance</th>
-    <th>Time</th>
-    <th>Pace</th>
-    <th>Heart Rate</th>
-    <th><abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</th>
-    </tr>
-   </thead>
+{% if item.pr == true %}<p class="lead">🏆&nbsp;New Personal Record!</p>{% endif %}
+<p><i>On <date datetime="{{ item.startTimeLocal | date('Y-M-D') }}">{{ item.startTimeLocal | date("MMMM Do, YYYY") }}</date> at <time datetime="{{ item.startTimeLocal | date('H:mm')}}">{{ item.startTimeLocal | date("h:mm A")}}</time>,</i> I went for a {{ item.distance | miles }} mile run. The run took {{ item.duration | duration("mm:ss") }} which was an average of {{ ((item.duration)/(item.distance | miles)) | duration("m:ss") }} per mile. {{ item.description }} The statistics for my run are below. </p>
+
+<table>
    <tbody>
-    {% include "_page_partial/running-columns.njk" %}
+    <tr>
+        <th scope="rowgroup">Day &amp; Time</th>
+        <td>{{ item.startTimeLocal | date("M/D/Y") }}, {{ item.startTimeLocal | date("h:mm A")}}</td>
+     
+      </tr>
+      <tr>
+        <th scope="rowgroup">Distance</th>
+        <td data-tblColumn="Distance">{{ item.distance | miles }} miles</td>
+        
+      </tr>
+      <tr>
+        <th scope="rowgroup">Time</th>
+        <td data-tblColumn="Time">{{ item.duration | duration("mm:ss") }}</td>
+       
+      </tr>
+      <tr>
+        <th scope="rowgroup">Pace</th>
+        <td data-tblColumn="Pace">{{ ((item.duration)/(item.distance | miles)) | duration("m:ss") }} per mile</td>
+      </tr>
+      <tr>
+        <th scope="rowgroup">Heart Rate</th>
+        <td data-tblColumn="Heart Rate"><span>{{ item.averageHR }} beats per minute ({{ item.maxHR }}&nbsp;Max)</span></td>
+      </tr>
+      <tr>
+        <th scope="rowgroup"><abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</th>
+        <td data-tblColumn="VO2 Max">{% if item.vO2MaxValue %}{{ item.vO2MaxValue }} <abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</abbr>{% endif %}</td>
+      </tr>
+      <tr>
+        <th scope="rowgroup">Speed</th>
+        <td data-tblColumn="Speed">{{ item.averageSpeed | mph }} miles per hour ({{ item.maxSpeed | mph }}&nbsp;max) </td>
+      </tr>
+      <tr>
+        <th scope="rowgroup">Stride Length</th>
+        <td data-tblColumn="Stride Length">{{ item.avgStrideLength | divide100 }} meters</td>
+      </tr>
+      <tr>
+        <th scope="rowgroup">Calories</th>
+        <td data-tblColumn="Calories">{{ item.calories }}</td>
+      </tr>
+      <tr>
+        <th scope="rowgroup">Steps</th>
+        <td data-tblColumn="Steps">{{ item.steps }} ({{ item.averageRunningCadenceInStepsPerMinute | decimal }}/minute)</td>
+      </tr>
     </tbody>
 </table>
+
+<p><i>See more runs from <a href="/running/{{ item.startTimeLocal | date('YYYY') }}/">{{ item.startTimeLocal | date("YYYY") }}</a>.</i></p>
