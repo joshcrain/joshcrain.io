@@ -466,7 +466,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .table_rwd [data-tblColumn] br{display: none;}
   .table_rwd [data-tblColumn] span{display: inline-block;}
 
-  .table_rwd :not(:first-child) td,table :not(:first-child) th{border:0;border-bottom:var(--border-size-1) solid rgba(var(--colorFore),.8);}
+  .table_rwd :not(:first-child) td{border:0;border-bottom:var(--border-size-1) solid rgba(var(--colorFore),.8);}
 
   .table_rwd {border:0;}
 .table_rwd th, .table_rwd tr {display: block;}
