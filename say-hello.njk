@@ -1,0 +1,25 @@
+---
+layout: layout.njk
+title: Say Hello
+metaTitle: Ask Josh Crain Questions
+description: Contact Josh Crain
+---
+<p class="lead">Say hello and ask that burning question.</p>
+
+<form name="contact" class="form" method="POST" data-netlify="true" action="/">
+<fieldset style="border:0;padding:0;">
+<legend class="visuallyhidden">Info and comments</legend>
+  <div class="form_item">
+    <label>Your Name <input type="text" name="name" title="Please provide a name" class="form_field" aria-required="true" required/></label>   
+  </div>
+  <div class="form_item">
+    <label>Your Email <input type="email" name="email" class="form_field" aria-required="true" required title="Please provide a valid email" /></label>
+  </div>
+  <div class="form_item">
+    <label>Message <textarea name="message" class="form_field" title="Please provide a message" aria-required="true" required></textarea></label>
+  </div>
+  </fieldset>
+  <div class="form_item">
+    <button type="submit" class="btn">Say Hello</button>
+  </div> 
+</form>
