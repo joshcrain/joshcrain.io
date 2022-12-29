@@ -4,7 +4,7 @@ eleventyComputed:
     description: I went for a run on {{ item.startTimeLocal | date("M/D/Y") }} at {{ item.startTimeLocal | date("h:mm A")}}. 
 tags: ['runlog']
 pagination:
-    data: running.garmin
+    data: running.garmin.activityList
     size: 1
     alias: item
     addAllPagesToCollections: true

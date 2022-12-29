@@ -106,7 +106,7 @@ priority: "1.0"
     <section class="grid-layout_home">
         <div class="layout-section">
             <h2>Running</h2>
-            <span class="text--smaller">{{ running.garmin | length }} activities</span>
+            <span class="text--smaller">{{ running.garmin.activityList | length }} activities</span>
         </div>
         <div class="grid-content">
             <table class="table_rwd">
@@ -119,7 +119,7 @@ priority: "1.0"
                         <th scope="col">Heart Rate</th>
                     </tr>
                 </thead>
-                {% set rundata = running.garmin %}
+                {% set rundata = running.garmin.activityList %}
                 {% for item in rundata.slice(0, 5) %}
                     {% if item.sportTypeId == "1" %}
                         {% include "_page_partial/running-columns.njk" %}
