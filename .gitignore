@@ -7,4 +7,4 @@ node_modules
 notes/_templates
 _site
 package-lock.json
-# .cache
+.cache
