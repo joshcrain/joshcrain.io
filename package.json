@@ -18,15 +18,16 @@
   },
   "homepage": "https://github.com/joshcrain/josh-crain.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0-beta.8",
-    "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "ava": "^3.15.0"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^0.6.0",
-    "clean-css": "^4.2.3",
+    "clean-css": "^4.2.4",
     "debug": "^4.3.1",
+    "html-minifier": "^4.0.0",
     "luxon": "^1.25.0",
     "moment": "^2.29.1",
     "posthtml": "^0.11.2",
