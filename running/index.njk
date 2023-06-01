@@ -4,7 +4,7 @@ metaTitle: Running Log
 tags: ['running']
 description: A running log to track dates, distance, time, pace, heart rate, and Vo2 Max.
 ---
-<p class="lead">I have logged {{ running.garmin.activityList | length }} runs using my watch and Garmin Connect. More <a href="/notes/2021/eleventy-garmin-connect/">about the project</a>. </p>
+<p class="lead">I have logged {{ running.activityList | length }} runs using my watch and Garmin Connect. More <a href="/notes/2021/eleventy-garmin-connect/">about the project</a>. </p>
 
 <table class="full_width table_rwd">
   <thead>
@@ -16,7 +16,7 @@ description: A running log to track dates, distance, time, pace, heart rate, and
     <th scope="col">Heart Rate</th>
     </tr>
    </thead>
-   {% for item in running.garmin.activityList %}
+   {% for item in running.activityList %}
   {% if item.sportTypeId == "1" %}
   {% include "_page_partial/running-columns.njk" %}
   {% endif %}

@@ -4,14 +4,14 @@ eleventyComputed:
     description: I went for a run on {{ item.startTimeLocal | date("M/D/Y") }} at {{ item.startTimeLocal | date("h:mm A")}}. 
 tags: ['runlog']
 pagination:
-    data: running.garmin.activityList
+    data: running.activityList
     size: 1
     alias: item
     addAllPagesToCollections: true
 permalink: "running/{{ item.startTimeLocal | date('YYYY') }}/{{ item.activityId }}/"
 ---
 {% if item.pr == true %}<p class="lead">🏆&nbsp;New Personal Record!</p>{% endif %}
-<p><i>On <date datetime="{{ item.startTimeLocal | date('Y-M-D') }}">{{ item.startTimeLocal | date("MMMM Do, YYYY") }}</date> at <time datetime="{{ item.startTimeLocal | date('H:mm')}}">{{ item.startTimeLocal | date("h:mm A")}}</time>,</i> I went for a {{ item.distance | miles }} mile run. The run took {{ item.duration | duration("mm:ss") }} which was an average of {{ ((item.duration)/(item.distance | miles)) | duration("m:ss") }} per mile. {{ item.description }} The statistics for my run are below. </p>
+<p><i>On&nbsp;<date datetime="{{ item.startTimeLocal | date('Y-M-D') }}">{{ item.startTimeLocal | date("MMMM Do, YYYY") }}</date>&nbsp;at <time datetime="{{ item.startTimeLocal | date('H:mm')}}">{{ item.startTimeLocal | date("h:mm A")}}</time>,</i> I went for a {{ item.distance | miles }} mile run. The run took {{ item.duration | duration("mm:ss") }} which was an average of {{ ((item.duration)/(item.distance | miles)) | duration("m:ss") }} per mile. {{ item.description }} Additional statistics for my run are below. </p>
 
 <table>
    <tbody>
