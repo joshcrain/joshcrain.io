@@ -1,0 +1,9 @@
+[build]
+  # The build output folder
+  publish = "_site"
+  # The build command
+  command = "npx @11ty/eleventy"
+  
+[build.environment]
+  # Environment variables are set here
+  NODE_VERSION = "v18.14.0"
