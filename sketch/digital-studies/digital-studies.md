@@ -19,7 +19,7 @@ date: 2020-09-01
     <figcaption>Photo study. Digital. 2021.</figcaption>
 </figure>
 <figure>
-    {% responsiveimage "./sketch/digital-studies/purple-study.jpg" "Purple study" "(min-width: 30em) 50vw, 100vw" %}
+    {% storyImage "./sketch/digital-studies/purple-study.jpg" "Purple study" %}
     <figcaption>Purple Study. 2021.</figcaption>
 </figure>
 <figure>

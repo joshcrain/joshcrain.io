@@ -8,7 +8,7 @@ A while back I wrote about the steps I had taken to [become a front-end master](
 
 Recently I came across [a design](https://www.flickr.com/photos/joshuacrain/4949551963/in/album-72157623021882338/) created between college and my first full-time design job. At that time I was looking at ways to build a portfolio of client work—the real-world stuff employers want to see. I was also broke, so the additional income would be helpful to pay rent. 
 
-<figure>{% responsiveimage "./notes/2020/project-proposal-form.jpg" "A project proposal form for designers" "(min-width: 30em) 50vw, 100vw" %}</figure>
+{% storyImage "./notes/2020/project-proposal-form.jpg" "A project proposal form for designers." %}
 
 I became interested in how I could, even on a small scale, operate a design business using the skills that I was developing. I had taken on small projects but didn’t have a nice way to spec out the work for the client. I learned very quickly how important it is to be on the same page about the deliverable and the price. In practice, the form was used very little. It wasn’t easy enough to update and lacked flexibility since updates were managed directly in InDesign.
 

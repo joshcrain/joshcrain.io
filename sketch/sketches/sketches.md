@@ -2,11 +2,10 @@
 title: Sketches
 tags: ['sketches','digital']
 description: Just a few sketches. 
-metaImage: /images/fbc3a03f-438.jpeg
+metaImage: 
 date: 2021-01-28
 ---
 
+{% storyImage "./sketch/view-of-the-water.jpg" "A view of the lake." %}
 
-<figure>{% responsiveimage "./sketch/view-of-the-water.jpg" "A view of the lake." "(min-width: 30em) 50vw, 100vw" %}<figcaption>A view of the lake.</figcaption></figure>
-
-<figure>{% responsiveimage "./sketch/luna.jpg" "sketch of a dog." "(min-width: 30em) 50vw, 100vw" %}<figcaption>Luna.</figcaption></figure>
+{% storyImage "./sketch/luna.jpg" "sketch of a dog." %}
