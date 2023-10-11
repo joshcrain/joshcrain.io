@@ -11,7 +11,7 @@ I was reminded of *Little Bohemia*, a tavern around the corner from my house. It
 
 I searched again, this time for a photo of Little Bo. To my surprise [one image](https://www.pinterest.com/pin/523473156672382313/), a print once sold on eBay, surfaced. What luck! 
 
-<img src="little-bo-wendell-mohr.jpg" alt="illustration of a tavern by Wendell Mohr">
+{% storyImage "./notes/2022/little-bo-wendell-mohr/little-bo-wendell-mohr.jpg" "illustration of the Little Bohemia tavern by Wendell Mohr" %}
 
 The undated artist’s proof is signed “W. Mohr.” With a little investigation I learned it was by *Wendell Mohr*, an Iowa artist who lived in the southeast part of the state. He had an impressive resumé. 
 

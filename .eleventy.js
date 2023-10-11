@@ -59,26 +59,13 @@ module.exports = function(eleventyConfig) {
     return parseFloat(mph*2.2369369).toFixed(2);
   });
   
-  eleventyConfig.addPassthroughCopy("images"), function () {
-  // You can return your Config object (optional).
-  return {
-    dir: {
-      input: "images",
-      output: "_site/images"
-    }
-  };
-  };
 
   eleventyConfig.addPassthroughCopy("android-chrome-*.png");
   eleventyConfig.addPassthroughCopy("apple-touch-icon.png");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPassthroughCopy("google88f9e8b0497a35bd.html");
-  eleventyConfig.addPassthroughCopy("notes/*/*/*.jpg");
-  eleventyConfig.addPassthroughCopy("notes/*/*/*.png");
-  eleventyConfig.addPassthroughCopy("notes/*/*/*.gif");
   
-
 
   // minify js
   const { minify } = require("terser");
@@ -96,11 +83,9 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-
-
   eleventyConfig.addShortcode("storyImage", async function(src, alt) {
 		let metadata = await Image(src, {
-			widths: [300, 600],
+			widths: [480, 768],
 			formats: ["avif", "jpeg"],
       outputDir: "./_site/img/"
 		});

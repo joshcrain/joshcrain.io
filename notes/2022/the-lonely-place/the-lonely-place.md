@@ -8,7 +8,7 @@ date: 2022-11-28
 This weekend I visited *the lonely place*. This is a place where, a few times a day; early in the morning or late at night, I find myself alone and [straining my senses](/notes/2021/december-27-2020/) to hear the faintest whispers of creation. Saturday looked like it would be clear, just like the last time in October. I looked forward to the night sky and in particular a cluster of stars that had sparkled near the horizon. They hung there again, shimmering on the edge of the atmosphere, visually closer than so many others. This time the group was a bit higher in the east. I took a few photos with my phone.
 
 <figure>
-<img src="the-lonely-place-sky.jpg" alt="The stars in the eastern sky in November. The constellations Taurus, Perseus, Triangulum, Aries, and Orion" />
+{% storyImage "./notes/2022/the-lonely-place/the-lonely-place-sky.jpg" "The stars in the eastern sky in November. The constellations Taurus, Perseus, Triangulum, Aries, and Orion" %}
 <figcaption>The constellations Taurus, Perseus, Triangulum, Aries, and Orion captured on a dark night with only a camera phone.</figcaption>
 </figure>
 

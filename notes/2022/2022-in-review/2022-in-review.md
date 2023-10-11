@@ -15,7 +15,7 @@ As I look back over the last year I am surprised. I wouldn’t have guessed I wo
 - [Run Log](/running/): This site now outputs a page for each running activity with the help of [Eleventy Permalinks](https://www.11ty.dev/docs/pagination/#remapping-with-permalinks). But, as of 12/17/2022 the feed provided by Garmin returns a [402 Payment Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402) response, so that’s annoying.
 
 <figure>
-<img src="joshcrain_io-2022.png" alt="A screenshot of https://joshcrain.io"/>
+{% storyImage "./notes/2022/2022-in-review/joshcrain_io-2022.png" "A screenshot of https://joshcrain.io" %}/>
 	<figcaption>
 	The homepage of this site captured on 12/16/2022
 	</figcaption>

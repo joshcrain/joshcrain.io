@@ -13,9 +13,9 @@ For example, if I wanted to output a list of items in a grid using *CSS Grid or 
 
 ```html
 <grid-items>
-	<grid-item>item</grid-item>
-	<grid-item>item</grid-item>
-	<grid-item>item</grid-item>
+  <grid-item>item</grid-item>
+  <grid-item>item</grid-item>
+  <grid-item>item</grid-item>
 </grid-items>
 ```
 
@@ -33,15 +33,15 @@ That works! But what if I want to add another component inside `<grid-items>` th
 
 ```html
 <grid-items>
-	<grid-item>item</grid-item>
-	<grid-item>item</grid-item>
-	<grid-item>item</grid-item>
-	<grid-group>
-		#shadow-root (open)
-		<grid-item>item</grid-item>
-		<grid-item>item</grid-item>
-		<grid-item>item</grid-item>
-	</grid-item>
+  <grid-item>item</grid-item>
+  <grid-item>item</grid-item>
+  <grid-item>item</grid-item>
+  <grid-group>
+    #shadow-root (open)
+    <grid-item>item</grid-item>
+    <grid-item>item</grid-item>
+    <grid-item>item</grid-item>
+  </grid-item>
 </grid-items>
 ```
 

@@ -7,10 +7,10 @@ description: Jonathan Crane the second of 9 children, was born December 1, 1658.
 <p><i>Jonathan Crane</i>, the second of 9 children, was born December 1, 1658. Jonathan was married to Deborah Griswold Dec. 19, 1678. They had 10 children, two of which died shortly after birth. The name Griswold suggests a lineage from England in the county of Warwickshire. </p>
     <p>  He was one of the most active and influential men in Windham, Connecticut. On Oct. 6, 1691, he was an original petitioner at the General Court in Hartford for Windham's town charter. He served on various committees, procured a minister, sold tracts of land to settlers and in 1715 he built a sawmill in Windham. He was successful in business, and known well in Windham, Norwich and Lebanon.</p>
     <p>Jonathan died in March 12th, 1735 of unknown causes, his burial location is at Trumbull Cemetery in Lebanon, Connecticut. </p>
-    <figure><img src="/images/ancestry/jonathan-crane-lebanon-ct.jpg" alt="Jonathan Crane, Trumbull Cemetery, Lebanon, Connecticut">
+    <figure>{% storyImage "./ancestry/images/jonathan-crane-lebanon-ct.jpg" "Jonathan Crane, Trumbull Cemetery, Lebanon, Connecticut" %}
       <figcaption>&ldquo;Here lies Mr Jonathan Crane husband of Mrs Deborah Crane who lived a pious and Godly life and left ye earth for heaven March ye 12th Ano c 1735, and in ye 77th year of his age.&rdquo;  The gravestone was carved by Obadiah Wheeler, often considered the greatest of all eastern Connecticut carvers. <em>Photo credit: Jack Shackles (7/03/2012) - Find A Grave</em>.</figcaption>
     </figure>
-    <figure><img src="/images/ancestry/trumbull-cemetery-lebanon-ct.jpg" alt="Trumbull Cemetery, Lebanon, Connecticut. Photo credit: Karen Carlini (KC) - Find A Grave">
+    <figure>{% storyImage "./ancestry/images/trumbull-cemetery-lebanon-ct.jpg" "Trumbull Cemetery, Lebanon, Connecticut. Photo credit: Karen Carlini (KC) - Find A Grave" %}
       <figcaption>Trumbull Cemetery, Lebanon, Connecticut. <em>Photo credit: Karen Carlini (KC) - Find A Grave</em></figcaption>
     </figure>
  

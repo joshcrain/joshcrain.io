@@ -8,7 +8,7 @@ description: Lemuel Crane was born July 12, 1725, the 8th of 11 children from tw
     <p>Lemuel was married to Jershua Crane, daughter of Jonathan, on May 13, 1752. They settled in Lebanon, Connecticut and had 3 children (E. B. Crane, p. 44-45). Based on limited research, it appears Lemuel and Jershua were first cousins. Their fathers, <a href="/ancestry/ancestors/john-crane">John</a> and Jonathan, were brothers. </p>
     <p>Lemuel is listed as one of the men of Alstead who signed The New Hampshire Association Test in April, 1776. The document was created as a way to identify and disarm any British sympathizers in the months leading up to the beginning of the Revolutionary War  (Bouton, p. 205).</p>
     <figure>
-    <img src="/images/ancestry/slade-cemetery-alstead-nh.jpg" alt="Slade Cemetery, Alstead New Hampshire">
+    {% storyImage "./ancestry/images/slade-cemetery-alstead-nh.jpg" "Slade Cemetery, Alstead New Hampshire" %}
     <figcaption>Slade Cemetery, Alstead New Hampshire. The likely burial location of Jershua Crane. Photo credit: George Wilsom (4/5/2008).</figcaption>
     </figure>
     <p>On August 2, 1776 Lemuel and 10 other men established land for a cemetery near Alstead, New Hampshire known today as The Slade Cemetery. Later records indicate the cemetery had an unmarked grave, thought to be Lemuel's wife Jershua (Peck, p. 159-160). Lemuel and Jershua&rsquo;s date of death and burial location are currently unknown.  </p>  

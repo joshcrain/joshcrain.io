@@ -11,7 +11,7 @@ I arrived with about an hour left in the bidding. I felt rushed to survey the wo
 Ray and Annice’s daughter Denise introduced me to several people—some who knew my dad. Among these, I met [Chris Chantland](https://chrischantland.com/) a student of Ray’s and a talented artist in his own right. We exchanged memories of visits with Ray and Annice and shared photos of paintings on our phones. I shared a photo of a painting Ray made of my dad.
 
 <figure>
-<img src="sam-1975.jpg" alt="Painting in the style of a playing card">
+{% storyImage "./notes/2022/ray-frederick-sale/sam-1975.jpg" "Painting in the style of a playing card" %}
 <figcaption>Sam. Acrylic and mixed media. 1975. </figcaption>
 </figure>
 

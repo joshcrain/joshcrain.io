@@ -11,7 +11,7 @@ That was the night I planned to run six but instead ended up on a gravel road in
 For a while, I only listened to the rocks under my feet and my steady breaths. I began to wonder why I’d changed my mind. Why didn’t I run what I’d planned? If you’d asked me earlier in the day I’m sure I would have given you a long list of reasons not to. We put in a lot of miles the week before, and besides it was late. As a runner, you always think about how the run fits into the completed and upcoming mileage. In the morning, when your body aches and creaks you curse your poor judgment from the day before. Still, there is something about running at night that’s different than the day. Something, I’m sure I’ll forget by morning.
 
 <figure>
-    <img src="/images/a-day-in-the-life-video-still_3821176372_o.jpg" alt="A day in the life. Video still."/>
+    {% storyImage "./notes/2019/a-day-in-the-life-video-still.jpg" "A day in the life. Video still." %}
     <figcaption>A Day In The Life. Senior BFA project. Video still.</figcaption>
 </figure>
 

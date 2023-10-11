@@ -9,7 +9,7 @@ description: Josh Crain; his work, history, and personal records.
 I have worked as a web designer, product designer, and front-end developer. I want to improve at what I do. I created this site to practice and learn&mdash;practice the fundamentals of web design and learn more web development. I also wanted to share my work. Over time I plan to add more design, illustration, and art to this site. 
 
 ## Family History
-<figure style="float:right;margin:0 0 1em 1em;width:auto;max-width:100px;width:25%;"> {% storyImage "https://joshcrain.github.io/ancestry/images/crane-coat-of-arms.png" "Crane of Suffolk, England Coat Of Arms. Argent, a fesse between three crosses crosslet fitchée Guls, crest a crane ppr." %}>
+<figure style="float:right;margin:0 0 1em 1em;width:auto;max-width:100px;width:25%;"> {% storyImage "https://joshcrain.github.io/ancestry/images/crane-coat-of-arms.png" "Crane of Suffolk, England Coat Of Arms. Argent, a fesse between three crosses crosslet fitchée Guls, crest a crane ppr." %}
 </figure>
 
 I created a website of <a href="/ancestry/">Crain family ancestry</a> as a way to explore my interest in heritage and progeny, and as place to catalog my findings. I learned some interesting things about <em>heraldry</em>&mdash;something I knew nothing about. You are most welcome to <a href="/say-hello/">contact me</a> with any interest.
