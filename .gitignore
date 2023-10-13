@@ -4,7 +4,6 @@ node_modules
 .vscode
 .DS_Store
 .obsidian
-notes/_templates
 _site
 package-lock.json
 .cache
