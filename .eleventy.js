@@ -4,7 +4,7 @@ const moment = require("moment");
 const htmlmin = require("html-minifier");
 
 const eleventyWebcPlugin = require("@11ty/eleventy-plugin-webc");
-const Image = require("@11ty/eleventy-img");
+const eleventyImagePlugin = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
 
@@ -84,10 +84,14 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("storyImage", async function(src, alt) {
-		let metadata = await Image(src, {
+		let metadata = await eleventyImagePlugin(src, {
 			widths: [480, 768],
 			formats: ["avif", "jpeg"],
-      outputDir: "./_site/img/"
+      outputDir: "./_site/img/",
+      sharpAvifOptions: {
+        quality: 85
+      },
+      //useCache: false
 		});
 
 		let imageAttributes = {
@@ -97,8 +101,29 @@ module.exports = function(eleventyConfig) {
 			decoding: "async",
 		};
 
-		// You bet we throw an error on a missing alt (alt="" works okay)
-		return Image.generateHTML(metadata, imageAttributes);
+		return eleventyImagePlugin.generateHTML(metadata, imageAttributes);
 	});
+
+  eleventyConfig.addShortcode("gridImage", async function(src, alt) {
+		let metadata = await eleventyImagePlugin(src, {
+			widths: [480],
+			formats: ["avif", "jpeg"],
+      outputDir: "./_site/img/",
+      sharpAvifOptions: {
+        quality: 65
+      }
+		});
+
+		let imageAttributes = {
+			alt,
+			//sizes: "(min-width: 30em) 50vw, 100vw",
+			loading: "lazy",
+			decoding: "async",
+		};
+
+		return eleventyImagePlugin.generateHTML(metadata, imageAttributes);
+	});
+
+
 
 };

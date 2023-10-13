@@ -2,16 +2,18 @@
 pageType: section
 title: Art
 metaTitle: Josh Crain's Art
-description: Artwork to share with you.
+description: Art to share with you.
 ---
 
 <p class="lead">{{description}}</p>
 <div class="subgrid">
-    {% for item in artwork.cloudinary.resources%} 
+    {% set items = collections.artworks | reverse %}
+    {% for item in items %} 
     <div class="grid-quarter@l tile">
-    <a href="/art/{{ item.context.custom.caption | slugify }}"><img src="https://res.cloudinary.com/joshcrain/image/upload/c_thumb,h_300,w_300/c_limit,q_auto,w_742,h_742/{{ item.public_id }}.webp" alt="{{ item.context.custom.alt }}" loading="lazy"></a>
+        
+    <a href="{{ item.url }}">{% gridImage item.data.image, item.data.alt %}</a>
         <div class="tile_inner item_detail">
-            <a href="/art/{{ item.context.custom.caption | slugify }}" class="tile_link"><span class="tile_desc text--smaller">{{ item.context.custom.caption }}. {{ item.context.custom.year }}. {{ item.context.custom.medium }}.</span></a>
+            <a href="{{ item.url }}" class="tile_link"><span class="tile_desc text--smaller">{{ item.data.title }}. {{ item.data.year }}. {{ item.data.medium }}.</span></a>
         </div>
     </div>
     {% endfor %}
