@@ -1,6 +1,6 @@
 ---
 title: Weeknote 41/2023
-tags: type/weeknotes
+tags: ['weeknotes']
 description: Weekly notes for week 41/2023.
 date: 2023-10-13
 ---
