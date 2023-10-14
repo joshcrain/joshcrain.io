@@ -1,5 +1,5 @@
 ---
-title: Ted Kautsky Drawing Studies
+title: Ted Kautzky Drawing Studies
 tags: ['artworks', 'drawing']
 image: art/kautzky-pencil-studies/indicating-brickwork.jpg
 alt: A drawing of a house
