@@ -6,7 +6,7 @@ alt: A drawing of a woman based on a painting by Jean-François Millet
 description: A drawing of a woman based on a painting by Jean-François Millet
 medium: Digital
 year: 2022
-date: 2022-11-06
+date: 2022-11-08
 featured: true
 ---
 {% storyImage image, alt %}

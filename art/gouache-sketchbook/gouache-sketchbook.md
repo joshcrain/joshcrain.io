@@ -5,8 +5,8 @@ image: art/gouache-sketchbook/gouache-sketchbook-2015-1.jpg
 alt: Painting in gouache
 description: Pages from my first gouache sketchbook.
 medium: Gouache
-year: 2015
-date: 2022-02-22
+year: 2014
+date: 2014-11-08
 featured: true
 ---
 {% storyImage image, alt %}

@@ -5,7 +5,7 @@ image: art/lake-of-three-fires/lake-of-three-fires.png
 alt: A drawing of a lake and trees
 description: 
 medium: Digital
-year: 2022
-date: 2022-11-06
+year: 2021
+date: 2021-02-26
 ---
 {% storyImage image, alt %}
