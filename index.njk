@@ -72,7 +72,7 @@ priority: "1.0"
             
             <div class="grid-full@l">
                 <div>
-                    <p><i>See <a href="/art/">all art</a>. The most recent is titled {% set items = collections.artworks %}{% for art in items.slice(0, 1) %}<a href="{{ art.url }}">{{ art.data.title }}</a>{% endfor %}.</i></p>
+                    <p><i>See <a href="/art/">all art</a>. The most recent is titled {% set items = collections.artworks | reverse %}{% for art in items.slice(0, 1) %}<a href="{{ art.url }}">{{ art.data.title }}</a>{% endfor %}.</i></p>
                 </div>
             </div>
             </div>
