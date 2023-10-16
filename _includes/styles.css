@@ -283,7 +283,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   .tile_inner.item_detail {background-image:none;}
   
   .tile img  {
-    aspect-ratio: 1/1x;
+    aspect-ratio: 1 / 1;
     margin-bottom: -10px;
     object-fit: cover;
     object-position: center;}
