@@ -5,7 +5,7 @@ tags: ['notes', 'webdev', 'css']
 description: "The CSS property display: contents; can help layout CSS grids using web components."
 date: 2023-06-22
 ---
-Every once in a while I surprise myself with a solution so simple I kick myself for not seeing it sooner. Today was that day. 
+Every once in a while I surprise myself with a solution so simple I kick myself for not seeing it sooner. Today was one of those days. 
 
 About a year ago I delved into the world of web components. Web components are a great way to group functionality (including other components) in a modular and compartmentalized way. Web components have proven an effective and powerful tool but I have also found myself struggling to do basic things. One such problem is that web components must render a host element. Most of the time this is not a problem except when the HTML or CSS layout expects a particular structure. 
 
