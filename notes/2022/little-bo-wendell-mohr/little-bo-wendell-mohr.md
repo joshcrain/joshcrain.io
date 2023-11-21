@@ -1,7 +1,10 @@
 ---
 title: Wendell Mohr & Little Bo
-metaTitle:  
-tags: ['notes','artist','Wendell Mohr']
+metaTitle: 
+tags:
+  - notes
+  - artist
+  - wendallMohr
 description: How Google Street View and an expired online auction took me back to my childhood home.
 date: 2022-07-13
 ---
