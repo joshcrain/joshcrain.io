@@ -170,7 +170,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 
 /* home */
 .hero {
-  border-bottom:var(--border-size-2) solid rgba(var(--colorFore), .25);
+  border-bottom:var(--border-size-2) solid rgba(var(--colorAccent),.5);
 }
 
 .hero header {margin-bottom:0;}
