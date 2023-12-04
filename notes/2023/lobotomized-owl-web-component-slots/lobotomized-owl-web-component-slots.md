@@ -1,7 +1,10 @@
 ---
 title: The Lobotomized Owl & Web Component Slots
 metaTitle: 
-tags: ['notes', 'webdev']
+tags:
+  - notes
+  - webdev
+  - webComponents
 description: The Lobotomized Owl trick does not work for slotted content in web components. What else can be done?
 date: 2023-01-05
 ---

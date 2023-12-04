@@ -1,7 +1,11 @@
 ---
 title: Web Components & Display Contents
 metaTitle: 
-tags: ['notes', 'webdev', 'css']
+tags:
+  - notes
+  - webdev
+  - css
+  - webComponents
 description: "The CSS property display: contents; can help layout CSS grids using web components."
 date: 2023-06-22
 ---
