@@ -10,5 +10,7 @@ date: 2014-11-08
 featured: true
 ---
 {% storyImage image, alt %}
+
 {% storyImage 'art/gouache-sketchbook/gouache-sketchbook-2015-2.jpg', 'Painting in gouache of trees and a path' %}
+
 {% storyImage 'art/gouache-sketchbook/IMG_4440.jpg', 'Painting of shell beach, bodega bay' %}
