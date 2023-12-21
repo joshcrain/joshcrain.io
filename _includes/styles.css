@@ -313,7 +313,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 .paging a {display: block;line-height: 1.333;}
 .paging .grid-half\@l > div{
   border-left:var(--size-1) rgba(var(--colorAccent),.7) solid;
-  padding-left: var(--size-3);
+  padding-left: var(--size-3);line-height: 1.1em;
 }
 
 
