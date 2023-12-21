@@ -3,7 +3,6 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const moment = require("moment");
 const htmlmin = require("html-minifier");
 
-const eleventyWebcPlugin = require("@11ty/eleventy-plugin-webc");
 const eleventyImagePlugin = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
