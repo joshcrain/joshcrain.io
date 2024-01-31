@@ -1,0 +1,24 @@
+---
+title: 2024 Running Log
+metaTitle: 2024 Running Log
+tags: ['running']
+description: A 2024 running log to track dates, distance, time, pace, heart rate, and Vo2 Max. 
+---
+<p class="lead">Running activity from 2024. <a href="/running/">See all</a>.  </p>
+
+<table class="full_width table_rwd">
+  <thead>
+  <tr>
+    <th>When</th>
+    <th>Distance</th>
+    <th>Time</th>
+    <th>Pace</th>
+    <th>Heart Rate</th>
+    </tr>
+   </thead>
+   {% for item in running.activityList %}
+  {% if (item.sportTypeId == "1") and (item.startTimeLocal | date("Y") == "2024") %}
+   {% include "_page_partial/running-columns.njk" %}
+  {% endif %}
+{% endfor %}
+</table>
