@@ -7,6 +7,6 @@ description: A painting of South Bubble, Maine.
 medium: watercolor & gouache
 year: 2021
 date: 2021-04-15
-featured: true
+featured: false
 ---
 {% storyImage image, alt %}

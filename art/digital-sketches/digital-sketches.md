@@ -11,3 +11,5 @@ date: 2022-09-14
 {% storyImage image, alt %}
 
 {% storyImage 'art/digital-sketches/loomis-studies-6-22.jpg', 'Loomis studies' %}
+
+{% storyImage 'art/digital-sketches/lake-of-three-fires.png', 'Lake of Three Fires Sketch' %}
