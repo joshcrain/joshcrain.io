@@ -18,3 +18,5 @@ When I saw [Strata Easel advertise a January challenge](https://www.stradaeasel.
 One of the constraints of the challenge was to work from life. This influenced what I could work on because the only consistent time I have is after everyone else has gone to bed. For this reason, I stuck to small objects that could be drawn or painted in an hour or two. Although I could have spent multiple nights on one picture I opted for *more starts*. I thought this would be the best way to practice and would allow me to turn the page on the last, especially if it wasn't working out.
 
 I didn't win anything but I enjoyed the time to focus. The month went fast.
+
+{% storyImage 'art/strada-easel-challenge/strada-piggy-bank.jpg', 'a painting of a glass piggy bank' %}
