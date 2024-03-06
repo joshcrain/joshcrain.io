@@ -3,7 +3,7 @@ title: Strada Easel Challenge
 tags: ['artworks', 'painting']
 image: art/strada-easel-challenge/strada-piggy-bank.jpg
 alt: A painting of a baseball glove
-description: The Strada Easel Challenge
+description: My experience with the January 2024 Strada Easel Challenge. 
 medium: Gouache
 year: 2024
 date: 2024-02-08

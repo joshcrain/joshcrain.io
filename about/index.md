@@ -2,19 +2,25 @@
 title: A little about Josh Crain
 metaTitle: About Josh Crain
 tags: about
-description: Josh Crain; his work, history, and personal records. 
+description: Josh Crain his work, history, and personal records. 
 ---
-<p class="lead">Josh Crain is a designer, developer, and student of art.</p>
+<p class="lead">Who does this guy think he is?</p>
 
-I have worked as a web designer, product designer, and front-end developer. I want to improve at what I do. I created this site to practice and learn&mdash;practice the fundamentals of web design and learn more web development. I also wanted to share my work. Over time I plan to add more design, illustration, and art to this site. 
+## Professional
+I have been building things on the web professionally for almost 20 years. I began my career at an agency where I designed, presented, and delivered code. I learned how to scale my work (and the work of others) by formalizing best practices and patterns that unified our design approach. Around this same time, I also had opportunities to work on products. Everything I did seemed to have connection to a design system. Eventually, I was able to move to a dedicated role at one of these products. This was exciting because it provided the opportunity to work _directly with users_ and focus even more on design systems. 
 
-## Family History
-<figure style="float:right;margin:0 0 1em 1em;width:auto;max-width:100px;width:25%;"> {% storyImage "https://joshcrain.github.io/ancestry/images/crane-coat-of-arms.png" "Crane of Suffolk, England Coat Of Arms. Argent, a fesse between three crosses crosslet fitchée Guls, crest a crane ppr." %}
-</figure>
+## This site
+I've made a lot of websites, but for years I struggled with what to do with a personal site. When I shifted my focus to what I wanted to learn it became easier to get started. This site is as much a collection of tinkerings as it is words about me. 
 
-I created a website of <a href="/ancestry/">Crain family ancestry</a> as a way to explore my interest in heritage and progeny, and as place to catalog my findings. I learned some interesting things about <em>heraldry</em>&mdash;something I knew nothing about. You are most welcome to <a href="/say-hello/">contact me</a> with any interest.
+## Elsewheres
+- [The Galactic Guppy](https://galacticguppy.net/), _The Ultimate Fish Out Of Water Story_ is a webcomic. 
+- I created a website of [Crain family ancestry](/ancestry/). You are most welcome to [contact me](/say-hello/) with any interest. 
 
-## Personal Records
+## Other interests
+- Many summers ago I played the [keytar](/notes/2020/yamaha-shs-10/) in _Dr. Mike_, one the the greatest bands of all time. You should buy our album, _A Mighty Love_, on [Amazon](https://www.amazon.com/Mighty-Love-Dr-Mike/dp/B000FSMMNK/) or [iTunes](https://music.apple.com/us/album/a-mighty-love/97175026). You'll thank me.
+- I like to run. I created a way to track my [running activity](/running/) using data from my watch.
+
+### Personal Records
 <table class="table_rwd">
     <thead>
     <tr>
@@ -51,6 +57,3 @@ I created a website of <a href="/ancestry/">Crain family ancestry</a> as a way t
     </tr>
     </tbody>
 </table>
-
-## Keytarist
-Many summers ago I played the <a href="/notes/2020/yamaha-shs-10/">keytar</a> in <em>Dr. Mike</em>, one the the greatest bands of all time. You should buy our album, <em>A Mighty Love</em>, on <a href="https://www.amazon.com/Mighty-Love-Dr-Mike/dp/B000FSMMNK/" rel="noopener">Amazon</a> or <a href="https://music.apple.com/us/album/a-mighty-love/97175026" rel="noopener">iTunes</a>. You'll thank me. 
