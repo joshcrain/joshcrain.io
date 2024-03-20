@@ -94,24 +94,11 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 .fill-accent {fill:hsl(var(--fillAccent))}
 
 /* utilities */
-  /*layout utilities*/
-    .list--horizontal {list-style:none;padding:0;margin:0;display: flex;flex-flow: row;gap:var(--size-7);line-height:1.1;}
-      .list--horizontal.list--m--larger {gap:var(--size-9)}
-      .list--horizontal.list--m--smaller i{gap:var(--size-4);}
+
   .list--articles{margin:0;padding:0;}
     .list--articles li{list-style:none;margin-bottom:var(--size-6)}
 
-  .media{display: -ms-flexbox;display: flex;-ms-flex-align: start;align-items: flex-start;}
-  .media_body{-ms-flex: 1;flex: 1;min-width: 0;-ms-word-break: break-word;word-break: break-word;overflow-wrap: break-word;word-wrap: break-word;}
-  .media_right{-ms-flex-negative: 0;flex-shrink: 0;margin-left: var(--size-3);}
-  .media_left {margin-left: 0;margin-right: var(--size-3);}
-
-
   .grid-layout_page picture{display: flex;align-items: center;justify-content: center;}
-
-
-/* define as navigation */
-.site_header a {text-decoration: none;}
   
 
   /* type utilities*/
@@ -134,7 +121,15 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 
 /* header */
 .site_header{padding:var(--size-6) 0;line-height: 1.1;}
-  .site_header a{color:inherit;min-height: 48px;min-width: 60px;place-content: center;display: flex;align-items: center;border-bottom:var(--border-size-3) solid transparent;position:relative}
+.site_header .wrapper{display:flex;flex-wrap:wrap;column-gap:2em;justify-content: space-between;row-gap:1em;}
+.site_id {white-space:nowrap;}
+.site_nav {display:flex;flex-wrap:wrap;column-gap:2em;justify-content: space-around;}
+
+@media only screen and (max-width: 480px) {
+  .site_header .wrapper{justify-content: space-around;}
+}
+
+  .site_header a{text-decoration: none;color:inherit;min-height: 48px;min-width: 60px;place-content: center;display: flex;align-items: center;border-bottom:var(--border-size-3) solid transparent;position:relative;white-space: nowrap;}
   .site_header a[data-state='active'] {border-color:rgba(var(--colorAccent), 1)}
   .site_header a:hover {
     text-decoration: none;
@@ -160,7 +155,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 /* footer */
 .site_footer{font-size:.875em;padding:var(--size-9) 0;}
   .site_footer a{color:inherit;min-height: 48px;align-items: center;}
-  .site_footer .list--horizontal {flex-wrap: wrap;place-content: center;}
+  .site_footer ul {flex-wrap: wrap;place-content: center;list-style:none;padding:0;margin:0;display: flex;gap:var(--size-7);line-height:1.1;}
 
 
 .site_content{padding:var(--size-fluid-5) 0 var(--size-12);}
@@ -328,7 +323,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 .view .night svg {fill:hsl(var(--fillFore));}
 .view .day svg {fill:rgba(var(--colorAccent),1);}
 
-/* fade small and big? - should be a utility */
+
 .fade-in {
   transform: translate3d(0,0,0);
   backface-visibility: hidden;
@@ -422,8 +417,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 @media only screen and (max-width: 768px) {
   
-  .site_header .list--horizontal {gap:var(--size-6);}
-  .site_header .media_right .list--horizontal li:first-child{display: none;} 
+  .site_header .nav-item_home{display: none;} 
 
 
   .grid-third\@l{

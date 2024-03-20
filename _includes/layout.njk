@@ -32,11 +32,14 @@
         <div class="visuallyhidden"><a href="#content">Skip Content</a></div>
         <header class="site_header">
             <div class="wrapper">
-                <div class="media">
-                    <div class="media_body"><ul class="list--horizontal list--m--larger">{% if category != "Ancestry" %}<li><a href="/" class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"/><circle cx="40" cy="17" r="5"/><circle cx="5" cy="17" r="5"/><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"/></svg><span class="visuallyhidden">Josh Crain’s Home</span></a></li>{% endif %}{% if category == "Ancestry" %}<li><a href="/ancestry/" class="text_accent">Crain Ancestry</a></li>{% endif %}</ul></div>
-                    <nav class="media_right" aria-label="nav-primary"><ul class="list--horizontal list--m--larger">{% if category != "Ancestry" %}<li><a href="/" {% if pageType == "home" %}data-state="active"{% endif %}>Home</a></li><li><a href="/notes/" {% if category == "Notes" %}data-state="active"{% endif %}>Notes</a></li><li><a href="/art/" {% if category == "Art" %}data-state="active"{% endif %}>Art</a></li><li><a href="/about/" {% if category == "About" %}data-state="active"{% endif %}>About</a></li>{% else %}<li><a href="/ancestry/ancestors/">Ancestors</a></li><li><a href="/ancestry/heraldry/">Heraldry</a></li><li><a href="/ancestry/sources/">Sources</a></li>{% endif %}</ul></nav>
-                </div>
+            <div class="site_id">
+                {% if category != "Ancestry" %}<a href="/" class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"/><circle cx="40" cy="17" r="5"/><circle cx="5" cy="17" r="5"/><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"/></svg><span class="visuallyhidden">Josh Crain’s Home</span></a>{% endif %}{% if category == "Ancestry" %}<a href="/ancestry/" class="text_accent">Crain Ancestry</a>{% endif %}
+              </div>
+              <nav class="site_nav">
+                {% if category != "Ancestry" %}<a href="/" {% if pageType == "home" %}data-state="active"{% endif %} class="nav-item_home">Home</a><a href="/notes/" {% if category == "Notes" %}data-state="active"{% endif %}>Notes</a><a href="/art/" {% if category == "Art" %}data-state="active"{% endif %}>Art</a><a href="/about/" {% if category == "About" %}data-state="active"{% endif %}>About</a>{% else %}<a href="/ancestry/ancestors/">Ancestors</a><a href="/ancestry/heraldry/">Heraldry</a><a href="/ancestry/sources/">Sources</a>{% endif %}
+              </nav>
             </div>
+            
         </header>
         <main class="site_content {% if pageType == 'home' %}home{% endif %}" id="content">
         {% if pageType == "home" %}
@@ -136,7 +139,7 @@
         </main>
         <footer class="site_footer">
             <div class="wrapper">
-                <nav aria-label="nav-primary-footer"><ul class="list--horizontal"><li>&copy; <time datetime="2019-11-06 09:58">2019</time>-<time datetime="{{ date.now | date('YYYY-MM-DD HH:mm') }}">{{ date.now | date("YYYY") }}</time> ⁃ <span id="hcard-Josh-Crain" class="vcard"><a class="url fn" href="https://joshcrain.io">Josh Crain</a></span></li><li><a href="/say-hello/" class="text--small">Contact</a></li><li><a href="/running/" class="text--small">Running</a></li><li><a href="/about/site/colophon/" class="text--small">Colophon</a></li><li><a href="/feed.xml" class="text--small">RSS</a></li></ul></nav>
+                <nav aria-label="nav-primary-footer"><ul><li>&copy; <time datetime="2019-11-06 09:58">2019</time>-<time datetime="{{ date.now | date('YYYY-MM-DD HH:mm') }}">{{ date.now | date("YYYY") }}</time> ⁃ <span id="hcard-Josh-Crain" class="vcard"><a class="url fn" href="https://joshcrain.io">Josh Crain</a></span></li><li><a href="/say-hello/" class="text--small">Contact</a></li><li><a href="/running/" class="text--small">Running</a></li><li><a href="/about/site/colophon/" class="text--small">Colophon</a></li><li><a href="/feed.xml" class="text--small">RSS</a></li></ul></nav>
             </div>
         </footer>
         <nav class="view" aria-label="nav-view">
