@@ -33,7 +33,7 @@ priority: "1.0"
             <div class="subgrid">
                 {% set items = collections.notes | reverse %}
                 {% for post in items.slice(0, 4) %}
-                <div class="grid-half@l">
+                <div class="grid-half">
                     <div>
                         <a href="{{ post.url }}" class="h2">{{ post.data.title }}</a>
                         <p class="line-clamp"><span class="small-caps"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br/>
@@ -41,7 +41,7 @@ priority: "1.0"
                     </div>
                 </div>
                 {% endfor %}
-                <div class="grid-full@l">
+                <div class="grid-full">
                     <div>
                         <p><i>See <a href="/notes/">all notes</a> or a list of semi-weekly <a href="/tags/weeknotes/">weeknotes</a>. The most recent is {% set items = collections.weeknotes | reverse %}{% for post in items.slice(0, 1) %}<a href="{{ post.url }}">{{ post.data.title }}</a>{% endfor %}.</i></p>
                     </div>
@@ -60,7 +60,7 @@ priority: "1.0"
             <div class="subgrid">
                 {% for item in collections.artworks | reverse %} 
                 {% if item.data.featured %}
-                <div class="grid-third@l tile">
+                <div class="grid-third tile">
         
                     <a href="{{ item.url }}">{% gridImage item.data.image, item.data.alt %}</a>
                         <div class="tile_inner item_detail">
@@ -70,7 +70,7 @@ priority: "1.0"
                 {% endif %}
                 {% endfor %}
             
-            <div class="grid-full@l">
+            <div class="grid-full">
                 <div>
                     <p><i>See <a href="/art/">all art</a>. The most recent is titled {% set items = collections.artworks | reverse %}{% for art in items.slice(0, 1) %}<a href="{{ art.url }}">{{ art.data.title }}</a>{% endfor %}.</i></p>
                 </div>

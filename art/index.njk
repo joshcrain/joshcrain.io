@@ -9,7 +9,7 @@ description: Art to share with you.
 <div class="subgrid">
     {% set items = collections.artworks | reverse %}
     {% for item in items %} 
-    <div class="grid-quarter@l tile">
+    <div class="grid-quarter tile">
         
     <a href="{{ item.url }}">{% gridImage item.data.image, item.data.alt %}</a>
         <div class="tile_inner item_detail">
