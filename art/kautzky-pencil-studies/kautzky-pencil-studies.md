@@ -18,4 +18,4 @@ date: 2022-02-13
 
 {% storyImage "art/kautzky-pencil-studies/brickwork-gate.png", "drawing of a gate" %} 
 
-{% storyImage "art/kautzky-pencil-studies/pine-tree-lesson-5.jpg", "drawing of pine trees" %} 
+{% storyImage "art/kautzky-pencil-studies/pine-tree-lesson-5.jpg", "drawing of pine trees" %}  
