@@ -1,7 +1,11 @@
 ---
 title: SVG Self-Portrait
 metaTitle: 
-tags: ['notes','illustration','Adobe Fresco']
+tags:
+  - notes
+  - illustration
+  - fresco
+  - adobe
 description: Notes on digital self-portrait created with Adobe Fresco.
 date: 2022-12-14
 ---
