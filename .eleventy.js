@@ -58,10 +58,11 @@ module.exports = function(eleventyConfig) {
     return parseFloat(mph*2.2369369).toFixed(2);
   });
   
-
+  eleventyConfig.addPassthroughCopy("**/*.gif");
   eleventyConfig.addPassthroughCopy("android-chrome-*.png");
   eleventyConfig.addPassthroughCopy("apple-touch-icon.png");
   eleventyConfig.addPassthroughCopy("favicon.ico");
+  eleventyConfig.addPassthroughCopy("favicon-*.png");
   eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPassthroughCopy("google88f9e8b0497a35bd.html");
   
