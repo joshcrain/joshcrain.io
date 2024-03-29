@@ -21,7 +21,6 @@
                 "givenName": "Joshua",
                 "familyName": "Crain",
                 "jobTitle": "Web Designer and Developer",
-                "worksFor": "AgencyBloc",
                 "additionalName": "Web Designer | Front-End Developer",
                 "knowsAbout": "Web Design, Product Design, Front-End Development, User-Centric Design, Web Standards",
                 "email": "josh.crain+joshcrain_io@gmail.com"
@@ -33,13 +32,20 @@
         <header class="site_header">
             <div class="wrapper">
             <div class="site_id">
-                {% if category != "Ancestry" %}<a href="/" class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"/><circle cx="40" cy="17" r="5"/><circle cx="5" cy="17" r="5"/><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"/></svg><span class="visuallyhidden">Josh Crain’s Home</span></a>{% endif %}{% if category == "Ancestry" %}<a href="/ancestry/" class="text_accent">Crain Ancestry</a>{% endif %}
+                {% if category == "Ancestry" %}
+                <a href="/ancestry/" class="text_accent">Crain Ancestry</a>
+                {% else %}
+                <a href="/" class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"/><circle cx="40" cy="17" r="5"/><circle cx="5" cy="17" r="5"/><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"/></svg><span class="visuallyhidden">Josh Crain’s Home</span></a>
+                {% endif %}
               </div>
-              <nav class="site_nav">
-                {% if category != "Ancestry" %}<a href="/" {% if pageType == "home" %}data-state="active"{% endif %} class="nav-item_home">Home</a><a href="/notes/" {% if category == "Notes" %}data-state="active"{% endif %}>Notes</a><a href="/art/" {% if category == "Art" %}data-state="active"{% endif %}>Art</a><a href="/about/" {% if category == "About" %}data-state="active"{% endif %}>About</a>{% else %}<a href="/ancestry/ancestors/">Ancestors</a><a href="/ancestry/heraldry/">Heraldry</a><a href="/ancestry/sources/">Sources</a>{% endif %}
+              <nav class="site_nav" aria-label="nav-primary">
+                {% if category == "Ancestry" %}
+                <a href="/ancestry/ancestors/">Ancestors</a><a href="/ancestry/heraldry/">Heraldry</a><a href="/ancestry/sources/">Sources</a>
+                {% else %}
+                <a href="/" {% if pageType == "home" %}data-state="active"{% endif %} class="nav-item_home">Home</a><a href="/notes/" {% if category == "Notes" %}data-state="active"{% endif %}>Notes</a><a href="/art/" {% if category == "Art" %}data-state="active"{% endif %}>Art</a><a href="/about/" {% if category == "About" %}data-state="active"{% endif %}>About</a>
+                {% endif %}
               </nav>
             </div>
-            
         </header>
         <main class="site_content {% if pageType == 'home' %}home{% endif %}" id="content">
         {% if pageType == "home" %}
@@ -50,15 +56,10 @@
                     <h1>{{ title }}{{ artworks.group }}{% if tag %}<i>“{{ tag }}”</i>{% endif %}</h1> 
                     {% if date != blank %}<div class="small-caps"><time datetime="{{ date | date('YYYY-MM-DD HH:mm') }}">{{ date|date("D MMM Y") }}</time>&nbsp; ⁃ &nbsp;{{ category }}</div>{% endif %} 
                 </header>
-                {% if pageType == "section" %}
-                    <div class="grid-layout_section">
-                {% else %}
-                    <div class="grid-layout_page">
-                        <div></div>
-                        <div>
-                {% endif %}  
+                    <div class="{% if pageType == 'section' %}grid-layout_section{% else %} grid-layout_page{% endif %}">
+                        <div class="grid-content">
                     {{ content | safe }}
-                {% if pageType != "section" %}
+                    {% if pageType != "section" %}
                     {% if tags >= "0" %}
                         <p class="article--tags">
                         Filed under: 
@@ -73,69 +74,68 @@
                             {% set previousRun = collections.runlog | getNextCollectionItem(page) %}
                             {% set nextArt = collections.artworks | getPreviousCollectionItem(page) %}
                             {% set previousArt = collections.artworks | getNextCollectionItem(page) %}
-                            <div class="grid-half@l">
-                                {% if previousNote %}<div>
-                                    <div class="text--smaller"><i>Previously</i></div>
-                                    <a href="{{ previousNote.url }}">{{ previousNote.data.title }}</a>
-                                    <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ previousNote.date | date('YYYY-MM-DD HH:mm') }}">{{ previousNote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in previousNote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
-                                </div>{% endif %}
-                            </div>
-                            <div class="grid-half@l">
-                                {% if nextNote %}<div>
-                                    <div class="text--smaller"><i>Up next</i></div>
-                                    <a href="{{ nextNote.url }}">{{ nextNote.data.title }}</a>
-                                    <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextNote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextNote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
-                                </div>{% endif %}
-                            </div>
                             
-                            {% if previousWeeknote %}<div class="grid-half@l">
-                                <div>
-                                    <div class="text--smaller"><i>Previously</i></div>
-                                    <a href="{{ previousWeeknote.url }}">{{ previousWeeknote.data.title }}</a>
-                                    <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ previousWeeknote.date | date('YYYY-MM-DD HH:mm') }}">{{ previousWeeknote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in previousWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
-                                </div>
-                            </div>{% endif %}
-                            {% if nextWeeknote %}<div class="grid-half@l">
-                                <div>
-                                    <div class="text--smaller"><i>Up next</i></div>
-                                    <a href="{{ nextWeeknote.url }}">{{ nextWeeknote.data.title }}</a>
-                                    <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextWeeknote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
-                                </div>
-                            </div>{% endif %}
-
-                            {% if previousRun %}<div class="grid-half@l">
-                                <div>
-                                    <div class="text--smaller"><i>Previously</i></div>
-                                    <a href="{{ previousRun.url }}">{{ previousRun.data.title }}</a>
-                                </div>
-                            </div>{% endif %}
-                            {% if nextRun %}<div class="grid-half@l">
-                                <div>
-                                    <div class="text--smaller"><i>Up next</i></div>
-                                    <a href="{{ nextRun.url }}">{{ nextRun.data.title }}</a>
-                                </div>
-                            </div>{% endif %}
-
-                            {% if previousArt %}<div class="grid-half@l">
-                                <div>
-                                    <div class="text--smaller"><i>Previously</i></div>
-                                    <a href="{{ previousArt.url }}">{{ previousArt.data.title }}</a>
-                                </div>
-                            </div>{% endif %}
-                            {% if nextArt %}<div class="grid-half@l">
-                                <div>
-                                    <div class="text--smaller"><i>Up next</i></div>
-                                    <a href="{{ nextArt.url }}">{{ nextArt.data.title }}</a>
-                                </div>
-                            </div>{% endif %}
-                    {% endif %}
+                            {% if previousNote %}
+                            <div class="grid-half">
+                                <div class="text--smaller"><i>Previously</i></div>
+                                <a href="{{ previousNote.url }}">{{ previousNote.data.title }}</a>
+                                <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ previousNote.date | date('YYYY-MM-DD HH:mm') }}">{{ previousNote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in previousNote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
+                            </div>
+                            {% endif %}
+                            {% if nextNote %}
+                            <div class="grid-half">
+                                <div class="text--smaller"><i>Up next</i></div>
+                                <a href="{{ nextNote.url }}">{{ nextNote.data.title }}</a>
+                                <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextNote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextNote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
+                            </div>
+                            {% endif %}
+                            {% if previousWeeknote %}
+                            <div class="grid-half">
+                                <div class="text--smaller"><i>Previously</i></div>
+                                <a href="{{ previousWeeknote.url }}">{{ previousWeeknote.data.title }}</a>
+                                <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ previousWeeknote.date | date('YYYY-MM-DD HH:mm') }}">{{ previousWeeknote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in previousWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
+                            </div>
+                            {% endif %}
+                            {% if nextWeeknote %}
+                            <div class="grid-half">
+                                <div class="text--smaller"><i>Up next</i></div>
+                                <a href="{{ nextWeeknote.url }}">{{ nextWeeknote.data.title }}</a>
+                                <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextWeeknote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
+                            </div>
+                            {% endif %}
+                            {% if previousRun %}
+                            <div class="grid-half">
+                                <div class="text--smaller"><i>Previously</i></div>
+                                <a href="{{ previousRun.url }}">{{ previousRun.data.title }}</a>
+                            </div>
+                            {% endif %}
+                            {% if nextRun %}
+                            <div class="grid-half">
+                                <div class="text--smaller"><i>Up next</i></div>
+                                <a href="{{ nextRun.url }}">{{ nextRun.data.title }}</a>
+                            </div>
+                            {% endif %}
+                            {% if previousArt %}
+                            <div class="grid-half">
+                                <div class="text--smaller"><i>Previously</i></div>
+                                <a href="{{ previousArt.url }}">{{ previousArt.data.title }}</a>
+                            </div>
+                            {% endif %}
+                            {% if nextArt %}
+                            <div class="grid-half">
+                                <div class="text--smaller"><i>Up next</i></div>
+                                <a href="{{ nextArt.url }}">{{ nextArt.data.title }}</a>
+                            </div>
+                            {% endif %}
+                            
                         </div>
+                    {% endif %}  
+                    {% endif %}  
+                </div>
                     </div>
-                {% endif %}  
-                {% if pageType == "section" %}</div>{% endif %} 
-            </div>
+                </div>
         {% endif %}
-            </div>
+            
         </main>
         <footer class="site_footer">
             <div class="wrapper">
