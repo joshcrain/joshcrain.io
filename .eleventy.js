@@ -58,7 +58,6 @@ module.exports = function(eleventyConfig) {
     return parseFloat(mph*2.2369369).toFixed(2);
   });
   
-  eleventyConfig.addPassthroughCopy("**/*.gif");
   eleventyConfig.addPassthroughCopy("android-chrome-*.png");
   eleventyConfig.addPassthroughCopy("apple-touch-icon.png");
   eleventyConfig.addPassthroughCopy("favicon.ico");
@@ -112,6 +111,26 @@ module.exports = function(eleventyConfig) {
       sharpAvifOptions: {
         quality: 65
       }
+		});
+
+		let imageAttributes = {
+			alt,
+			//sizes: "(min-width: 30em) 50vw, 100vw",
+			loading: "lazy",
+			decoding: "async",
+		};
+
+		return eleventyImagePlugin.generateHTML(metadata, imageAttributes);
+	});
+
+  eleventyConfig.addShortcode("storyImageAnimated", async function(src, alt) {
+		let metadata = await eleventyImagePlugin(src, {
+			widths: [480],
+      outputDir: "./_site/img/",
+      formats: ["webp", "gif"],
+      sharpOptions: {
+        animated: true,
+      },
 		});
 
 		let imageAttributes = {
