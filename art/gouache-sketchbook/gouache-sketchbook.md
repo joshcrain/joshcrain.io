@@ -7,7 +7,7 @@ description: Pages from my first gouache sketchbook.
 medium: Gouache
 year: 2014
 date: 2014-11-08
-featured: true
+featured: false
 ---
 {% storyImage image, alt %}
 
