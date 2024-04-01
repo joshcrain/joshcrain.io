@@ -1,8 +1,14 @@
 <tr id="{{ item.activityId }}">
     <th scope="rowgroup" {% if (item.description) or (item.pr == true) %}rowspan="2"{% endif %}><a href="/running/{{ item.startTimeLocal | date('YYYY') }}/{{ item.activityId }}">{{ item.startTimeLocal | date("M/D/Y") }}</a><br> {{ item.startTimeLocal | date("h:mm A")}}</th>
     <td data-tblColumn="Distance">{{ item.distance | miles }} <abbr title="miles">mi</abbr></td>
-    <td data-tblColumn="Time">{{ item.duration | duration("mm:ss") }}</td>
-    <td data-tblColumn="Pace">{{ ((item.duration)/(item.distance | miles)) | duration("m:ss") }}/<abbr title="miles">mi</abbr></td>
+    <td data-tblColumn="Time">
+      {% if item.duration < 3600 %}
+        <time datetime="{{ item.duration | duration('mm') }}m {{ item.duration | duration('ss') }}s">{{ item.duration | duration("mm:ss") }}</time>
+      {% else %}
+        <time datetime="{{ item.duration | duration('H') }}h {{ item.duration | duration('mm') }}m {{ item.duration | duration('ss') }}s">{{ item.duration | duration("H:mm:ss") }}</time>
+      {% endif %}  
+    </td>
+    <td data-tblColumn="Pace"><time datetime="{{ ((item.duration)/(item.distance | miles)) | duration('m') }}m {{ ((item.duration)/(item.distance | miles)) | duration('ss') }}s">{{ ((item.duration)/(item.distance | miles)) | duration("m:ss") }}</time><abbr title=" per mile">/mi</abbr></td>
     <td data-tblColumn="Heart Rate"><span>{{ item.averageHR }} <abbr title="beats per minute">bpm</abbr><br> ({{ item.maxHR }}&nbsp;Max)</span></td>
   </tr>
   {% if (item.description) or (item.pr == true) %}<tr class="has-colspan">
