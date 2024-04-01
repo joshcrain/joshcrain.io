@@ -135,7 +135,7 @@ module.exports = function(eleventyConfig) {
 
 		let imageAttributes = {
 			alt,
-			//sizes: "(min-width: 30em) 50vw, 100vw",
+			sizes: "(min-width: 30em) 50vw, 100vw",
 			loading: "lazy",
 			decoding: "async",
 		};
