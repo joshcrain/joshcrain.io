@@ -83,7 +83,7 @@ priority: "1.0"
     <section class="grid-layout_home">
         <div class="layout-section">
             <h2>Running</h2>
-            <span class="text--smaller">{{ running.activityList | length }} activities</span>
+            <span class="text--smaller">{{ collections.combinedActivityList| length }} activities</span>
         </div>
         <div class="grid-content">
             <table class="table_rwd">
@@ -96,14 +96,12 @@ priority: "1.0"
                         <th scope="col">Heart Rate</th>
                     </tr>
                 </thead>
-                {% set rundata = running.activityList %}
+                {% set rundata = collections.combinedActivityList %}
                 {% for item in rundata.slice(0, 10) %}
-                    {% if item.sportTypeId == "1" %}
-                        {% include "_page_partial/running-columns.njk" %}
-                    {% endif %}
+                    {% include "_page_partial/running-columns.njk" %}
                 {% endfor %}
             </table>
-            <p><i>See <a href="/running/">all running activity</a> or activity for the years <a href="/running/2020/">2020</a>, <a href="/running/2021/">2021</a>,  <a href="/running/2022/">2022</a>,  <a href="/running/2023/">2023</a>,  and <a href="/running/2024/">2024</a>.</i></p>
+            <p><i>See <a href="/running/">all running</a> or for the years <a href="/running/2020/">2020</a>, <a href="/running/2021/">2021</a>,  <a href="/running/2022/">2022</a>,  <a href="/running/2023/">2023</a>,  and <a href="/running/2024/">2024</a>.</i></p>
         </div>
     </section>
 </div>
