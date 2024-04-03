@@ -2,6 +2,7 @@ const CleanCSS = require("clean-css");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const moment = require("moment");
 const htmlmin = require("html-minifier");
+//onst { refreshAccessToken, fetchStravaActivities } = require('./strava');
 
 const eleventyImagePlugin = require("@11ty/eleventy-img");
 
@@ -144,5 +145,57 @@ module.exports = function(eleventyConfig) {
 	});
 
 
+  // Combine running.activityList and running2023.activityList
+  eleventyConfig.addCollection("combinedActivityList", function(_) { // Use underscore (_) to indicate that the parameter is unused
+    const runningActivities = require("./_data/running.json");
+    const running2020Activities = require("./_data/running2020.json");
+    const running2021Activities = require("./_data/running2021.json");
+    const running2022Activities = require("./_data/running2022.json");
+    const running2023Activities = require("./_data/running2023.json");
+    const combinedActivities = runningActivities.activityList.concat(running2023Activities.activityList).concat(running2022Activities.activityList).concat(running2021Activities.activityList).concat(running2020Activities.activityList);
+
+    const filteredActivities = combinedActivities.filter(item => item.sportTypeId == "1");
+    return filteredActivities;
+});
+
+eleventyConfig.addCollection("2023ActivityList", function(_) { 
+  const runningActivities = require("./_data/running2023.json");
+
+  const filteredActivities = runningActivities.activityList.filter(item => item.sportTypeId == "1");
+  return filteredActivities;
+});
+    
+eleventyConfig.addCollection("2022ActivityList", function(_) { 
+  const runningActivities = require("./_data/running2022.json");
+
+  const filteredActivities = runningActivities.activityList.filter(item => item.sportTypeId == "1");
+  return filteredActivities;
+});
+
+eleventyConfig.addCollection("2021ActivityList", function(_) { 
+  const runningActivities = require("./_data/running2021.json");
+
+  const filteredActivities = runningActivities.activityList.filter(item => item.sportTypeId == "1");
+  return filteredActivities;
+});
+    
+
+eleventyConfig.addCollection("2020ActivityList", function(_) { 
+  const runningActivities = require("./_data/running2020.json");
+
+  const filteredActivities = runningActivities.activityList.filter(item => item.sportTypeId == "1");
+  return filteredActivities;
+});
+    
+
+
+    // Add Eleventy setup here
+  
+    /*
+    eleventyConfig.addCollection('stravaActivities', async function(collection) {
+      await refreshAccessToken();
+      return fetchStravaActivities();
+    });
+*/
 
 };
