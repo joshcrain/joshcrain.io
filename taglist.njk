@@ -1,0 +1,15 @@
+---
+layout: "layout.njk"
+title: Tags
+permalink: /tags/
+---
+<p class="lead">All tags used on this site. </p>
+<ul>
+{% for tag in collections.tagList %}
+<li>
+  <a href="/tags/{{ tag.title }}/">{{ tag.title }}</a>
+  <span class="small-caps">({{ tag.count }})</span>
+</li>
+{% endfor %}
+</ul>
+

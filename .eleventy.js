@@ -186,6 +186,18 @@ eleventyConfig.addCollection("2020ActivityList", function(_) {
   const filteredActivities = runningActivities.activityList.filter(item => item.sportTypeId == "1");
   return filteredActivities;
 });
+
+eleventyConfig.addCollection("tagList", collections => {
+  const tags = collections
+    .getAll()
+    .reduce((tags, item) => tags.concat(item.data.tags), [])
+    .filter(tag => !!tag && !["notes", "all"].includes(tag))
+    .sort()
+  return Array.from(new Set(tags)).map(tag => ({
+    title: tag,
+    count: collections.getFilteredByTag(tag).length,
+  }))
+})
     
 
 
