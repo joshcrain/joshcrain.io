@@ -1,7 +1,9 @@
 ---
 title: Weeknote 26/2021
-tags: ['weeknotes']
-description: OS upgrade, Safari 15, tinkerings. Nothing else. 
+tags:
+  - weeknotes
+  - releaseNotes
+description: OS upgrade, Safari 15, tinkerings. Nothing else.
 date: 2021-06-25
 ---
 - Updated my OS from Catalina 10.15.7 to Big Sur 11.4. I must have deferred the upgrade, but for the life of me I can't remember.

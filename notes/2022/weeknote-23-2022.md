@@ -1,6 +1,8 @@
 ---
 title: Weeknote 23/2022
-tags: ['weeknotes']
+tags:
+  - weeknotes
+  - releaseNotes
 description: 
 date: 2022-06-03
 ---

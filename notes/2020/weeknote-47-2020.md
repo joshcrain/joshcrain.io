@@ -1,7 +1,9 @@
 ---
-title:  Weeknote 47/2020
-tags: ['weeknotes']
-description: COVID cases on the rise, Phillip Marlowe, CSS minification, and miscellaneous improvements to this site. 
+title: Weeknote 47/2020
+tags:
+  - weeknotes
+  - releaseNotes
+description: COVID cases on the rise, Phillip Marlowe, CSS minification, and miscellaneous improvements to this site.
 date: 2020-11-21
 ---
 * Monday evening Governor Kim Reynolds announced new restrictions to help curb the spread of COVID-19. Infections have doubled in the last month. 

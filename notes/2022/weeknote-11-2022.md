@@ -1,7 +1,9 @@
 ---
 title: Weeknote 11/2022
-tags: ['weeknotes']
-description: Favicons and a self-portrait illustration. 
+tags:
+  - weeknotes
+  - releaseNotes
+description: Favicons and a self-portrait illustration.
 date: 2022-03-10
 ---
 - I added a self-portrait illustration to the homepage. It's something that I wanted to do for some time. I created the illustration in Adobe Fresco using vector brushes. I manually edited the SVG in a text editor to apply custom properties to allow me to update the colors based on a users preference for light or dark mode.
