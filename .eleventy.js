@@ -65,6 +65,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon-*.png");
   eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPassthroughCopy("google88f9e8b0497a35bd.html");
+  eleventyConfig.addPassthroughCopy("*.txt");
   
 
   // minify js
