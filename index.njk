@@ -27,7 +27,7 @@ priority: "1.0"
     <section class="grid-layout_home">
         <div class="layout-section"> 
             <h2>Notes</h2>
-            <span class="text--smaller">{{ collections.notes | length }} posts</span>
+            <span class="text--smaller meta">{{ collections.notes | length }} posts</span>
         </div>
         <div class="grid-content">
             <div class="subgrid">
@@ -36,7 +36,7 @@ priority: "1.0"
                 <div class="grid-half">
                     <div>
                         <a href="{{ post.url }}" class="h2">{{ post.data.title }}</a>
-                        <p class="line-clamp"><span class="small-caps"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br/>
+                        <p class="line-clamp"><span class="meta"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("MMM DD YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br/>
                         {{ post.data.description }}</p>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ priority: "1.0"
     <section class="grid-layout_home">
         <div class="layout-section">
             <h2>Art</h2>
-            <span class="text--smaller">{{ collections.artworks | length }} items</span>
+            <span class="text--smaller meta">{{ collections.artworks | length }} items</span>
         </div>
         <div class="grid-content">
             <div class="subgrid">
@@ -83,7 +83,7 @@ priority: "1.0"
     <section class="grid-layout_home">
         <div class="layout-section">
             <h2>Running</h2>
-            <span class="text--smaller">{{ collections.combinedActivityList| length }} activities</span>
+            <span class="text--smaller meta">{{ collections.combinedActivityList| length }} activities</span>
         </div>
         <div class="grid-content">
             <table class="table_rwd">

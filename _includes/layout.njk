@@ -11,11 +11,13 @@
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 xmlns:svgjs=%22http://svgjs.com/svgjs%22 width=%2250%22 height=%2250%22><svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2250%22 role=%22img%22 aria-labelledby=%22svgLogo%22 viewBox=%220 0 50 22%22><title id=%22SvgjsTitle1000%22>Josh Crain</title><circle cx=%2240%22 cy=%225%22 r=%225%22></circle><circle cx=%2240%22 cy=%2217%22 r=%225%22></circle><circle cx=%225%22 cy=%2217%22 r=%225%22></circle><path d=%22M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z%22></path></svg><style>@media(prefers-color-scheme:light){:root{filter:none;}}@media(prefers-color-scheme:dark){:root{filter:invert(100%);}}</style></svg>" type="image/svg+xml">
         <link rel="manifest" href="/site.webmanifest">
         <meta name="theme-color" content="rgb(239, 233, 228)">
+        <link rel="preload" href="/fonts/DMSerifDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
         {% set css %}{% include "styles.css" %}{% endset %}<style>{{ css | cssmin | safe }}</style>
+
         <link rel="alternate" type="application/atom+xml" title="RSS Feed for joshcrain.io" href="/feed.xml" />
         <script type="application/ld+json">{"@context": "http://schema.org","@type": "Person","name": "Josh Crain","givenName": "Joshua","familyName": "Crain","jobTitle": "Web Designer and Developer","additionalName": "Web Designer | Front-End Developer","knowsAbout": "Web Design, Product Design, Front-End Development, User-Centric Design, Web Standards","email": "josh.crain+joshcrain_io@gmail.com"}</script>
     </head>
-    <body class="no-js" onload="jscheck()">
+    <body class="no-js" onload="jscheck()"> 
         <div class="visuallyhidden"><a href="#content">Skip Content</a></div>
         <header class="site_header">
             <div class="wrapper">
@@ -42,7 +44,7 @@
             <div class="wrapper">
                 <header class="text_center">
                     <h1>{{ title }}{{ artworks.group }}{% if tag %}<i>“{{ tag }}”</i>{% endif %}</h1> 
-                    {% if date != blank %}<div class="small-caps"><time datetime="{{ date | date('YYYY-MM-DD HH:mm') }}">{{ date|date("D MMM Y") }}</time>&nbsp; ⁃ &nbsp;{{ category }}</div>{% endif %} 
+                    {% if date != blank %}<div class="meta"><time datetime="{{ date | date('YYYY-MM-DD HH:mm') }}">{{ date|date("MMM DD YYYY") }}</time>&nbsp; ⁃ &nbsp;{{ category }}</div>{% endif %} 
                 </header>
                     <div class="{% if pageType == 'section' %}grid-layout_section{% else %} grid-layout_page{% endif %}">
                         <div class="grid-content">
@@ -67,28 +69,28 @@
                             <div class="grid-half">
                                 <div class="text--smaller"><i>Previously</i></div>
                                 <a href="{{ previousNote.url }}">{{ previousNote.data.title }}</a>
-                                <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ previousNote.date | date('YYYY-MM-DD HH:mm') }}">{{ previousNote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in previousNote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
+                                <p class="line-clamp"><span class="meta text--smaller"><time datetime="{{ previousNote.date | date('YYYY-MM-DD HH:mm') }}">{{ previousNote.date | date("MMM DD YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in previousNote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
                             </div>
                             {% endif %}
                             {% if nextNote %}
                             <div class="grid-half">
                                 <div class="text--smaller"><i>Up next</i></div>
                                 <a href="{{ nextNote.url }}">{{ nextNote.data.title }}</a>
-                                <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextNote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextNote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
+                                <p class="line-clamp"><span class="meta text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextNote.date | date("MMM DD YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextNote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
                             </div>
                             {% endif %}
                             {% if previousWeeknote %}
                             <div class="grid-half">
                                 <div class="text--smaller"><i>Previously</i></div>
                                 <a href="{{ previousWeeknote.url }}">{{ previousWeeknote.data.title }}</a>
-                                <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ previousWeeknote.date | date('YYYY-MM-DD HH:mm') }}">{{ previousWeeknote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in previousWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
+                                <p class="line-clamp"><span class="meta text--smaller"><time datetime="{{ previousWeeknote.date | date('YYYY-MM-DD HH:mm') }}">{{ previousWeeknote.date | date("MMM DD YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in previousWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
                             </div>
                             {% endif %}
                             {% if nextWeeknote %}
                             <div class="grid-half">
                                 <div class="text--smaller"><i>Up next</i></div>
                                 <a href="{{ nextWeeknote.url }}">{{ nextWeeknote.data.title }}</a>
-                                <p class="line-clamp"><span class="small-caps text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextWeeknote.date | date("DD MMM YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
+                                <p class="line-clamp"><span class="meta text--smaller"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ nextWeeknote.date | date("MMM DD YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in nextWeeknote.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span></p>
                             </div>
                             {% endif %}
                             {% if previousRun %}
