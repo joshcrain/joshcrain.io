@@ -83,7 +83,7 @@ a {color:rgba(var(--colorAccent), 1);text-decoration-color: rgba(var(--colorAcce
 a, abbr {text-decoration-thickness: .2ex;text-underline-offset: .3ex;}
   a:hover {text-decoration-color: rgba(var(--colorAccent),.75);}
 h1 {margin:0 0 var(--size-8) 0;line-height: 1.1;font-size:var(--size-fluid-4);font-weight: 400;font-family: var(--fontHeading);color: hsl(var(--fillFore));text-wrap: balance;}
-h2, .h2 {font-size:var(--size-7);font-weight:normal;margin-bottom:var(--size-1);line-height:1.1;text-wrap: balance;display: block;}
+h2, .h2 {font-size:var(--size-7);font-weight:normal;margin-bottom:var(--size-1);line-height:1.1;text-wrap:pretty;display: block;}
 .h2{font-style: italic;}
 h2{font-family: var(--fontHeading);}
 h3, .h3 {font-size:var(--size-6);font-weight:normal;margin-bottom:.25em;line-height: 1.1;margin-top:1.5em}
