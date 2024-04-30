@@ -24,4 +24,4 @@ Shortly after writing this post I learned there is another update to `text-wrap`
 ```css
 h1 { text-wrap: pretty; }
 ```
-At the time of writing _pretty_ has less support, [supported by Chrome and Opera](https://caniuse.com/?search=text-wrap%3A%20balance).
+At this time _pretty_ is only [supported by Chrome and Opera](https://caniuse.com/?search=text-wrap%3A%20balance).
