@@ -1,8 +1,8 @@
 ---
 title: Ted Kautzky Drawing Studies
-tags: ['artworks', 'drawing', 'watercolor']
+tags: ['artworks', 'drawing']
 image: art/kautzky-pencil-studies/pine-tree-lesson-5.jpg
-alt: Study of a sycamore in watercolor
+alt: Study of pine trees
 description: A study of a drawing by Ted Kautsky
 medium: Pencil
 year: 2022-2023
