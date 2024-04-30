@@ -29,7 +29,7 @@
   --size-12: 10rem;
   --size-fluid-3: clamp(1.5rem, 3vw, 2rem);
   --size-fluid-4: clamp(3rem, 4vw, 4rem);
-  --size-fluid-5: clamp(3.5rem, 4.5vw, 4.5rem);
+  --size-fluid-5: clamp(3.5rem, 5vw, 5rem);
 } 
 :where(html) .darkTheme{
   --colorFore: 249, 240, 255;
@@ -178,7 +178,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 
 /* home */
 .hero {
-  border-bottom:var(--border-size-2) solid rgba(var(--colorAccent),.5);
+  /*border-bottom:var(--border-size-2) solid rgba(var(--colorAccent),.5);*/
 }
 
 .hero header {margin-bottom:0;}
@@ -196,6 +196,13 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 .hero .grid-layout_home{padding:var(--size-7) 0 var(--size-11) 0 ; }
 :not(.fade-in) > .grid-layout_home{  padding:var(--size-11) 0 0 0;}
 
+.divider stop:nth-child(1) {
+  stop-color: hsl(var(--fillAccent));
+}
+
+.divider stop:nth-child(2) {
+  stop-color: hsla(var(--fillFore), .75);
+}
 
 .grid-layout_home h2 {margin-top:0;}
 .grid-layout_home h2::after {display: block;height:var(--border-size-3);content:''; width:var(--size-3);background:rgba(var(--colorAccent));margin:var(--size-4) 0 var(--size-2)}
