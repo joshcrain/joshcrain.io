@@ -109,7 +109,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 /* utilities */
 
   .list--articles{margin:0;padding:0;}
-    .list--articles li{list-style:none;margin-bottom:var(--size-6)}
+    .list--articles li{list-style:none;margin-bottom:var(--size-7)}
 
   .grid-layout_page picture{display: flex;align-items: center;justify-content: center;}
   
@@ -234,7 +234,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 .subgrid{display: grid;
   grid-template-columns: repeat(12,1fr);
   gap: 5%;
-  grid-row-gap: var(--size-6);
+  grid-row-gap: var(--size-8);
 }
 
   .grid-full{
