@@ -378,19 +378,14 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   left: calc(100%/8* 2 *-1 - 3vw);
   width: calc(100%/8* 12 + 6vw);}}
 @media only screen and (max-width: 1024px) {
-  .grid-layout_home {
-    grid-template-areas:
-      "section"
-      "contentarea";
-  }
+  
   .layout-section {
-    text-align: center;
     margin-bottom: var(--size-8);
   }
   .hero .layout-section {
     margin-bottom: var(--size-6);;
   }
-  .grid-layout_home h2::after {margin-right:auto;margin-left: auto;width:var(--size-9);}
+
 
   .grid-layout_page {
     grid-template-areas:
@@ -404,12 +399,6 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 
 
-  .grid-layout_home {
-    display: grid;
-    grid-template-columns: 12fr;
-    grid-template-rows: 2fr;
-  }
-
   .grid-quarter{
     grid-column: span 4;
   }
@@ -417,10 +406,6 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 } 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-  .hero .grid-layout_home {
-    display: flex;
-  }
 
   .hero .layout-section {
     
@@ -471,16 +456,16 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 .table_rwd tr {border-left: solid rgb(var(--colorFore)) var(--border-size-3);border-bottom:0;}
 .table_rwd tr:not(:first-child):not(.has-colspan){margin-top: var(--size-5);}
 }
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-  .hero header {
-    text-align: center;
-  }
-
+.hero .text--larger {font-size: var(--size-4);}
+.grid-layout_home{
+  grid-template-columns: 3fr 9fr;
+}
 
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 767px) {
   .intro {font-size: var(--size-fluid-4);display: block;}
 
   .grid-third, .grid-half{
@@ -490,8 +475,17 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .grid-quarter {
     grid-column: span 12;
 }
+.grid-layout_home{
+  grid-template-areas:
+  "section"
+  "contentarea";
+  grid-template-columns: 1fr;
+}
 
-
+.layout-section {
+  text-align: center;
+}
+.grid-layout_home h2::after {margin-right:auto;margin-left: auto;width:var(--size-9);}
 
   
 }
