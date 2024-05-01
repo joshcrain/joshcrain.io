@@ -197,11 +197,11 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 :not(.fade-in) > .grid-layout_home{  padding:var(--size-11) 0 0 0;}
 
 .divider stop:nth-child(1) {
-  stop-color: hsl(var(--fillAccent));
+  stop-color: hsl(var(--fillAccent), .5);
 }
 
 .divider stop:nth-child(2) {
-  stop-color: hsla(var(--fillFore), .75);
+  stop-color: hsla(var(--fillFore), .5);
 }
 
 .grid-layout_home h2 {margin-top:0;}
@@ -222,6 +222,8 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 .grid-content {
   grid-area : contentarea;
 }
+
+.grid-content :last-child {margin-bottom:0;}
 
 .grid-layout_page {
   grid-template-areas:
