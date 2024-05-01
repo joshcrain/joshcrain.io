@@ -19,7 +19,7 @@ The [::slotted pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/
 }
 ```
 
-When I learned this it was a major bummer. I wanted to manage the space between slotted elements in the same way, ideally in the same component stylesheet. A prescriptive approach, where we target each slotted element is possible. But it's a bloated approach and prone to failure. Thus my disappointment in the gap in support for The Lobotomized Owl which utilizes the [universal selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors) to do the heavy lifting. 
+When I learned this it was a major bummer. I wanted to manage the space between slotted elements in the same way, ideally in the same component stylesheet. A prescriptive approach, where we target each slotted element is possible. But it’s a bloated approach and prone to failure. Thus my disappointment in the gap in support for The Lobotomized Owl which utilizes the [universal selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors) to do the heavy lifting. 
 
 Another approach would be to target the component in a separate stylesheet, specifically for the light DOM. But spreading out styles among two stylesheets seemed hacky and counter to components. 
 

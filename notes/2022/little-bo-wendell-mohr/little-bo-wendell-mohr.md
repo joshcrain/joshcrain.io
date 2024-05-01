@@ -10,7 +10,7 @@ date: 2022-07-13
 ---
 Until the other day, it had never occurred to me to look at my childhood home on Google Street View. When I did I was struck by how little had changed, even the neighboring houses. It was a little like traveling back in time and walking the same streets as my 9-year-old self. 
 
-I was reminded of *Little Bohemia*, a tavern around the corner from my house. It was a place I would walk past with my dad on the way to the park or gas station. Foot steps sounded heavy on the wooden porch. The screen door screeched open and snapped shut as men came and went. It smelled of cigarettes and beer. It's dark windows were mysterious behind the neon signs. Today it’s a small empty lot. 
+I was reminded of *Little Bohemia*, a tavern around the corner from my house. It was a place I would walk past with my dad on the way to the park or gas station. Foot steps sounded heavy on the wooden porch. The screen door screeched open and snapped shut as men came and went. It smelled of cigarettes and beer. It’s dark windows were mysterious behind the neon signs. Today it’s a small empty lot. 
 
 I searched again, this time for a photo of Little Bo. To my surprise [one image](https://www.pinterest.com/pin/523473156672382313/), a print once sold on eBay, surfaced. What luck! 
 
@@ -28,7 +28,7 @@ This, of course, is a lot of guesswork and perhaps even wishful thinking on my p
 
 The answer was simpler than I made it out to be. Oh well. I still get such a kick out of his visit to my neighborhood and the interest he found in this crummy little bar a few houses from mine. 
 
-I haven't thought about my first neighborhood in very long time. The discovery of Mohr's drawing, life, and work have given me a chance to reminisce and come away with new thoughts about my time on Young Street. Mohr’s drawing did something only great art can. It gave me the precious space to ponder my lived experience and led me to ask myself a few new questions about my time on earth. What a gift. 
+I haven't thought about my first neighborhood in very long time. The discovery of Mohr’s drawing, life, and work have given me a chance to reminisce and come away with new thoughts about my time on Young Street. Mohr’s drawing did something only great art can. It gave me the precious space to ponder my lived experience and led me to ask myself a few new questions about my time on earth. What a gift. 
 
 ---
 

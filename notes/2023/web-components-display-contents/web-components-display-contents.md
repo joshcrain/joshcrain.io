@@ -53,7 +53,7 @@ This is where we run into problems, not with the HTML but with the CSS. CSS Grid
 
 As I thought about this problem again I said to myself ”I wish I didn’t have to render the host element. I wish I could *display the contents*.” 
 
-Display contents... display contents... Why did this ring in my ears? Might there be a way to do this with the CSS `display` property? Turns out there is and it's the keyword property `contents`. [From MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/display#box):
+Display contents... display contents... Why did this ring in my ears? Might there be a way to do this with the CSS `display` property? Turns out there is and it’s the keyword property `contents`. [From MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/display#box):
 
 > These elements don't produce a specific box by themselves. They are replaced by their pseudo-box and their child boxes.
 

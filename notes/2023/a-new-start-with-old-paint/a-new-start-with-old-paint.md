@@ -14,7 +14,7 @@ It turned out the paints are still usable (though a bit pasty). The first thing 
 
 After all this time I finally had [a painting on my easel](/art/second-march-at-jester/). It was small but felt good. So when I received an e-newsletter from [Adventure of Painting](http://www.adventureofpainting.com/) that asked what I’m working on—I responded with a photo. To my great surprise, world-renowned artist [Scott L. Christensen](https://www.christensenstudio.com/) replied back! 
 
->Congrats, Josh! That's huge. Enjoy the journey and I'm glad to hear the easel has found you again. Keep up the great work.
+>Congrats, Josh! That’s huge. Enjoy the journey and I'm glad to hear the easel has found you again. Keep up the great work.
 >
 >All my best,
 >Scott 

@@ -10,7 +10,7 @@ description: Josh Crain his work, history, and personal records.
 I have been building things on the web professionally for almost 20 years. I began my career at an agency where I designed, presented, and delivered code. I learned how to scale my work (and the work of others) by formalizing best practices and patterns that unified our design approach. Around this same time, I also had opportunities to work on products. Everything I did seemed to have connection to a design system. Eventually, I was able to move to a dedicated role at one of these products. This was exciting because it provided the opportunity to work _directly with users_ and focus even more on design systems. 
 
 ## This site
-I've made a lot of websites, but for years I struggled with what to do with a personal site. When I shifted my focus to what I wanted to learn it became easier to get started. This site is as much a collection of tinkerings as it is words about me. 
+I’ve made a lot of websites, but for years I struggled with what to do with a personal site. When I shifted my focus to what I wanted to learn it became easier to get started. This site is as much a collection of tinkerings as it is words about me. 
 
 ## Elsewheres
 - [The Galactic Guppy](https://galacticguppy.net/), _The Ultimate Fish Out Of Water Story_ is a webcomic. 

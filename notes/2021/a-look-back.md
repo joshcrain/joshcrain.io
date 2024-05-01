@@ -22,7 +22,7 @@ Site speed has been a priority for this site in 2021. I was [the fastest](/notes
 I didn't write much again this year. This is the 5th post of 2021. 
 
 ### Garmin Plugin
-I created an Eleventy plugin to create a [running log with Garmin Connect](/notes/2021/eleventy-garmin-connect/) data. I use it on this site to capture and log running activities over time. The site build process triggers automatically with a Zapier action after every run, so there's nothing needed to update the [running log](/running/)—I love it. 
+I created an Eleventy plugin to create a [running log with Garmin Connect](/notes/2021/eleventy-garmin-connect/) data. I use it on this site to capture and log running activities over time. The site build process triggers automatically with a Zapier action after every run, so there’s nothing needed to update the [running log](/running/)—I love it. 
 
 ## What I Learned
 - I spent time learning about [Web Components](/notes/2021/weeknote-18-2021/).

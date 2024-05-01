@@ -7,5 +7,6 @@ description: A digital drawing of a cardinal.
 medium: Digital
 year: 2022
 date: 2022-01-24
+featured: true
 ---
 {% storyImage image, alt %}

@@ -2,9 +2,9 @@
 title: Benjamin Crane
 tags: ancestry
 
-description: Benjamin Crane is our family's first recorded ancestor, and first in Colonial England. There a lot we know about Benjamin and his life in the colonies, but there is no record of his arrival or birth and no record of parents or grandparents.
+description: Benjamin Crane is our family’s first recorded ancestor, and first in Colonial England. There a lot we know about Benjamin and his life in the colonies, but there is no record of his arrival or birth and no record of parents or grandparents.
 ---
-<p><i>Benjamin Crane</i> is our family's first recorded ancestor, and first in Colonial England. There a lot we know about Benjamin and his life in the colonies, but there is no record of his arrival or birth and no record of parents or grandparents. We do know Benjamin had a brother named Henry, but he also has no clear historical record prior to 1655. It is possible he and his brother were apprenticed outside the home or that their parents had died or moved back to England. </p>
+<p><i>Benjamin Crane</i> is our family’s first recorded ancestor, and first in Colonial England. There a lot we know about Benjamin and his life in the colonies, but there is no record of his arrival or birth and no record of parents or grandparents. We do know Benjamin had a brother named Henry, but he also has no clear historical record prior to 1655. It is possible he and his brother were apprenticed outside the home or that their parents had died or moved back to England. </p>
     <p>Benjamin was married to Mary Backus, daughter of William and Sarah (Charles) Backus, April 23, 1655. The name Backus also suggests England as a country of origin. They had 9 children. In the years 1655 and 1656 Benjamin was involved in two lawsuits, in which he was the defendant. He was granted the status of <em>Freeman</em> May 12, 1658, which meant he could own land, become a member of a church and vote in civic matters. </p>
     <p>Benjamin owned a tannery about a mile from Wethersfield, Connecticut on the Middletown road. According to E.B. Crane, the spot was known for many years as &ldquo;Old Crane&rsquo;s Tannery Place.&rdquo; Benjamin died in 1691 at approximately 61 years of age and Mary died July 8, 1717, their burial location is currently unknown. </p>
  
@@ -31,7 +31,7 @@ description: Benjamin Crane is our family's first recorded ancestor, and first i
       <p>Benjamin Crane, son of John, born 1630, went to Wethersfield by 1658, and in 1662 was one of the petitioners to set out a plantation in Wapaquasset County (now Woodstock, Conn.), Juror in 1664.<sup>1</sup></p>
       <p>Henry and Benjamin engaged in the tannery business in Wethersfield as early as 1665 or earlier.</p>
       <p>Benjamin Crane married Mary Backus, daughter of William Backus, of Saybrook, April 23, 1655.<sup>2</sup></p>
-      <p>Benjamin Crane&rsquo;s son, Jonathan, took charge of his father's business after his death and settled with the aid of his uncle, Henry Crane, the estate. He owned over five hundred and fifty acres of land and estate, valued at £640.<sup>3</sup> Mrs. Mary Backus Crane died July 8, 1717.</p>
+      <p>Benjamin Crane&rsquo;s son, Jonathan, took charge of his father’s business after his death and settled with the aid of his uncle, Henry Crane, the estate. He owned over five hundred and fifty acres of land and estate, valued at £640.<sup>3</sup> Mrs. Mary Backus Crane died July 8, 1717.</p>
       <p>CHILDREN.<br>
         Benjamin, b. March 1, 1656.<br>
         Jonathan, b. Dec. 1658; rem. to Windham; d. 1697. <br>

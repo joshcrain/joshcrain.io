@@ -5,7 +5,7 @@ tags: ancestry
 description: Jonathan Crane the second of 9 children, was born December 1, 1658. Jonathan was married to Deborah Griswold Dec. 19, 1678. 
 ---
 <p><i>Jonathan Crane</i>, the second of 9 children, was born December 1, 1658. Jonathan was married to Deborah Griswold Dec. 19, 1678. They had 10 children, two of which died shortly after birth. The name Griswold suggests a lineage from England in the county of Warwickshire. </p>
-    <p>  He was one of the most active and influential men in Windham, Connecticut. On Oct. 6, 1691, he was an original petitioner at the General Court in Hartford for Windham's town charter. He served on various committees, procured a minister, sold tracts of land to settlers and in 1715 he built a sawmill in Windham. He was successful in business, and known well in Windham, Norwich and Lebanon.</p>
+    <p>  He was one of the most active and influential men in Windham, Connecticut. On Oct. 6, 1691, he was an original petitioner at the General Court in Hartford for Windham’s town charter. He served on various committees, procured a minister, sold tracts of land to settlers and in 1715 he built a sawmill in Windham. He was successful in business, and known well in Windham, Norwich and Lebanon.</p>
     <p>Jonathan died in March 12th, 1735 of unknown causes, his burial location is at Trumbull Cemetery in Lebanon, Connecticut. </p>
     <figure>{% storyImage "./ancestry/images/jonathan-crane-lebanon-ct.jpg" "Jonathan Crane, Trumbull Cemetery, Lebanon, Connecticut" %}
       <figcaption>&ldquo;Here lies Mr Jonathan Crane husband of Mrs Deborah Crane who lived a pious and Godly life and left ye earth for heaven March ye 12th Ano c 1735, and in ye 77th year of his age.&rdquo;  The gravestone was carved by Obadiah Wheeler, often considered the greatest of all eastern Connecticut carvers. <em>Photo credit: Jack Shackles (7/03/2012) - Find A Grave</em>.</figcaption>
@@ -48,7 +48,7 @@ description: Jonathan Crane the second of 9 children, was born December 1, 1658.
     <p>Was Deputy in Colonial Assembly 1703-5-6-8-9-10-11-13-14-17- 18-21-22. Also chosen Deputy to General Court at Hartford several years.</p>
     <p>Chosen &ldquo;Ensign in Train Band of Windham.&rdquo; May, 1695. Commissioned, Oct. 16, 1695 ; made Lieutenant, Oct., 1703.<sup>6</sup></p>
     <p>Jonathan Crane had land in Norwich registered in 1672. He removed to Windham, where he had a thousand-acre right; built the first saw mill, also a grist mill in 1691 in that plantation, was one of the selectmen in 1692; made townsman June 12, 1692, and a patentee of the town, 1703.<sup>7</sup></p>
-    <p>He married Deborah Griswold, daughter of Francis Griswold, December 19, 1678, at Norwich, Connecticut. That Mr. Crane was one of Windham's most active and influential men there can be little doubt. He was one of the petitioners to General Court at Hartford for Town Charter for Windham, Oct. 6, 1691. Appointed to run town lines May 18, 1691, also appointed with Thomas Huntington to select a minister, and made &ldquo;collector&rdquo; to levy and gather rates.</p>
+    <p>He married Deborah Griswold, daughter of Francis Griswold, December 19, 1678, at Norwich, Connecticut. That Mr. Crane was one of Windham’s most active and influential men there can be little doubt. He was one of the petitioners to General Court at Hartford for Town Charter for Windham, Oct. 6, 1691. Appointed to run town lines May 18, 1691, also appointed with Thomas Huntington to select a minister, and made &ldquo;collector&rdquo; to levy and gather rates.</p>
     <p>January 4, 1695, Mr. Crane exchanged property with Sergeant William Backus, giving his grist mill and receiving a new dwelling house in Windham, situated on the house and home lot of Mr. Backus, on what is now called the Hither Place.</p>
     <p>January 30, 1700, lie, with Rev. Samuel Whiting, purchased the front portion of William Backus lot, 8 by 20 rods square, and gave it to the town for a &ldquo;meeting house plot or common;&rdquo; later this was called Windham Green and the first church erected on it.</p>
     <p>Chosen, Oct., 1701. on committee to run down lines: Oct. 20, 1702, on committee to see to completing the meeting house; 1703 commissioned Lieutenant by General Court; 1704, Indian War breaking out again, chosen lieutenant: John Fitch, captain. In 1705 Mr. Crane was one of a committee to have charge of all town lands, call meetings, sign acts; made Deacon, also Treasurer of fund of new church; 1726 chosen one of the &ldquo;seven pillars or counsellors of the church.&quot;<sup>8</sup></p>
@@ -58,7 +58,7 @@ description: Jonathan Crane the second of 9 children, was born December 1, 1658.
 John, b. Oct. 1, 1687. <br>
 Mary, b. Oct. 20, 1689. <br>
 Joseph, b. May 17, 1696.<sup>9</sup></p>
-    <p><sup>6</sup> Caulkins's History of Norwich, p. 136.<br>
+    <p><sup>6</sup> Caulkins’s History of Norwich, p. 136.<br>
       <sup>7</sup> Windliam Records.<br>
       <sup>8</sup> Crane Genealoery, pp. 13. 15, 21, 33, 34.<br>
 <sup>9</sup> Norwich Records. Windham Records.<br>

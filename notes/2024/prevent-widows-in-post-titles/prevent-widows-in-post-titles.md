@@ -10,7 +10,7 @@ In typographic terms, a widow is a very short line of text—usually one word, t
 
 {% storyImage "./notes/2024/prevent-widows-in-post-titles/widow.jpg" "A post title with one word on last line" %}
 ## Balance
-The CSS property `text-wrap` adds typographic improvements for more balanced line lengths. So it's ideal for multi-line headings, especially those that are centered.
+The CSS property `text-wrap` adds typographic improvements for more balanced line lengths. So it’s ideal for multi-line headings, especially those that are centered.
 
 ```css
 h1 { text-wrap: balance; }

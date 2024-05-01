@@ -1,7 +1,7 @@
 ---
 title: Weeknote 32/2021
 tags: ['weeknotes']
-description: This week's CSS learning - CSS property fit-content. Running log updates and the 2022 Grand Blue Mile (maybe). 
+description: This week’s CSS learning - CSS property fit-content. Running log updates and the 2022 Grand Blue Mile (maybe). 
 date: 2021-08-04
 ---
 - Learned about `fit-content` to help [fit content](https://codepen.io/chriscoyier/pen/vYmzZyo?editors=1100) into an absolutely positioned container. 

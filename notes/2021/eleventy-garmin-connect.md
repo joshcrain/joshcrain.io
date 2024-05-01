@@ -13,7 +13,7 @@ Christmas of 2019 I was given my first smart watch, a Garmin Forerunner 45. This
 Around the same time I was learning a lot about [Eleventy](https://www.11ty.dev) and how to generate static websites (like this one). It occurred to me my running activities might be a data source I could use for a website. Publishing my Garmin Connect activities as [a _new_ type of running log](/running/)  sounded like a fun side project but I didn't really know where to begin.
 
 ## Garmin Connect data
-Garmin provides a publicly accessible JSON feed of your data. I have no idea what this is for, except perhaps, a preview for developers. The path for everyone is the same with the exception of the user ID, which is in the URL of your Garmin Connect profile. _Note: activities need to be public to be seen in this feed_. I've tripped over this several times. 
+Garmin provides a publicly accessible JSON feed of your data. I have no idea what this is for, except perhaps, a preview for developers. The path for everyone is the same with the exception of the user ID, which is in the URL of your Garmin Connect profile. _Note: activities need to be public to be seen in this feed_. I’ve tripped over this several times. 
 
 If your Garmin Connect profile looks like this:  
 - https://connect.garmin.com/modern/profile/[YOUR-GARMIN-CONNECT-ID]
@@ -97,7 +97,7 @@ Garmin Connect doesn't have a Zapier integration but Strava does. [Strava](https
 5. Eleventy fetches the JSON data and builds the site
 6. Netlify deploys the site
 
-That's it!
+That’s it!
  
  Want to see more? Take a look: 
 - [My Running Log](/running/) 

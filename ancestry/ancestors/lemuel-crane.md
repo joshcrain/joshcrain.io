@@ -11,7 +11,7 @@ description: Lemuel Crane was born July 12, 1725, the 8th of 11 children from tw
     {% storyImage "./ancestry/images/slade-cemetery-alstead-nh.jpg" "Slade Cemetery, Alstead New Hampshire" %}
     <figcaption>Slade Cemetery, Alstead New Hampshire. The likely burial location of Jershua Crane. Photo credit: George Wilsom (4/5/2008).</figcaption>
     </figure>
-    <p>On August 2, 1776 Lemuel and 10 other men established land for a cemetery near Alstead, New Hampshire known today as The Slade Cemetery. Later records indicate the cemetery had an unmarked grave, thought to be Lemuel's wife Jershua (Peck, p. 159-160). Lemuel and Jershua&rsquo;s date of death and burial location are currently unknown.  </p>  
+    <p>On August 2, 1776 Lemuel and 10 other men established land for a cemetery near Alstead, New Hampshire known today as The Slade Cemetery. Later records indicate the cemetery had an unmarked grave, thought to be Lemuel’s wife Jershua (Peck, p. 159-160). Lemuel and Jershua&rsquo;s date of death and burial location are currently unknown.  </p>  
     <h2 class="center">Transcriptions</h2>
     <p>The following has been transcribed from <em>&ldquo;Genealogy of the Crane Family. Volume II.</em>&rdquo;</p>
     <blockquote>
@@ -22,7 +22,7 @@ description: Lemuel Crane was born July 12, 1725, the 8th of 11 children from tw
     </blockquote>
     <cite>Crane, Ellery Bicknell. Genealogy of the Crane Family. Volume II. Pages 44-45.</cite>
     
-  <p>Jershua's marriage to Lemuel is also recorded under the profile of her father, Jonathan:</p>
+  <p>Jershua’s marriage to Lemuel is also recorded under the profile of her father, Jonathan:</p>
     <blockquote> 83&mdash;9. Jerusha ; m. Lemuel Crane, May 13, 1757; family at Lebanon. </blockquote>
     <cite>Crane, Ellery Bicknell. Genealogy of the Crane Family. Volume II. Page 32.</cite>
     
