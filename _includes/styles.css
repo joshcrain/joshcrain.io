@@ -223,7 +223,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   grid-area : contentarea;
 }
 
-.grid-content :last-child {margin-bottom:0;}
+.grid-content p:last-child {margin-bottom:0;}
 
 .grid-layout_page {
   grid-template-areas:
