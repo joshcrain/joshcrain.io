@@ -102,4 +102,5 @@ That’s it!
  Want to see more? Take a look: 
 - [My Running Log](/running/) 
 - [Eleventy/Garmin Connect](https://github.com/joshcrain/eleventy-garmin-connect) on Github
+- Another idea: [Oliver Hewitt made a running log with Eleventy and Airtable](https://oliverhewitt.co.uk/projects/running/)
 
