@@ -308,7 +308,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
       opacity: 1;
     }
 
-
+  .tile_desc .meta {color:#FFF}
 
   .article--tags {margin-top:var(--size-11);}
   p.article--tags {font-style: italic;}
