@@ -177,10 +177,6 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 .wrapper p{-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;}
 
 /* home */
-.hero {
-  /*border-bottom:var(--border-size-2) solid rgba(var(--colorAccent),.5);*/
-}
-
 .hero header {margin-bottom:0;}
 .home h1 {font-size:var(--size-fluid-5);margin-bottom: var(--size-fluid-3);}
 
