@@ -439,20 +439,18 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
     height: 1px;
     width: 1px;}
   .table_rwd [data-tblColumn]{display: flex;}
-  .table_rwd [data-tblColumn]:before {content: attr(data-tblColumn);display: inline-block;
-    padding-top: 0;
-    padding-left: 0;
+  .table_rwd [data-tblColumn]:before {content: attr(data-tblColumn);
+
     font-weight: bold;
     flex-basis: 120px;
-    flex-grow: 0;
-    flex-shrink: 0;}
-  .table_rwd [data-tblColumn] br{display: none;}
-  .table_rwd [data-tblColumn] span{display: inline-block;}
+}
+  .table_rwd [data-tblColumn] div{display: inline;}
+  .table_rwd [data-tblColumn] abbr{margin-right:var(--size-1)}
 
   .table_rwd :not(:first-child) td{border:0;border-bottom:var(--border-size-1) solid rgba(var(--colorFore),.8);}
 
   .table_rwd {border:0;}
-.table_rwd th, .table_rwd tr {display: block;}
+.table_rwd th, .table_rwd tr {display: flex;flex-direction: column;}
 .table_rwd tr {border-left: solid rgb(var(--colorFore)) var(--border-size-3);border-bottom:0;}
 .table_rwd tr:not(:first-child):not(.has-colspan){margin-top: var(--size-5);}
 }
