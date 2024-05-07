@@ -280,7 +280,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
     margin-bottom: -10px;
     object-fit: cover;
     object-position: center;}
-    .tile_link {text-decoration: none;color:#FFF;}
+    .tile_link {text-decoration: none;color:#FFF;line-height:1.1;}
     .tile_link::after {
       content: '';
       position: absolute;
