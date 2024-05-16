@@ -1,6 +1,6 @@
 ---
 title: Weeknote 33/2021
-tags: ['weeknotes']
+tags: ['weeknotes', 'eleventy']
 description: It’s been an Olympics themed week! Top honors on on the Eleventy Leaderboards and Sanya. 
 date: 2021-08-09
 ---

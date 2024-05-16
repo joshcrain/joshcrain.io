@@ -1,6 +1,6 @@
 ---
 title: Weeknote 42/2021
-tags: ['weeknotes']
+tags: ['weeknotes', 'eleventy']
 description: State of Eleventy cameo. 
 date: 2021-10-11
 ---
