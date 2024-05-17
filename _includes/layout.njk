@@ -43,7 +43,7 @@
         {% else %}
             <div class="wrapper">
                 <header class="text_center">
-                    <h1>{{ title }}{% if tag %}<i>“{{ tag }}”</i>{% endif %}</h1> 
+                    <h1>{{ title }}{% if tag %}“{{ tag }}”{% endif %}</h1> 
                     {% if date != blank %}<div class="meta"><time datetime="{{ date | date('YYYY-MM-DD HH:mm') }}">{{ date|date("MMM DD YYYY") }}</time>&nbsp; ⁃ &nbsp;{{ category }}</div>{% endif %} 
                 </header>
                     <div class="{% if pageType == 'section' %}grid-layout_section{% else %} grid-layout_page{% endif %}">
