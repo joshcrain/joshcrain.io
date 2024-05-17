@@ -8,4 +8,4 @@ date: 2024-05-15
 ---
 The night lays heavy /  
 moored by fragrant memory /  
-three lilacs in bloom 
+two lilacs in bloom 
