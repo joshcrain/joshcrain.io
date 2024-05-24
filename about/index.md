@@ -1,24 +1,24 @@
 ---
-title: A little about Josh Crain
+title: About Josh Crain
 metaTitle: About Josh Crain
 tags: about
 description: Josh Crain his work, history, and personal records. 
 ---
-<p class="lead">Who does this guy think he is?</p>
+Hi, I’m *Josh Crain*—a designer and front-end developer working in product design. I have worked on quite a range of design and technical problems over the last 20 years. Design problems and approaches vary but my [design principles](/about/design-principles/) guide me to create user-centric interfaces that are scalable yet coherent. My work allows me to make an impact through user advocacy, web standards, research, and code. 
 
-## Professional
-I have been building things on the web professionally for almost 20 years. I began my career at an agency where I designed, presented, and delivered code. I learned how to scale my work (and the work of others) by formalizing best practices and patterns that unified our design approach. Around this same time, I also had opportunities to work on products. Everything I did seemed to have connection to a design system. Eventually, I was able to move to a dedicated role at one of these products. This was exciting because it provided the opportunity to work _directly with users_ and focus even more on design systems. 
+<figure>
+    {% include "_svg/scandi-joshtimized.svg" %}
+    <figcaption>Who does this guy think he is?</figcaption>
+</figure>
 
-## This site
-I’ve made a lot of websites, but for years I struggled with what to do with a personal site. When I shifted my focus to what I wanted to learn it became easier to get started. This site is as much a collection of tinkerings as it is words about me. 
+[Running](/running/) and [art](/art/) break me out of my daily routine—*and who doesn't need that?* Both challenge me to make something with the day. Both can leave me feeling spent. Both take a little and give a lot. 
 
-## Elsewheres
-- [The Galactic Guppy](https://galacticguppy.net/), _The Ultimate Fish Out Of Water Story_ is a webcomic. 
-- I created a website of [Crain family ancestry](/ancestry/). You are most welcome to [contact me](/say-hello/) with any interest. 
+Follow me on [CodePen](https://codepen.io/joshcrain/), [Dribbble](https://dribbble.com/joshcrain/), [GitHub](https://github.com/joshcrain/), or ~~Twitter~~. I don’t spend a lot of time on social media these days so maybe just [say hello](/say-hello/). 
 
-## Other interests
-- Many summers ago I played the [keytar](/notes/2020/yamaha-shs-10/) in _Dr. Mike_, one the the greatest bands of all time. You should buy our album, _A Mighty Love_, on [Amazon](https://www.amazon.com/Mighty-Love-Dr-Mike/dp/B000FSMMNK/) or [iTunes](https://music.apple.com/us/album/a-mighty-love/97175026). You'll thank me.
-- I like to run. I created a way to track my [running activity](/running/) using data from my watch.
+## Other interesting things
+- I occasionally make [illustrations](/tags/illustration/), which has included work for an Olympic gold medalist. When I have nothing productive to do I draw a webcomic called [The Galactic Guppy](https://galacticguppy.net/), _The Ultimate Fish Out Of Water Story_. 
+- _Many summers ago_ I played the [keytar](/notes/2020/yamaha-shs-10/) in _Dr. Mike_. You should buy the album, _A Mighty Love_, on [Amazon](https://www.amazon.com/Mighty-Love-Dr-Mike/dp/B000FSMMNK/) or [iTunes](https://music.apple.com/us/album/a-mighty-love/97175026).
+- I researched and created a website of [Crain family ancestry](/ancestry/) for my dad. You are welcome to [contact me](/say-hello/) with any interest.
 
 ### Personal Records
 <table class="table_rwd">
