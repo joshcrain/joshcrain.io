@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('/fonts/DMSerifDisplay-Regular.woff2') format('woff2');
+  font-display:swap;
+}
+
 :where(html) {
   --colorBase: 245, 245, 250;
   --colorBack: 239, 233, 228;
@@ -28,7 +34,7 @@
   --size-11: 7.5rem;
   --size-12: 10rem;
   --size-fluid-3: clamp(1.5rem, 3vw, 2rem);
-  --size-fluid-4: clamp(3rem, 4vw, 4rem);
+  --size-fluid-4: clamp(3rem, 5vw, 4rem);
   --size-fluid-5: clamp(3.5rem, 5vw, 5rem);
 } 
 :where(html) .darkTheme{
@@ -56,12 +62,6 @@
 .darkTheme .day {display:none;}
 .lightTheme .night {display:none;}
 
-@font-face {
-  font-family: 'DM Serif Display';
-  src: url('/fonts/DMSerifDisplay-Regular.woff2') format('woff2');
-  font-display:swap;
-}
-
 /* resets */
 html {
   /* prevent layout shifts */
@@ -85,6 +85,7 @@ a, abbr {text-decoration-thickness: .2ex;text-underline-offset: .3ex;}
 h1 {margin:0 0 var(--size-8) 0;line-height: 1.1;font-size:var(--size-fluid-4);font-weight: 400;font-family: var(--fontHeading);color: hsl(var(--fillFore));text-wrap: balance;}
 h2, .h2 {font-size:var(--size-7);font-weight:normal;margin-bottom:var(--size-1);line-height:1.1;text-wrap:pretty;display: block;}
 .h2{font-style: italic;}
+*+h2{margin-top:1.5em;}
 h2{font-family: var(--fontHeading);}
 h3, .h3 {font-size:var(--size-6);font-weight:normal;margin-bottom:.25em;line-height: 1.1;margin-top:1.5em}
   h2 + * {margin-top:.5em!important}
