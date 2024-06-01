@@ -436,10 +436,11 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
     height: 1px;
     width: 1px;}
   .table_rwd [data-tblColumn]{display: flex;}
-  .table_rwd [data-tblColumn]:before {content: attr(data-tblColumn);
-
-    font-weight: bold;
-    flex-basis: 120px;
+  .table_rwd [data-tblColumn]:before {
+    content: attr(data-tblColumn);
+    font-weight: 700;
+    width: 120px;
+    flex: none;
 }
   .table_rwd [data-tblColumn] div{display: inline;}
   .table_rwd [data-tblColumn] abbr{margin-right:var(--size-1)}
