@@ -76,6 +76,8 @@ html {
   box-sizing: border-box;
 }
 
+::selection {background:hsl(var(--fillAccent), 1);}
+
 /* elements */
 body {color:rgba(var(--colorFore), 1);font-family:var(--fontPrimary);font-weight:400;margin:0;font-size:1.333rem;line-height:1.666;background:rgba(var(--colorBack), 1);text-rendering: optimizeLegibility;-webkit-font-smoothing: subpixel-antialiased;}
 a {color:rgba(var(--colorAccent), 1);text-decoration-color: rgba(var(--colorAccent),.4);
@@ -84,7 +86,7 @@ a, abbr {text-decoration-thickness: .2ex;text-underline-offset: .3ex;}
   a:hover {text-decoration-color: rgba(var(--colorAccent),.75);}
 h1 {margin:0 0 var(--size-9) 0;line-height: 1.1;font-size:var(--size-fluid-4);font-weight: 400;font-family: var(--fontHeading);color: hsl(var(--fillFore));text-wrap: balance;}
 h2, .h2 {font-size:var(--size-7);font-weight:normal;margin-bottom:var(--size-1);line-height:1.1;text-wrap:pretty;display: block;}
-.h2{font-style: italic;font-size:var(--size-8)}
+.h2{font-size:var(--size-6)}
 *+h2{margin-top:1.5em;}
 h2{font-family: var(--fontHeading);}
 h3, .h3 {font-size:var(--size-6);font-weight:normal;margin-bottom:.25em;line-height: 1.1;margin-top:1.5em}
