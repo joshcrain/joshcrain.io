@@ -1,0 +1,17 @@
+---
+title: Insta
+tags: photo
+description:  
+
+---
+{{ insta | length }} items
+<div class="subgrid no-gap full_width" >
+{% for item in insta %}
+
+<div class="grid-sixth tile tile-square">
+        
+    {% storyImage "./photo/insta/" ~ item.media[0].uri, item.media[0].title | truncate(150) %}
+
+    </div>
+
+{% endfor %}</div>

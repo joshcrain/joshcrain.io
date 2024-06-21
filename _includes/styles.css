@@ -236,9 +236,17 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   grid-row-gap: var(--size-9);
 }
 
+.no-gap{
+  gap: 0
+}
+
   .grid-full{
     grid-column: span 12;
   }
+  .grid-sixth{
+    grid-column: span 2;
+  }
+
   .grid-quarter{
     grid-column: span 3;
   }
@@ -260,6 +268,8 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
     max-width: 300px;
     margin:0 auto;
   }
+.tile-square {border-radius: 0;}
+
   .tile p {margin:0;}
 
   .tile_inner {
