@@ -1,0 +1,19 @@
+<div class="visuallyhidden"><a href="#content">Skip Content</a></div>
+<header class="site_header">
+    <div class="wrapper">
+    <div class="site_id">
+        {% if category == "Ancestry" %}
+        <a href="/ancestry/" class="text_accent">Crain Ancestry</a>
+        {% else %}
+        <a href="/" class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"/><circle cx="40" cy="17" r="5"/><circle cx="5" cy="17" r="5"/><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"/></svg><span class="visuallyhidden">Josh Crain’s Home</span></a>
+        {% endif %}
+        </div>
+        <nav class="site_nav" aria-label="nav-primary">
+        {% if category == "Ancestry" %}
+        <a href="/ancestry/ancestors/">Ancestors</a><a href="/ancestry/heraldry/">Heraldry</a><a href="/ancestry/sources/">Sources</a>
+        {% else %}
+        <a href="/" {% if pageType == "home" %}data-state="active"{% endif %} class="nav-item_home">Home</a><a href="/notes/" {% if category == "Notes" %}data-state="active"{% endif %}>Notes</a><a href="/art/" {% if category == "Art" %}data-state="active"{% endif %}>Art</a><a href="/about/" {% if category == "About" %}data-state="active"{% endif %}>About</a>
+        {% endif %}
+        </nav>
+    </div>
+</header>
