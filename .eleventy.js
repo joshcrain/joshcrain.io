@@ -200,7 +200,12 @@ eleventyConfig.addCollection("tagList", collections => {
     count: collections.getFilteredByTag(tag).length,
   }))
 })
-    
+
+
+eleventyConfig.addFilter("runsWithDescription", function(array) {
+  return array.filter(item => item.description);
+
+});
 
 
     // Add Eleventy setup here
