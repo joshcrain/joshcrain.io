@@ -1,16 +1,56 @@
 ---
 title: Notes
 metaTitle: Josh Crain’s Notes
+pageType: section
 description: Writings. Some personal and some related to work as a web and product designer. 
 ---
-<p class="lead">Writing to share with you. </p>
-<ul class="list--articles">
-    {% set items = collections.notes | reverse %}
-    {% for post in items %} 
-    <li>
-        <a href="{{ post.url }}" class="h2">{{ post.data.title }}</a>
-        <div><span class="meta"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("MMM DD YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br>
-            {{ post.data.description }}</div>
-    </li>
-    {% endfor %}
-</ul>
+<p class="lead">Writings, weeknotes, and notes from my running log.</p>
+<div class="grid-layout-notes">
+    <div class="notes-noteslist">
+        <ul class="list--articles">
+            {% set items = collections.notes | reverse %}
+            {% for post in items %} 
+            <li>
+                <a href="{{ post.url }}" class="h2">{{ post.data.title }}</a>
+                <div><span class="meta"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("MMM DD YYYY") }}</time> ⁃ <span>{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br>
+                    {{ post.data.description }}</div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+<div class="notes-secondary">
+    <div class="notes-runlog">
+        <h2>Run Log</h2>
+        {% set itemsWithDescription = collections.combinedActivityList | runsWithDescription %}
+        {% set lastTenItems = itemsWithDescription.slice(0, 10) %}
+        
+        <ul class="list--articles">
+        {% for item in lastTenItems %}
+            <li>
+                <span class="meta">{{ item.startTimeLocal | date("MMM DD YYYY") }}</span>
+                <a href="/running/{{ item.startTimeLocal | date('YYYY') }}/{{ item.activityId }}" class="line-clamp text--smaller">{{ item.description }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+        See <a href="/tags/weeknotes/">all running</a>.
+
+        
+            
+    </div>
+    <div class="notes-weeknotes">
+        <h2>Weeknotes</h2>
+        <ul class="list--articles">
+            {% set items = collections.weeknotes | reverse %}
+            {% for weeknote in items.slice(0, 10) %} 
+            <li>
+                
+                <span class="meta"><time datetime="{{ weeknote.date | date('YYYY-MM-DD HH:mm') }}">{{ weeknote.date | date("MMM DD YYYY") }}</time></span>
+                <a href="{{ weeknote.url }}" class="line-clamp text--smaller">{{ weeknote.data.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        See <a href="/tags/weeknotes/">all weeknotes</a>.
+    </div>
+</div>
+</div>
+
