@@ -90,7 +90,7 @@ h2, .h2 {font-size:var(--size-7);font-weight:normal;margin-bottom:var(--size-1);
 .h2{font-size:var(--size-6)}
 *+h2{margin-top:1.5em;}
 h2{font-family: var(--fontHeading);}
-h3, .h3 {font-size:var(--size-6);font-weight:normal;margin-bottom:.25em;line-height: 1.1;margin-top:1.5em}
+h3, .h3 {font-size:var(--size-5);font-weight:normal;margin-bottom:.25em;line-height: 1.1;margin-top:1.5em;display: block;}
   h2 + * {margin-top:.5em!important}
   h3 + * {margin-top:.5em!important}
 img{max-width:100%;height:auto;line-height:1;}
@@ -177,7 +177,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 
 .site_content{padding:var(--size-fluid-5) 0 var(--size-12);}
   .site_content header{margin-bottom:var(--size-fluid-5);}
-.wrapper {max-width:1312px;margin:0 auto;padding:0 var(--size-fluid-3);}
+.wrapper {max-width:1312px;margin:0 auto;padding:0 var(--size-9);}
 .wrapper p{-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;}
 
 /* home */
@@ -421,7 +421,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 } 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
+  
   .hero .layout-section {
     
     margin:0 var(--size-4) var(--size-4) 0;
@@ -438,7 +438,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 }
 
 @media only screen and (max-width: 768px) {
-  
+  .wrapper {padding:0 var(--size-fluid-3);}
   .site_header .nav-item_home{display: none;} 
 
 
