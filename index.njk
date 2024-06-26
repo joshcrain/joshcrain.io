@@ -28,17 +28,17 @@ priority: "1.0"
     <section class="grid-layout_home">
         <div class="layout-section"> 
             <h2>Notes</h2>
-            <span class="text--smaller meta">{{ collections.notes | length }} posts</span>
+            <span class="meta">{{ collections.notes | length }} posts</span>
         </div>
         <div class="grid-content">
             <div class="subgrid">
                 {% set items = collections.notes | reverse %}
-                {% for post in items.slice(0, 4) %}
-                <div class="grid-half">
+                {% for post in items.slice(0, 3) %}
+                <div class="grid-third">
                     <div>
-                        <a href="{{ post.url }}" class="h2">{{ post.data.title }}</a>
-                        <p class="line-clamp"><span class="meta"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("MMM DD YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br/>
-                        {{ post.data.description }}</p>
+                        <a href="{{ post.url }}" class="h3">{{ post.data.title }}</a>
+                        <p class="line-clamp text--smaller"><span class="meta"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("MMM DD YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br/>
+                        <span class="">{{ post.data.description }}</span></p>
                     </div>
                 </div>
                 {% endfor %}
@@ -55,7 +55,7 @@ priority: "1.0"
     <section class="grid-layout_home">
         <div class="layout-section">
             <h2>Art</h2>
-            <span class="text--smaller meta">{{ collections.artworks | length }} items</span>
+            <span class="meta">{{ collections.artworks | length }} items</span>
         </div>
         <div class="grid-content">
             <div class="subgrid">
@@ -84,7 +84,7 @@ priority: "1.0"
     <section class="grid-layout_home">
         <div class="layout-section">
             <h2>Running</h2>
-            <span class="text--smaller meta">{{ collections.combinedActivityList| length }} activities</span>
+            <span class="meta">{{ collections.combinedActivityList| length }} activities</span>
         </div>
         <div class="grid-content">
             <table class="table_rwd">
