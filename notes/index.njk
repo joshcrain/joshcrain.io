@@ -43,9 +43,8 @@ description: Writings. Some personal and some related to work as a web and produ
             {% set items = collections.weeknotes | reverse %}
             {% for weeknote in items.slice(0, 10) %} 
             <li>
-                
-                <span class="meta"><time datetime="{{ weeknote.date | date('YYYY-MM-DD HH:mm') }}">{{ weeknote.date | date("MMM DD YYYY") }}</time></span>
-                <a href="{{ weeknote.url }}" class="line-clamp text--smaller">{{ weeknote.data.title }}</a>
+                <span class="meta"><time datetime="{{ weeknote.date | date('YYYY-MM-DD HH:mm') }}">{{ weeknote.data.title }}</time></span>
+                <a href="{{ weeknote.url }}" class="line-clamp text--smaller">{{ weeknote.content | safe | striptags(true) | truncate(200, true, "") }}</a>
             </li>
             {% endfor %}
         </ul>
