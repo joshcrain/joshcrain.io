@@ -44,7 +44,7 @@ description: Writings. Some personal and some related to work as a web and produ
             {% for weeknote in items.slice(0, 10) %} 
             <li>
                 <span class="meta">{{ weeknote.data.title }}</span>
-                <a href="{{ weeknote.url }}" class="line-clamp text--smaller">{{ weeknote.content | safe | striptags(true) | truncate(200, true, "") }}</a>
+                <a href="{{ weeknote.url }}" class="line-clamp text--smaller">{{ weeknote.content | safe | striptags(true) | truncate(200, true, "...") }}</a>
             </li>
             {% endfor %}
         </ul>
