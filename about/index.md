@@ -4,7 +4,7 @@ metaTitle: About Josh Crain
 tags: about
 description: Josh Crain his work, history, and personal records. 
 ---
-Hi, I’m *Josh Crain*—a designer and front-end developer working in product design. I have worked on quite a range of design and technical problems over the last 20 years. Design problems and approaches vary but my [design principles](/about/design-principles/) guide me to create user-centric interfaces that are scalable yet coherent. My work allows me to make an impact through user advocacy, web standards, research, and code. 
+Hi, I’m *Josh Crain*—a designer and front-end developer working in product design. I have worked on a wide range of design and technical problems over the last 20 years. Design problems and approaches vary but my [design principles](/about/design-principles/) guide me to create user-centric interfaces that are scalable yet coherent. My work allows me to make an impact through user advocacy, web standards, research, and code. 
 
 <figure>
     {% include "_svg/scandi-joshtimized.svg" %}
