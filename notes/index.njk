@@ -18,38 +18,34 @@ description: Writings. Some personal and some related to work as a web and produ
             {% endfor %}
         </ul>
     </div>
-<div class="notes-secondary">
-    <div class="notes-runlog">
-        <h2>Run Log</h2>
-        {% set itemsWithDescription = collections.combinedActivityList | runsWithDescription %}
-        {% set lastTenItems = itemsWithDescription.slice(0, 10) %}
-        
-        <ul class="list--articles">
-        {% for item in lastTenItems %}
-            <li>
-                <span class="meta">{{ item.startTimeLocal | date("MMM DD YYYY") }}</span>
-                <a href="/running/{{ item.startTimeLocal | date('YYYY') }}/{{ item.activityId }}" class="line-clamp text--smaller">{{ item.description }}</a>
-            </li>
-        {% endfor %}
-        </ul>
-        <i>See <a href="/running/">all running</a>.</i>
-
-        
-            
-    </div>
-    <div class="notes-weeknotes">
-        <h2>Weeknotes</h2>
-        <ul class="list--articles">
-            {% set items = collections.weeknotes | reverse %}
-            {% for weeknote in items.slice(0, 10) %} 
-            <li>
-                <span class="meta">{{ weeknote.data.title }}</span>
-                <a href="{{ weeknote.url }}" class="line-clamp text--smaller">{{ weeknote.content | safe | striptags(true) | truncate(200, true, "...") }}</a>
-            </li>
+    <div class="notes-secondary">
+        <div class="notes-runlog">
+            <h2>Run Log</h2>
+            {% set itemsWithDescription = collections.combinedActivityList | runsWithDescription %}
+            {% set lastTenItems = itemsWithDescription.slice(0, 10) %}
+            <ul class="list--articles">
+            {% for item in lastTenItems %}
+                <li>
+                    <span class="meta">{{ item.startTimeLocal | date("MMM DD YYYY") }}</span>
+                    <a href="/running/{{ item.startTimeLocal | date('YYYY') }}/{{ item.activityId }}" class="line-clamp text--smaller">{{ item.description }}</a>
+                </li>
             {% endfor %}
-        </ul>
-        <i>See <a href="/tags/weeknotes/">all weeknotes</a>.</i>
+            </ul>
+            <i>See <a href="/running/">all running</a>.</i>
+        </div>
+        <div class="notes-weeknotes">
+            <h2>Weeknotes</h2>
+            <ul class="list--articles">
+                {% set items = collections.weeknotes | reverse %}
+                {% for weeknote in items.slice(0, 10) %} 
+                <li>
+                    <span class="meta">{{ weeknote.data.title }}</span>
+                    <a href="{{ weeknote.url }}" class="line-clamp text--smaller">{{ weeknote.content | safe | striptags(true) | truncate(200, true, "...") }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            <i>See <a href="/tags/weeknotes/">all weeknotes</a>.</i>
+        </div>
     </div>
-</div>
 </div>
 
