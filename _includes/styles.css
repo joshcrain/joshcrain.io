@@ -121,7 +121,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   /* type utilities*/
   p.lead {font-style:italic;margin-bottom:var(--size-10);text-align: center}
   .text_center {text-align:center;}
-  .meta{letter-spacing:.05em;font-size:var(--size-3);font-family:var(--fontIndustrial);text-transform: uppercase;color:hsl(var(--fillFore));}
+  .meta{letter-spacing:.05em;font-size:var(--size-3);font-family:var(--fontIndustrial);text-transform: uppercase;color:hsl(var(--fillFore));line-height: 1;display: inline-block;}
   .text--smallest {font-size:var(--size-2);}
   .text--smaller {font-size:var(--size-3);}
   .text--larger {font-size:var(--size-6);}
