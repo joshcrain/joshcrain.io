@@ -5,7 +5,6 @@
 }
 
 :where(html) {
-  --colorBase: 245, 245, 250;
   --colorBack: 239, 233, 228;
   --colorFore: 0, 0, 0;
   --colorAccent: 114,96,18;
@@ -39,7 +38,6 @@
 } 
 :where(html) .darkTheme{
   --colorFore: 249, 240, 255;
-  --colorBase: 0, 0, 0;
   --colorBack: 10, 10, 25; /*HSL: 240° 50% 7%*/
   --colorAccent: 199,171,227;
 
@@ -50,7 +48,6 @@
 @media (prefers-color-scheme: dark) {
   :root(html) {
     --colorFore: 249, 240, 255;
-    --colorBase: 0, 0, 0;
     --colorBack: 10, 10, 25; /*HSL: 240° 50% 7%*/
     --colorAccent: 199,171,227;
 
@@ -122,10 +119,8 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   p.lead {font-style:italic;margin-bottom:var(--size-10);text-align: center}
   .text_center {text-align:center;}
   .meta{letter-spacing:.05em;font-size:var(--size-3);font-family:var(--fontIndustrial);text-transform: uppercase;color:hsl(var(--fillFore));line-height: 1;display: inline-block;}
-  .text--smallest {font-size:var(--size-2);}
   .text--smaller {font-size:var(--size-3);}
   .text--larger {font-size:var(--size-6);}
-  .text--secondary {text-transform: uppercase;}
   .visuallyhidden { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
   .line-clamp {
     display: -webkit-box;
@@ -379,12 +374,12 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 
 
-.form .form_item {margin-bottom:var(--size-3);}
-.form .form_item .form_field {border:0;color:rgba(var(--colorFore),1);background:rgba(var(--colorFore),.075);outline:var(--border-size-2) solid rgba(var(--colorFore),1);width:100%;padding:var(--size-1);font-size:var(--size-3);font-family: inherit;}
-.form .form_item .form_field:focus {outline:var(--border-size-2) solid rgba(var(--colorAccent), 1);outline:0;}
-.form_field:not(:focus):invalid {outline-color:rgba(var(--colorDanger),1); }
+.form fieldset{display:flex; flex-direction:column; gap:var(--size-5);margin-bottom:var(--size-6);}
+.form_field {border:0;color:rgba(var(--colorFore),1);background:rgba(var(--colorFore),.075);outline:var(--border-size-2) solid rgba(var(--colorFore),1);width:100%;padding:var(--size-1);font-size:var(--size-3);font-family: inherit;border-radius: var(--size-0);}
+.form_field:focus {outline:var(--border-size-2) solid rgba(var(--colorAccent), 1);}
+.form_field:user-invalid {outline-color:rgba(var(--colorDanger),1); }
 
-.btn {font-size:var(--size-3);font-family: inherit;border:var(--border-size-2) solid rgba(var(--colorAccent),1);background:rgba(var(--colorFore),0);color:rgba(var(--colorAccent),1);padding:var(--size-1) .75em;border-radius: 0;}
+.btn {font-size:var(--size-4);font-family: inherit;border:var(--border-size-2) solid rgba(var(--colorAccent),1);background:rgba(var(--colorFore),0);color:rgba(var(--colorAccent),1);padding:var(--size-1) .75em;border-radius: var(--size-0);}
 
 
 

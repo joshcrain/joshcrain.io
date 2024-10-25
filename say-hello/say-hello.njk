@@ -4,22 +4,23 @@ title: Say Hello
 metaTitle: Ask Josh Crain Questions
 description: Contact Josh Crain
 ---
-<p class="lead">All fields are required. </p>
-
 <form name="contact" class="form" method="POST" data-netlify="true" action="/say-hello/thanks/">
 <fieldset style="border:0;padding:0;">
 <legend class="visuallyhidden">Info and comments</legend>
   <div class="form_item">
-    <label>Your Name <input type="text" name="name" title="Please provide a name" class="form_field" aria-required="true" required/></label>   
+    <label for="name">Your Name <span class="text--smaller">(required)</span></label> 
+    <input type="text" name="name" id="name" title="Please provide a name" class="form_field" aria-required="true" required/>   
   </div>
   <div class="form_item">
-    <label>Your Email <input type="email" name="email" class="form_field" aria-required="true" required title="Please provide a valid email" /></label>
+    <label for="email">Your Email <span class="text--smaller">(required)</span></label>
+      <input type="email" name="email" id="email" class="form_field" aria-required="true" required title="Please provide a valid email" />
   </div>
   <div class="form_item">
-    <label>Message <textarea name="message" class="form_field" title="Please provide a message" aria-required="true" required placeholder="What brought you here?"></textarea></label>
+    <label for="message">Message <span class="text--smaller">(required)</span></label>
+    <textarea name="message" id="message" class="form_field" title="Please provide a message" aria-required="true" required placeholder="What brought you here?"></textarea>
   </div>
   </fieldset>
   <div class="form_item">
-    <button type="submit" class="btn">Say Hello</button>
+    <button type="submit" class="btn">Send</button>
   </div> 
 </form> 
