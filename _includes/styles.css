@@ -372,8 +372,9 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   }
 }
 
-
-
+.form-actions{display:flex;align-items: center;gap:var(--size-4)}
+.invalid-message{display:none;color:rgba(var(--colorDanger),1);}
+.form:has(:user-invalid) .invalid-message{display:block;}
 .form fieldset{display:flex; flex-direction:column; gap:var(--size-5);margin-bottom:var(--size-6);}
 .form_field {border:0;color:rgba(var(--colorFore),1);background:rgba(var(--colorFore),.075);outline:var(--border-size-2) solid rgba(var(--colorFore),1);width:100%;padding:var(--size-1);font-size:var(--size-3);font-family: inherit;border-radius: var(--size-0);}
 .form_field:focus {outline:var(--border-size-2) solid rgba(var(--colorAccent), 1);}
