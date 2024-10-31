@@ -178,6 +178,28 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 /* home */
 .hero header {margin-bottom:0;}
 .home h1 {font-size:var(--size-fluid-5);margin-bottom: var(--size-fluid-3);}
+.hero .text--larger{margin-top:0;}
+
+.grid-layout_hero {
+  display: grid;
+  grid-template-columns: 2fr 9fr;
+  grid-column-gap: var(--size-9);
+  grid-template-rows: 1fr;
+  place-content: center;
+  grid-template-areas:
+    "heroimage herotitle"
+    "heroimage herocontent";
+  padding:var(--size-7) 0 var(--size-11) 0 ; }
+
+  .hero-image {
+    grid-area : heroimage;
+  }
+  .hero-title {
+    grid-area : herotitle;
+  }
+  .hero-content {
+    grid-area : herocontent;
+  }
 
 .grid-layout_home {
   display: grid;
@@ -187,9 +209,7 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   place-content: center;
   grid-template-areas:
     "section contentarea";
-}
-.hero .grid-layout_home{padding:var(--size-7) 0 var(--size-11) 0 ; }
-:not(.fade-in) > .grid-layout_home{  padding:var(--size-11) 0 0 0;}
+  padding:var(--size-11) 0 0 0;}
 
 .divider stop:nth-child(1) {
   stop-color: hsl(var(--fillAccent), .5);
@@ -393,10 +413,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
   .layout-section {
     margin-bottom: var(--size-9);
   }
-  .hero .layout-section {
-    margin-bottom: var(--size-6);;
-  }
-
+  
 
   .grid-layout_page {
     grid-template-areas:
@@ -408,8 +425,6 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
     grid-template-columns: 1fr 10fr 1fr;;
   }
 
-
-
   .grid-quarter{
     grid-column: span 4;
   }
@@ -418,10 +433,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 } 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   
-  .hero .layout-section {
-    
-    margin:0 var(--size-4) var(--size-4) 0;
-  }
+
 
   .grid-layout-notes {
     grid-template-columns: 4fr 3fr;
@@ -487,6 +499,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 }
 
+
 @media only screen and (max-width: 767px) {
   .intro {font-size: var(--size-fluid-4);display: block;}
 
@@ -512,7 +525,30 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
   
 }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.grid-layout_hero{
+  grid-template-areas:
+  "heroimage herotitle"
+  "herocontent herocontent";
+  grid-template-columns: 4fr 5fr;
+  gap: var(--size-8) var(--size-fluid-4);
+  align-items: center;
+}
 
+.hero-image{text-align: right;}
+}
+
+@media only screen and (max-width: 479px) {
+.grid-layout_hero{
+  grid-template-areas:
+  "heroimage"
+  "herotitle"
+  "herocontent";
+  grid-template-columns: 1fr;
+}
+
+.hero-image{text-align: center;}
+}
 @media only print {
   * {background: none!important;color:var(--colorFore)!important;}
   .site_header, .site_footer {display: none!important;} 
