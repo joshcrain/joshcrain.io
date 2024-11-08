@@ -7,7 +7,6 @@ description: A study of a drawing by Ted Kautsky
 medium: Pencil
 year: 2022-2023
 date: 2022-02-13
-featured: true
 ---
 {% storyImage image, alt %}
 
