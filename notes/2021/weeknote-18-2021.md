@@ -1,6 +1,6 @@
 ---
 title: Weeknote 18/2021
-tags: ['weeknotes']
+tags: ['weeknotes', 'webComponents']
 description: Styling Web Components mostly. 
 date: 2021-04-28
 ---
