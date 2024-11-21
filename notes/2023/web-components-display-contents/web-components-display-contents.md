@@ -17,9 +17,9 @@ For example, if I wanted to output a list of items in a grid using *CSS Grid or 
 
 ```html
 <grid-items>
-  <grid-item>item</grid-item>
-  <grid-item>item</grid-item>
-  <grid-item>item</grid-item>
+  <grid-item>Grid Item</grid-item>
+  <grid-item>Grid Item</grid-item>
+  <grid-item>Grid Item</grid-item>
 </grid-items>
 ```
 
@@ -37,15 +37,15 @@ That works! But what if I want to add another component inside `<grid-items>` th
 
 ```html
 <grid-items>
-  <grid-item>item</grid-item>
-  <grid-item>item</grid-item>
-  <grid-item>item</grid-item>
+  <grid-item>Grid Item</grid-item>
+  <grid-item>Grid Item</grid-item>
+  <grid-item>Grid Item</grid-item>
   <grid-group>
     #shadow-root (open)
-    <grid-item>item</grid-item>
-    <grid-item>item</grid-item>
-    <grid-item>item</grid-item>
-  </grid-item>
+    <grid-item>Grouped Grid Item</grid-item>
+    <grid-item>Grouped Grid Item</grid-item>
+    <grid-item>Grouped Grid Item</grid-item>
+  </grid-group>
 </grid-items>
 ```
 
@@ -57,13 +57,27 @@ Display contents... display contents... Why did this ring in my ears? Might ther
 
 > These elements don't produce a specific box by themselves. They are replaced by their pseudo-box and their child boxes.
 
-For this use case `display: contents` was what I needed. The `<grid-group>` element does not produce its own box so the layout and the items contained in the shadow-root act as direct descendants. In my implementation I utilized the `:not()` pseudo-class to ensure any component that is not `<grid-item>` does not produce a box.
+For this use case `display: contents` was what I needed. The `<grid-group>` element does not produce its own box so the layout and the items contained in the shadow-root act as direct descendants. In my first implementation I utilized the `:not()` pseudo-class to ensure any component that is not `<grid-item>` does not produce a box.
 
 ```css
 ::slotted(:not(grid-item) {
   display: contents;
 }
 ```
+
+But the <code>::slotted</code> pseudo element can only style the top-level slotted elements directly, and advanced selectors like :not() won't work. So there's this:
+
+```css
+::slotted(*) {
+  display: contents; /* Default for all slotted content */
+}
+
+::slotted(grid-item) {
+  display: block; /* Override for grid-item elements */
+}
+```
+
+Here's a working example of [::slotted display contents in a Web Component](https://codepen.io/joshcrain/pen/QWeXQGa) on Codepen.
 
 I have found Web components to be a great way to manage complex design systems. They have often challenged me to rethink old habits—which is good. Be prepared for change if you wish to make web components part of your front-end toolset. A familiarity with `display: contents` might help!
 
