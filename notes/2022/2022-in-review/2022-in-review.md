@@ -10,7 +10,7 @@ As I look back over the last year I am surprised. I wouldn’t have guessed I wo
 
 ## This Site
 - [I continued to tinker](/notes/2022/joshtimization/) with site speed optimizations (with only marginal success) even though [I told myself](/notes/2022/not-so-fast/) there were other things to do.
-- I created an [SVG illustration](/notes/2022/svg-self-portrait/) for the homepage of this site. I used Adobe Fresco to draw, Figma and VSCode to edit, and SVGO to optimize. Since it‘s an SVG and it’s rendered inline, colors can be applied to match the light or dark theme with CSS custom properties. 
+- I created an [SVG illustration](/notes/2022/svg-self-portrait/) for the homepage of this site. I used Adobe Fresco to draw, Figma and VSCode to edit, and SVGO to optimize. Since it’s an SVG and it’s rendered inline, colors can be applied to match the light or dark theme with CSS custom properties. 
 - I reworked the [Art](/art/) section of this site a few times to use the Cloudinary API and Zapier to publish images, later I added dedicated pages. 
 - [Run Log](/running/): This site now outputs a page for each running activity with the help of [Eleventy Permalinks](https://www.11ty.dev/docs/pagination/#remapping-with-permalinks). But, as of 12/17/2022 the feed provided by Garmin returns a [402 Payment Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402) response, so that’s annoying.
 

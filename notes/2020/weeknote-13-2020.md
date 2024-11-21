@@ -6,7 +6,7 @@ date: 2020-03-28
 ---
 ## Saturday, March 28th
 * Saw a rumor on social media the CDC will recommend everyone wear masks in public. 
-* Grocery stores continue to have limits on toilet paper, paper towels, packaged deli meat, milk, eggs, bagels, pasta, canned vegetables, etc. Marks on the floor to help customers know what is an appropriate distance in line.  We understand Target didn’t have toilet paper, but _we‘ve heard_ you might just have to ask for it. 
+* Grocery stores continue to have limits on toilet paper, paper towels, packaged deli meat, milk, eggs, bagels, pasta, canned vegetables, etc. Marks on the floor to help customers know what is an appropriate distance in line.  We understand Target didn’t have toilet paper, but _we’ve heard_ you might just have to ask for it. 
 * Weeknotes during this time reminds me of the book _Years of Struggle: the Farm Diary of Elmer G. Powers, 1931-1936_.  
 
 ## Friday, March 27th
