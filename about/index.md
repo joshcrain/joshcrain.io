@@ -13,13 +13,11 @@ Hi, I’m *Josh Crain*—a designer and front-end developer working in product d
 
 [Running](/running/) and [art](/art/) break me out of my daily routine—*and who doesn't need that?* Both challenge me to make something with the day. Both can leave me feeling spent. Both take a little and give a lot. 
 
-Follow me on [CodePen](https://codepen.io/joshcrain/), [Dribbble](https://dribbble.com/joshcrain/), [GitHub](https://github.com/joshcrain/), or ~~Twitter~~. I don’t spend a lot of time on social media these days so maybe just [say hello](/say-hello/). 
-
 ## Other interesting things
 - I occasionally make [illustrations](/tags/illustration/), which has included work for an Olympic gold medalist. When I have nothing productive to do I draw a webcomic called [The Galactic Guppy](https://galacticguppy.net/), _The Ultimate Fish Out Of Water Story_. 
 - _Many summers ago_ I played the [keytar](/notes/2020/yamaha-shs-10/) in _Dr. Mike_. You should buy the album, _A Mighty Love_, on [Amazon](https://www.amazon.com/Mighty-Love-Dr-Mike/dp/B000FSMMNK/) or [iTunes](https://music.apple.com/us/album/a-mighty-love/97175026).
 - I researched and created a website of [Crain family ancestry](/ancestry/) for my dad. You are welcome to [contact me](/say-hello/) with any interest.
-
+<!--
 ### Personal Records
 <table class="table_rwd">
     <thead>
@@ -57,3 +55,5 @@ Follow me on [CodePen](https://codepen.io/joshcrain/), [Dribbble](https://dribbb
     </tr>
     </tbody>
 </table>
+
+-->
