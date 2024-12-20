@@ -3,37 +3,36 @@
   "permalink": "feed.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
-    "title": "Josh Crain Notes",
-    "subtitle": "I am an experienced web designer, product designer, and front-end developer. Design allows me to make an impact through user advocacy, research, web standards, and code.",
-    "url": "https://joshcrain.io/",
-    "feedUrl": "https://joshcrain.io/feed.xml",
+    "title": "Josh Crain's Notes",
+    "description": "Writings and thoughts from Josh Crain",
+    "language": "en",
+    "base": "https://joshcrain.io/",
     "author": {
-      "name": "Josh Crain",
-      "email": "josh.crain.gmail.com"
+      "name": "Josh Crain"
     }
   }
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<?xml-stylesheet href="/pretty-feed-v3.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ metadata.language or page.lang }}">
   <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.notes | rssLastUpdatedDate }}</updated>
-  <id>{{ metadata.url }}</id>
+  <subtitle>{{ metadata.description }}</subtitle>
+  <link href="{{ permalink | htmlBaseUrl(metadata.base) }}" rel="self" />
+  <link href="{{ metadata.base | addPathPrefixToFullUrl }}" />
+  <updated>{{ collections.notes | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.base | addPathPrefixToFullUrl }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
   </author>
-  {%- for post in collections.notes %}
-  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  {%- for post in collections.notes | reverse %}
+  {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
   <entry>
-    <title type="html">{{ post.data.title }}</title>
-    <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | rssDate }}</updated>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}" />
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    <content type="html">{{ post.content | renderTransforms(post.data.page, metadata.base) }}</content>
   </entry>
   {%- endfor %}
 </feed>

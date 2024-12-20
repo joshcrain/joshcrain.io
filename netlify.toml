@@ -7,3 +7,9 @@
 [build.environment]
   # Environment variables are set here
   NODE_VERSION = "v18.14.0"
+
+  [[headers]]
+  for = "/feed.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    X-Content-Type-Options = "nosniff"

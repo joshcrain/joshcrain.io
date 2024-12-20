@@ -1,12 +1,19 @@
+
 const CleanCSS = require("clean-css");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const moment = require("moment");
 const htmlmin = require("html-minifier");
 //onst { refreshAccessToken, fetchStravaActivities } = require('./strava');
 
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
 const eleventyImagePlugin = require("@11ty/eleventy-img");
 
+
+
 module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addPlugin(UpgradeHelper);
 
   eleventyConfig.addTransform("htmlmin", function(content) {
     // Prior to Eleventy 2.0: use this.outputPath instead
@@ -66,6 +73,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPassthroughCopy("google88f9e8b0497a35bd.html");
   eleventyConfig.addPassthroughCopy("*.txt");
+  eleventyConfig.addPassthroughCopy("*.xsl");
   eleventyConfig.addPassthroughCopy("fonts/");
   
 
