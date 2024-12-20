@@ -5,16 +5,11 @@ const moment = require("moment");
 const htmlmin = require("html-minifier");
 //onst { refreshAccessToken, fetchStravaActivities } = require('./strava');
 
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
-
 const eleventyImagePlugin = require("@11ty/eleventy-img");
 
 
 
 module.exports = function(eleventyConfig) {
-
-  eleventyConfig.addPlugin(UpgradeHelper);
-
   eleventyConfig.addTransform("htmlmin", function(content) {
     // Prior to Eleventy 2.0: use this.outputPath instead
     if( this.page.outputPath && this.page.outputPath.endsWith(".html") ) {
