@@ -1,5 +1,5 @@
 ---
-title: 2024 In Review
+title: 2024 Year In Review
 tags:
   - notes
   - about
@@ -9,6 +9,8 @@ date: 2024-12-30
 It's that time of year again. It's time to look back at the previous year to think about what's been done and what I might do differently. 
 ## This site
 I've been thinking about how much I like my website this year. I've never been able to dedicate a lot of time to it in one sitting but over time it has shaped up. In past years, I've spent a lot more time on the mechanics of things—how some thing should work. But this year I spent a little more time rounding out the design. I made some general [design updates](/notes/2024/design-updates/) to smooth out some rough edges, and added a page for [tags](/tags/) and updated [notes](/notes/). I'm particularly happy with the notes page because it pulls together different types of notes in one place. The page includes blog posts, of course, but also notes added to my running activities, and weeknotes.
+
+{% storyImage "./notes/2024/2024-in-review/notes-2024.jpg" "a screenshot of the notes page including weeknotes and running notes" %}
 
 The focus though has been less on how I want things to work more on how I want to present the site. Perhaps for that reason, the site fell from 42nd to 92nd on the Eleventy Leaderboards (out of 957). But come on—it's still pretty fast. The last update to the leaderboard run was in March. 
 
