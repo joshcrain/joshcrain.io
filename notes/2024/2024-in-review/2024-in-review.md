@@ -6,9 +6,9 @@ tags:
 description: A look back at what stands out about 2024.
 date: 2024-12-30
 ---
-It's that time of year again. It's time to look back at the previous year to think about what's been done and what I might do differently. 
+It's that time of year again. It's time to look back at the previous year and write a bit about it.
 ## This site
-I've been thinking about how much I like my website this year. I've never been able to dedicate a lot of time to it in one sitting but over time it has shaped up. In past years, I've spent a lot more time on the mechanics of things—how some thing should work. But this year I spent a little more time rounding out the design. I made some general [design updates](/notes/2024/design-updates/) to smooth out some rough edges, and added a page for [tags](/tags/) and updated [notes](/notes/). I'm particularly happy with the notes page because it pulls together different types of notes in one place. The page includes blog posts, of course, but also notes added to my running activities, and weeknotes.
+I've been thinking about how much I like my website this year. I've never been able to dedicate a lot of time to it in one sitting, but over time it has shaped up. In past years, I've spent a lot more time on the mechanics of things—how some thing should work. But this year I spent a little more time rounding out the design. I made some general [design updates](/notes/2024/design-updates/) to smooth out some rough edges, and added a page for [tags](/tags/) and updated [notes](/notes/). I'm particularly happy with the notes page because it pulls together different types of notes in one place. The page includes blog posts, of course, but also notes added to my running activities, and weeknotes.
 
 {% storyImage "./notes/2024/2024-in-review/notes-2024.jpg" "a screenshot of the notes page including weeknotes and running notes" %}
 
@@ -40,4 +40,4 @@ I read some books this year but I also started listening to audiobooks.
 - Hunt, Gather, Parent by Michaeleen Doucleff. How the oldest cultures in the world have mastered the art of raising well-adjusted kids and how different that process looks compared to modern Western culture. 
 
 ## Wrapping up
-I thought very seriously about not writing a 2024 wrap-up. I've done it for a few years now, but I've never enjoyed doing it. It feels like a chore and most of what I write about feels like a bunch of statistics. And after all that I put on this website isn't my whole life. Even so, after it's done, I do find it helpful to see what was happening each year. 
+I wasn't sure if I'd write this final post of 2024. I've done this for a few years now and I always dread doing it. I do look back at them periodically to see where things were. On to 2025!
