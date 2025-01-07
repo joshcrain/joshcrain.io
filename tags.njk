@@ -6,7 +6,9 @@ pagination:
   alias: tag
   filter:
     - all
-permalink: /tags/{{ tag }}/
+permalink: /tags/{{ tag | slug }}/
+eleventyComputed:
+  title: Tagged “{{ tag }}”
 ---
 <p class="lead">Here are all articles <a href="/tags/">tagged</a> “{{ tag }}.” </p>
 <ul class="list--articles">
