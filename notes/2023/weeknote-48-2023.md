@@ -2,7 +2,7 @@
 title: Weeknote 48/2023
 tags:
   - weeknotes
-  - webComponents
+  - web components
   - webdev
 description: Weekly notes for week 48/2023.
 date: 2023-11-30

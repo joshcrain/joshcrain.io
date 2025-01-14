@@ -5,7 +5,7 @@ tags:
   - notes
   - webdev
   - css
-  - webComponents
+  - web components
 description: "The CSS property display: contents; can help layout CSS grids using web components."
 date: 2023-06-22
 ---

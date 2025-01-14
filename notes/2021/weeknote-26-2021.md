@@ -2,7 +2,7 @@
 title: Weeknote 26/2021
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
 description: OS upgrade, Safari 15, tinkerings. Nothing else.
 date: 2021-06-25
 ---

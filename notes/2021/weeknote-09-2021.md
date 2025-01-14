@@ -2,7 +2,7 @@
 title: Weeknote 09/2021
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
 description: Upgraded internet and the state of design.
 date: 2021-02-22
 ---

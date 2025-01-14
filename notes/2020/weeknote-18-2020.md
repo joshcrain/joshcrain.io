@@ -2,7 +2,7 @@
 title: Weeknote 18/2020
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
 description: Iowa reopens 77 counties, grid layout, accessibility leaderboard, and first trips outside the house. The 18th week of 2020.
 date: 2020-05-02
 ---

@@ -3,6 +3,7 @@ title: Weeknote 50/2024
 tags:
   - weeknotes
   - illustration
+  - sketchbook
 description: Weekly notes for week 50/2024.
 date: 2024-12-12
 ---

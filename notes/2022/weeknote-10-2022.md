@@ -2,7 +2,7 @@
 title: Weeknote 10/2022
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
 description: 
 date: 2022-02-27
 ---

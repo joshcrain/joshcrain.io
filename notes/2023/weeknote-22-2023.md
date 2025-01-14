@@ -2,7 +2,7 @@
 title: Weeknote 22/2023
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
 description: Eleventy 2.0 build failed. Netlify builds using .toml. Gardening.
 date: 2023-06-02
 ---

@@ -2,7 +2,7 @@
 title: Weeknote 26/2024
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
 description: Weekly notes for week 26/2024.
 date: 2024-06-24
 ---

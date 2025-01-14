@@ -7,7 +7,7 @@ permalink: /tags/
 <ul>
 {% for tag in collections.tagList %}
 <li>
-  <a href="/tags/{{ tag.title }}/">{{ tag.title }}</a>
+  <a href="/tags/{{ tag.title | slugify }}/">{{ tag.title }}</a>
   <span class="meta">({{ tag.count }})</span>
 </li>
 {% endfor %}

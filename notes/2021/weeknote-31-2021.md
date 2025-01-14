@@ -2,7 +2,7 @@
 title: Weeknote 31/2021
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
 description: SVG favicons. Viewbox, height, and width refresher. SVG favicons inline with base64 encoding with an example.
 date: 2021-07-29
 ---

@@ -2,7 +2,7 @@
 title: Font & Design Updates
 tags:
   - notes
-  - releaseNotes
+  - release notes
 description: Updated font stacks, a new custom font. Miscellaneous design updates and the affect on performance.
 date: 2024-05-06
 ---

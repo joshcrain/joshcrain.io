@@ -2,7 +2,7 @@
 title: Weeknote 11/2021
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
 description: System fonts, running, SPA and MPA.
 date: 2021-03-08
 ---

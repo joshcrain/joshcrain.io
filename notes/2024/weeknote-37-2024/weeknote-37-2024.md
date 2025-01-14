@@ -3,7 +3,7 @@ title: Weeknote 37/2024
 tags:
   - weeknotes
   - sketchbook
-  - arthurGuptill
+  - arthur guptill
 description: How to Arthur Guptill identifies edges in drawing.
 date: 2024-09-13
 ---

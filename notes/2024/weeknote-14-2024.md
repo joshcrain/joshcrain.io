@@ -3,7 +3,7 @@ title: Weeknote 14/2024
 tags:
   - weeknotes
   - eleventy
-  - releaseNotes
+  - release notes
 description: Weekly notes for week 14/2024.
 date: 2024-04-03
 ---

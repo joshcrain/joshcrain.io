@@ -3,7 +3,7 @@ title: Weeknote 49/2021
 tags:
   - weeknotes
   - css
-  - releaseNotes
+  - release notes
 description: Contemplating CSS resets.
 date: 2021-12-01
 ---

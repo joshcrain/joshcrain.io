@@ -2,7 +2,7 @@
 title: Weeknote 47/2020
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
 description: COVID cases on the rise, Phillip Marlowe, CSS minification, and miscellaneous improvements to this site.
 date: 2020-11-21
 ---

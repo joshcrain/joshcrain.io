@@ -3,8 +3,8 @@ title: A New Start With Old Paint
 tags:
   - notes
   - art
-  - richardSchmid
-  - scottChristensen
+  - richard schmid
+  - scott christensen
 description: In recent months I dusted off old paints and set them up in a corner in my basement. 
 date: 2023-11-20
 ---

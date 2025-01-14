@@ -2,7 +2,7 @@
 title: Weeknote 16/2024
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
   - ai
 description: Weekly notes for week 16/2024.
 date: 2024-04-16

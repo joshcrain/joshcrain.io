@@ -2,7 +2,7 @@
 title: Weeknote 11/2022
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
 description: Favicons and a self-portrait illustration.
 date: 2022-03-10
 ---

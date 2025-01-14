@@ -2,7 +2,7 @@
 title: Weeknote 28/2024
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
 description: Weekly notes for week 28/2024.
 date: 2024-07-08
 ---

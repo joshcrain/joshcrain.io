@@ -1,6 +1,6 @@
 ---
 title: Weeknote 18/2024
-tags: ['weeknotes', 'releaseNotes']
+tags: ['weeknotes', 'release notes']
 description: Weekly notes for week 18/2024.
 date: 2024-05-02
 ---

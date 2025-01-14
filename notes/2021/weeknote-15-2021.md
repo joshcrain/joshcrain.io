@@ -2,7 +2,7 @@
 title: Weeknote 15/2021
 tags:
   - weeknotes
-  - releaseNotes
+  - release notes
 description: Prefers reduced motion, Space Jam, HSLA and LCH color systems.
 date: 2021-04-07
 ---
