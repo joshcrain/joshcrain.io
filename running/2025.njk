@@ -1,11 +1,11 @@
 ---
-title: 2024 Running Log
-metaTitle: 2024 Running Log
+title: 2025 Running Log
+metaTitle: 2025 Running Log
 pageType: section
 tags: ['running']
-description: A 2024 running log to track dates, distance, time, pace, heart rate, and Vo2 Max. 
+description: A 2025 running log to track dates, distance, time, pace, heart rate, and Vo2 Max. 
 ---
-<p class="lead">I logged {{ collections.2024ActivityList | length }} runs in 2024. <a href="/running/">See all</a>.  </p>
+<p class="lead">I logged {{ running.activityList | length }} runs in 2025. <a href="/running/">See all</a>.  </p>
 
 <table class="table_rwd">
   <thead>
@@ -17,7 +17,7 @@ description: A 2024 running log to track dates, distance, time, pace, heart rate
     <th>Heart Rate</th>
     </tr>
    </thead>
-   {% for item in collections.2024ActivityList %}
+   {% for item in running.activityList %}
   {% if (item.sportTypeId == "1") and (item.startTimeLocal | date("Y") == "2024") %}
    {% include "_page_partial/running-columns.njk" %}
   {% endif %}
