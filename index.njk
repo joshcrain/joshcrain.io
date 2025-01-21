@@ -36,7 +36,7 @@ priority: "1.0"
                 {% for post in items.slice(0, 3) %}
                 <div class="grid-third">
                     <div>
-                        <a href="{{ post.url }}" class="h3">{{ post.data.title }}</a>
+                        <a href="{{ post.url }}" class="h3">{{ post.data.title | replaceAmpersand | safe }}</a>
                         <p class="line-clamp text--smaller"><span class="meta"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("MMM DD YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags.slice(0, 2) %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br/>
                         <span class="">{{ post.data.description }}</span></p>
                     </div>

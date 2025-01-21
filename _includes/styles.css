@@ -103,6 +103,14 @@ blockquote cite {display:block;font-size:var(--size-3);text-align: right;}
 code {font-size: .875em;padding:0.0625em;border-radius: 2px;background: rgba(var(--colorAccent), .1);font-family: var(--fontMono);}
 pre {max-width: 100%;overflow-x: auto;display: block;}
   pre code {padding:var(--size-6);display: table;width: 100%;box-sizing: border-box;}
+.amp {
+  font-family: Baskerville, "Goudy Old Style", Palatino, "Book Antiqua", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.2em;
+  vertical-align: middle;
+  letter-spacing: .15ex;
+}
 
 .fill-fore {fill:hsl(var(--fillFore))}
 .fill-accent {fill:hsl(var(--fillAccent))}

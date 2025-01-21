@@ -60,6 +60,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addNunjucksFilter("mph", function (mph) {
     return parseFloat(mph*2.2369369).toFixed(2);
   });
+
+  eleventyConfig.addNunjucksFilter("replaceAmpersand", function(value) {
+    if (!value) return value; // Return if value is falsy
+    // Replace ampersands (& or &amp;) with <span>&amp;</span>
+    return value.replace(/&amp;|&/g, "<span class='amp'>&amp;</span>");
+  });
   
   eleventyConfig.addPassthroughCopy("android-chrome-*.png");
   eleventyConfig.addPassthroughCopy("apple-touch-icon.png");
@@ -162,7 +168,7 @@ module.exports = function(eleventyConfig) {
 
     const filteredActivities = combinedActivities.filter(item => item.sportTypeId == "1");
     return filteredActivities;
-});
+  });
 
 eleventyConfig.addCollection("2024ActivityList", function(_) { 
   const runningActivities = require("./_data/running2024.json");
