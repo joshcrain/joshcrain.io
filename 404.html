@@ -1,9 +1,16 @@
 ---
 layout: layout.njk
-title: Oops! Not Found
+title: '404 Not Found'
 permalink: 404.html
 ignore: true
 ---
 <div class="text_center">
-    <p>That didn't work. Maybe the <a href="{{ "/" | url }}">home page</a>?</p>
+    <div style="font-size: 125px;line-height:110px;color:rgba(var(--colorAccent),1)">
+        �
+    </div>
+    <p><code id="path-container"></code> wasn’t found.</p>
+    <script>
+        document.getElementById('path-container').textContent = window.location.pathname;
+    </script>
+    <p>Take me <a href="{{ "/" | url }}">home</a>!</p>
 </div>
