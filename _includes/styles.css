@@ -35,6 +35,8 @@
   --size-fluid-3: clamp(1.5rem, 3vw, 2rem);
   --size-fluid-4: clamp(3rem, 5vw, 4rem);
   --size-fluid-5: clamp(3.5rem, 5vw, 5rem);
+
+  --radius-blob-4: 63% 37% 37% 63% / 43% 37% 63% 57%;
 } 
 :where(html) .darkTheme{
   --colorFore: 249, 240, 255;
@@ -112,6 +114,11 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   letter-spacing: .15ex;
 }
 
+@supports (initial-letter: 2) {
+p.firstLetter:first-letter {initial-letter: 2;margin-inline-start:-.55em;padding:.5rem .75rem;font-family: var(--fontHeading);
+  border-radius: var(--radius-blob-4);background:hsl(var(--fillAccent), .8);min-width: 3.32rem;display: block;
+}
+}
 .fill-fore {fill:hsl(var(--fillFore))}
 .fill-accent {fill:hsl(var(--fillAccent))}
 
