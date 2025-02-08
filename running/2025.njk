@@ -18,7 +18,7 @@ description: A 2025 running log to track dates, distance, time, pace, heart rate
     </tr>
    </thead>
    {% for item in running.activityList %}
-  {% if (item.sportTypeId == "1") and (item.startTimeLocal | date("Y") == "2024") %}
+  {% if (item.sportTypeId == "1") and (item.startTimeLocal | date("Y") == "2025") %}
    {% include "_page_partial/running-columns.njk" %}
   {% endif %}
 {% endfor %}
