@@ -16,7 +16,7 @@
                 </header>
                     <div class="{% if pageType == 'section' %}grid-layout_section{% else %} grid-layout_page{% endif %}">
                         <div class="grid-content">
-                    {{ content | addFirstLetterClass | safe }}
+                    {{ content | safe }}
                     {% if pageType != "section" %}
                     {% if tags >= "0" %}
                         <p class="article--tags">

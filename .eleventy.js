@@ -67,26 +67,7 @@ module.exports = function(eleventyConfig) {
     return value.replace(/&amp;|&/g, "<span class='amp'>&amp;</span>");
   });
 
-  eleventyConfig.addNunjucksFilter("addFirstLetterClass", (content /*, page*/) => {
-    // Use regex to find the first paragraph tag
-    const match = content.match(/<p[^>]*>(.*?)<\/p>/s);
 
-    if (match) {
-      // Extract inner content of <p>
-      let innerContent = match[1];
-
-      // Remove all HTML tags, leaving only plain text
-      let textOnly = innerContent.replace(/<[^>]+>/g, "").trim();
-
-      // Check if the text (excluding tags) is longer than 300 characters
-      if (textOnly.length > 300) {
-        // Inject class into the <p> opening tag
-        return content.replace("<p", '<p class="firstLetter"');
-      }
-    }
-
-    return content; // Return unmodified content if conditions aren't met
-  });
 
 
   
