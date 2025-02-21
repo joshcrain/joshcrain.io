@@ -1,0 +1,77 @@
+---
+title: About Josh Crain
+metaTitle: About Josh Crain
+pageType: section
+tags: about
+description: Josh Crain his work, history, and personal records. 
+---
+<div class="grid-layout-about">
+    <div>
+        <figure>
+            {% include "_svg/scandi-joshtimized.svg" %}
+            <figcaption>Who does this guy think he is?</figcaption>
+        </figure> 
+    </div>
+    <div>
+        <p>Hello! I’m <em>Josh Crain</em>—a designer and front-end developer working in product design. I have worked on a wide range of design and technical problems over the last 20 years. Design problems and approaches vary but my <a href="/about/design-principles/">design principles</a> guide me to create user-centric interfaces that are scalable yet coherent. My work allows me to make an impact through user advocacy, web standards, research, and code. </p>
+        <p><a href="/running/">Running</a> and <a href="/art/">art</a> break me out of my daily routine—<em>and who doesn&#39;t need that?</em> Both challenge me to make something with the day. Both can leave me feeling spent. Both take a little and give a lot. </p>
+        <h2 id="other-interesting-things">Other interesting things</h2>
+        <ul>
+        <li>I occasionally make <a href="/tags/illustration/">illustrations</a>, which has included work for an Olympic gold medalist. When I have nothing productive to do I draw a webcomic called <a href="https://galacticguppy.net/">The Galactic Guppy</a>, <em>The Ultimate Fish Out Of Water Story</em>. </li>
+        <li><em>Many summers ago</em> I played the <a href="/notes/2020/yamaha-shs-10/">keytar</a> in <em>Dr. Mike</em>. You should buy the album, <em>A Mighty Love</em>, on <a href="https://www.amazon.com/Mighty-Love-Dr-Mike/dp/B000FSMMNK/">Amazon</a> or <a href="https://music.apple.com/us/album/a-mighty-love/97175026">iTunes</a>.</li>
+        <li>I researched and created a website of <a href="/ancestry/">Crain family ancestry</a> for my dad. You are welcome to <a href="/say-hello/">contact me</a> with any interest.</li>
+        </ul>
+
+<!--
+### Personal Records
+<table class="table_rwd">
+    <thead>
+    <tr>
+        <th>Event</th>
+        <th>PR</th>
+        <th>Meet</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td data-tblColumn="Event">8000m (cross-country)</td>
+        <td data-tblColumn="PR">24:39</td>
+        <td data-tblColumn="Meet">MVC Cross-Country Championships</td>
+    </tr>
+    <tr>
+        <td data-tblColumn="Event">3000m (indoor)</td>
+        <td data-tblColumn="PR">8:18.01</td>
+        <td data-tblColumn="Meet">Iowa State University Classic</td>
+    </tr>
+    <tr>
+        <td data-tblColumn="Event">5000m (indoor)</td>
+        <td data-tblColumn="PR">14:26.26</td>
+        <td data-tblColumn="Meet">MVC Indoor Championships</td>
+    </tr>
+    <tr>
+        <td data-tblColumn="Event">5000m (outdoor)</td>
+        <td data-tblColumn="PR">14:21.11</td>
+        <td data-tblColumn="Meet">Stanford Invitational</td>
+    </tr>
+    <tr>
+        <td data-tblColumn="Event">Bowling</td>
+        <td data-tblColumn="PR"><a href="https://twitter.com/thejoshcrain/status/3592903958">221</a></td>
+        <td data-tblColumn="Meet">Strike It Up Challenge</td>
+    </tr>
+    </tbody>
+</table>
+
+-->
+    </div>
+    <div>
+        <h2>About</h2>
+            <ul class="list--articles">
+                {% set items = collections.about | reverse %}
+                {% for item in items.slice(0, 10) %} 
+                <li>
+                    <a href="{{ item.url }}" class="line-clamp text--smaller">{{ item.data.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+    </div>
+</div>
