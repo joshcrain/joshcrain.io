@@ -3,6 +3,7 @@ const CleanCSS = require("clean-css");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const moment = require("moment");
 const htmlmin = require("html-minifier");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 //onst { refreshAccessToken, fetchStravaActivities } = require('./strava');
 
 const eleventyImagePlugin = require("@11ty/eleventy-img");
@@ -10,6 +11,8 @@ const eleventyImagePlugin = require("@11ty/eleventy-img");
 
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(syntaxHighlight);
+
   eleventyConfig.addTransform("htmlmin", function(content) {
     // Prior to Eleventy 2.0: use this.outputPath instead
     if( this.page.outputPath && this.page.outputPath.endsWith(".html") ) {
@@ -66,7 +69,6 @@ module.exports = function(eleventyConfig) {
     // Replace ampersands (& or &amp;) with <span>&amp;</span>
     return value.replace(/&amp;|&/g, "<span class='amp'>&amp;</span>");
   });
-
 
 
 
