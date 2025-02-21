@@ -9,7 +9,7 @@ This site uses [Eleventy](https://www.11ty.io) for static site generation. Chang
 
 ## Running Locally
 
-```
+```node
 npm install
 npx @11ty/eleventy --serve
 ```
