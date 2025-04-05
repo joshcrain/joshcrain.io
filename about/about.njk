@@ -64,14 +64,11 @@ description: Josh Crain his work, history, and personal records.
 -->
     </div>
     <div>
-        <h2>About</h2>
-            <ul class="list--articles">
-                {% set items = collections.about | reverse %}
-                {% for item in items.slice(0, 10) %} 
-                <li>
-                    <a href="{{ item.url }}" class="line-clamp text--smaller">{{ item.data.title }}</a>
-                </li>
-                {% endfor %}
+        <h3>This Site</h3>
+
+            <ul>
+                <li><a href="/notes/2020/website-launch/">The launch of this website</a></li>
+                <li><a href="/about/colophon/">Colophon</a></li>
             </ul>
     </div>
 </div>
