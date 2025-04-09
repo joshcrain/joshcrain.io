@@ -1,0 +1,1 @@
+{% storyImage "./notes/{{date:YYYY}}/weeknote-{{date:ww}}-{{date:YYYY}}/name.jpg" "Alt Text" %}
