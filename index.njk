@@ -102,7 +102,7 @@ priority: "1.0"
                     {% include "_page_partial/running-columns.njk" %}
                 {% endfor %}
             </table>
-            <p><i>See <a href="/running/">all running</a> or the years: 
+            <p><i>See <a href="/running/">all running</a> activities or by year: 
             {% set uniqueYears = [] %}
             {% for item in collections.combinedActivityList %}
               {% set year = item.startTimeLocal | date('YYYY') %}
