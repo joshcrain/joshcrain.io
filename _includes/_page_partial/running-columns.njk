@@ -9,7 +9,7 @@
       {% endif %}  
     </td>
     <td data-tblColumn="Pace"><time datetime="{{ ((item.duration)/(item.distance | miles)) | duration('m') }}m {{ ((item.duration)/(item.distance | miles)) | duration('ss') }}s">{{ ((item.duration)/(item.distance | miles)) | duration("m:ss") }}</time><abbr title=" per mile">/mi</abbr></td>
-    <td data-tblColumn="Heart Rate"><span>{{ item.averageHR }} <abbr title="beats per minute">bpm </abbr></span> <div>({{ item.maxHR }}&nbsp;Max)</div></td>
+    <td data-tblColumn="Heart Rate"><span>{{ item.averageHR | heartRate }} <abbr title="beats per minute">bpm </abbr></span> <div>({{ item.maxHR | heartRate }}&nbsp;Max)</div></td>
   </tr>
   {% if (item.description) or (item.pr == true) %}<tr class="has-colspan">
     <td colspan="4" data-tblColumn="Description">

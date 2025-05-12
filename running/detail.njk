@@ -37,11 +37,11 @@ permalink: "running/{{ item.startTimeLocal | date('YYYY') }}/{{ item.activityId 
       </tr>
       <tr>
         <th scope="rowgroup">Heart Rate</th>
-        <td data-tblColumn="Heart Rate"><span>{{ item.averageHR }} beats per minute ({{ item.maxHR }}&nbsp;Max)</span></td>
+        <td data-tblColumn="Heart Rate"><span>{{ item.averageHR | heartRate }} beats per minute ({{ item.maxHR | heartRate }}&nbsp;Max)</span></td>
       </tr>
       <tr>
         <th scope="rowgroup"><abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</th>
-        <td data-tblColumn="VO2 Max">{% if item.vO2MaxValue %}{{ item.vO2MaxValue }} <abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</abbr>{% endif %}</td>
+        <td data-tblColumn="VO2 Max">{% if item.vO2MaxValue %}{{ item.vO2MaxValue | vO2Max }} <abbr title="volume, oxygen, maximum">VO<sub>2</sub> Max</abbr>{% endif %}</td>
       </tr>
       <tr>
         <th scope="rowgroup">Speed</th>
@@ -53,7 +53,7 @@ permalink: "running/{{ item.startTimeLocal | date('YYYY') }}/{{ item.activityId 
       </tr>
       <tr>
         <th scope="rowgroup">Calories</th>
-        <td data-tblColumn="Calories">{{ item.calories }}</td>
+        <td data-tblColumn="Calories">{{ item.calories | calories }}</td>
       </tr>
       <tr>
         <th scope="rowgroup">Steps</th>

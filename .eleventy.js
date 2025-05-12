@@ -1,4 +1,3 @@
-
 const CleanCSS = require("clean-css");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const moment = require("moment");
@@ -62,6 +61,33 @@ module.exports = function(eleventyConfig) {
   // meters/second to mph
   eleventyConfig.addNunjucksFilter("mph", function (mph) {
     return parseFloat(mph*2.2369369).toFixed(2);
+  });
+
+  // heart rate filter to handle both numeric and object formats
+  eleventyConfig.addNunjucksFilter("heartRate", function (hr) {
+    if (!hr) return '';
+    if (typeof hr === 'object' && hr.parsedValue) {
+      return hr.parsedValue;
+    }
+    return hr;
+  });
+
+  // vO2Max filter to handle both numeric and object formats
+  eleventyConfig.addNunjucksFilter("vO2Max", function (vO2Max) {
+    if (!vO2Max) return '';
+    if (typeof vO2Max === 'object' && vO2Max.parsedValue) {
+      return vO2Max.parsedValue;
+    }
+    return vO2Max;
+  });
+
+  // calories filter to handle both numeric and object formats
+  eleventyConfig.addNunjucksFilter("calories", function (calories) {
+    if (!calories) return '';
+    if (typeof calories === 'object' && calories.parsedValue) {
+      return calories.parsedValue;
+    }
+    return calories;
   });
 
   eleventyConfig.addNunjucksFilter("replaceAmpersand", function(value) {
