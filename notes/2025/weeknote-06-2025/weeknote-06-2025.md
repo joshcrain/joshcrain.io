@@ -2,7 +2,6 @@
 title: Weeknote 06/2025
 tags:
   - weeknotes
-  - sketchbook
   - css
 description: Weekly notes for week 06/2025.
 date: 2025-02-03

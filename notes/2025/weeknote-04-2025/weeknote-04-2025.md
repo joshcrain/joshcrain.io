@@ -2,7 +2,6 @@
 title: Weeknote 04/2025
 tags:
   - weeknotes
-  - sketchbook
 description: Weekly notes for week 04/2025.
 date: 2025-01-21
 ---
