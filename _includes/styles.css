@@ -61,6 +61,28 @@
 .darkTheme .day {display:none;}
 .lightTheme .night {display:none;}
 
+@view-transition {
+  navigation: auto;
+}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes move-out {
+    0%    { opacity: 1; }
+    100%  { opacity: 0; }
+  }
+
+  @keyframes move-in {
+    0%    { opacity: 0; }
+    100%  { opacity: 1; }
+  }
+  ::view-transition-old(root) {
+    animation: 0.3s ease-out move-out;
+  }
+
+  ::view-transition-new(root) {
+    animation: 0.3s ease-in move-in;
+  }
+}
+
 /* resets */
 html {
   /* prevent layout shifts */
