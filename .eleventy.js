@@ -108,6 +108,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("google88f9e8b0497a35bd.html");
   eleventyConfig.addPassthroughCopy("*.txt");
   eleventyConfig.addPassthroughCopy("*.xsl");
+  eleventyConfig.addPassthroughCopy("*.svg");
+  eleventyConfig.addPassthroughCopy("**/*.svg");
   eleventyConfig.addPassthroughCopy("fonts/");
   
 
