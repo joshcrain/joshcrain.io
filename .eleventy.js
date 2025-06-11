@@ -77,7 +77,7 @@ const createSocialImageForArticle = (input, output) =>
         // Give the portrait more space based on the new image dimensions (403x512)
         // Since it's taller than wide, we can be more generous with width
         const maxPortraitWidth = (canvas.width * 0.55) - 30; // Up to 55% of canvas width
-        const maxPortraitHeight = canvas.height - 60; // Leave 30px padding top and bottom
+        const maxPortraitHeight = canvas.height - 140; // Reduced by another 40px (was -100, now -140)
         
         // Calculate the aspect ratio of the original image
         const imageAspectRatio = portraitImage.width / portraitImage.height;
@@ -93,7 +93,7 @@ const createSocialImageForArticle = (input, output) =>
         }
         
         // Position the portrait on the left with minimal padding
-        const portraitX = 15; // Minimal left padding
+        const portraitX = 35; // Moved right by 20px (was 15, now 35)
         const portraitY = (canvas.height - portraitHeight) / 2 - 20; // Center vertically, moved up 20px
         
         // Draw the PNG portrait with proper aspect ratio
@@ -174,7 +174,7 @@ const createSocialImageForArticle = (input, output) =>
 
         // Draw the date below the title if we have one
         if (dateString) {
-          ctx.font = '24px sans-serif';
+          ctx.font = '24px Arial, sans-serif';
           ctx.fillStyle = 'hsl(270,50%,20%)';
           currentY += spacingBetween;
           ctx.fillText(dateString, textStartX, currentY);
@@ -203,7 +203,7 @@ const createSocialImageForArticle = (input, output) =>
         // Fallback to placeholder if PNG fails
         const portraitWidth = canvas.width / 3 - 60;
         const portraitHeight = 400; // Adjusted for taller aspect ratio
-        const portraitX = 15; // Minimal left padding to match
+        const portraitX = 35; // Moved right by 20px (was 15, now 35)
         const portraitY = (canvas.height - portraitHeight) / 2 - 20; // Center vertically, moved up 20px
         
         ctx.fillStyle = 'rgba(10,10,25,0.1)';
