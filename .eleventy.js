@@ -7,7 +7,332 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 const eleventyImagePlugin = require("@11ty/eleventy-img");
 
+// Add canvas imports for social image generation
+const fs = require('fs');
+const path = require('path');
+const { createCanvas, loadImage, registerFont } = require('canvas');
 
+// Function to create social images for articles
+const createSocialImageForArticle = (input, output) =>
+  new Promise(async (resolve, reject) => {
+    try {
+      // read data from input file
+      const data = fs.readFileSync(input, {
+        encoding: 'utf-8',
+      });
+
+      // get title from file data - handle both "title:" and "title :" formats
+      const titleMatch = data.match(/title:\s*(.+)/);
+      if (!titleMatch) {
+        return resolve();
+      }
+      
+      const title = titleMatch[1].trim();
+
+      // Extract date from front matter or file path
+      let dateString = '';
+      const dateMatch = data.match(/date:\s*(.+)/);
+      if (dateMatch) {
+        // Use date from front matter
+        const dateValue = dateMatch[1].trim();
+        const date = new Date(dateValue);
+        dateString = date.toLocaleDateString('en-US', { 
+          year: 'numeric', 
+          month: 'long', 
+          day: 'numeric' 
+        });
+      } else {
+        // Extract date from file path (e.g., /2024/weeknote-28-2024.md)
+        const pathDateMatch = input.match(/\/(\d{4})\//);
+        if (pathDateMatch) {
+          dateString = pathDateMatch[1]; // Just the year if no specific date
+        }
+      }
+
+      // Extract description from front matter
+      let description = '';
+      const descriptionMatch = data.match(/description:\s*(.+)/);
+      if (descriptionMatch) {
+        description = descriptionMatch[1].trim().replace(/['"]/g, ''); // Remove quotes
+      }
+
+      // draw cover image
+      const canvas = createCanvas(1200, 630); // Standard OG image size
+      const ctx = canvas.getContext('2d');
+
+      // Background
+      ctx.fillStyle = 'rgba(239,233,228,1)'; 
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Add a subtle border
+      ctx.strokeStyle = '#e5e5e5';
+      ctx.lineWidth = 2;
+      ctx.strokeRect(0, 0, canvas.width, canvas.height);
+
+      // Load and draw the PNG portrait - let it be bigger!
+      try {
+        const portraitPath = path.join(__dirname, 'social.png');
+        const portraitImage = await loadImage(portraitPath);
+        
+        // Give the portrait more space based on the new image dimensions (403x512)
+        // Since it's taller than wide, we can be more generous with width
+        const maxPortraitWidth = (canvas.width * 0.55) - 30; // Up to 55% of canvas width
+        const maxPortraitHeight = canvas.height - 60; // Leave 30px padding top and bottom
+        
+        // Calculate the aspect ratio of the original image
+        const imageAspectRatio = portraitImage.width / portraitImage.height;
+        
+        // Calculate the best fit dimensions while maintaining aspect ratio
+        let portraitWidth = maxPortraitWidth;
+        let portraitHeight = portraitWidth / imageAspectRatio;
+        
+        // If height is too large, scale by height instead
+        if (portraitHeight > maxPortraitHeight) {
+          portraitHeight = maxPortraitHeight;
+          portraitWidth = portraitHeight * imageAspectRatio;
+        }
+        
+        // Position the portrait on the left with minimal padding
+        const portraitX = 15; // Minimal left padding
+        const portraitY = (canvas.height - portraitHeight) / 2 - 20; // Center vertically, moved up 20px
+        
+        // Draw the PNG portrait with proper aspect ratio
+        ctx.drawImage(portraitImage, portraitX, portraitY, portraitWidth, portraitHeight);
+        
+        
+        // Calculate text area based on actual portrait size
+        const textStartX = portraitX + portraitWidth + 40; // Start after portrait plus smaller gap
+        const textMaxWidth = canvas.width - textStartX - 80; // Remaining width minus even larger right padding
+        
+        // Title styling - positioned in remaining space after portrait
+        ctx.fillStyle = 'hsl(270,50%,20%)';
+        ctx.font = 'bold 72px Arial, sans-serif'; // Simplified font syntax for Canvas
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'top';
+
+        // Word wrap the title - now for the remaining space after the portrait
+        const words = title.split(' ');
+        const lines = [];
+        let currentLine = words[0];
+
+        for (let i = 1; i < words.length; i++) {
+          const word = words[i];
+          const width = ctx.measureText(currentLine + ' ' + word).width;
+          if (width < textMaxWidth) {
+            currentLine += ' ' + word;
+          } else {
+            lines.push(currentLine);
+            currentLine = word;
+          }
+        }
+        lines.push(currentLine);
+
+        // Word wrap the description if we have one
+        let descriptionLines = [];
+        if (description) {
+          ctx.font = '30px Arial, sans-serif'; // Set font for description measurement - FIXED to match drawing font
+          const descWords = description.split(' ');
+          if (descWords.length > 0 && descWords[0]) { // Only process if we have actual words
+            let currentDescLine = descWords[0];
+
+            for (let i = 1; i < descWords.length; i++) {
+              const word = descWords[i];
+              const width = ctx.measureText(currentDescLine + ' ' + word).width;
+              if (width < textMaxWidth) {
+                currentDescLine += ' ' + word;
+              } else {
+                descriptionLines.push(currentDescLine);
+                currentDescLine = word;
+              }
+            }
+            descriptionLines.push(currentDescLine);
+          }
+        }
+
+        // Calculate total content height (title + date + description + spacing)
+        const titleLineHeight = 78; // Reduced from 85px for tighter title spacing
+        const dateLineHeight = 32;
+        const descriptionLineHeight = 40; // Increased to accommodate 30px font
+        const spacingBetween = 20;
+        const totalTitleHeight = lines.length * titleLineHeight;
+        const totalDateHeight = dateString ? dateLineHeight : 0;
+        const totalDescriptionHeight = descriptionLines.length * descriptionLineHeight;
+        const totalSpacing = (dateString ? spacingBetween : 0) + (description ? spacingBetween : 0);
+        const totalContentHeight = totalTitleHeight + totalDateHeight + totalDescriptionHeight + totalSpacing;
+        
+        // Center the entire content block vertically
+        const contentStartY = (canvas.height - totalContentHeight) / 2;
+        
+        // Draw the title lines
+        ctx.fillStyle = 'hsl(270,50%,20%)';
+        ctx.font = 'bold 72px Arial, sans-serif';
+        lines.forEach((line, index) => {
+          ctx.fillText(line, textStartX, contentStartY + (index * titleLineHeight));
+        });
+
+        let currentY = contentStartY + totalTitleHeight;
+
+        // Draw the date below the title if we have one
+        if (dateString) {
+          ctx.font = '24px sans-serif';
+          ctx.fillStyle = 'hsl(270,50%,20%)';
+          currentY += spacingBetween;
+          ctx.fillText(dateString, textStartX, currentY);
+          currentY += dateLineHeight;
+        }
+
+        // Draw the description below the date if we have one
+        if (description) {
+          ctx.font = '30px Arial, sans-serif';
+          ctx.fillStyle = 'rgba(10,10,25,1)';
+          currentY += spacingBetween;
+          descriptionLines.forEach((line, index) => {
+            ctx.fillText(line, textStartX, currentY + (index * descriptionLineHeight));
+          });
+        }
+
+        // Add site name centered under portrait image
+        ctx.font = '24px Arial, sans-serif';
+        ctx.fillStyle = 'rgba(10,10,25,1)';
+        ctx.textAlign = 'left';
+        const siteNameX = portraitX + (portraitWidth / 2) - 100; // Center under portrait, moved 100px left
+        const siteNameY = canvas.height - 75; // Moved up 20px more (was -55, now -75)
+        ctx.fillText('joshcrain.io', siteNameX, siteNameY);
+      } catch (portraitError) {
+        
+        // Fallback to placeholder if PNG fails
+        const portraitWidth = canvas.width / 3 - 60;
+        const portraitHeight = 400; // Adjusted for taller aspect ratio
+        const portraitX = 15; // Minimal left padding to match
+        const portraitY = (canvas.height - portraitHeight) / 2 - 20; // Center vertically, moved up 20px
+        
+        ctx.fillStyle = 'rgba(10,10,25,0.1)';
+        ctx.fillRect(portraitX, portraitY, portraitWidth, portraitHeight);
+        
+        ctx.fillStyle = 'rgba(10,10,25,0.3)';
+        ctx.beginPath();
+        ctx.ellipse(portraitX + portraitWidth/2, portraitY + portraitHeight/3, portraitWidth/4, portraitHeight/5, 0, 0, 2 * Math.PI);
+        ctx.fill();
+        
+        // Calculate text area for fallback
+        const fallbackTextStartX = portraitX + portraitWidth + 40;
+        const fallbackTextMaxWidth = canvas.width - fallbackTextStartX - 80;
+        
+        // Title styling - positioned in remaining space after placeholder
+        ctx.fillStyle = 'hsl(270,50%,20%)';
+        ctx.font = 'bold 72px Arial, sans-serif'; // Updated to match main section
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'top';
+
+        // Word wrap the description if we have one
+        let descriptionLines = [];
+        if (description) {
+          ctx.font = '30px Arial, sans-serif'; // Updated to match main section
+          const descWords = description.split(' ');
+          if (descWords.length > 0 && descWords[0]) { // Only process if we have actual words
+            let currentDescLine = descWords[0];
+
+            for (let i = 1; i < descWords.length; i++) {
+              const word = descWords[i];
+              const width = ctx.measureText(currentDescLine + ' ' + word).width;
+              if (width < fallbackTextMaxWidth) {
+                currentDescLine += ' ' + word;
+              } else {
+                descriptionLines.push(currentDescLine);
+                currentDescLine = word;
+              }
+            }
+            descriptionLines.push(currentDescLine);
+          }
+        }
+
+        // Word wrap the title - now for the remaining space after the placeholder
+        const words = title.split(' ');
+        const lines = [];
+        let currentLine = words[0];
+
+        for (let i = 1; i < words.length; i++) {
+          const word = words[i];
+          const width = ctx.measureText(currentLine + ' ' + word).width;
+          if (width < fallbackTextMaxWidth) {
+            currentLine += ' ' + word;
+          } else {
+            lines.push(currentLine);
+            currentLine = word;
+          }
+        }
+        lines.push(currentLine);
+
+        // Calculate total content height (title + date + description + spacing)
+        const titleLineHeight = 78; // Reduced from 85px for tighter title spacing
+        const dateLineHeight = 32;
+        const descriptionLineHeight = 40; // Increased to accommodate 30px font
+        const spacingBetween = 20;
+        const totalTitleHeight = lines.length * titleLineHeight;
+        const totalDateHeight = dateString ? dateLineHeight : 0;
+        const totalDescriptionHeight = descriptionLines.length * descriptionLineHeight;
+        const totalSpacing = (dateString ? spacingBetween : 0) + (description ? spacingBetween : 0);
+        const totalContentHeight = totalTitleHeight + totalDateHeight + totalDescriptionHeight + totalSpacing;
+        
+        // Center the entire content block vertically
+        const contentStartY = (canvas.height - totalContentHeight) / 2;
+        
+        // Draw the title lines
+        ctx.fillStyle = 'hsl(270,50%,20%)';
+        ctx.font = 'bold 72px Arial, sans-serif';
+        lines.forEach((line, index) => {
+          ctx.fillText(line, fallbackTextStartX, contentStartY + (index * titleLineHeight));
+        });
+
+        let currentY = contentStartY + totalTitleHeight;
+
+        // Draw the date below the title if we have one
+        if (dateString) {
+          ctx.font = '24px sans-serif';
+          ctx.fillStyle = 'hsl(270,50%,20%)';
+          currentY += spacingBetween;
+          ctx.fillText(dateString, fallbackTextStartX, currentY);
+          currentY += dateLineHeight;
+        }
+
+        // Draw the description below the date if we have one
+        if (description) {
+          ctx.font = '30px Arial, sans-serif';
+          ctx.fillStyle = 'rgba(10,10,25,1)';
+          currentY += spacingBetween;
+          descriptionLines.forEach((line, index) => {
+            ctx.fillText(line, fallbackTextStartX, currentY + (index * descriptionLineHeight));
+          });
+        }
+
+        // Add site name centered under portrait image
+        ctx.font = '24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif';
+        ctx.fillStyle = '#666666';
+        ctx.textAlign = 'left';
+        const siteNameX = portraitX + (portraitWidth / 2) - 100; // Center under portrait, moved 100px left
+        const siteNameY = canvas.height - 75; // Moved up 20px more (was -55, now -75)
+        ctx.fillText('joshcrain.io', siteNameX, siteNameY);
+      }
+
+      // test if the output directory already exists, if not, create
+      const outputDir = path.dirname(output);
+      if (!fs.existsSync(outputDir))
+        fs.mkdirSync(outputDir, { recursive: true });
+
+      // write the output image
+      const stream = fs.createWriteStream(output);
+      stream.on('finish', resolve);
+      stream.on('error', reject);
+      canvas
+        .createJPEGStream({
+          quality: 0.9,
+        })
+        .pipe(stream);
+    } catch (error) {
+      console.error(`Error creating social image for ${input}:`, error);
+      resolve(); // Don't fail the build if social image generation fails
+    }
+  });
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -23,6 +348,31 @@ module.exports = function(eleventyConfig) {
       return minified;
     }
 
+    return content;
+  });
+
+  // Social image generation transform
+  eleventyConfig.addTransform('social-image', async function (content) {
+    // only handle markdown files in the notes directory
+    if (!this.page.inputPath.endsWith('.md') || !this.page.inputPath.includes('/notes/')) {
+      return content;
+    }
+
+    try {
+      const outputImagePath = this.page.outputPath.replace('.html', '.jpg');
+      
+      await createSocialImageForArticle(
+        // our input article
+        this.page.inputPath,
+        // the output image name
+        outputImagePath
+      );
+      
+    } catch (err) {
+      console.error('Error generating social image:', err);
+    }
+
+    // return normal content
     return content;
   });
   
@@ -108,9 +458,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("google88f9e8b0497a35bd.html");
   eleventyConfig.addPassthroughCopy("*.txt");
   eleventyConfig.addPassthroughCopy("*.xsl");
-  eleventyConfig.addPassthroughCopy("*.svg");
-  eleventyConfig.addPassthroughCopy("**/*.svg");
+  // Fix SVG passthrough copy to avoid recursive _site directory issues
+  eleventyConfig.addPassthroughCopy("_includes/**/*.svg");
+  eleventyConfig.addPassthroughCopy("notes/**/*.svg");
   eleventyConfig.addPassthroughCopy("fonts/");
+  
+  // Copy generated social images - REMOVED: not needed since images are generated directly in _site
   
 
   // minify js
