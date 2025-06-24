@@ -8,7 +8,7 @@ tags:
 description: Fishing, a mystery bird, and a connection made.
 date: 2025-06-11
 ---
-<figure><img src="./bobolink.svg" alt="Boblink Illustration"  loading="lazy" decoding="async" width="400"></figure>
+<figure><img src="./bobolink.svg" alt="Boblink Illustration"  loading="lazy" decoding="async" width="400" height="310" /></figure>
 
 The truck bumbled over the horse path toward the road. It was a good afternoon of fishing. The rain from the morning held and touches of blue sky slowly appeared in the west. A white egret stalked the pond’s northern shallows while we sat in the small fishing boat. As we reeled fish to the surface we guessed the catch. Crappie flashed white, bass a warmer gold.
 
