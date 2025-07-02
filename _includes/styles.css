@@ -145,6 +145,15 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   .list--articles{margin:0;padding:0;}
     .list--articles li{list-style:none;margin-bottom:var(--size-7)}
 
+    .list--horizontal {
+      display: flex;
+      gap: var(--size-4) var(--size-8);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
   .grid-layout_page picture{display: flex;align-items: center;justify-content: center;}
   
 
@@ -629,8 +638,9 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 
 @media only print {
-  * {background: none!important;color:var(--colorFore)!important;}
-  .site_header, .site_footer {display: none!important;} 
+  * {background: none!important;color:#000!important;}
+  .site_header, .site_footer, .view {display: none!important;} 
+  .wrapper > *, .grid-content > * {display:block!important;}
 }
 
 

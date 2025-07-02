@@ -1,0 +1,68 @@
+---
+title: Design Portfolio
+metaTitle: Design Portfolio
+pageType: home
+description: Josh Crain's portfolio of work. 
+---
+<div class="wrapper">
+    <header>
+        <span class="meta">
+            Josh Crain
+        </span>
+        <h1>{{ title | replaceAmpersand | safe }}</h1> 
+        <p class="text--larger">I’m a product <span class="amp">&amp;</span> web designer with front-end expertise, focused on accessible, standards-based solutions that align with business and user goals. I bridge design and engineering by prototyping in code and collaborating across teams. I create systems that look great and empower teams to own and evolve them.</p>
+        <ul class="list--horizontal">
+            <li><a href="/portfolio/resume/">Resumé</a></li>
+            <li><a href="https://www.linkedin.com/in/joshcrain/">LinkedIn</a></li>
+            <li><a href="https://github.com/joshcrain">GitHub</a></li>
+            <li><a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fjoshcrain.io%2F">PageSpeed Insights</a></li>
+        </ul>
+    </header>
+</div>
+<div class="wrapper">
+    <section class="grid-layout_home" style="padding-top: 0;">
+        <div class="layout-section"> 
+            <h2>Product Design</h2>
+            <span class="meta">{{ collections.portfolio | length }} items</span>
+        </div>
+        <div class="grid-content">
+<div class="subgrid">
+                {% for item in collections.portfolio | reverse %} 
+                <div class="grid-third tile">
+        
+                    <a href="{{ item.url }}">{% gridImage item.data.image, item.data.alt %}</a>
+                        <div class="tile_inner item_detail">
+                            <a href="{{ item.url }}" class="tile_link"><span class="tile_desc">{{ item.data.title }} <p class="line-clamp"><span class="meta text--smaller">{{ item.data.year }} - {{ item.data.medium }}</span></p></span></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            
+            
+            </div>
+        </div>
+        
+    </section>
+</div>
+<div class="wrapper">
+    <section class="grid-layout_home">
+        <div class="layout-section">
+            <h2>Web Design</h2>
+            <span class="meta">{{ collections.webDesign | length }} items</span>
+        </div>
+        <div class="grid-content">
+            <div class="subgrid">
+                {% for item in collections.webDesign | reverse %} 
+                <div class="grid-third tile">
+        
+                    <a href="{{ item.url }}">{% gridImage item.data.image, item.data.alt %}</a>
+                        <div class="tile_inner item_detail">
+                            <a href="{{ item.url }}" class="tile_link"><span class="tile_desc">{{ item.data.title }} <p class="line-clamp"><span class="meta text--smaller">{{ item.data.year }} - {{ item.data.medium }}</span></p></span></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            
+            
+            </div>
+        </div>
+    </section>
+</div>

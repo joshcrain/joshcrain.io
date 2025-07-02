@@ -1,0 +1,20 @@
+---
+pageType: section
+title: Web Design
+metaTitle: Web Design
+description: Art to share with you.
+---
+
+<p class="lead">{{description}}</p>
+<div class="subgrid">
+    {% set items = collections.webDesign | reverse %}
+    {% for item in items %} 
+    <div class="grid-quarter tile">
+        
+    <a href="{{ item.url }}">{% gridImage item.data.image, item.data.alt %}</a>
+        <div class="tile_inner item_detail">
+            <a href="{{ item.url }}" class="tile_link"><span class="tile_desc">{{ item.data.title }} <p class="line-clamp"><span class="meta text--smaller">{{ item.data.year }} - {{ item.data.medium }}</span></p></span></a>
+        </div>
+    </div>
+    {% endfor %}
+</div> 
