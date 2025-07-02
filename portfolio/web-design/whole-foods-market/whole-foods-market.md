@@ -18,7 +18,7 @@ date: 2024-02-08
 
 ---
 
-### 🧭 Project Overview
+### Project Overview
 
 Whole Foods Market needed a responsive online experience to support high-volume holiday meal orders, both through web and in-store kiosks. The site had to provide a seamless user experience while existing outside of the primary Whole Foods marketing site—mirroring the brand visually and structurally without inheriting its backend.
 
@@ -26,7 +26,7 @@ The project supported meal ordering across Thanksgiving and Christmas, requiring
 
 ---
 
-### 👤 My Role & Collaboration
+### My Role & Collaboration
 
 I was brought in shortly after the scope was defined to lead front-end development and offer design consulting throughout. I collaborated closely with:
 
@@ -36,7 +36,7 @@ I was brought in shortly after the scope was defined to lead front-end developme
 
 ---
 
-### 🎨 Design Process
+### Design Process
 
 While the visual direction was largely provided, I was responsible for interpreting and implementing the brand faithfully across breakpoints. I also identified opportunities to enhance usability and maintainability, especially where gaps or rigidities existed in the provided mocks.
 
@@ -55,7 +55,7 @@ Accessibility and responsive testing were integral throughout the process.
 
 ---
 
-### 🔧 Technical Implementation
+### Technical Implementation
 
 I built the site using semantic HTML, modular CSS, and jQuery to power dynamic interactions. Development followed **Common Patterns**, the internal design system I had created, ensuring baseline accessibility and reusable components.
 
@@ -69,7 +69,7 @@ Final code was deployed to a development server for integration, with handoff ha
 
 ---
 
-### 🧩 Challenges & Adaptations
+### Challenges & Adaptations
 
 Executing on a visual direction without direct access to the original design files or source code posed challenges—but also opened the door to rethink and simplify. By shifting from an adaptive/fixed-width system to a fluid, percentage-based layout, I reduced code complexity while improving responsiveness across breakpoints.
 
@@ -77,7 +77,7 @@ An early usability study—run by a third-party firm and shared by the client—
 
 ---
 
-### 📈 Outcomes & Takeaways
+### Outcomes & Takeaways
 
 The site performed reliably through two major holiday ordering seasons and met the needs of both Whole Foods Market and their customers. It functioned seamlessly across desktop, tablet, and in-store kiosks—earning internal praise for its performance and polish.
 
