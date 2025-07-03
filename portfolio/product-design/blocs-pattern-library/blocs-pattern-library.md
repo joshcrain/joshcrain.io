@@ -2,7 +2,7 @@
 title: 'Building the Blocs Pattern Library & Interactive Design System'
 tags:
   - caseStudy
-  - portfolio
+  - productDesign
 description: To support a growing product, expanding team, and maturing front-end architecture at AgencyBloc, I created the Blocs Pattern Library.
 image: portfolio/product-design/blocs-pattern-library/blocs-pattern-library-square.png
 alt: Blocs Pattern Library Screenshot

@@ -2,7 +2,7 @@
 title: 'Building a Design System Before “Design Systems” Were a Thing'
 tags:
   - caseStudy
-  - portfolio
+  - productDesign
 description: While working as a UX designer and front-end developer at Spinutech, I created an internal front-end pattern library that helped align designers and developers across dozens of custom client websites.
 image: portfolio/product-design/first-design-system/common-patterns.png
 alt: Common Patterns Logo

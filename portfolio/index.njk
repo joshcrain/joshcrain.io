@@ -23,11 +23,11 @@ description: Josh Crain's portfolio of work.
     <section class="grid-layout_home" style="padding-top: 0;">
         <div class="layout-section"> 
             <h2>Product Design</h2>
-            <span class="meta">{{ collections.portfolio | length }} items</span>
+            <span class="meta">{{ collections.productDesign | length }} items</span>
         </div>
         <div class="grid-content">
 <div class="subgrid">
-                {% for item in collections.portfolio | reverse %} 
+                {% for item in collections.productDesign | reverse %} 
                 <div class="grid-third tile">
         
                     <a href="{{ item.url }}">{% gridImage item.data.image, item.data.alt %}</a>
@@ -52,6 +52,29 @@ description: Josh Crain's portfolio of work.
         <div class="grid-content">
             <div class="subgrid">
                 {% for item in collections.webDesign | reverse %} 
+                <div class="grid-third tile">
+        
+                    <a href="{{ item.url }}">{% gridImage item.data.image, item.data.alt %}</a>
+                        <div class="tile_inner item_detail">
+                            <a href="{{ item.url }}" class="tile_link"><span class="tile_desc">{{ item.data.title }} <p class="line-clamp"><span class="meta text--smaller">{{ item.data.year }} - {{ item.data.medium }}</span></p></span></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            
+            
+            </div>
+        </div>
+    </section>
+</div>
+<div class="wrapper">
+    <section class="grid-layout_home">
+        <div class="layout-section">
+            <h2>Branding</h2>
+            <span class="meta">{{ collections.branding | length }} item</span>
+        </div>
+        <div class="grid-content">
+            <div class="subgrid">
+                {% for item in collections.branding | reverse %} 
                 <div class="grid-third tile">
         
                     <a href="{{ item.url }}">{% gridImage item.data.image, item.data.alt %}</a>

@@ -2,7 +2,7 @@
 title: 'A Prototyping Platform That Shapes Product Strategy'
 tags:
   - caseStudy
-  - portfolio
+  - productDesign
 description: I created and maintain a custom interactive prototype site that enables rapid, high-fidelity simulation of in-development features at AgencyBloc.
 image: portfolio/product-design/prototyping-platform/prototyping-platform.jpg
 alt: Prototyping Platform
