@@ -36,7 +36,6 @@
   --size-fluid-4: clamp(3rem, 5vw, 4rem);
   --size-fluid-5: clamp(3.5rem, 5vw, 5rem);
 
-  --radius-blob-4: 63% 37% 37% 63% / 43% 37% 63% 57%;
 } 
 :where(html) .darkTheme{
   --colorFore: 249, 240, 255;
@@ -91,6 +90,7 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  interpolate-size: allow-keywords;
 }
 /* box-sizing */
 *, *::before, *::after {
@@ -139,6 +139,12 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 
 .fill-fore {fill:hsl(var(--fillFore))}
 .fill-accent {fill:hsl(var(--fillAccent))}
+
+.image-full {
+  grid-column: 1 / -1; /* Span all columns */
+  width: 100%;
+  display: block;
+}
 
 /* utilities */
 

@@ -1,0 +1,80 @@
+<style>
+.drop-toggle {
+  position: relative;
+}
+:where(.drop-toggle) {
+  display: inline-block;
+}
+.drop-toggle_menu {
+  display: none;
+  box-shadow:0 0 10px #ccc;
+  border-radius: 4px;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  width: 200px;
+  border: 1px solid #ccc;
+  color: #000;
+}
+
+.drop-toggle.drop-toggle_left .drop-toggle_menu {
+  right: 0;
+}
+
+.drop-toggle.drop-toggle_active .drop-toggle_menu {
+  display: block;
+}
+
+.drop-toggle_menu a {
+  display:block;
+  padding:.5em;
+  color: #000;
+  text-decoration:none;
+}
+
+.drop-toggle_menu a + a {
+  border-top:#ccc 1px solid;
+}
+
+.drop-toggle_menu a:hover {
+  background:whitesmoke;
+}
+</style>
+<section>
+  <h1>Toggle Menu</h1>
+  <div class="drop-toggle drop-toggle_right">
+  <a href="javascript:void(0);" class="drop-toggle_button" aria-haspopup="true" aria-expanded="false" link-role="button">toggle</a>
+  <div class="drop-toggle_menu" role="menu" tabindex="0">
+    <a href="#">test</a>
+    <a href="#">test</a>
+  </div>
+  </div>
+  
+</section>
+
+<script>
+  document.querySelectorAll('.drop-toggle_button').forEach(anchor => {
+  anchor.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior if needed
+
+    document.querySelectorAll('.drop-toggle_button').forEach(otherAnchor => {
+      if (otherAnchor !== this) {
+        otherAnchor.parentElement.classList.remove('drop-toggle_active');
+        this.ariaExpanded = 'false';
+      }
+    });
+    this.parentElement.classList.toggle('drop-toggle_active');
+    this.ariaExpanded = this.parentElement.classList.contains('drop-toggle_active') ? 'true' : 'false';
+  });
+});
+
+// Hide the dropdown when clicking outside
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('.drop-toggle')) {
+    document.querySelectorAll('.drop-toggle.drop-toggle_active').forEach(el => {
+      el.classList.remove('drop-toggle_active');
+      el.querySelector('.drop-toggle_button').ariaExpanded = 'false';
+    });
+  }
+});
+</script>

@@ -2,6 +2,1977 @@
 
 
     [
+
+            {
+                "activityId": 19801368592,
+                "activityName": "Windsor Heights Running",
+                "startTimeLocal": "2025-07-21 06:32:12",
+                "startTimeGMT": "2025-07-21 11:32:12",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 5524.669921875,
+                "duration": 1603.446044921875,
+                "elapsedDuration": 1639.8470458984375,
+                "movingDuration": 1602.9630126953125,
+                "elevationGain": 34.21978759765625,
+                "elevationLoss": 28.006927490234375,
+                "averageSpeed": 3.4449999332427983,
+                "maxSpeed": 4.002999782562256,
+                "startLatitude": 41.60715621896088,
+                "startLongitude": -93.71447869576514,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "320.0",
+                    "parsedValue": 320
+                },
+                "bmrCalories": {
+                    "source": "35.0",
+                    "parsedValue": 35
+                },
+                "averageHR": {
+                    "source": "133.0",
+                    "parsedValue": 133
+                },
+                "maxHR": {
+                    "source": "148.0",
+                    "parsedValue": 148
+                },
+                "averageRunningCadenceInStepsPerMinute": 159.234375,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "167.0",
+                    "parsedValue": 167
+                },
+                "steps": 4250,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1753097532000,
+                "sportTypeId": 1,
+                "avgStrideLength": 129.80724036533772,
+                "vO2MaxValue": {
+                    "source": "58.0",
+                    "parsedValue": 58
+                },
+                "deviceId": 3417824817,
+                "minElevation": 247.60000610351562,
+                "maxElevation": 274.3416748046875,
+                "maxDoubleCadence": {
+                    "source": "167.0",
+                    "parsedValue": 167
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 1.6006673177083333,
+                "manufacturer": "GARMIN",
+                "locationName": "Windsor Heights",
+                "lapCount": 4,
+                "endLatitude": 41.61293629556894,
+                "endLongitude": -93.72361304238439,
+                "minActivityLapDuration": 211.48300170898438,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 271.69500732421875,
+                "fastestSplit_1609": 442.0889892578125,
+                "fastestSplit_5000": 1432.425048828125,
+                "hrTimeInZone_1": {
+                    "source": "30.0",
+                    "parsedValue": 30
+                },
+                "hrTimeInZone_2": {
+                    "source": "213.0",
+                    "parsedValue": 213
+                },
+                "hrTimeInZone_3": {
+                    "source": "846.0",
+                    "parsedValue": 846
+                },
+                "hrTimeInZone_4": {
+                    "source": "493.0",
+                    "parsedValue": 493
+                },
+                "hrTimeInZone_5": {
+                    "source": "0.0",
+                    "parsedValue": 0
+                },
+                "endTimeGMT": "2025-07-21 11:59:31",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": false,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+            {
+                "activityId": 19797884132,
+                "activityName": "Windsor Heights Running",
+                "startTimeLocal": "2025-07-20 06:40:12",
+                "startTimeGMT": "2025-07-20 11:40:12",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 11753.169921875,
+                "duration": 3196.4140625,
+                "elapsedDuration": 3282.2109375,
+                "movingDuration": 3193.321990966797,
+                "elevationGain": 38.08631896972656,
+                "elevationLoss": 30.799758911132812,
+                "averageSpeed": 3.677000045776367,
+                "maxSpeed": 3.9839999675750737,
+                "startLatitude": 41.607082542032,
+                "startLongitude": -93.71450442820787,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "720.0",
+                    "parsedValue": 720
+                },
+                "bmrCalories": {
+                    "source": "66.0",
+                    "parsedValue": 66
+                },
+                "averageHR": {
+                    "source": "149.0",
+                    "parsedValue": 149
+                },
+                "maxHR": {
+                    "source": "169.0",
+                    "parsedValue": 169
+                },
+                "averageRunningCadenceInStepsPerMinute": 164.109375,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "176.0",
+                    "parsedValue": 176
+                },
+                "steps": 8756,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1753011612000,
+                "sportTypeId": 1,
+                "avgStrideLength": 134.4391462682536,
+                "vO2MaxValue": {
+                    "source": "57.0",
+                    "parsedValue": 57
+                },
+                "deviceId": 3417824817,
+                "minElevation": {
+                    "source": "250.0",
+                    "parsedValue": 250
+                },
+                "maxElevation": 274.1397705078125,
+                "maxDoubleCadence": {
+                    "source": "176.0",
+                    "parsedValue": 176
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 0.31857045491536456,
+                "manufacturer": "GARMIN",
+                "locationName": "Windsor Heights",
+                "lapCount": 8,
+                "endLatitude": 41.60043753683567,
+                "endLongitude": -93.72218174859881,
+                "minActivityLapDuration": 132.5749969482422,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 258.8320007324219,
+                "fastestSplit_1609": 421.1809997558594,
+                "fastestSplit_5000": 1341.4090576171875,
+                "fastestSplit_10000": 2694.910888671875,
+                "hrTimeInZone_1": {
+                    "source": "22.0",
+                    "parsedValue": 22
+                },
+                "hrTimeInZone_2": {
+                    "source": "57.0",
+                    "parsedValue": 57
+                },
+                "hrTimeInZone_3": {
+                    "source": "353.0",
+                    "parsedValue": 353
+                },
+                "hrTimeInZone_4": {
+                    "source": "2358.0",
+                    "parsedValue": 2358
+                },
+                "hrTimeInZone_5": {
+                    "source": "393.0",
+                    "parsedValue": 393
+                },
+                "endTimeGMT": "2025-07-20 12:34:54",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": false,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+            {
+                "activityId": 19797882952,
+                "activityName": "Windsor Heights Running",
+                "startTimeLocal": "2025-07-19 06:08:16",
+                "startTimeGMT": "2025-07-19 11:08:16",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 6678.33984375,
+                "duration": 1872.280029296875,
+                "elapsedDuration": 1880.1839599609375,
+                "movingDuration": 1870.7559814453125,
+                "elevationGain": 29.010421752929688,
+                "elevationLoss": 30.021011352539062,
+                "averageSpeed": 3.5669999122619633,
+                "maxSpeed": 12.567999839782715,
+                "startLatitude": 41.60705102607608,
+                "startLongitude": -93.71459126472473,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "432.0",
+                    "parsedValue": 432
+                },
+                "bmrCalories": {
+                    "source": "39.0",
+                    "parsedValue": 39
+                },
+                "averageHR": {
+                    "source": "150.0",
+                    "parsedValue": 150
+                },
+                "maxHR": {
+                    "source": "165.0",
+                    "parsedValue": 165
+                },
+                "averageRunningCadenceInStepsPerMinute": 160.609375,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "171.0",
+                    "parsedValue": 171
+                },
+                "steps": 5004,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1752923296000,
+                "sportTypeId": 1,
+                "avgStrideLength": 133.21583598440975,
+                "vO2MaxValue": {
+                    "source": "56.0",
+                    "parsedValue": 56
+                },
+                "deviceId": 3417824817,
+                "minElevation": {
+                    "source": "253.0",
+                    "parsedValue": 253
+                },
+                "maxElevation": 274.4010925292969,
+                "maxDoubleCadence": {
+                    "source": "171.0",
+                    "parsedValue": 171
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 0.9913591657366072,
+                "manufacturer": "GARMIN",
+                "locationName": "Windsor Heights",
+                "lapCount": 5,
+                "endLatitude": 41.61285758949816,
+                "endLongitude": -93.72347876429558,
+                "minActivityLapDuration": 68.15399932861328,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 259.0979919433594,
+                "fastestSplit_1609": 427.2250061035156,
+                "fastestSplit_5000": 1367.800048828125,
+                "hrTimeInZone_1": {
+                    "source": "13.0",
+                    "parsedValue": 13
+                },
+                "hrTimeInZone_2": {
+                    "source": "47.0",
+                    "parsedValue": 47
+                },
+                "hrTimeInZone_3": {
+                    "source": "222.0",
+                    "parsedValue": 222
+                },
+                "hrTimeInZone_4": {
+                    "source": "854.0",
+                    "parsedValue": 854
+                },
+                "hrTimeInZone_5": {
+                    "source": "724.0",
+                    "parsedValue": 724
+                },
+                "endTimeGMT": "2025-07-19 11:39:36",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": false,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+            {
+                "activityId": 19760818375,
+                "activityName": "Windsor Heights Running",
+                "startTimeLocal": "2025-07-17 05:47:43",
+                "startTimeGMT": "2025-07-17 10:47:43",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 5467.27001953125,
+                "duration": 1552.0240478515625,
+                "elapsedDuration": 1552.0240478515625,
+                "movingDuration": 1549.9380111694336,
+                "elevationGain": 41.12608337402344,
+                "elevationLoss": 34.84053039550781,
+                "averageSpeed": 3.5230000019073486,
+                "maxSpeed": 4.059000015258789,
+                "startLatitude": 41.60707449540496,
+                "startLongitude": -93.71445966884494,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "356.0",
+                    "parsedValue": 356
+                },
+                "bmrCalories": {
+                    "source": "31.0",
+                    "parsedValue": 31
+                },
+                "averageHR": {
+                    "source": "149.0",
+                    "parsedValue": 149
+                },
+                "maxHR": {
+                    "source": "163.0",
+                    "parsedValue": 163
+                },
+                "averageRunningCadenceInStepsPerMinute": 160.046875,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "187.0",
+                    "parsedValue": 187
+                },
+                "steps": 4126,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1752749263000,
+                "sportTypeId": 1,
+                "avgStrideLength": 131.97974356710168,
+                "vO2MaxValue": {
+                    "source": "57.0",
+                    "parsedValue": 57
+                },
+                "deviceId": 3417824817,
+                "minElevation": {
+                    "source": "253.0",
+                    "parsedValue": 253
+                },
+                "maxElevation": 273.9662170410156,
+                "maxDoubleCadence": {
+                    "source": "187.0",
+                    "parsedValue": 187
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 1.8392868041992188,
+                "manufacturer": "GARMIN",
+                "locationName": "Windsor Heights",
+                "lapCount": 6,
+                "endLatitude": 41.61288382485509,
+                "endLongitude": -93.72374312952161,
+                "minActivityLapDuration": 1.6929999589920044,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 263.18798828125,
+                "fastestSplit_1609": 426.40899658203125,
+                "fastestSplit_5000": 1390.864013671875,
+                "hrTimeInZone_1": {
+                    "source": "13.0",
+                    "parsedValue": 13
+                },
+                "hrTimeInZone_2": {
+                    "source": "40.0",
+                    "parsedValue": 40
+                },
+                "hrTimeInZone_3": {
+                    "source": "209.0",
+                    "parsedValue": 209
+                },
+                "hrTimeInZone_4": {
+                    "source": "944.0",
+                    "parsedValue": 944
+                },
+                "hrTimeInZone_5": {
+                    "source": "334.0",
+                    "parsedValue": 334
+                },
+                "endTimeGMT": "2025-07-17 11:13:35",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": false,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+            {
+                "activityId": 19750302410,
+                "activityName": "Windsor Heights Running",
+                "startTimeLocal": "2025-07-16 05:57:12",
+                "startTimeGMT": "2025-07-16 10:57:12",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 5482.81005859375,
+                "duration": 1525.6820068359375,
+                "elapsedDuration": 1525.6820068359375,
+                "movingDuration": 1524.3139953613281,
+                "elevationGain": 33.48258972167969,
+                "elevationLoss": 25.239181518554688,
+                "averageSpeed": 3.5940001010894775,
+                "maxSpeed": 4.244999885559082,
+                "startLatitude": 41.607029903680086,
+                "startLongitude": -93.71463317424059,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "331.0",
+                    "parsedValue": 331
+                },
+                "bmrCalories": {
+                    "source": "32.0",
+                    "parsedValue": 32
+                },
+                "averageHR": {
+                    "source": "144.0",
+                    "parsedValue": 144
+                },
+                "maxHR": {
+                    "source": "170.0",
+                    "parsedValue": 170
+                },
+                "averageRunningCadenceInStepsPerMinute": 161.015625,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "169.0",
+                    "parsedValue": 169
+                },
+                "steps": 4100,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1752663432000,
+                "sportTypeId": 1,
+                "avgStrideLength": 133.8853600899619,
+                "vO2MaxValue": {
+                    "source": "57.0",
+                    "parsedValue": 57
+                },
+                "deviceId": 3417824817,
+                "minElevation": {
+                    "source": "253.0",
+                    "parsedValue": 253
+                },
+                "maxElevation": 274.0774841308594,
+                "maxDoubleCadence": {
+                    "source": "169.0",
+                    "parsedValue": 169
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 0.6168746948242188,
+                "manufacturer": "GARMIN",
+                "locationName": "Windsor Heights",
+                "lapCount": 4,
+                "endLatitude": 41.612892877310514,
+                "endLongitude": -93.723453450948,
+                "minActivityLapDuration": 189.23699951171875,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 254.3800048828125,
+                "fastestSplit_1609": 412.47900390625,
+                "fastestSplit_5000": 1374.0040283203125,
+                "hrTimeInZone_1": {
+                    "source": "37.0",
+                    "parsedValue": 37
+                },
+                "hrTimeInZone_2": {
+                    "source": "104.0",
+                    "parsedValue": 104
+                },
+                "hrTimeInZone_3": {
+                    "source": "299.0",
+                    "parsedValue": 299
+                },
+                "hrTimeInZone_4": {
+                    "source": "903.0",
+                    "parsedValue": 903
+                },
+                "hrTimeInZone_5": {
+                    "source": "169.0",
+                    "parsedValue": 169
+                },
+                "endTimeGMT": "2025-07-16 11:22:37",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": false,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+            {
+                "activityId": 19739615898,
+                "activityName": "Windsor Heights Running",
+                "startTimeLocal": "2025-07-15 06:02:55",
+                "startTimeGMT": "2025-07-15 11:02:55",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 6981.1201171875,
+                "duration": 1994.822021484375,
+                "elapsedDuration": 1994.822021484375,
+                "movingDuration": 1994.0220336914062,
+                "elevationGain": 34.411590576171875,
+                "elevationLoss": 27.42681884765625,
+                "averageSpeed": 3.5,
+                "maxSpeed": 4.367000102996826,
+                "startLatitude": 41.60707441158593,
+                "startLongitude": -93.71430619619787,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "457.0",
+                    "parsedValue": 457
+                },
+                "bmrCalories": {
+                    "source": "44.0",
+                    "parsedValue": 44
+                },
+                "averageHR": {
+                    "source": "150.0",
+                    "parsedValue": 150
+                },
+                "maxHR": {
+                    "source": "171.0",
+                    "parsedValue": 171
+                },
+                "averageRunningCadenceInStepsPerMinute": 161.21875,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "171.0",
+                    "parsedValue": 171
+                },
+                "steps": 5356,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1752577375000,
+                "sportTypeId": 1,
+                "avgStrideLength": 130.21546395562956,
+                "vO2MaxValue": {
+                    "source": "56.0",
+                    "parsedValue": 56
+                },
+                "deviceId": 3417824817,
+                "minElevation": {
+                    "source": "253.0",
+                    "parsedValue": 253
+                },
+                "maxElevation": 274.27532958984375,
+                "maxDoubleCadence": {
+                    "source": "171.0",
+                    "parsedValue": 171
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 0.880345662434896,
+                "manufacturer": "GARMIN",
+                "locationName": "Windsor Heights",
+                "lapCount": 5,
+                "endLatitude": 41.61291324533522,
+                "endLongitude": -93.72371362522244,
+                "minActivityLapDuration": 158.4040069580078,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 261.6449890136719,
+                "fastestSplit_1609": 425.2279968261719,
+                "fastestSplit_5000": 1389.7650146484375,
+                "hrTimeInZone_1": {
+                    "source": "11.0",
+                    "parsedValue": 11
+                },
+                "hrTimeInZone_2": {
+                    "source": "63.0",
+                    "parsedValue": 63
+                },
+                "hrTimeInZone_3": {
+                    "source": "291.0",
+                    "parsedValue": 291
+                },
+                "hrTimeInZone_4": {
+                    "source": "864.0",
+                    "parsedValue": 864
+                },
+                "hrTimeInZone_5": {
+                    "source": "758.0",
+                    "parsedValue": 758
+                },
+                "endTimeGMT": "2025-07-15 11:36:09",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": false,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+            {
+                "activityId": 19728960568,
+                "activityName": "Windsor Heights Running",
+                "startTimeLocal": "2025-07-14 05:28:37",
+                "startTimeGMT": "2025-07-14 10:28:37",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 11271.7099609375,
+                "duration": 3027.967041015625,
+                "elapsedDuration": 3027.967041015625,
+                "movingDuration": {
+                    "source": "3027.0",
+                    "parsedValue": 3027
+                },
+                "elevationGain": 40.50248718261719,
+                "elevationLoss": 33.56672668457031,
+                "averageSpeed": 3.7230000495910645,
+                "maxSpeed": 5.972000122070312,
+                "startLatitude": 41.60703199915588,
+                "startLongitude": -93.71452999301255,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "761.0",
+                    "parsedValue": 761
+                },
+                "bmrCalories": {
+                    "source": "65.0",
+                    "parsedValue": 65
+                },
+                "averageHR": {
+                    "source": "159.0",
+                    "parsedValue": 159
+                },
+                "maxHR": {
+                    "source": "173.0",
+                    "parsedValue": 173
+                },
+                "averageRunningCadenceInStepsPerMinute": 163.734375,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "174.0",
+                    "parsedValue": 174
+                },
+                "steps": 8260,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1752488917000,
+                "sportTypeId": 1,
+                "avgStrideLength": 136.3785751322842,
+                "vO2MaxValue": {
+                    "source": "57.0",
+                    "parsedValue": 57
+                },
+                "deviceId": 3417824817,
+                "minElevation": {
+                    "source": "250.0",
+                    "parsedValue": 250
+                },
+                "maxElevation": 274.4755859375,
+                "maxDoubleCadence": {
+                    "source": "174.0",
+                    "parsedValue": 174
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 1.600006103515625,
+                "manufacturer": "GARMIN",
+                "locationName": "Windsor Heights",
+                "lapCount": 8,
+                "endLatitude": 41.60044038668275,
+                "endLongitude": -93.72196918353438,
+                "minActivityLapDuration": 1.4190000295639038,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 251.89700317382812,
+                "fastestSplit_1609": 409.0950012207031,
+                "fastestSplit_5000": 1308.1639404296875,
+                "fastestSplit_10000": 2655.614990234375,
+                "hrTimeInZone_1": {
+                    "source": "15.0",
+                    "parsedValue": 15
+                },
+                "hrTimeInZone_2": {
+                    "source": "56.0",
+                    "parsedValue": 56
+                },
+                "hrTimeInZone_3": {
+                    "source": "274.0",
+                    "parsedValue": 274
+                },
+                "hrTimeInZone_4": {
+                    "source": "552.0",
+                    "parsedValue": 552
+                },
+                "hrTimeInZone_5": {
+                    "source": "2121.0",
+                    "parsedValue": 2121
+                },
+                "endTimeGMT": "2025-07-14 11:19:04",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": false,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+            {
+                "activityId": 19720934108,
+                "activityName": "Des Moines Running",
+                "startTimeLocal": "2025-07-13 08:55:03",
+                "startTimeGMT": "2025-07-13 13:55:03",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 1439.6700439453125,
+                "duration": 463.614990234375,
+                "elapsedDuration": 1015.427978515625,
+                "movingDuration": {
+                    "source": "463.0",
+                    "parsedValue": 463
+                },
+                "elevationGain": 24.5487060546875,
+                "elevationLoss": 20.13323974609375,
+                "averageSpeed": 3.1050000190734863,
+                "maxSpeed": 3.555000066757202,
+                "startLatitude": 41.58574330620468,
+                "startLongitude": -93.65302132442594,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "108.0",
+                    "parsedValue": 108
+                },
+                "bmrCalories": {
+                    "source": "10.0",
+                    "parsedValue": 10
+                },
+                "averageHR": {
+                    "source": "147.0",
+                    "parsedValue": 147
+                },
+                "maxHR": {
+                    "source": "162.0",
+                    "parsedValue": 162
+                },
+                "averageRunningCadenceInStepsPerMinute": 157.59375,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "174.0",
+                    "parsedValue": 174
+                },
+                "steps": 1226,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1752414903000,
+                "sportTypeId": 1,
+                "avgStrideLength": 118.22729656794301,
+                "vO2MaxValue": {
+                    "source": "57.0",
+                    "parsedValue": 57
+                },
+                "deviceId": 3417824817,
+                "minElevation": 259.10223388671875,
+                "maxElevation": 279.3033142089844,
+                "maxDoubleCadence": {
+                    "source": "174.0",
+                    "parsedValue": 174
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 0.35797119140625,
+                "manufacturer": "GARMIN",
+                "locationName": "Des Moines",
+                "lapCount": 1,
+                "endLatitude": 41.60029931925237,
+                "endLongitude": -93.70366914197803,
+                "minActivityLapDuration": 463.614990234375,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 315.51800537109375,
+                "hrTimeInZone_1": {
+                    "source": "0.0",
+                    "parsedValue": 0
+                },
+                "hrTimeInZone_2": {
+                    "source": "0.0",
+                    "parsedValue": 0
+                },
+                "hrTimeInZone_3": {
+                    "source": "73.0",
+                    "parsedValue": 73
+                },
+                "hrTimeInZone_4": {
+                    "source": "361.0",
+                    "parsedValue": 361
+                },
+                "hrTimeInZone_5": {
+                    "source": "29.0",
+                    "parsedValue": 29
+                },
+                "endTimeGMT": "2025-07-13 14:11:58",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": false,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+            {
+                "activityId": 19720832404,
+                "activityName": "Des Moines Running",
+                "description": "Official result 5:25.883",
+                "startTimeLocal": "2025-07-13 08:32:43",
+                "startTimeGMT": "2025-07-13 13:32:43",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 1697.530029296875,
+                "duration": 362.88299560546875,
+                "elapsedDuration": 362.88299560546875,
+                "movingDuration": {
+                    "source": "329.0",
+                    "parsedValue": 329
+                },
+                "elevationGain": 13.612518310546875,
+                "elevationLoss": 18.276336669921875,
+                "averageSpeed": 4.677999973297119,
+                "maxSpeed": 5.710000038146973,
+                "startLatitude": 41.58710922114551,
+                "startLongitude": -93.6519625224173,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "94.0",
+                    "parsedValue": 94
+                },
+                "bmrCalories": {
+                    "source": "8.0",
+                    "parsedValue": 8
+                },
+                "averageHR": {
+                    "source": "165.0",
+                    "parsedValue": 165
+                },
+                "maxHR": {
+                    "source": "182.0",
+                    "parsedValue": 182
+                },
+                "averageRunningCadenceInStepsPerMinute": 164.03125,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "192.0",
+                    "parsedValue": 192
+                },
+                "steps": 984,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1752413563000,
+                "sportTypeId": 1,
+                "avgStrideLength": 168.71055675727618,
+                "vO2MaxValue": {
+                    "source": "58.0",
+                    "parsedValue": 58
+                },
+                "deviceId": 3417824817,
+                "minElevation": 257.289794921875,
+                "maxElevation": 272.32763671875,
+                "maxDoubleCadence": {
+                    "source": "192.0",
+                    "parsedValue": 192
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 0.36370849609374994,
+                "manufacturer": "GARMIN",
+                "locationName": "Des Moines",
+                "lapCount": 2,
+                "endLatitude": 41.58570441417396,
+                "endLongitude": -93.6516950558871,
+                "minActivityLapDuration": 46.63199996948242,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 195.7270050048828,
+                "fastestSplit_1609": 312.8080139160156,
+                "hrTimeInZone_1": {
+                    "source": "12.0",
+                    "parsedValue": 12
+                },
+                "hrTimeInZone_2": {
+                    "source": "10.0",
+                    "parsedValue": 10
+                },
+                "hrTimeInZone_3": {
+                    "source": "11.0",
+                    "parsedValue": 11
+                },
+                "hrTimeInZone_4": {
+                    "source": "23.0",
+                    "parsedValue": 23
+                },
+                "hrTimeInZone_5": {
+                    "source": "307.0",
+                    "parsedValue": 307
+                },
+                "endTimeGMT": "2025-07-13 13:38:45",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": true,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+            {
+                "activityId": 19720831494,
+                "activityName": "Des Moines Running",
+                "startTimeLocal": "2025-07-13 07:42:35",
+                "startTimeGMT": "2025-07-13 12:42:35",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 3137.419921875,
+                "duration": 993.22802734375,
+                "elapsedDuration": 1041.4090576171875,
+                "movingDuration": 993.2279968261719,
+                "elevationGain": 25.032989501953125,
+                "elevationLoss": 31.2076416015625,
+                "averageSpeed": 3.1589999198913574,
+                "maxSpeed": 3.7320001125335693,
+                "startLatitude": 41.588306073099375,
+                "startLongitude": -93.65363538265228,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "220.0",
+                    "parsedValue": 220
+                },
+                "bmrCalories": {
+                    "source": "22.0",
+                    "parsedValue": 22
+                },
+                "averageHR": {
+                    "source": "142.0",
+                    "parsedValue": 142
+                },
+                "maxHR": {
+                    "source": "159.0",
+                    "parsedValue": 159
+                },
+                "averageRunningCadenceInStepsPerMinute": 156.734375,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "165.0",
+                    "parsedValue": 165
+                },
+                "steps": 2592,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1752410555000,
+                "sportTypeId": 1,
+                "avgStrideLength": 120.92888351409732,
+                "vO2MaxValue": {
+                    "source": "58.0",
+                    "parsedValue": 58
+                },
+                "deviceId": 3417824817,
+                "minElevation": 256.2994079589844,
+                "maxElevation": 278.89288330078125,
+                "maxDoubleCadence": {
+                    "source": "165.0",
+                    "parsedValue": 165
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 0.2887725830078125,
+                "manufacturer": "GARMIN",
+                "locationName": "Des Moines",
+                "lapCount": 2,
+                "endLatitude": 41.58703034743667,
+                "endLongitude": -93.65406353026628,
+                "minActivityLapDuration": 492.3420104980469,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 292.4570007324219,
+                "fastestSplit_1609": 500.39599609375,
+                "hrTimeInZone_1": {
+                    "source": "17.0",
+                    "parsedValue": 17
+                },
+                "hrTimeInZone_2": {
+                    "source": "48.0",
+                    "parsedValue": 48
+                },
+                "hrTimeInZone_3": {
+                    "source": "139.0",
+                    "parsedValue": 139
+                },
+                "hrTimeInZone_4": {
+                    "source": "752.0",
+                    "parsedValue": 752
+                },
+                "hrTimeInZone_5": {
+                    "source": "19.0",
+                    "parsedValue": 19
+                },
+                "endTimeGMT": "2025-07-13 12:59:56",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": false,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+            {
+                "activityId": 19709313788,
+                "activityName": "Windsor Heights Running",
+                "startTimeLocal": "2025-07-12 06:32:35",
+                "startTimeGMT": "2025-07-12 11:32:35",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 5548.85009765625,
+                "duration": 1591.552001953125,
+                "elapsedDuration": 1591.552001953125,
+                "movingDuration": 1590.7739868164062,
+                "elevationGain": 37.251617431640625,
+                "elevationLoss": 29.716583251953125,
+                "averageSpeed": 3.4860000610351562,
+                "maxSpeed": 6.056000232696533,
+                "startLatitude": 41.6071205958724,
+                "startLongitude": -93.7145309150219,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "363.0",
+                    "parsedValue": 363
+                },
+                "bmrCalories": {
+                    "source": "34.0",
+                    "parsedValue": 34
+                },
+                "averageHR": {
+                    "source": "145.0",
+                    "parsedValue": 145
+                },
+                "maxHR": {
+                    "source": "163.0",
+                    "parsedValue": 163
+                },
+                "averageRunningCadenceInStepsPerMinute": 159.515625,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "194.0",
+                    "parsedValue": 194
+                },
+                "steps": 4224,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1752319955000,
+                "sportTypeId": 1,
+                "avgStrideLength": 131.0549186530505,
+                "vO2MaxValue": {
+                    "source": "58.0",
+                    "parsedValue": 58
+                },
+                "deviceId": 3417824817,
+                "minElevation": {
+                    "source": "253.0",
+                    "parsedValue": 253
+                },
+                "maxElevation": 274.542236328125,
+                "maxDoubleCadence": {
+                    "source": "194.0",
+                    "parsedValue": 194
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 0.5627543131510416,
+                "manufacturer": "GARMIN",
+                "locationName": "Windsor Heights",
+                "lapCount": 4,
+                "endLatitude": 41.6128452681005,
+                "endLongitude": -93.72345831245184,
+                "minActivityLapDuration": 227.27699279785156,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 251.14500427246094,
+                "fastestSplit_1609": 414.7640075683594,
+                "fastestSplit_5000": 1408.4000244140625,
+                "hrTimeInZone_1": {
+                    "source": "8.0",
+                    "parsedValue": 8
+                },
+                "hrTimeInZone_2": {
+                    "source": "43.0",
+                    "parsedValue": 43
+                },
+                "hrTimeInZone_3": {
+                    "source": "280.0",
+                    "parsedValue": 280
+                },
+                "hrTimeInZone_4": {
+                    "source": "1201.0",
+                    "parsedValue": 1201
+                },
+                "hrTimeInZone_5": {
+                    "source": "51.0",
+                    "parsedValue": 51
+                },
+                "endTimeGMT": "2025-07-12 11:59:06",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": false,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+            {
+                "activityId": 19702536693,
+                "activityName": "Des Moines Running",
+                "startTimeLocal": "2025-07-11 12:14:36",
+                "startTimeGMT": "2025-07-11 17:14:36",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 5370.16015625,
+                "duration": 1640.4100341796875,
+                "elapsedDuration": 1807.2110595703125,
+                "movingDuration": 1640.1489868164062,
+                "elevationGain": 66.63275146484375,
+                "elevationLoss": 67.323486328125,
+                "averageSpeed": 3.2739999294281006,
+                "maxSpeed": 6.157999992370606,
+                "startLatitude": 41.58577180467546,
+                "startLongitude": -93.65446443669498,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "312.0",
+                    "parsedValue": 312
+                },
+                "bmrCalories": {
+                    "source": "35.0",
+                    "parsedValue": 35
+                },
+                "averageHR": {
+                    "source": "128.0",
+                    "parsedValue": 128
+                },
+                "maxHR": {
+                    "source": "144.0",
+                    "parsedValue": 144
+                },
+                "averageRunningCadenceInStepsPerMinute": 157.21875,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "203.0",
+                    "parsedValue": 203
+                },
+                "steps": 4282,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1752254076000,
+                "sportTypeId": 1,
+                "avgStrideLength": 124.85058121506738,
+                "vO2MaxValue": {
+                    "source": "58.0",
+                    "parsedValue": 58
+                },
+                "deviceId": 3417824817,
+                "minElevation": 256.24090576171875,
+                "maxElevation": 272.69586181640625,
+                "maxDoubleCadence": {
+                    "source": "203.0",
+                    "parsedValue": 203
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 0.4228668212890625,
+                "manufacturer": "GARMIN",
+                "locationName": "Des Moines",
+                "lapCount": 4,
+                "endLatitude": 41.58708818256855,
+                "endLongitude": -93.65018790587783,
+                "minActivityLapDuration": 139.26100158691406,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 236.19000244140625,
+                "fastestSplit_1609": 436.281005859375,
+                "fastestSplit_5000": 1505.9969482421875,
+                "hrTimeInZone_1": {
+                    "source": "44.0",
+                    "parsedValue": 44
+                },
+                "hrTimeInZone_2": {
+                    "source": "267.0",
+                    "parsedValue": 267
+                },
+                "hrTimeInZone_3": {
+                    "source": "1249.0",
+                    "parsedValue": 1249
+                },
+                "hrTimeInZone_4": {
+                    "source": "71.0",
+                    "parsedValue": 71
+                },
+                "hrTimeInZone_5": {
+                    "source": "0.0",
+                    "parsedValue": 0
+                },
+                "endTimeGMT": "2025-07-11 17:44:43",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": false,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+            {
+                "activityId": 19678540811,
+                "activityName": "Windsor Heights Running",
+                "startTimeLocal": "2025-07-09 06:09:15",
+                "startTimeGMT": "2025-07-09 11:09:15",
+                "activityType": {
+                    "typeId": 1,
+                    "typeKey": "running",
+                    "parentTypeId": 17,
+                    "isHidden": false,
+                    "restricted": false,
+                    "trimmable": true
+                },
+                "eventType": {
+                    "typeId": 9,
+                    "typeKey": "uncategorized",
+                    "sortOrder": 10
+                },
+                "distance": 5492.740234375,
+                "duration": 1578.70703125,
+                "elapsedDuration": 1578.70703125,
+                "movingDuration": 1572.5870056152344,
+                "elevationGain": 34.75184631347656,
+                "elevationLoss": 28.126022338867188,
+                "averageSpeed": 3.4790000915527344,
+                "maxSpeed": 5.429999828338623,
+                "startLatitude": 41.607162253931165,
+                "startLongitude": -93.71447048150003,
+                "hasPolyline": true,
+                "hasImages": false,
+                "ownerId": 83134634,
+                "ownerDisplayName": "8ee2fc52-fe2a-403a-9cc3-5113d520ab51",
+                "ownerFullName": "J Crain",
+                "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/49296e9c-0b78-4f95-8ba7-3b8d34eeb0c2-83134634.png",
+                "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9436e55a-fce2-4a4f-9120-0db399d8af7f-83134634.png",
+                "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6e981d00-5d23-4273-87f2-9c86bc6cc240-83134634.png",
+                "calories": {
+                    "source": "344.0",
+                    "parsedValue": 344
+                },
+                "bmrCalories": {
+                    "source": "34.0",
+                    "parsedValue": 34
+                },
+                "averageHR": {
+                    "source": "140.0",
+                    "parsedValue": 140
+                },
+                "maxHR": {
+                    "source": "159.0",
+                    "parsedValue": 159
+                },
+                "averageRunningCadenceInStepsPerMinute": 159.953125,
+                "maxRunningCadenceInStepsPerMinute": {
+                    "source": "188.0",
+                    "parsedValue": 188
+                },
+                "steps": 4202,
+                "userRoles": [
+                    "SCOPE_GOLF_API_READ",
+                    "SCOPE_ATP_READ",
+                    "SCOPE_DIVE_API_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+                    "SCOPE_DIVE_API_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_READ",
+                    "SCOPE_CONNECT_WRITE",
+                    "SCOPE_COMMUNITY_COURSE_WRITE",
+                    "SCOPE_MESSAGE_GENERATION_READ",
+                    "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+                    "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+                    "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+                    "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+                    "SCOPE_CONNECT_READ",
+                    "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+                    "SCOPE_SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+                    "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+                    "ROLE_CONNECTUSER",
+                    "ROLE_FITNESS_USER",
+                    "ROLE_WELLNESS_USER"
+                ],
+                "privacy": {
+                    "typeId": 1,
+                    "typeKey": "public"
+                },
+                "userPro": false,
+                "hasVideo": false,
+                "timeZoneId": 152,
+                "beginTimestamp": 1752059355000,
+                "sportTypeId": 1,
+                "avgStrideLength": 130.46287793085813,
+                "vO2MaxValue": {
+                    "source": "58.0",
+                    "parsedValue": 58
+                },
+                "deviceId": 3417824817,
+                "minElevation": {
+                    "source": "253.0",
+                    "parsedValue": 253
+                },
+                "maxElevation": 274.3712158203125,
+                "maxDoubleCadence": {
+                    "source": "188.0",
+                    "parsedValue": 188
+                },
+                "summarizedDiveInfo": {
+                    "summarizedDiveGases": []
+                },
+                "maxVerticalSpeed": 0.623565673828125,
+                "manufacturer": "GARMIN",
+                "locationName": "Windsor Heights",
+                "lapCount": 4,
+                "endLatitude": 41.612953478470445,
+                "endLongitude": -93.72382284142077,
+                "minActivityLapDuration": 205.3979949951172,
+                "splitSummaries": [],
+                "hasSplits": false,
+                "hasHeatMap": false,
+                "fastestSplit_1000": 261.3529968261719,
+                "fastestSplit_1609": 428.6960144042969,
+                "fastestSplit_5000": 1415.656005859375,
+                "hrTimeInZone_1": {
+                    "source": "29.0",
+                    "parsedValue": 29
+                },
+                "hrTimeInZone_2": {
+                    "source": "117.0",
+                    "parsedValue": 117
+                },
+                "hrTimeInZone_3": {
+                    "source": "304.0",
+                    "parsedValue": 304
+                },
+                "hrTimeInZone_4": {
+                    "source": "1114.0",
+                    "parsedValue": 1114
+                },
+                "hrTimeInZone_5": {
+                    "source": "0.0",
+                    "parsedValue": 0
+                },
+                "endTimeGMT": "2025-07-09 11:35:33",
+                "qualifyingDive": false,
+                "purposeful": false,
+                "favorite": false,
+                "pr": false,
+                "parent": false,
+                "decoDive": false,
+                "manualActivity": false,
+                "autoCalcCalories": false,
+                "elevationCorrected": true,
+                "atpActivity": false
+            },
+
         {
             "activityId": 19667787118,
             "activityName": "Urbandale Running",

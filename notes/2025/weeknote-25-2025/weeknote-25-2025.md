@@ -2,7 +2,6 @@
 title: Weeknote 25/2025
 tags:
   - weeknotes
-  - sketchbook
 description: Weekly notes for week 25/2025.
 date: 2025-06-16
 ---
