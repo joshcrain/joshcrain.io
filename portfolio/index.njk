@@ -69,12 +69,12 @@ description: Josh Crain's portfolio of work.
 <div class="wrapper">
     <section class="grid-layout_home">
         <div class="layout-section">
-            <h2>Branding</h2>
-            <span class="meta">{{ collections.branding | length }} item</span>
+            <h2>Identity</h2>
+            <span class="meta">{{ collections.identity | length }} item</span>
         </div>
         <div class="grid-content">
             <div class="subgrid">
-                {% for item in collections.branding | reverse %} 
+                {% for item in collections.identity | reverse %} 
                 <div class="grid-third tile">
         
                     <a href="{{ item.url }}">{% gridImage item.data.image, item.data.alt %}</a>

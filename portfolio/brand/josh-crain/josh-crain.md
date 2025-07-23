@@ -1,7 +1,7 @@
 ---
 title: 'Personal Branding – Logo, Illustration & Theming'
 tags:
-  - branding
+  - identity
   - portfolio
 description: Personal visual identity for website, business cards, resume, and digital presence 
 image: portfolio/brand/josh-crain/self-portrait-2022-light.png
@@ -69,7 +69,7 @@ It’s now used as a decorative but functional identity element for my homepage 
 
 ## Integration & Use
 
-The branding system is currently live on my **portfolio website** and has been extended to **business cards and resume design**. It was built from the ground up with web standards and accessibility in mind. The illustration and logo both remain crisp, scalable, and theme-responsive, with no reliance on bitmap formats.
+The identity system is currently live on my **portfolio website** and has been extended to **business cards and resume design**. It was built from the ground up with web standards and accessibility in mind. The illustration and logo both remain crisp, scalable, and theme-responsive, with no reliance on bitmap formats.
 
 - **Technologies:** Inline SVG, CSS custom properties, responsive media queries  
 - **Constraints considered:** accessibility, theming flexibility, cross-device performance  
