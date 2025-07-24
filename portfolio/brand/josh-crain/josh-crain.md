@@ -36,10 +36,10 @@ The brand had to feel expressive but not ornamental, technical but not cold. The
 
 ## Logo Design
 
-The logo represents my first and last initials, constructed from large geometric forms aligned to a grid. It's minimal but slightly enigmatic—functional at small sizes (like favicons) but visually interesting enough to anchor a website header.
+<div style='padding:2em;float:right;margin:0 0 1em 1em;border: var(--border-size-1) dashed rgba(var(--colorFore),.25);' class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"></circle><circle cx="40" cy="17" r="5"></circle><circle cx="5" cy="17" r="5"></circle><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"></path></svg></div>The logo represents my first and last initials, constructed from large geometric forms aligned to a grid. It's minimal but slightly enigmatic—functional at small sizes (like favicons) but visually interesting enough to anchor a website header.
 
 - **Tooling:** Adobe Illustrator  
-- **Usage:** Favicon, website header, resume lockup, business cards  
+- **Usage:** Favicon, website header, business cards  
 - **Style:** Modular, grid-based, typographic abstraction  
 
 ---
