@@ -10,7 +10,7 @@ medium: Branding
 year: 2022-Current
 date: 2025-07-03
 ---
-{% storyImage "./portfolio/brand/josh-crain/self-portrait-2022-light.png" "Prototyping Platform" %}
+{% storyImage "./portfolio/brand/josh-crain/self-portrait-2022-light.png" "Self Portrait Illustration" %}
 
 **Role:** Designer, Illustrator, Front-End Developer  
 **Tools:** Adobe Illustrator, Adobe Fresco, SVGO, VSCode  
@@ -36,7 +36,9 @@ The brand had to feel expressive but not ornamental, technical but not cold. The
 
 ## Logo Design
 
-<div style='padding:2em;float:right;margin:0 0 1em 1em;border: var(--border-size-1) dashed rgba(var(--colorFore),.25);' class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"></circle><circle cx="40" cy="17" r="5"></circle><circle cx="5" cy="17" r="5"></circle><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"></path></svg></div>The logo represents my first and last initials, constructed from large geometric forms aligned to a grid. It's minimal but slightly enigmatic—functional at small sizes (like favicons) but visually interesting enough to anchor a website header.
+<div style='padding:2em;float:right;margin:0 0 1em 1em;border: var(--border-size-1) dashed rgba(var(--colorFore),.25);' class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"></circle><circle cx="40" cy="17" r="5"></circle><circle cx="5" cy="17" r="5"></circle><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"></path></svg></div>
+
+The logo represents my first and last initials, constructed from large geometric forms aligned to a grid. It's minimal but slightly enigmatic—functional at small sizes (like favicons) but visually interesting enough to anchor a website header.
 
 - **Tooling:** Adobe Illustrator  
 - **Usage:** Favicon, website header, business cards  
@@ -66,6 +68,7 @@ The illustration—a hand-drawn SVG self-portrait—adds warmth and expressivene
 It’s now used as a decorative but functional identity element for my homepage and social profiles.
 
 ---
+{% storyImage "./portfolio/brand/josh-crain/joshcrain-bc-proof-2025.jpg" "Business Card" %}
 
 ## Integration & Use
 
@@ -84,3 +87,4 @@ Has it helped me stand out? I’m not sure. But it’s something I’m proud of�
 - Building your own identity system is a surprisingly introspective act  
 - Simplicity is hard—but clarity is worth the effort  
 - Even personal projects deserve technical rigor  
+

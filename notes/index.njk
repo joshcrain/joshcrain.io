@@ -12,7 +12,7 @@ description: Writings and short weekly notes or weeknotes. Notes from my running
             {% for post in items %} 
             <li>
                 <a href="{{ post.url }}" class="h2">{{ post.data.title | replaceAmpersand | safe }}</a>
-                <div><span class="meta"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("MMM DD YYYY") }}</time> ⁃ <span>{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br>
+                <div><span class="meta"><time datetime="{{ post.date | date('YYYY-MM-DD HH:mm') }}">{{ post.date | date("MMM DD YYYY") }}</time> ⁃ <span class="article--tags">{% for tag in post.data.tags %}{% if tag != 'notes' %}<span> {{tag}}</span>{% endif %}{% endfor %}</span></span> <br>
                     {{ post.data.description }}</div>
             </li>
             {% endfor %}

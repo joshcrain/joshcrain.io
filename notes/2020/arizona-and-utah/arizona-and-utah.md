@@ -6,7 +6,7 @@ metaImage:
 date: 2019-07-18
 ---
 <figure>
-    {% storyImage "./notes/2020/arizona-and-utah/1024/montezuma-1.jpeg" "Montezuma Castle" %}
+    {% storyImageFull "./notes/2020/arizona-and-utah/full/montezuma-castle.jpg" "Montezuma Castle" %}
 <figcaption>
 Montezuma Castle National Monument, Arizona.</figcaption>
 </figure>

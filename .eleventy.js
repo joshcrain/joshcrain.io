@@ -503,6 +503,24 @@ module.exports = function(eleventyConfig) {
 		return eleventyImagePlugin.generateHTML(metadata, imageAttributes);
 	});
 
+  eleventyConfig.addShortcode("storyImageFull", async function(src, alt) {
+    let metadata = await eleventyImagePlugin(src, {
+      widths: [1216],
+      formats: ["avif", "jpeg"],
+      outputDir: "./_site/img/",
+    });
+
+    let imageAttributes = {
+      alt,
+      class: "full_width",
+      sizes: "(min-width: 30em) 50vw, 100vw",
+      loading: "lazy",
+      decoding: "async",
+    };
+
+    return eleventyImagePlugin.generateHTML(metadata, imageAttributes);
+  });
+
   eleventyConfig.addShortcode("gridImage", async function(src, alt) {
 		let metadata = await eleventyImagePlugin(src, {
 			widths: [480],
