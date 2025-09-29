@@ -386,7 +386,15 @@ module.exports = function(eleventyConfig) {
 
   // duration filter
   eleventyConfig.addNunjucksFilter("duration", function (duration, format) {
-    return moment('1900-01-01 00:00:00').seconds(duration).format(format);
+    // Handle both numeric and object formats
+    let durationValue;
+    if (typeof duration === 'object' && duration !== null && duration.parsedValue !== undefined) {
+      durationValue = duration.parsedValue;
+    } else {
+      durationValue = duration;
+    }
+    
+    return moment('1900-01-01 00:00:00').seconds(durationValue).format(format);
   });
 
   // date filter
@@ -395,8 +403,18 @@ module.exports = function(eleventyConfig) {
   });
   // miles filter
   eleventyConfig.addNunjucksFilter("miles", function (miles) {
-    return parseFloat(miles/1609.344).toFixed(2);
+    // Handle both numeric and object formats
+    let distanceValue;
+    if (typeof miles === 'object' && miles !== null && miles.parsedValue !== undefined) {
+      distanceValue = miles.parsedValue;
+    } else {
+      distanceValue = miles;
+    }
+    
+    return parseFloat(distanceValue/1609.344).toFixed(2);
   });
+
+  
 
   // two decimal places filter
   eleventyConfig.addNunjucksFilter("decimal", function (decimal) {
