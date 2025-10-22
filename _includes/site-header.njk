@@ -12,7 +12,7 @@
         {% if category == "Ancestry" %}
         <a href="/ancestry/ancestors/">Ancestors</a><a href="/ancestry/heraldry/">Heraldry</a><a href="/ancestry/sources/">Sources</a>
         {% else %}
-        <a href="/" {% if pageType == "home" %}data-state="active"{% endif %} class="nav-item_home">Home</a><a href="/notes/" {% if category == "Notes" %}data-state="active"{% endif %}>Notes</a><a href="/art/" {% if category == "Art" %}data-state="active"{% endif %}>Art</a><a href="/about/" {% if category == "About" %}data-state="active"{% endif %}>About</a>
+        <a href="/notes/" {% if category == "Notes" %}data-state="active"{% endif %}>Notes</a><a href="/art/" {% if category == "Art" %}data-state="active"{% endif %}>Art</a><a href="/about/" {% if category == "About" %}data-state="active"{% endif %}>About</a>
         {% endif %}
         </nav>
     </div>
