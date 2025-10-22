@@ -6,7 +6,7 @@
   
 [build.environment]
   # Environment variables are set here
-  NODE_VERSION >= "v21.0.0"
+  NODE_VERSION = "v21.0.0"
 
   [[headers]]
   for = "/feed.xml"
