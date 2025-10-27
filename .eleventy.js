@@ -336,6 +336,10 @@ const createSocialImageForArticle = (input, output) =>
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
+  
+  // Add explicit watch targets for notes directory
+  eleventyConfig.addWatchTarget("./notes/");
+  
 
   eleventyConfig.addTransform("htmlmin", function(content) {
     // Prior to Eleventy 2.0: use this.outputPath instead
@@ -370,6 +374,7 @@ module.exports = function(eleventyConfig) {
       
     } catch (err) {
       console.error('Error generating social image:', err);
+      // Don't fail the build if social image generation fails
     }
 
     // return normal content
@@ -639,8 +644,8 @@ eleventyConfig.addCollection("tagList", collections => {
   return Array.from(new Set(tags)).map(tag => ({
     title: tag,
     count: collections.getFilteredByTag(tag).length,
-  }))
-})
+  }));
+});
 
 
 eleventyConfig.addFilter("runsWithDescription", function(array) {
