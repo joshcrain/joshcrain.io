@@ -16,7 +16,7 @@ The [SVG self portrait](/notes/2022/svg-self-portrait/) illustrated for this sit
 Special effort has been made to give the text and background colors a high contrast for those with limited sight. Text has a 4.5:1 contrast ratio at Level AA or better, as specified by [WCAG 2.0](https://www.w3.org/TR/WCAG20/). If you find an issue accessing any part of this site please [file an issue](https://github.com/joshcrain/joshcrain.io/issues). 
 
 ## Page Speed & Energy
-Page speed and economy of code have two benefits. Pages are retrieved fast and energy usage is low. Code and assets are compressed, unnecessary scripts (tracking or otherwise) are avoided. This site receives a perfect score (400) on [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-joshcrain-io). As of May 1, 2025 this site is [cleaner than 96% of web pages](https://www.websitecarbon.com/website/joshcrain-io/), producing 0.04 g of CO2 every time someone visits the homepage.
+Page speed and economy of code have two benefits. Pages are retrieved fast and energy usage is low. Code and assets are compressed, unnecessary scripts (tracking or otherwise) are avoided. This site receives a perfect score (400) on [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-joshcrain-io). As of November 17, 2025 this site is [cleaner than 97% of web pages](https://www.websitecarbon.com/website/joshcrain-io/), producing 0.02 g of CO2 every time someone visits the homepage.
 
 ## Privacy
 This website does not track your activity. I know nothing about who visits or how often. If you’d like to tell me what brought you here [say hello](/say-hello/).
