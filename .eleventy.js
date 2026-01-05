@@ -587,17 +587,30 @@ module.exports = function(eleventyConfig) {
 
   // Combine running.activityList and running2023.activityList
   eleventyConfig.addCollection("combinedActivityList", function(_) { 
-    const runningActivities = require("./_data/running.json");
     const running2020Activities = require("./_data/running2020.json");
     const running2021Activities = require("./_data/running2021.json");
     const running2022Activities = require("./_data/running2022.json");
     const running2023Activities = require("./_data/running2023.json");
     const running2024Activities = require("./_data/running2024.json");
-    const combinedActivities = runningActivities.activityList.concat(running2024Activities.activityList).concat(running2023Activities.activityList).concat(running2022Activities.activityList).concat(running2021Activities.activityList).concat(running2020Activities.activityList);
+    const running2025Activities = require("./_data/running2025.json");
+    const running2026Activities = require("./_data/running2026.json");
+    const combinedActivities = [].concat(running2026Activities.activityList).concat(running2025Activities.activityList).concat(running2024Activities.activityList).concat(running2023Activities.activityList).concat(running2022Activities.activityList).concat(running2021Activities.activityList).concat(running2020Activities.activityList);
 
     const filteredActivities = combinedActivities.filter(item => item.sportTypeId == "1");
     return filteredActivities;
   });
+
+eleventyConfig.addCollection("2026ActivityList", function(_) { 
+  const runningActivities = require("./_data/running2026.json");
+  const filteredActivities = runningActivities.activityList.filter(item => item.sportTypeId == "1");
+  return filteredActivities;
+});
+
+eleventyConfig.addCollection("2025ActivityList", function(_) { 
+  const runningActivities = require("./_data/running2025.json");
+  const filteredActivities = runningActivities.activityList.filter(item => item.sportTypeId == "1");
+  return filteredActivities;
+});
 
 eleventyConfig.addCollection("2024ActivityList", function(_) { 
   const runningActivities = require("./_data/running2024.json");

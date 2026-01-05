@@ -1,0 +1,25 @@
+---
+title: 2026 Running Log
+metaTitle: 2026 Running Log
+pageType: section
+tags: ['running']
+description: A 2026 running log to track dates, distance, time, pace, heart rate, and Vo2 Max. 
+---
+<p class="lead">I logged {{ running.2026ActivityList | length }} runs in 2026. <a href="/running/">See all</a>.  </p>
+
+<table class="table_rwd">
+  <thead>
+  <tr>
+    <th>When</th>
+    <th>Distance</th>
+    <th>Time</th>
+    <th>Pace</th>
+    <th>Heart Rate</th>
+    </tr>
+   </thead>
+   {% for item in running.2026ActivityList %}
+  {% if (item.sportTypeId == "1") and (item.startTimeLocal | date("Y") == "2026") %}
+   {% include "_page_partial/running-columns.njk" %}
+  {% endif %}
+{% endfor %}
+</table>
