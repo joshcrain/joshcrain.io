@@ -18,67 +18,59 @@ date: 2017-06-21
 
 ## Summary
 
-While working as a UX designer and front-end developer at Spinutech, I created an internal front-end pattern library that helped align designers and developers across dozens of custom client websites. Long before “design systems” were common practice, this effort standardized our HTML, CSS, and JavaScript components across a wide range of responsive marketing sites, ecommerce platforms, and intranets — improving accessibility, development speed, and cross-team clarity.
+While working as a UX designer and front-end developer at Spinutech, I created an internal front-end pattern library that standardized HTML, CSS, and JavaScript components across dozens of custom client websites — responsive marketing sites, ecommerce platforms, and intranets spanning industries from grocery retail to agricultural equipment.
 
+This wasn't a response to an industry trend. The term "design system" wasn't in common use yet. It was a response to a real problem: inconsistent builds, repeated work, and the friction of translating design intent into production code across a team with no shared starting point. The solution I built then is recognizably the same approach I've refined over the fifteen years since.
 ---
 
 ## The Problem
 
-Spinutech’s design and development teams were regularly launching custom websites across a range of industries — from banking to retail to B2B. Projects moved quickly, and transitions from static design comps to browser-ready code were inconsistent and sometimes brittle.
+The core motivation was simple: I was spending too much time rebuilding the same things, and not enough time solving design problems. Projects moved quickly, and the gap between a static design comp and browser-ready code was filled differently every time — by different developers, with different markup, different accessibility practices, and different interpretations of what the design intended.
 
-Each team had its own way of interpreting comps, which led to:
+That inconsistency compounded:
 
-- Friction during handoff between design and development
-- Inconsistent markup and accessibility practices
-- Difficulty maintaining or scaling shared components
-- Tight deadlines that left little room for refinement
+- Handoff friction between design and development on every project
+- Brittle or redundant markup across the portfolio
+- Accessibility practices that varied by who happened to build the feature
+- No shared baseline, which meant no shared standard for what "done" looked like
 
-At the same time, I wanted to reduce implementation overhead so I could spend more time solving design problems — not rebuilding the same markup again and again.
-
+The pattern library was the answer to all of it — and the starting point for how I think about design systems today.
 ---
 
 ## My Solution: A Shared Pattern Library
 
-To address these challenges, I created and maintained a **standalone front-end pattern library**:
+I created and maintained a standalone front-end pattern library:
 
-- A centralized website of reusable HTML/CSS/JS snippets
+- A centralized site of reusable, documented HTML/CSS/JS components — not snippets, but a shared starting point for every project
 - Responsive, accessible patterns for common UI needs
-- Support for metadata standards (e.g., Open Graph protocol)
-- Contributions from designers and developers
-- Documentation to guide consistent use and integration
-- Logo and Identity (just for fun)
+- Support for metadata standards (Open Graph protocol, semantic structure)
+- Contributions from designers and developers across the team
+- A name and identity for the project — because giving internal infrastructure a real presence is how you get adoption
 
-It became our shared starting point for design and development, significantly reducing time-to-browser while preserving fidelity to the original design intent.
-
+It became the shared foundation for design and development, significantly reducing time-to-browser while preserving fidelity to the original design intent.
 ---
 
 ## Key Outcomes
 
-- **Faster implementation**: I could move from comps to a browser-ready build in 1–2 days
-- **Better collaboration**: Reduced friction between design and development
-- **Stronger standards**: Improved accessibility, semantic structure, and maintainability
-- **Greater velocity**: Allowed more time for higher-level UX thinking and client collaboration
-- **More consistent outcomes**: Regardless of designer or developer, starting points aligned
-
-This effort helped shape the team’s internal workflow and elevated the quality of our shipped work across many high-profile clients.
-
+- **1–2 days from design comp to browser-ready build** — the most direct measure of what the pattern library made possible
+- **Consistent outputs regardless of who built it** — the shared starting point meant quality didn't vary by team member or project
+- **Accessibility and semantic structure as defaults**, not afterthoughts applied at the end
+- **More time for higher-level design work** — implementation overhead dropped enough to shift focus toward UX thinking and client collaboration
+- **A template for what came next** — the same principles behind this library are what ab-components, Blocs, and the review process at AgencyBloc are built on
 ---
 
 ## Notable Clients
 
-- **Hy-Vee**: Worked closely with their internal design team, implementing front-end code that honored their visual language while improving structure and responsiveness
-- **Electrolux, Firestone Ag, Whole Foods, Des Moines Airport**: Led full design and front-end efforts, often presenting directly to stakeholders, gathering feedback, and iterating toward launch
+The pattern library had to hold up across clients with very different visual languages, technical constraints, and organizational expectations. That it did — consistently — was the real proof of the approach.
 
+- **Hy-Vee**: Worked closely with their internal design team, implementing front-end code that honored an established visual language while improving structure and responsiveness across a large, high-traffic site
+- **Electrolux, Firestone Ag, Whole Foods, Des Moines Airport**: Led full design and front-end efforts across projects in retail, agriculture, food, and public infrastructure — presenting directly to stakeholders, gathering feedback, and iterating toward launch
 
+The range mattered. A pattern library that only works for one context isn't a system — it's a template.
 ---
 
 ## What I Learned
 
-This experience taught me how to:
+The practical skills — building under constraints, communicating across disciplines, advocating for code quality and accessibility — all came from this work. But the more lasting thing was learning to trust the instinct that led to it: that consistency is an architectural problem, not a discipline problem, and that the right answer is infrastructure rather than effort.
 
-- Build scalable solutions under real-world time and resource constraints
-- Communicate effectively across disciplines and with clients
-- Advocate for code quality, accessibility, and design fidelity
-- Work with and support external design teams while offering UX leadership
-
-It laid the foundation for how I think about systems, design operations, and collaboration today.
+That instinct is what led to ab-components and Blocs at AgencyBloc — a Stencil-based Web Components library, a prototype environment built on real components, and a structured review process designed to hold quality standards without depending on a single person to enforce them. The tools are different. The approach is the same one that started here.

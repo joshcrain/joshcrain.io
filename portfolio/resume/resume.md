@@ -2,13 +2,13 @@
 title: Josh Crain’s Resumé
 tags:
 description: Josh Crain’s resumé
-date: 2025-06-26
+date: 2026-05-12
 ---
 <p class="lead">Senior Product Designer & Front-End Developer<br>
 <a href="mailto:josh.crain@gmail.com">josh.crain@gmail.com</a> &bull; <a href="/portfolio/">https://joshcrain.io/portfolio/</a></p>
 
 ## Summary  
-Creative and technically fluent **Senior Product Designer and Front-End Developer** with 15+ years designing and building growing web-based SaaS products. Specializes in growth-focused user experiences, design systems, and accessible, scalable UI components. Passionate about helping users succeed through thoughtful design and iterative improvement. Brings a strong hybrid skill set across UX, UI, and code — with a deep understanding of front-end technologies, cross-functional collaboration, and product strategy. *Outside of product design, I’m a practicing visual artist, which informs my attention to detail, storytelling, and empathy for creative users.*
+**Senior Product Designer and Front-End Developer** with 15+ years designing and building web-based SaaS products. Works at the intersection of UX, systems thinking, and front-end code — translating user needs into design systems, production components, and processes that scale beyond one person. Brings a track record of surfacing design risk early, advocating for research-grounded decisions, and communicating findings in ways that inform product and leadership direction. Thinks carefully about where AI-assisted tools accelerate the work and where they introduce false confidence — and has built workflows that use the difference. *Outside of product design, a practicing visual artist — which informs the attention to detail, the craft, and the instinct to question what "good" actually means.*
 
 ---
 ## Experience  
@@ -16,14 +16,14 @@ Creative and technically fluent **Senior Product Designer and Front-End Develope
 ### AgencyBloc, Inc.  
 **Senior Product Designer / Front-End Developer**  
 *May 2016 – Present · Des Moines, Iowa*  
-- Lead UX and UI design for core CRM/AMS product used by insurance agencies, with a focus on retention, efficiency, and feature adoption.  
-- Designed and iterated onboarding and lifecycle flows to improve user activation and engagement and encourage product led growth.  
-- Collaborated with product managers, engineers, and support teams to define features and validate designs using both qualitative and quantitative data.  
-- Built and maintained the **Blocs Pattern System**, a component based design system driving consistency across design and engineering teams.  
-- Developed internal tools for prototyping, documentation, and deployment using Eleventy, Nunjucks, Storybook, and Bitbucket Pipelines.  
-- Delivered production front-end code using TypeScript, Web Components, and templating engines.  
-- Used analytics and client feedback contribute to growth initiatives including onboarding flows, usability improvements, and funnel optimizations.  
-- Conducted accessibility reviews and implemented inclusive design patterns throughout the app.  
+- Lead UX and UI design for a core CRM/AMS platform used by insurance agencies, with a focus on feature adoption, efficiency, and retention.  
+- Established and advocated for UX process standards — including research-grounded design briefs and usability validation before shipping — and communicated design risk directly to CPO and product leadership.  
+- Designed onboarding and lifecycle flows to improve user activation and engagement, informed by analytics, usability studies, and direct client research.  
+- Architected **ab-components**, a Stencil-based Web Components library with Storybook documentation, accessibility review, and authoring conventions structured so other contributors and AI-assisted workflows can follow the same process without additional guidance.  
+- Built **Blocs**, a high-fidelity static prototype environment that assembles realistic product pages using ab-components — bridging component-level development and product-level design validation.  
+- Developed AI-integrated design workflows that scale synthesis, component review, and documentation work — replacing hours of manual cross-referencing with repeatable, structured processes.  
+- Delivered production front-end code using TypeScript, Web Components, Stencil, and Eleventy.  
+- Conducted accessibility reviews and implemented inclusive design patterns throughout the product, including WCAG-compliant component specifications.  
 
 ### Spinutech, Inc.  
 **Web Designer / UX Developer**  
