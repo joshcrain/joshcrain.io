@@ -18,73 +18,17 @@ date: 2025-07-03
 
 ---
 
-## Project Overview
+The motivation wasn’t a rebrand. It was wanting to exist more visibly online in a way I actually controlled, and to shift the balance of what I put out there — more design and illustration, less front-end work by default.
 
-I began this project not to build a broad personal brand, but to **exist more visibly online**—to showcase some of my work and creative sensibilities in a space I controlled. Much of my professional output is focused on front-end development, and I wanted to shift the balance—creating a visual identity that spoke more to my background in design and illustration.
+The logo is built from my initials, J and C, using large geometric forms aligned to a grid. Where the letterforms intersect, the shape disappears — it prompts the viewer to complete them. Minimal but slightly enigmatic, it works at favicon scale and still holds interest at header size.
 
-This identity system includes a custom logo, an SVG-based self-portrait illustration, a carefully selected type system, and a light/dark theming approach designed for flexibility and accessibility.
+<div style=’padding:2em;float:right;margin:0 0 1em 1em;border: var(--border-size-1) dashed rgba(var(--colorFore),.25);’ class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"></circle><circle cx="40" cy="17" r="5"></circle><circle cx="5" cy="17" r="5"></circle><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"></path></svg></div>
 
----
+I chose DM Serif Display for headings to echo the contrast and delicacy of the logo’s shapes: high-contrast, transitional, modern but classical. The system is built for theming from the ground up — all SVGs are inline and use CSS custom properties for stroke and fill, so the identity responds to light/dark mode without bitmap assets.
 
-## Design Strategy
+The self-portrait started in Adobe Fresco with vector brushes, then moved through Illustrator to VSCode for manual path optimization — merged redundant paths, simplified layering, same CSS variables as the rest of the site. It adds warmth to an otherwise clean system without breaking the logic of it.
 
-From the beginning, I knew I wanted to **emphasize shape, contrast, and scale**—leaning into bold visual forms that still felt restrained. The logo, based on my initials (J and C), uses oversized letterforms whose intersections vanish, prompting the participation of the viewer to complete the letterforms. To complement this, I chose **DM Serif Display** for large headings—a high-contrast, transitional serif that feels both modern and classical.
-
-The brand had to feel expressive but not ornamental, technical but not cold. The illustration would serve as a more personal, character-driven extension of that tone.
-
----
-
-## Logo Design
-
-<div style='padding:2em;float:right;margin:0 0 1em 1em;border: var(--border-size-1) dashed rgba(var(--colorFore),.25);' class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"></circle><circle cx="40" cy="17" r="5"></circle><circle cx="5" cy="17" r="5"></circle><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"></path></svg></div>
-
-The logo represents my first and last initials, constructed from large geometric forms aligned to a grid. It's minimal but slightly enigmatic—functional at small sizes (like favicons) but visually interesting enough to anchor a website header.
-
-- **Tooling:** Adobe Illustrator  
-- **Usage:** Favicon, website header, business cards  
-- **Style:** Modular, grid-based, typographic abstraction  
-
----
-
-## Typography & Theming
-
-Typography plays a central role in the brand system. I chose **DM Serif Display** for headers (H1/H2) to echo the delicacy and contrast of the logo’s shapes. Body text relies on a simpler, readable sans-serif for balance.
-
-The entire visual system is built with **theming in mind**:  
-- **SVGs and illustrations are inline** and use **CSS variables** for stroke and fill  
-- A **light/dark mode system** responds to user preference or can be toggled manually  
-- The color system prioritizes clarity and contrast for **accessibility and legibility** across devices  
-
----
-
-## Self-Portrait Illustration
-
-The illustration—a hand-drawn SVG self-portrait—adds warmth and expressiveness to the otherwise clean system. Inspired by Scandinavian line work and the digital brushes of Adobe evangelist Kyle Webster, it was drawn in **Adobe Fresco** using vector brushes and refined through a series of optimizations:
-
-- Exported as PDF from Fresco → cleaned in Illustrator → manually optimized in VSCode  
-- Merged redundant paths, simplified layering  
-- Themed using the same CSS variables as the rest of the site  
-
-It’s now used as a decorative but functional identity element for my homepage and social profiles.
-
----
 {% storyImage "./portfolio/brand/josh-crain/joshcrain-bc-proof-2025.jpg" "Business Card" %}
 
-## Integration & Use
-
-The identity system is currently live on my **portfolio website** and has been extended to **business cards and resume design**. It was built from the ground up with web standards and accessibility in mind. The illustration and logo both remain crisp, scalable, and theme-responsive, with no reliance on bitmap formats.
-
-- **Technologies:** Inline SVG, CSS custom properties, responsive media queries  
-- **Constraints considered:** accessibility, theming flexibility, cross-device performance  
-
----
-
-## Outcomes & Reflections
-
-Has it helped me stand out? I’m not sure. But it’s something I’m proud of—not just because it looks like me, but because it reflects how I work: **with care, curiosity, and a willingness to connect artistic thinking with technical execution**.
-
-### What I Learned  
-- Building your own identity system is a surprisingly introspective act  
-- Simplicity is hard—but clarity is worth the effort  
-- Even personal projects deserve technical rigor  
+I’m proud of the result. But the process is what I’m most proud of — it was the same one I’d bring to any serious project: the SVG optimization, the theming system, the accessibility decisions.
 
