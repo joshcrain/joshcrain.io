@@ -46,3 +46,77 @@ if (localStorage.getItem("theme") == 'lightTheme') {
 if (localStorage.getItem("theme") == 'darkTheme') {
     scheme.setAttribute('content', 'rgb(10, 10, 25)');
 }
+
+/* Image lightbox dialog handler */
+(function () {
+    const imageDialog = document.getElementById('image-dialog');
+    const dialogImage = document.getElementById('dialog-image');
+    const dialogCaption = document.getElementById('dialog-caption');
+    const dialogTitle = document.getElementById('dialog-title');
+    const dialogPreset = document.getElementById('dialog-preset');
+    const dialogDate = document.getElementById('dialog-date');
+    const dialogDimensions = document.getElementById('dialog-dimensions');
+    const dialogCamera = document.getElementById('dialog-camera');
+    const dialogExposure = document.getElementById('dialog-exposure');
+    const dialogDetailLink = document.getElementById('dialog-detail-link');
+
+    if (!imageDialog || !dialogImage) return;
+
+    const setDialogData = (link) => {
+        const title = link.dataset.title || 'Untitled';
+        const alt = link.dataset.alt || title;
+        const detailUrl = link.dataset.detailUrl || '#';
+        const preset = link.dataset.preset || '';
+
+        dialogImage.src = link.href;
+        dialogImage.alt = alt;
+        dialogCaption.textContent = alt;
+        dialogTitle.textContent = title;
+
+        dialogPreset.textContent = preset;
+        dialogPreset.hidden = !preset;
+
+        dialogDate.textContent = link.dataset.date || '—';
+        dialogDimensions.textContent = link.dataset.dimensions || '—';
+        dialogCamera.textContent = link.dataset.camera || '—';
+        dialogExposure.textContent = link.dataset.exposure || '—';
+        dialogDetailLink.href = detailUrl;
+        dialogDetailLink.textContent = detailUrl && detailUrl !== '#' ? 'View full details' : 'Open image';
+    };
+
+    document.addEventListener('click', (event) => {
+        const link = event.target.closest && event.target.closest('a.image-lightbox');
+        if (!link) return;
+        event.preventDefault();
+
+        setDialogData(link);
+
+        document.body.style.overflow = 'hidden';
+        imageDialog.showModal();
+    });
+
+    imageDialog.addEventListener('click', (event) => {
+        if (event.target === imageDialog) {
+            imageDialog.close();
+        }
+    });
+
+    const closeBtn = document.getElementById('dialog-close');
+    if (closeBtn) closeBtn.addEventListener('click', () => imageDialog.close());
+
+    imageDialog.addEventListener('close', () => {
+        document.body.style.overflow = '';
+        dialogImage.src = '';
+        dialogImage.alt = '';
+        dialogCaption.textContent = '';
+        dialogTitle.textContent = 'Untitled';
+        dialogPreset.textContent = '';
+        dialogPreset.hidden = true;
+        dialogDate.textContent = '—';
+        dialogDimensions.textContent = '—';
+        dialogCamera.textContent = '—';
+        dialogExposure.textContent = '—';
+        dialogDetailLink.href = '#';
+        dialogDetailLink.textContent = 'View full details';
+    });
+})();

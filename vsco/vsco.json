@@ -1,0 +1,6 @@
+{
+    "layout": "layout.njk",
+    "category": "VSCO",
+    "changefreq": "yearly",
+    "priority": "0.4"
+}

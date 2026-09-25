@@ -485,6 +485,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_includes/**/*.svg");
   eleventyConfig.addPassthroughCopy("notes/**/*.svg");
   eleventyConfig.addPassthroughCopy("fonts/");
+  eleventyConfig.addPassthroughCopy("dialog.css");
+  eleventyConfig.addPassthroughCopy("vsco/images/");
   
   // Copy generated social images - REMOVED: not needed since images are generated directly in _site
   
@@ -545,24 +547,37 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("gridImage", async function(src, alt) {
-		let metadata = await eleventyImagePlugin(src, {
-			widths: [480],
-			formats: ["avif", "jpeg"],
-      outputDir: "./_site/img/",
-      sharpAvifOptions: {
-        quality: 65
+    const isRemote = src && /^https?:\/\//i.test(src);
+
+    try {
+      const metadata = await eleventyImagePlugin(src, {
+        widths: [480],
+        formats: ["avif", "jpeg"],
+        outputDir: "./_site/img/",
+        sharpAvifOptions: {
+          quality: 65,
+        },
+        ...(isRemote ? {
+          cacheOptions: {
+            duration: "1d",
+          },
+        } : {}),
+      });
+
+      const imageAttributes = {
+        alt: alt || "",
+        loading: "lazy",
+        decoding: "async",
+      };
+
+      return eleventyImagePlugin.generateHTML(metadata, imageAttributes);
+    } catch (error) {
+      if (isRemote) {
+        return `<img src="${src}" alt="${alt || ''}" loading="lazy" decoding="async">`;
       }
-		});
-
-		let imageAttributes = {
-			alt,
-			//sizes: "(min-width: 30em) 50vw, 100vw",
-			loading: "lazy",
-			decoding: "async",
-		};
-
-		return eleventyImagePlugin.generateHTML(metadata, imageAttributes);
-	});
+      throw error;
+    }
+  });
 
   eleventyConfig.addShortcode("storyImageAnimated", async function(src, alt) {
 		let metadata = await eleventyImagePlugin(src, {

@@ -1,0 +1,39 @@
+---
+title: VSCO
+metaTitle: VSCO
+pageType: section
+description: 10 years of VSCO (2013-2023).
+category: VSCO
+---
+
+<p class="lead">{{ description }}</p>
+
+<div class="subgrid">
+  {% for item in vsco.media %}
+    {% set image = item.image %}
+    {% if image and image.responsive_url %}
+      {% if image.local_image %}
+      {% set imageUrl = (image.local_image | replace('/vsco/images/', 'vsco/images/')) | replace('^/', '') %}
+      {% elif image.image_meta and image.image_meta.file_hash %}
+      {% set captureDate = image.capture_date | date("YYYYMMDD") %}
+      {% set imageUrl = 'vsco/images/' + (image.image_meta.file_hash or image._id) + '_' + captureDate + '.jpg' %}
+      {% else %}
+      {% set captureDate = image.capture_date | date("YYYYMMDD") %}
+      {% set imageUrl = 'vsco/images/' + (image._id or 'vsco-image') + '_' + captureDate + '.jpg' %}
+      {% endif %}
+      <div class="grid-quarter tile">
+        <a href="/{{ imageUrl }}" class="image-lightbox" data-title="{{ image.description or 'Untitled' }}" data-alt="{{ image.description or 'VSCO image' }}" data-date="{{ image.capture_date | date('M/D/Y, h:mm A') }}" data-dimensions="{{ image.width }} × {{ image.height }} pixels" data-camera="{% if image.image_meta and (image.image_meta.make or image.image_meta.model) %}{{ (image.image_meta.make or '') }} {{ (image.image_meta.model or '') }}{% else %}—{% endif %}" data-exposure="{% if image.image_meta %}{{ image.image_meta.aperture or '—' }} / {{ image.image_meta.shutter_speed or '—' }} / {{ image.image_meta.iso or '—' }}{% else %}—{% endif %}" data-preset="{% if image.preset %}{{ image.preset.short_name or image.preset.key or '' }}{% endif %}" data-detail-url="/vsco/photo/{{ image.capture_date | date('YYYY') }}/{{ image._id }}-{{ image.image_meta.file_hash or image.capture_date }}-{{ loop.index0 }}/">
+          {% gridImage imageUrl, image.description or 'VSCO image' %}
+        </a>
+        <div class="tile_inner item_detail">
+          <a href="/{{ imageUrl }}" class="tile_link image-lightbox" data-title="{{ image.description or 'Untitled' }}" data-alt="{{ image.description or 'VSCO image' }}" data-date="{{ image.capture_date | date('M/D/Y, h:mm A') }}" data-dimensions="{{ image.width }} × {{ image.height }} pixels" data-camera="{% if image.image_meta and (image.image_meta.make or image.image_meta.model) %}{{ (image.image_meta.make or '') }} {{ (image.image_meta.model or '') }}{% else %}—{% endif %}" data-exposure="{% if image.image_meta %}{{ image.image_meta.aperture or '—' }} / {{ image.image_meta.shutter_speed or '—' }} / {{ image.image_meta.iso or '—' }}{% else %}—{% endif %}" data-preset="{% if image.preset %}{{ image.preset.short_name or image.preset.key or '' }}{% endif %}" data-detail-url="/vsco/photo/{{ image.capture_date | date('YYYY') }}/{{ image._id }}-{{ image.image_meta.file_hash or image.capture_date }}-{{ loop.index0 }}/">
+            <span class="tile_desc">
+              {{ image.description or 'Untitled' }} {% if image.preset and image.preset.short_name %} <span class="badge">{{ image.preset.short_name }}</span>{% endif %}
+              <p class="line-clamp"><span class="meta text--smaller">{{ image.capture_date | date("MMM D, YYYY") }}</span></p>
+            </span>
+          </a>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

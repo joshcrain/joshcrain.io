@@ -1,0 +1,62 @@
+---
+pageType: page
+eleventyComputed:
+  title: "{{ item.image.description or 'Untitled' }}"
+  description: "{{ item.image.description or 'Untitled' }}"
+  permalink: "/vsco/photo/{{ item.image.capture_date | date('YYYY') }}/{{ item.image._id }}-{{ item.image.image_meta.file_hash or item.image.capture_date }}-{{ pagination.pageNumber }}/"
+tags: ['vsco','photo']
+pagination:
+  data: vsco.media
+  size: 1
+  alias: item
+  addAllPagesToCollections: true
+ 
+---
+
+{% set image = item.image %}
+
+{% if image and image.responsive_url %}
+  {% set imageUrl = image.local_image or ('https://' + image.responsive_url) %}
+
+  <p class="lead">{{ image.capture_date | date('M/D/Y') }}{% if image.preset and image.preset.short_name %} <span class="badge">{{ image.preset.short_name }}</span>{% elif image.preset and image.preset.key %} <span class="badge">{{ image.preset.key }}</span>{% else %} <span class="badge">Untitled</span>{% endif %}</p>
+
+  <p>
+    <span class="full_width">
+      {% storyImageFull imageUrl, image.description or 'Untitled' %}
+    </span>
+  </p>
+
+  <table>
+    <tbody>
+      <tr>
+        <th scope="rowgroup">When</th>
+        <td>{{ image.capture_date | date("M/D/Y") }}, {{ image.capture_date | date("h:mm A") }}</td>
+      </tr>
+      <tr>
+        <th scope="rowgroup">Dimensions</th>
+        <td>{{ image.width }} × {{ image.height }} pixels</td>
+      </tr>
+      <tr>
+        <th scope="rowgroup">Camera</th>
+        <td>{% if image.image_meta and (image.image_meta.make or image.image_meta.model) %}{{ (image.image_meta.make or '') }} {{ (image.image_meta.model or '') }}{% endif %}</td>
+      </tr>
+      <tr>
+        <th scope="rowgroup">Aperture / Shutter / ISO</th>
+        <td>{% if image.image_meta %}{{ image.image_meta.aperture or '—' }} / {{ image.image_meta.shutter_speed or '—' }} / {{ image.image_meta.iso or '—' }}{% endif %}</td>
+      </tr>
+      <tr>
+        <th scope="rowgroup">Preset</th>
+        <td>{% if image.preset %}<span class="badge">{{ image.preset.short_name or image.preset.key or '—' }}</span>{% endif %}</td>
+      </tr>
+      <tr>
+        <th scope="rowgroup">Source</th>
+        <td><a href="{{ image.permalink }}" target="_blank" rel="noreferrer">View on VSCO</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><i>See more VSCO photos on the <a href="/vsco/">VSCO index</a>.</i></p>
+
+{% else %}
+  <p>No image data available.</p>
+{% endif %}

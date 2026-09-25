@@ -43,12 +43,6 @@
   --radius-drawn-5: 250px 25px 15px 20px / 15px 80px 105px 115px;
   --radius-drawn-6: 28px 100px 20px 15px / 150px 30px 205px 225px;
 
-  --radius-blob-1: 30% 70% 70% 30% / 53% 30% 70% 47%;
-  --radius-blob-2: 53% 47% 34% 66% / 63% 46% 54% 37%;
-  --radius-blob-3: 37% 63% 56% 44% / 49% 56% 44% 51%;
-  --radius-blob-4: 63% 37% 37% 63% / 43% 37% 63% 57%;
-  --radius-blob-5: 49% 51% 48% 52% / 57% 44% 56% 43%;
-
 } 
 :where(html) .darkTheme{
   --colorFore: 249, 240, 255;
@@ -355,6 +349,9 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   margin-left: auto;
 }
 
+.full_width {display: grid;place-content:center;}
+.full_width img{max-height:100vh;object-fit: contain}
+
 .grid-content :first-child {margin-top:0;}
 .grid-content p:last-child {margin-bottom:0;}
 
@@ -412,53 +409,9 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
   .tile a {
     box-shadow: 0 0 var(--size-0) 0 hsla(var(--fillFore), .3);  
     overflow: hidden;
-    transition: border-radius .3s ease;
-
-  }
-  .tile:nth-child(5n+1) a {
-    border-radius: var(--radius-drawn-1);
-
-  }
-  .tile:nth-child(5n+2) a {
-    border-radius: var(--radius-drawn-2);
-  }
-  .tile:nth-child(5n+3) a {
-    border-radius: var(--radius-drawn-3);
-  }
-  .tile:nth-child(5n+4) a {
-    border-radius: var(--radius-drawn-4);
-  }
-  .tile:nth-child(5n+5) a {
-    border-radius: var(--radius-drawn-5);
-  }
-
-  .tile:nth-child(5n+1) a:after{
-    border-radius: var(--radius-drawn-4);
-
-  }
-  .tile:nth-child(5n+2) a:after{
-    border-radius: var(--radius-drawn-5);
-  }
-  .tile:nth-child(5n+3) a:after{
-    border-radius: var(--radius-drawn-1);
-  }
-  .tile:nth-child(5n+4) a:after{
-    border-radius: var(--radius-drawn-2);
-  }
-  .tile:nth-child(5n+5) a:after{
-    border-radius: var(--radius-drawn-3);
-  }
-
-
-  @media (prefers-reduced-motion: no-preference) {
-    .tile:hover a {
-      transition: border-radius .3s ease;
-    }
-  }
-  .tile:hover a {
     border-radius: var(--size-1);
   }
-
+  
   .tile p {margin:0;}
 
   .tile_inner {
@@ -569,9 +522,7 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 
 .btn {font-size:var(--size-4);font-family: inherit;border:var(--border-size-2) solid rgba(var(--colorAccent),1);background:rgba(var(--colorFore),0);color:rgba(var(--colorAccent),1);padding:var(--size-1) .75em;border-radius: var(--size-0);}
 
-
-
-
+.badge {font-family: var(--fontIndustrial);font-size:.8em;letter-spacing:.05em;text-transform:uppercase;display:inline-block;padding:.2em .4em;border-radius:var(--size-0);background:rgba(var(--colorAccent),.4);color:rgba(var(--colorFore),1);line-height:1.1;white-space: nowrap;font-weight: normal;font-style: normal;}
 
 @media only screen and (max-width: 1024px) {
   

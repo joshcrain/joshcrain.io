@@ -32,6 +32,8 @@
                             {% set previousRun = collections.runlog | getNextCollectionItem(page) %}
                             {% set nextArt = collections.artworks | getPreviousCollectionItem(page) %}
                             {% set previousArt = collections.artworks | getNextCollectionItem(page) %}
+                            {% set nextVsco = collections.vsco | getPreviousCollectionItem(page) %}
+                            {% set previousVsco = collections.vsco | getNextCollectionItem(page) %}
                             
                             {% if previousNote %}
                             <div class="grid-half">
@@ -83,6 +85,18 @@
                             <div class="grid-half">
                                 <div class="text--smaller"><i>Up next</i></div>
                                 <a href="{{ nextArt.url }}">{{ nextArt.data.title }}</a>
+                            </div>
+                            {% endif %}
+                            {% if previousVsco %}
+                            <div class="grid-half">
+                                <div class="text--smaller"><i>Previously</i></div>
+                                <a href="{{ previousVsco.url }}">{{ previousVsco.data.title }}</a>
+                            </div>
+                            {% endif %}
+                            {% if nextVsco %}
+                            <div class="grid-half">
+                                <div class="text--smaller"><i>Up next</i></div>
+                                <a href="{{ nextVsco.url }}">{{ nextVsco.data.title }}</a>
                             </div>
                             {% endif %}
                             
