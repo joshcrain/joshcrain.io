@@ -12,7 +12,20 @@
         {% if category == "Ancestry" %}
         <a href="/ancestry/ancestors/">Ancestors</a><a href="/ancestry/heraldry/">Heraldry</a><a href="/ancestry/sources/">Sources</a>
         {% else %}
-        <a href="/notes/" {% if category == "Notes" %}data-state="active"{% endif %}>Notes</a><a href="/art/" {% if category == "Art" %}data-state="active"{% endif %}>Art</a><a href="/about/" {% if category == "About" %}data-state="active"{% endif %}>About</a>
+        <a href="/notes/" {% if category == "Notes" %}data-state="active"{% endif %}>Notes</a>
+        <details class="nav-practice" {% if category == "Art" or category == "Design" or category == "Photography" or category == "VSCO" or category == "Running" or page.url == "/portfolio/" %}data-state="active"{% endif %}>
+            <summary {% if category == "Art" or category == "Design" or category == "Photography" or category == "VSCO" or category == "Running" or page.url == "/portfolio/" %}data-state="active"{% endif %}>
+                <span>Practice</span>
+                <span class="nav-caret" aria-hidden="true">▾</span>
+            </summary>
+            <ul class="nav-submenu" aria-label="Practice navigation">
+                <li><a href="/portfolio/" {% if category == "Design" or page.url == "/portfolio/" %}data-state="active"{% endif %}>Design</a></li>
+                <li><a href="/art/" {% if category == "Art" %}data-state="active"{% endif %}>Art</a></li>
+                <li><a href="/vsco/" {% if category == "Photography" or category == "VSCO" %}data-state="active"{% endif %}>Photography</a></li>
+                <li><a href="/running/" {% if category == "Running" %}data-state="active"{% endif %}>Running</a></li>
+            </ul>
+        </details>
+        <a href="/about/" {% if category == "About" %}data-state="active"{% endif %}>About</a>
         {% endif %}
         </nav>
     </div>

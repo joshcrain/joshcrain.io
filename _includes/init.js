@@ -120,3 +120,67 @@ if (localStorage.getItem("theme") == 'darkTheme') {
         dialogDetailLink.textContent = 'View full details';
     });
 })();
+
+/* Practice submenu keyboard + outside click behavior */
+(function () {
+    const practiceMenu = document.querySelector('.nav-practice');
+    if (!practiceMenu) return;
+
+    const practiceSummary = practiceMenu.querySelector('summary');
+    const getLinks = () => [...practiceMenu.querySelectorAll('.nav-submenu a')];
+
+    const closePracticeMenu = () => {
+        practiceMenu.removeAttribute('open');
+    };
+
+    practiceMenu.querySelectorAll('.nav-submenu a').forEach((link) => {
+        link.addEventListener('click', () => {
+            closePracticeMenu();
+        });
+    });
+
+    if (practiceSummary) {
+        practiceSummary.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+                const links = getLinks();
+                if (!links.length) return;
+                event.preventDefault();
+                practiceMenu.setAttribute('open', 'open');
+                const targetIndex = event.key === 'ArrowDown' ? 0 : links.length - 1;
+                links[targetIndex].focus();
+            }
+        });
+    }
+
+    practiceMenu.addEventListener('keydown', (event) => {
+        const links = getLinks();
+        if (!links.length) return;
+
+        const currentIndex = links.indexOf(document.activeElement);
+        if (currentIndex === -1) return;
+
+        if (event.key === 'ArrowDown') {
+            event.preventDefault();
+            const nextIndex = (currentIndex + 1) % links.length;
+            links[nextIndex].focus();
+        }
+
+        if (event.key === 'ArrowUp') {
+            event.preventDefault();
+            const prevIndex = (currentIndex - 1 + links.length) % links.length;
+            links[prevIndex].focus();
+        }
+
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            closePracticeMenu();
+            if (practiceSummary) practiceSummary.focus();
+        }
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!practiceMenu.contains(event.target)) {
+            closePracticeMenu();
+        }
+    });
+})();
