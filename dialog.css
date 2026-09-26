@@ -1,10 +1,13 @@
 /* Image dialog / lightbox */
 dialog#image-dialog {
+  --dialog-max-height: 90vh;
+  --dialog-max-width: 90vw;
+  
   border: 0;
   padding: 0;
   background: transparent;
-  width: min(90vw, 1200px);
-  max-height: 90vh;
+  width: min(var(--dialog-max-width), 1200px);
+  max-height: var(--dialog-max-height);
   overflow: hidden;
   overscroll-behavior: contain;
   border-radius: var(--size-2);
@@ -21,7 +24,7 @@ dialog#image-dialog .dialog_inner {
   background: rgba(var(--colorBack), 0.96);
   border: 2px solid rgba(var(--colorFore), 0.15);
   border-radius: var(--size-2);
-  max-height: 90vh;
+  max-height: var(--dialog-max-height);
   overflow: hidden;
   box-shadow: 0 24px 80px rgba(0,0,0,0.3);
 }
@@ -29,7 +32,7 @@ dialog#image-dialog .dialog_inner {
 dialog#image-dialog .dialog_content {
   display: grid;
   grid-template-columns: minmax(0, 1.75fr) minmax(260px, 0.9fr);
-  max-height: 90vh;
+  max-height: var(--dialog-max-height);
   overflow: hidden;
 }
 
@@ -42,12 +45,13 @@ dialog#image-dialog .dialog_figure {
   overflow: auto;
   overscroll-behavior: contain;
   background: rgba(var(--colorFore), 0.02);
+  max-height: var(--dialog-max-height);
 }
 
 dialog#image-dialog .dialog_figure img {
   display: block;
   max-width: 100%;
-  max-height: calc(90vh - var(--size-7));
+  max-height: calc(var(--dialog-max-height) - var(--size-7));
   width: auto;
   height: auto;
   border-radius: var(--size-1);
@@ -61,6 +65,7 @@ dialog#image-dialog .dialog_meta {
   overscroll-behavior: contain;
   border-left: 1px solid rgba(var(--colorFore), 0.12);
   font-size: var(--size-3);
+  max-height: var(--dialog-max-height);
 }
 
 dialog#image-dialog .dialog_meta_header {
@@ -124,12 +129,13 @@ dialog#image-dialog .dialog_meta_list dd {
 @media (max-width: 768px) {
   dialog#image-dialog {
     width: 96vw;
-    max-height: 92vh;
+    --dialog-max-height: 92vh;
   }
 
   dialog#image-dialog .dialog_content {
     grid-template-columns: 1fr;
-    max-height: 92vh;
+    max-height: var(--dialog-max-height);
+    overflow: auto;
   }
 
   dialog#image-dialog .dialog_meta {
@@ -146,7 +152,7 @@ dialog#image-dialog .dialog_meta_list dd {
 @media (max-width: 480px) {
   dialog#image-dialog {
     width: 98vw;
-    max-height: 94vh;
+    --dialog-max-height: 94vh;
   }
 
   .dialog_close {
