@@ -1,7 +1,7 @@
 /* Image dialog / lightbox */
 dialog#image-dialog {
-  --dialog-max-height: 90vh;
-  --dialog-max-width: 90vw;
+  --dialog-max-height: 95vh;
+  --dialog-max-width: 95vw;
   
   border: 0;
   padding: 0;
@@ -20,7 +20,6 @@ dialog#image-dialog::backdrop {
 }
 
 dialog#image-dialog .dialog_inner {
-  position: relative;
   background: rgba(var(--colorBack), 0.96);
   border: 2px solid rgba(var(--colorFore), 0.15);
   border-radius: var(--size-2);
