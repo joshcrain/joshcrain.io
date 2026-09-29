@@ -1,8 +1,78 @@
 /* Image dialog / lightbox */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes dialog-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(var(--size-2)) scale(0.985);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes dialog-fade-out {
+    from {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(var(--size-2)) scale(0.985);
+    }
+  }
+
+  @keyframes dialog-backdrop-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  dialog#image-dialog[data-state='open']::backdrop,
+  dialog#image-dialog[open]::backdrop {
+    animation: dialog-backdrop-in var(--dialog-transition-duration) var(--dialog-transition-easing) forwards;
+  }
+
+  dialog#image-dialog[data-state='open'] .dialog_inner,
+  dialog#image-dialog[open] .dialog_inner {
+    animation: dialog-fade-in var(--dialog-transition-duration) var(--dialog-transition-easing) forwards;
+  }
+
+  dialog#image-dialog[data-state='closing'] .dialog_inner {
+    animation: dialog-fade-out calc(var(--dialog-transition-duration) * 0.8) var(--dialog-transition-easing) forwards;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  dialog#image-dialog::backdrop,
+  dialog#image-dialog .dialog_inner,
+  dialog#image-dialog .dialog_figure img,
+  .dialog_close {
+    animation: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  dialog#image-dialog,
+  dialog#image-dialog .dialog_inner,
+  dialog#image-dialog .dialog_figure img {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  dialog#image-dialog::backdrop {
+    opacity: 1;
+  }
+}
+
 dialog#image-dialog {
   --dialog-max-height: 95vh;
   --dialog-max-width: 95vw;
-  
+  --dialog-transition-duration: 700ms;
+  --dialog-transition-easing: cubic-bezier(.4, 0, .2, 1);
+
   border: 0;
   padding: 0;
   background: transparent;
@@ -12,11 +82,24 @@ dialog#image-dialog {
   overscroll-behavior: contain;
   border-radius: var(--size-2);
   color: inherit;
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+dialog#image-dialog[data-state='open'],
+dialog#image-dialog[open] {
+  opacity: 1;
+}
+
+dialog#image-dialog[data-state='closing'] {
+  opacity: 1;
 }
 
 dialog#image-dialog::backdrop {
-  background: rgba(0,0,0,0.72);
+  background: rgba(var(--colorBack), 0.8);
   backdrop-filter: blur(6px) saturate(0.9);
+  opacity: 0;
 }
 
 dialog#image-dialog .dialog_inner {
@@ -26,6 +109,8 @@ dialog#image-dialog .dialog_inner {
   max-height: var(--dialog-max-height);
   overflow: hidden;
   box-shadow: 0 24px 80px rgba(0,0,0,0.3);
+  opacity: 0;
+  transform: translateY(var(--size-2)) scale(0.985);
 }
 
 dialog#image-dialog .dialog_content {
@@ -36,6 +121,7 @@ dialog#image-dialog .dialog_content {
 }
 
 dialog#image-dialog .dialog_figure {
+  position: relative;
   margin: 0;
   padding: var(--size-4);
   display: flex;
@@ -47,6 +133,22 @@ dialog#image-dialog .dialog_figure {
   max-height: var(--dialog-max-height);
 }
 
+dialog#image-dialog .dialog_loading {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--fontIndustrial);
+  font-size: var(--size-3);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(var(--colorFore), 0.7);
+  pointer-events: none;
+}
+
+dialog#image-dialog .dialog_loading[hidden] {
+  display: none;
+}
+
 dialog#image-dialog .dialog_figure img {
   display: block;
   max-width: 100%;
@@ -56,6 +158,12 @@ dialog#image-dialog .dialog_figure img {
   border-radius: var(--size-1);
   object-fit: contain;
   background: transparent;
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+dialog#image-dialog .dialog_figure img.is-visible {
+  opacity: 1;
 }
 
 dialog#image-dialog .dialog_meta {
@@ -105,7 +213,7 @@ dialog#image-dialog .dialog_meta_list dd {
 }
 
 .dialog_close {
-  position: absolute;
+  position: fixed;
   right: var(--size-2);
   top: var(--size-2);
   z-index: 1;
@@ -113,16 +221,16 @@ dialog#image-dialog .dialog_meta_list dd {
   border: 0;
   padding: var(--size-1) var(--size-2);
   border-radius: var(--size-1);
-  font-size: var(--size-6);
+  font-size: var(--size-7);
   cursor: pointer;
   transition: background 0.2s ease, opacity 0.2s ease;
   line-height: 1;
   color:inherit;
-  background: rgba(var(--colorAccent), .1);
+  background: rgba(var(--colorAccent), 0.7);
 }
 
 .dialog_close:hover {
-  background: rgba(var(--colorAccent), .3);
+  background: rgba(var(--colorAccent), 1);
 }
 
 @media (max-width: 768px) {
