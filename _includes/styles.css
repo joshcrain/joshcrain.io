@@ -608,8 +608,8 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 a:hover svg {fill:rgba(var(--colorFore), 1)}
 .logo svg{fill:rgba(var(--colorAccent), 1)}
 .no-js .view {display:none;}
-.view a{border-radius:50%;padding:var(--size-1) var(--size-0) var(--size-0);line-height:.8;transition: all .1s ease-in-out;position: fixed;right:var(--size-4);bottom:var(--size-4);}
-.view a:hover {transform: scale(1.2);}
+.view a{border-radius: 50%;padding: var(--size-1);line-height: .8;transition: all .1s ease-in-out;position: fixed;right: var(--size-4);bottom: var(--size-4);background: rgba(var(--colorAccent), 0.50);display: block;display: grid;place-items: center;}
+.view a:hover {transform: scale(1.2);transition: all .1s ease-in-out;position: fixed;right: var(--size-4);bottom: var(--size-4);background: rgba(var(--colorAccent), 0.30);}
 .view svg{height:var(--size-6);opacity: .8;}
 .view .night svg {fill:hsl(var(--fillFore));}
 .view .day svg {fill:rgba(var(--colorAccent),1);}
