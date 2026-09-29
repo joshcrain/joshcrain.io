@@ -51,6 +51,7 @@ if (localStorage.getItem("theme") == 'darkTheme') {
 (function () {
     const imageDialog = document.getElementById('image-dialog');
     const dialogImage = document.getElementById('dialog-image');
+    const dialogLoading = document.getElementById('dialog-loading');
     const dialogCaption = document.getElementById('dialog-caption');
     const dialogTitle = document.getElementById('dialog-title');
     const dialogPreset = document.getElementById('dialog-preset');
@@ -62,12 +63,27 @@ if (localStorage.getItem("theme") == 'darkTheme') {
 
     if (!imageDialog || !dialogImage) return;
 
+    const showLoadingState = () => {
+        if (dialogLoading) dialogLoading.hidden = false;
+        dialogImage.classList.remove('is-visible');
+    };
+
+    const hideLoadingState = () => {
+        if (dialogLoading) dialogLoading.hidden = true;
+        dialogImage.classList.add('is-visible');
+    };
+
+    const setDialogState = (state) => {
+        imageDialog.dataset.state = state;
+    };
+
     const setDialogData = (link) => {
         const title = link.dataset.title || 'Untitled';
         const alt = link.dataset.alt || title;
         const detailUrl = link.dataset.detailUrl || '#';
         const preset = link.dataset.preset || '';
 
+        showLoadingState();
         dialogImage.src = link.href;
         dialogImage.alt = alt;
         dialogCaption.textContent = alt;
@@ -84,6 +100,17 @@ if (localStorage.getItem("theme") == 'darkTheme') {
         dialogDetailLink.textContent = detailUrl && detailUrl !== '#' ? 'View full details' : 'Open image';
     };
 
+    const handleImageLoad = () => {
+        if (dialogImage.complete && dialogImage.naturalWidth > 0) {
+            hideLoadingState();
+        }
+    };
+
+    dialogImage.addEventListener('load', handleImageLoad);
+    dialogImage.addEventListener('error', () => {
+        hideLoadingState();
+    });
+
     document.addEventListener('click', (event) => {
         const link = event.target.closest && event.target.closest('a.image-lightbox');
         if (!link) return;
@@ -92,22 +119,35 @@ if (localStorage.getItem("theme") == 'darkTheme') {
         setDialogData(link);
 
         document.body.style.overflow = 'hidden';
+        setDialogState('opening');
         imageDialog.showModal();
+        requestAnimationFrame(() => {
+            setDialogState('open');
+        });
     });
 
     imageDialog.addEventListener('click', (event) => {
         if (event.target === imageDialog) {
+            setDialogState('closing');
             imageDialog.close();
         }
     });
 
     const closeBtn = document.getElementById('dialog-close');
-    if (closeBtn) closeBtn.addEventListener('click', () => imageDialog.close());
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            setDialogState('closing');
+            imageDialog.close();
+        });
+    }
 
     imageDialog.addEventListener('close', () => {
+        setDialogState('closed');
         document.body.style.overflow = '';
         dialogImage.src = '';
         dialogImage.alt = '';
+        dialogImage.classList.remove('is-visible');
+        if (dialogLoading) dialogLoading.hidden = false;
         dialogCaption.textContent = '';
         dialogTitle.textContent = 'Untitled';
         dialogPreset.textContent = '';
