@@ -536,8 +536,14 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
     box-shadow: 0 0 var(--size-0) 0 hsla(var(--fillFore), .3);  
     overflow: hidden;
     border-radius: var(--size-1);
+    transition: box-shadow .2s ease;
   }
   
+  .tile:hover > a,
+.tile:focus-visible > a {
+  box-shadow: 0 0 var(--size-1) var(--size-1) hsla(var(--fillFore), .4), 0 var(--size-1) var(--size-3) hsla(var(--fillFore), .18);
+}
+
   .tile p {margin:0;}
 
   .tile_inner {
@@ -608,12 +614,73 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 a:hover svg {fill:rgba(var(--colorFore), 1)}
 .logo svg{fill:rgba(var(--colorAccent), 1)}
 .no-js .view {display:none;}
-.view a{border-radius: 50%;padding: var(--size-1);line-height: .8;transition: all .1s ease-in-out;position: fixed;right: var(--size-4);bottom: var(--size-4);background: rgba(var(--colorAccent), 0.50);display: block;display: grid;place-items: center;}
-.view a:hover {transform: scale(1.2);transition: all .1s ease-in-out;position: fixed;right: var(--size-4);bottom: var(--size-4);background: rgba(var(--colorAccent), 0.30);}
+.view {
+  position: fixed;
+  right: var(--size-4);
+  bottom: var(--size-4);
+  z-index: 10;
+}
+.view a {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  padding: var(--size-1);
+  line-height: .8;
+  background: hsla(var(--fillAccent), 0.60);
+  backdrop-filter: blur(6px) saturate(0.9);
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+  transition: opacity .2s ease, transform .2s ease, background .2s ease, visibility .2s ease;
+}
+.view a:hover {
+  background: hsla(var(--fillAccent), 0.30);
+}
+.view a > svg {
+  display: block;
+  transform: translateY(0);
+  transition: transform .15s ease;
+}
+.view a:hover > svg {
+  transform: scale(1.2);
+}
+
+@supports (animation-timeline: scroll()) {
+  .view a {
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    visibility: hidden;
+    animation: viewButton linear both;
+    animation-timeline: scroll(root block);
+  }
+
+  @keyframes viewButton {
+    0%, 8% {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      visibility: visible;
+    }
+    24%, 72% {
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+      visibility: hidden;
+    }
+    92%, 100% {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      visibility: visible;
+    }
+  }
+}
+
 .view svg{height:var(--size-6);opacity: .8;}
 .view .night svg {fill:hsl(var(--fillFore));}
 .view .day svg {fill:rgba(var(--colorAccent),1);}
-
 
 .fade-in {
   transform: translate3d(0,0,0);
