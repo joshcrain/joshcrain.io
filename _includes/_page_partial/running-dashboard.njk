@@ -1,0 +1,73 @@
+<figure class="activity-calendar">
+    <figcaption>
+        <h3>Running days</h3>
+    </figcaption>
+    <div class="activity-calendar_grid" role="group" aria-labelledby="activity-calendar-title">
+        <h4 class="visuallyhidden" id="activity-calendar-title">Daily running activity over the same 26 weeks</h4>
+        <div class="activity-calendar_weekdays" aria-hidden="true">
+            <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+        </div>
+        <div class="activity-calendar_body">
+            <div class="activity-calendar_months" aria-hidden="true">
+                {% for week in collections.runningMileageChartWeeks %}
+                {% if week.monthLabel %}<span style="grid-column: {{ loop.index }}">{{ week.monthLabel }}</span>{% endif %}
+                {% endfor %}
+            </div>
+            <div class="activity-calendar_weeks">
+                {% for week in collections.runningMileageChartWeeks %}
+                <div class="activity-calendar_week">
+                    {% for day in week.days %}
+                    {% if day.isAfterLatest %}
+                    <span class="activity-calendar_day is-outside-range" aria-hidden="true"></span>
+                    {% elif day.runCount > 0 %}
+                    <a class="activity-calendar_day level-{{ day.level }}" href="{{ day.activityUrl }}" title="{{ day.label }}: {{ day.milesLabel }} miles, {{ day.runCount }} {% if day.runCount == 1 %}run{% else %}runs{% endif %}" aria-label="{{ day.label }}: {{ day.milesLabel }} miles, {{ day.runCount }} {% if day.runCount == 1 %}run{% else %}runs{% endif %}"></a>
+                    {% else %}
+                    <span class="activity-calendar_day level-0" aria-hidden="true"></span>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="activity-calendar_legend" aria-label="Mileage per day">
+        <span>Less</span>
+        <span class="activity-calendar_swatch level-0" aria-hidden="true"></span>
+        <span class="activity-calendar_swatch level-1" aria-hidden="true"></span>
+        <span class="activity-calendar_swatch level-2" aria-hidden="true"></span>
+        <span class="activity-calendar_swatch level-3" aria-hidden="true"></span>
+        <span class="activity-calendar_swatch level-4" aria-hidden="true"></span>
+        <span>More</span>
+    </div>
+</figure>
+<figure class="running-chart">
+    <figcaption>
+        <h3>Weekly mileage</h3>
+    </figcaption>
+    <div class="running-chart_visual" role="img" aria-label="Bar chart of miles run each week over the last 26 weeks. Weekly values are listed below the chart." aria-describedby="weekly-running-data">
+        <div class="running-chart_scale" aria-hidden="true">
+            <span>{{ collections.runningMileageChartWeeks[0].axisMaximum }} mi</span>
+            <span>0</span>
+        </div>
+        <div class="running-chart_plot">
+            <div class="running-chart_grid" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <ol class="running-chart_bars" aria-hidden="true">
+                {% for week in collections.runningMileageChartWeeks %}
+                <li class="{% if week.isLatest %}is-latest{% endif %}" title="Week of {{ week.startDate | date('MMM D, YYYY') }}: {{ week.milesLabel }} miles across {{ week.runCount }} runs">
+                    <span style="height: {{ week.barHeight }}%"></span>
+                </li>
+                {% endfor %}
+            </ol>
+            <div class="running-chart_ticks" aria-hidden="true">
+                {% for week in collections.runningMileageChartWeeks %}
+                {% if week.showTick %}<span class="{% if loop.first %}tick-first{% elif loop.last %}tick-last{% endif %}" style="left: {{ week.tickPosition }}%">{{ week.label }}</span>{% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <ol class="visuallyhidden" id="weekly-running-data">
+        {% for week in collections.runningMileageChartWeeks %}
+        <li>Week of {{ week.startDate | date('MMM D, YYYY') }}: {{ week.milesLabel }} miles across {{ week.runCount }} runs.</li>
+        {% endfor %}
+    </ol>
+</figure>

@@ -87,6 +87,8 @@ priority: "1.0"
             <span class="meta">{{ collections.combinedActivityList| length }} activities</span>
         </div>
         <div class="grid-content">
+            {% include "_page_partial/running-dashboard.njk" %}
+            <h3>Recent activities</h3>
             <table class="table_rwd">
                 <thead>
                     <tr>
@@ -98,7 +100,7 @@ priority: "1.0"
                     </tr>
                 </thead>
                 {% set rundata = collections.combinedActivityList %}
-                {% for item in rundata.slice(0, 10) %}
+                {% for item in rundata.slice(0, 5) %}
                     {% include "_page_partial/running-columns.njk" %}
                 {% endfor %}
             </table>

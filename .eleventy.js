@@ -600,8 +600,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 
-  // Combine running.activityList and running2023.activityList
-  eleventyConfig.addCollection("combinedActivityList", function(_) { 
+  const getCombinedRunningActivities = function() {
     const running2020Activities = require("./_data/running2020.json");
     const running2021Activities = require("./_data/running2021.json");
     const running2022Activities = require("./_data/running2022.json");
@@ -611,8 +610,92 @@ module.exports = function(eleventyConfig) {
     const running2026Activities = require("./_data/running2026.json");
     const combinedActivities = [].concat(running2026Activities.activityList).concat(running2025Activities.activityList).concat(running2024Activities.activityList).concat(running2023Activities.activityList).concat(running2022Activities.activityList).concat(running2021Activities.activityList).concat(running2020Activities.activityList);
 
-    const filteredActivities = combinedActivities.filter(item => item.sportTypeId == "1");
-    return filteredActivities;
+    return combinedActivities.filter(item => item.sportTypeId == "1");
+  };
+
+  eleventyConfig.addCollection("combinedActivityList", function(_) {
+    return getCombinedRunningActivities();
+  });
+
+  eleventyConfig.addCollection("runningMileageChartWeeks", function(_) {
+    const dayMilliseconds = 24 * 60 * 60 * 1000;
+    const weekMilliseconds = dayMilliseconds * 7;
+    const activities = getCombinedRunningActivities();
+    const latestActivityDate = activities.reduce(function(latest, activity) {
+      const match = activity.startTimeLocal && activity.startTimeLocal.match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if (!match) return latest;
+
+      const activityDate = Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+      return latest === null || activityDate > latest ? activityDate : latest;
+    }, null);
+    const latestDate = latestActivityDate === null ? Date.now() : latestActivityDate;
+    const latestWeekStart = latestDate - ((new Date(latestDate).getUTCDay() + 6) % 7) * dayMilliseconds;
+    const firstWeekStart = latestWeekStart - 25 * weekMilliseconds;
+    const weeks = Array.from({ length: 26 }, function(_, index) {
+      const startDate = new Date(firstWeekStart + index * weekMilliseconds);
+      const days = Array.from({ length: 7 }, function(_, dayIndex) {
+        const dayDate = new Date(startDate.getTime() + dayIndex * dayMilliseconds);
+        return {
+          date: dayDate.toISOString().slice(0, 10),
+          label: moment.utc(dayDate).format("MMM D, YYYY"),
+          miles: 0,
+          runCount: 0,
+          activityUrl: null,
+          isAfterLatest: latestActivityDate !== null && dayDate.getTime() > latestActivityDate
+        };
+      });
+      return {
+        startDate: startDate.toISOString().slice(0, 10),
+        label: moment.utc(startDate).format("MMM D"),
+        miles: 0,
+        runCount: 0,
+        days,
+        isLatest: index === 25,
+        monthLabel: index === 0 ? moment.utc(startDate).format("MMM") : "",
+        showTick: index % 5 === 0 || index === 25,
+        tickPosition: ((index + 0.5) / 26) * 100
+      };
+    });
+
+    weeks.forEach(function(week) {
+      const monthStart = week.days.find(day => day.date.slice(-2) === "01" && !day.isAfterLatest);
+      if (monthStart) week.monthLabel = moment.utc(monthStart.date).format("MMM");
+    });
+
+    activities.forEach(function(activity) {
+      const match = activity.startTimeLocal && activity.startTimeLocal.match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if (!match) return;
+
+      const activityDate = Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+      const activityWeekStart = activityDate - ((new Date(activityDate).getUTCDay() + 6) % 7) * dayMilliseconds;
+      const weekIndex = Math.floor((activityWeekStart - firstWeekStart) / weekMilliseconds);
+      if (weekIndex < 0 || weekIndex >= weeks.length) return;
+
+      const distance = typeof activity.distance === "object" && activity.distance !== null
+        ? activity.distance.parsedValue
+        : activity.distance;
+      const miles = Number(distance || 0) / 1609.344;
+      const dayIndex = Math.floor((activityDate - (firstWeekStart + weekIndex * weekMilliseconds)) / dayMilliseconds);
+      const day = weeks[weekIndex].days[dayIndex];
+      weeks[weekIndex].miles += miles;
+      weeks[weekIndex].runCount += 1;
+      day.miles += miles;
+      day.runCount += 1;
+      if (!day.activityUrl) day.activityUrl = `/running/${match[1]}/${activity.activityId}`;
+    });
+
+    const maximumMiles = Math.max(...weeks.map(week => week.miles));
+    const axisMaximum = Math.max(5, Math.ceil(maximumMiles / 5) * 5);
+    return weeks.map(function(week) {
+      week.milesLabel = week.miles.toFixed(1);
+      week.barHeight = week.miles === 0 ? 0 : Math.max(1, (week.miles / axisMaximum) * 100);
+      week.axisMaximum = axisMaximum;
+      week.days.forEach(function(day) {
+        day.milesLabel = day.miles.toFixed(1);
+        day.level = day.runCount === 0 ? 0 : day.miles >= 10 ? 4 : day.miles >= 6 ? 3 : day.miles >= 3 ? 2 : 1;
+      });
+      return week;
+    });
   });
 
 eleventyConfig.addCollection("2026ActivityList", function(_) { 
