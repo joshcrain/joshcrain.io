@@ -885,6 +885,8 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 }
 
 @media only screen and (max-width: 479px) {
+.site_header .wrapper{flex-direction:column;align-items:center;}
+.site_nav{justify-content:center;}
 .running-chart_ticks span:not(.tick-first):not(.tick-last) {display:none;}
 .activity-calendar_weekdays {font-size:.5rem;}
 .grid-layout_hero{
