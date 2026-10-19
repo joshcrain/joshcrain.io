@@ -88,22 +88,6 @@ priority: "1.0"
         </div>
         <div class="grid-content">
             {% include "_page_partial/running-dashboard.njk" %}
-            <h3>Recent activities</h3>
-            <table class="table_rwd">
-                <thead>
-                    <tr>
-                        <th scope="col">When</th>
-                        <th scope="col">Distance</th>
-                        <th scope="col">Time</th>
-                        <th scope="col">Pace</th>
-                        <th scope="col">Heart Rate</th>
-                    </tr>
-                </thead>
-                {% set rundata = collections.combinedActivityList %}
-                {% for item in rundata.slice(0, 5) %}
-                    {% include "_page_partial/running-columns.njk" %}
-                {% endfor %}
-            </table>
             <p><i>See <a href="/running/">all running</a> activities or by year: 
             {% set uniqueYears = [] %}
             {% for item in collections.combinedActivityList %}
