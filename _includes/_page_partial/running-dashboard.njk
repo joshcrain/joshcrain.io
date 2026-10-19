@@ -42,9 +42,9 @@
 </figure>
 <figure class="running-chart">
     <figcaption>
-        <h3>Weekly mileage</h3>
+        <h3>Weekly mileage <span class="amp">&amp;</span> VO<sub>2</sub> max</h3>
     </figcaption>
-    <div class="running-chart_visual" role="img" aria-label="Bar chart of miles run each week over the last 26 weeks. Weekly values are listed below the chart." aria-describedby="weekly-running-data">
+    <div class="running-chart_visual" role="img" aria-label="Chart of weekly running mileage shown as bars and average VO2 max shown as dots on a separate historically scaled axis. Weekly values are listed below the chart." aria-describedby="weekly-running-data">
         <div class="running-chart_scale" aria-hidden="true">
             <span>{{ collections.runningMileageChartWeeks[0].axisMaximum }} mi</span>
             <span>0</span>
@@ -53,8 +53,9 @@
             <div class="running-chart_grid" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
             <ol class="running-chart_bars" aria-hidden="true">
                 {% for week in collections.runningMileageChartWeeks %}
-                <li class="{% if week.isLatest %}is-latest{% endif %}" title="Week of {{ week.startDate | date('MMM D, YYYY') }}: {{ week.milesLabel }} miles across {{ week.runCount }} runs">
+                <li title="Week of {{ week.startDate | date('MMM D, YYYY') }}: {{ week.milesLabel }} miles across {{ week.runCount }} runs{% if week.vo2Label %}; average VO2 max {{ week.vo2Label }}{% endif %}">
                     <span style="height: {{ week.barHeight }}%"></span>
+                    {% if week.vo2Label %}<span class="running-chart_vo2-dot" style="bottom: {{ week.vo2Position }}%" title="Average VO2 max: {{ week.vo2Label }}"></span>{% endif %}
                 </li>
                 {% endfor %}
             </ol>
@@ -64,10 +65,16 @@
                 {% endfor %}
             </div>
         </div>
+        <div class="running-chart_vo2-scale" aria-hidden="true">
+            {% for tick in collections.runningMileageChartWeeks[0].vo2ScaleTicks %}
+            <span>{{ tick }}</span>
+            {% endfor %}
+        </div>
     </div>
+    <div class="running-chart_legend" aria-hidden="true"><span class="running-chart_vo2-swatch"></span><span>Weekly average VO2 max</span></div>
     <ol class="visuallyhidden" id="weekly-running-data">
         {% for week in collections.runningMileageChartWeeks %}
-        <li>Week of {{ week.startDate | date('MMM D, YYYY') }}: {{ week.milesLabel }} miles across {{ week.runCount }} runs.</li>
+        <li>Week of {{ week.startDate | date('MMM D, YYYY') }}: {{ week.milesLabel }} miles across {{ week.runCount }} runs{% if week.vo2Label %}; average VO2 max {{ week.vo2Label }}{% else %}; no VO2 max data{% endif %}.</li>
         {% endfor %}
     </ol>
 </figure>
