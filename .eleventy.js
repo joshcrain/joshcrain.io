@@ -649,8 +649,9 @@ module.exports = function(eleventyConfig) {
         label: moment.utc(startDate).format("MMM D"),
         miles: 0,
         runCount: 0,
+        vo2Total: 0,
+        vo2Count: 0,
         days,
-        isLatest: index === 25,
         monthLabel: index === 0 ? moment.utc(startDate).format("MMM") : "",
         showTick: index % 5 === 0 || index === 25,
         tickPosition: ((index + 0.5) / 26) * 100
@@ -679,6 +680,11 @@ module.exports = function(eleventyConfig) {
       const day = weeks[weekIndex].days[dayIndex];
       weeks[weekIndex].miles += miles;
       weeks[weekIndex].runCount += 1;
+      const vo2Value = Number(activity.vO2MaxValue);
+      if (activity.vO2MaxValue !== null && activity.vO2MaxValue !== undefined && Number.isFinite(vo2Value) && vo2Value > 0) {
+        weeks[weekIndex].vo2Total += vo2Value;
+        weeks[weekIndex].vo2Count += 1;
+      }
       day.miles += miles;
       day.runCount += 1;
       if (!day.activityUrl) day.activityUrl = `/running/${match[1]}/${activity.activityId}`;
@@ -686,10 +692,29 @@ module.exports = function(eleventyConfig) {
 
     const maximumMiles = Math.max(...weeks.map(week => week.miles));
     const axisMaximum = Math.max(5, Math.ceil(maximumMiles / 5) * 5);
+    const historicalVo2Values = activities
+      .map(activity => Number(activity.vO2MaxValue))
+      .filter(value => Number.isFinite(value) && value > 0);
+    const vo2ScaleMinimum = historicalVo2Values.length
+      ? Math.floor(Math.min(...historicalVo2Values) / 5) * 5
+      : 50;
+    const vo2ScaleMaximum = historicalVo2Values.length
+      ? Math.max(vo2ScaleMinimum + 10, Math.ceil(Math.max(...historicalVo2Values) / 5) * 5)
+      : 60;
+    const vo2ScaleTicks = Array.from(
+      { length: (vo2ScaleMaximum - vo2ScaleMinimum) / 5 + 1 },
+      (_, index) => vo2ScaleMaximum - index * 5
+    );
     return weeks.map(function(week) {
       week.milesLabel = week.miles.toFixed(1);
       week.barHeight = week.miles === 0 ? 0 : Math.max(1, (week.miles / axisMaximum) * 100);
       week.axisMaximum = axisMaximum;
+      week.vo2Average = week.vo2Count > 0 ? week.vo2Total / week.vo2Count : null;
+      week.vo2Label = week.vo2Average === null ? null : week.vo2Average.toFixed(1);
+      week.vo2ScaleTicks = vo2ScaleTicks;
+      week.vo2Position = week.vo2Average === null
+        ? null
+        : Math.max(0, Math.min(100, ((week.vo2Average - vo2ScaleMinimum) / (vo2ScaleMaximum - vo2ScaleMinimum)) * 100));
       week.days.forEach(function(day) {
         day.milesLabel = day.miles.toFixed(1);
         day.level = day.runCount === 0 ? 0 : day.miles >= 10 ? 4 : day.miles >= 6 ? 3 : day.miles >= 3 ? 2 : 1;
