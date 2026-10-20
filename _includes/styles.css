@@ -842,9 +842,6 @@ a:hover svg {fill:rgba(var(--colorFore), 1)}
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
 .hero .text--larger {font-size: var(--size-4);}
-.grid-layout_home{
-  grid-template-columns: 3fr 9fr;
-}
 
 }
 
