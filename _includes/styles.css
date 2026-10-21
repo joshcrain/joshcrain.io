@@ -445,7 +445,8 @@ pre {max-width: 100%;overflow-x: auto;display: block;}
 .activity-calendar_legend {display:flex;align-items:center;justify-content:flex-end;gap:clamp(2px,.6vw,8px);margin-top:var(--size-3);font-size:.7rem;color:rgba(var(--color-ink),.72);}
 .activity-calendar_swatch {display:block;width:.7rem;aspect-ratio:1;border:1px solid rgba(var(--color-ink),.18);border-radius:var(--size-0);background:rgba(var(--color-ink),.035);}
 @media only screen and (max-width: 1199px) {
-.activity-calendar_body {overflow-x:auto;overscroll-behavior-x:contain;}
+.activity-calendar_body {overflow-x:auto;overscroll-behavior-x:contain;direction:rtl;}
+.activity-calendar_body > * {direction:ltr;}
 .activity-calendar_months,.activity-calendar_weeks {width:max-content;min-width:100%;grid-template-columns:repeat(26,24px);column-gap:4px;}
 .activity-calendar_week {grid-template-rows:repeat(7,24px);row-gap:4px;}
 }
