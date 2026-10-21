@@ -554,8 +554,18 @@ module.exports = function(eleventyConfig) {
         widths: [480],
         formats: ["avif", "jpeg"],
         outputDir: "./_site/img/",
+        hashLength: 11,
+        transform: async (image) => {
+          const { width, height } = await image.metadata();
+          const size = Math.min(480, width, height);
+          image.resize(size, size, {
+            fit: "cover",
+            position: "centre",
+          });
+        },
         sharpAvifOptions: {
-          quality: 65,
+          quality: 60,
+          effort: 7,
         },
         ...(isRemote ? {
           cacheOptions: {
