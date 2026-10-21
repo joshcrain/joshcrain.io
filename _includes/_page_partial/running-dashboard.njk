@@ -7,7 +7,7 @@
         <div class="activity-calendar_weekdays" aria-hidden="true">
             <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
         </div>
-        <div class="activity-calendar_body">
+        <div class="activity-calendar_body" role="region" aria-label="Activity calendar; scroll horizontally to see earlier weeks" tabindex="0">
             <div class="activity-calendar_months" aria-hidden="true">
                 {% for week in collections.runningMileageChartWeeks %}
                 {% if week.monthLabel %}<span style="grid-column: {{ loop.index }}">{{ week.monthLabel }}</span>{% endif %}

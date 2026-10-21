@@ -1,6 +1,18 @@
 function jscheck() {
     document.getElementsByTagName("BODY")[0].classList.remove("no-js");
 }
+
+const activityCalendar = document.querySelector('.activity-calendar_body');
+const activityCalendarMobile = window.matchMedia('(max-width: 1199px)');
+const scrollActivityCalendarToLatest = () => {
+    if (activityCalendar && activityCalendarMobile.matches) {
+        activityCalendar.scrollLeft = activityCalendar.scrollWidth;
+    }
+};
+scrollActivityCalendarToLatest();
+activityCalendarMobile.addEventListener('change', scrollActivityCalendarToLatest);
+window.addEventListener('resize', scrollActivityCalendarToLatest);
+
 //theming local storage
 if (localStorage.getItem("theme") != null) {
     getColour = localStorage.theme;
