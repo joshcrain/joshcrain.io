@@ -22,7 +22,7 @@ The motivation wasn’t a rebrand. It was wanting to exist more visibly online i
 
 The logo is built from my initials, J and C, using large geometric forms aligned to a grid. Where the letterforms intersect, the shape disappears — it prompts the viewer to complete them. Minimal but slightly enigmatic, it works at favicon scale and still holds interest at header size.
 
-<div style=’padding:2em;float:right;margin:0 0 1em 1em;border: var(--border-size-1) dashed rgba(var(--colorFore),.25);’ class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"></circle><circle cx="40" cy="17" r="5"></circle><circle cx="5" cy="17" r="5"></circle><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"></path></svg></div>
+<div style=’padding:2em;float:right;margin:0 0 1em 1em;border: var(--border-size-1) dashed rgba(var(--color-ink),.25);’ class="text_accent logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" role="img" aria-labelledby="svgLogo"><title id="svgLogo">Josh Crain</title><circle cx="40" cy="5" r="5"></circle><circle cx="40" cy="17" r="5"></circle><circle cx="5" cy="17" r="5"></circle><path d="M33 0v22c-5.5 0-10-4.9-10-11S27.5 0 33 0zM22 11c0 6.1-4.5 11-10 11V0h10v11z"></path></svg></div>
 
 I chose DM Serif Display for headings to echo the contrast and delicacy of the logo’s shapes: high-contrast, transitional, modern but classical. The system is built for theming from the ground up — all SVGs are inline and use CSS custom properties for stroke and fill, so the identity responds to light/dark mode without bitmap assets.
 

@@ -105,7 +105,7 @@ const createSocialImageForArticle = (input, output) =>
         const textMaxWidth = canvas.width - textStartX - 80; // Remaining width minus even larger right padding
         
         // Title styling - positioned in remaining space after portrait
-        ctx.fillStyle = 'hsl(270,50%,20%)';
+        ctx.fillStyle = 'rgb(51,25.5,76.5)';
         ctx.font = 'bold 72px Arial, sans-serif'; // Simplified font syntax for Canvas
         ctx.textAlign = 'left';
         ctx.textBaseline = 'top';
@@ -164,7 +164,7 @@ const createSocialImageForArticle = (input, output) =>
         const contentStartY = (canvas.height - totalContentHeight) / 2;
         
         // Draw the title lines
-        ctx.fillStyle = 'hsl(270,50%,20%)';
+        ctx.fillStyle = 'rgb(51,25.5,76.5)';
         ctx.font = 'bold 72px Arial, sans-serif';
         lines.forEach((line, index) => {
           ctx.fillText(line, textStartX, contentStartY + (index * titleLineHeight));
@@ -175,7 +175,7 @@ const createSocialImageForArticle = (input, output) =>
         // Draw the date below the title if we have one
         if (dateString) {
           ctx.font = '24px Arial, sans-serif';
-          ctx.fillStyle = 'hsl(270,50%,20%)';
+          ctx.fillStyle = 'rgb(51,25.5,76.5)';
           currentY += spacingBetween;
           ctx.fillText(dateString, textStartX, currentY);
           currentY += dateLineHeight;
@@ -219,7 +219,7 @@ const createSocialImageForArticle = (input, output) =>
         const fallbackTextMaxWidth = canvas.width - fallbackTextStartX - 80;
         
         // Title styling - positioned in remaining space after placeholder
-        ctx.fillStyle = 'hsl(270,50%,20%)';
+        ctx.fillStyle = 'rgb(51,25.5,76.5)';
         ctx.font = 'bold 72px Arial, sans-serif'; // Updated to match main section
         ctx.textAlign = 'left';
         ctx.textBaseline = 'top';
@@ -278,7 +278,7 @@ const createSocialImageForArticle = (input, output) =>
         const contentStartY = (canvas.height - totalContentHeight) / 2;
         
         // Draw the title lines
-        ctx.fillStyle = 'hsl(270,50%,20%)';
+        ctx.fillStyle = 'rgb(51,25.5,76.5)';
         ctx.font = 'bold 72px Arial, sans-serif';
         lines.forEach((line, index) => {
           ctx.fillText(line, fallbackTextStartX, contentStartY + (index * titleLineHeight));
@@ -289,7 +289,7 @@ const createSocialImageForArticle = (input, output) =>
         // Draw the date below the title if we have one
         if (dateString) {
           ctx.font = '24px sans-serif';
-          ctx.fillStyle = 'hsl(270,50%,20%)';
+          ctx.fillStyle = 'rgb(51,25.5,76.5)';
           currentY += spacingBetween;
           ctx.fillText(dateString, fallbackTextStartX, currentY);
           currentY += dateLineHeight;

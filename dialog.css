@@ -97,14 +97,14 @@ dialog#image-dialog[data-state='closing'] {
 }
 
 dialog#image-dialog::backdrop {
-  background: rgba(var(--colorBack), 0.8);
+  background: rgba(var(--color-surface), 0.8);
   backdrop-filter: blur(6px) saturate(0.9);
   opacity: 0;
 }
 
 dialog#image-dialog .dialog_inner {
-  background: rgba(var(--colorBack), 0.96);
-  border: 2px solid rgba(var(--colorFore), 0.15);
+  background: rgba(var(--color-surface), 0.96);
+  border: 2px solid rgba(var(--color-ink), 0.15);
   border-radius: var(--size-2);
   max-height: var(--dialog-max-height);
   overflow: hidden;
@@ -129,7 +129,7 @@ dialog#image-dialog .dialog_figure {
   justify-content: center;
   overflow: auto;
   overscroll-behavior: contain;
-  background: rgba(var(--colorFore), 0.02);
+  background: rgba(var(--color-ink), 0.02);
   max-height: var(--dialog-max-height);
 }
 
@@ -141,7 +141,7 @@ dialog#image-dialog .dialog_loading {
   font-size: var(--size-3);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(var(--colorFore), 0.7);
+  color: rgba(var(--color-ink), 0.7);
   pointer-events: none;
 }
 
@@ -170,7 +170,7 @@ dialog#image-dialog .dialog_meta {
   padding: var(--size-10) var(--size-5) var(--size-5);
   overflow: auto;
   overscroll-behavior: contain;
-  border-left: 1px solid rgba(var(--colorFore), 0.12);
+  border-left: 1px solid rgba(var(--color-ink), 0.12);
   font-size: var(--size-3);
   max-height: var(--dialog-max-height);
 }
@@ -199,7 +199,7 @@ dialog#image-dialog .dialog_meta_list div {
   display: grid;
   gap: var(--size-0);
   padding-bottom: var(--size-2);
-  border-bottom: 1px solid rgba(var(--colorFore), 0.12);
+  border-bottom: 1px solid rgba(var(--color-ink), 0.12);
 }
 
 dialog#image-dialog .dialog_meta_list dt {
@@ -226,11 +226,11 @@ dialog#image-dialog .dialog_meta_list dd {
   transition: background 0.2s ease, opacity 0.2s ease;
   line-height: 1;
   color:inherit;
-  background: rgba(var(--colorAccent), 0.7);
+  background: rgba(var(--color-accent), 0.7);
 }
 
 .dialog_close:hover {
-  background: rgba(var(--colorAccent), 1);
+  background: rgba(var(--color-accent), 1);
 }
 
 @media (max-width: 768px) {
@@ -247,7 +247,7 @@ dialog#image-dialog .dialog_meta_list dd {
 
   dialog#image-dialog .dialog_meta {
     border-left: 0;
-    border-top: 1px solid rgba(var(--colorFore), 0.12);
+    border-top: 1px solid rgba(var(--color-ink), 0.12);
     padding: var(--size-3) var(--size-3) var(--size-5);
   }
 
