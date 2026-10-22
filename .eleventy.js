@@ -564,8 +564,8 @@ module.exports = function(eleventyConfig) {
           });
         },
         sharpAvifOptions: {
-          quality: 60,
-          effort: 7,
+          quality: 53,
+          effort: 6,
         },
         ...(isRemote ? {
           cacheOptions: {
